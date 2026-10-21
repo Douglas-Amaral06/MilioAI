@@ -1,0 +1,32 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 6px 12px;
+  padding: 8px 20px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+}
+.controls small {
+  font-size: inherit;
+}
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.controls select,
+.controls button {
+  max-width: 100%;
+  font: inherit;
+  color: var(--ink);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 5px 7px;
+}
+.controls button:disabled {
+  opacity: 0.5;
+}

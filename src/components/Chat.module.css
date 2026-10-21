@@ -1,0 +1,903 @@
+.history {
+  container: history / size;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-height: 0;
+}
+.content.homeContent {
+  overflow: clip;
+}
+.compactSupport {
+  display: none;
+  gap: 8px;
+}
+.compactSupport select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 8px;
+  color: var(--ink);
+  background: var(--surface);
+  font: inherit;
+  font-size: 14px;
+}
+.content {
+  overflow-anchor: none;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  min-height: 0;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  scrollbar-width: thin;
+}
+.welcome {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 0;
+  width: 100%;
+  margin-block: auto;
+}
+.welcomeTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.welcomeTop > span {
+  padding-top: 12px;
+}
+.art {
+  position: relative;
+  flex: 0 0 138px;
+  width: 138px;
+  height: 100px;
+  margin-right: 8px;
+}
+.art i {
+  position: absolute;
+  display: block;
+}
+.art i:nth-child(1) {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: var(--brand-yellow);
+  top: 0;
+  right: 0;
+}
+.art i:nth-child(2) {
+  width: 114px;
+  height: 40px;
+  border-radius: 30px;
+  background: var(--brand-blue);
+  transform: rotate(-20deg);
+  bottom: 10px;
+  left: 0;
+}
+.art i:nth-child(3) {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  bottom: 4px;
+  right: 1px;
+}
+.intro {
+  margin-top: -26px;
+  max-width: 470px;
+}
+.hello {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+}
+.intro h1 {
+  font-size: clamp(34px, 3.6vw, 46px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -2.5px;
+  margin: 8px 0 14px;
+}
+.intro p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 0;
+}
+.suggestions {
+  margin-top: 22px;
+}
+.suggestions h2 {
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.suggestions button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 2px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+  transition:
+    color 150ms,
+    background 150ms;
+}
+.suggestions button:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.suggestions button:hover {
+  color: var(--brand-blue);
+  background: var(--subtle);
+}
+.number {
+  font-size: 10px;
+  color: var(--muted);
+}
+.suggestionArrow {
+  margin-left: auto;
+  padding-left: 8px;
+  color: var(--brand-blue);
+  font-size: 18px;
+}
+.composerArea {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 760px;
+  padding: 12px 40px max(12px, env(safe-area-inset-bottom));
+  margin: 0 auto;
+  background: var(--surface);
+}
+.composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+}
+.composer:focus-within {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 1px var(--brand-blue);
+}
+.composer textarea {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  max-height: min(140px, 24dvh);
+  overflow-y: auto;
+  resize: none;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 24px;
+}
+.composer textarea:focus-visible {
+  outline: none;
+}
+.attachButton,
+.sendButton {
+  flex: 0 0 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 5px;
+}
+.attachButton {
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.attachButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.sendButton {
+  background: var(--brand-blue);
+  color: white;
+  cursor: pointer;
+}
+.sendButton:hover:not(:disabled) {
+  background: var(--blue-hover);
+}
+.sendButton:disabled {
+  background: var(--hover);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+.composerNote,
+.storageNote {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+  text-align: center;
+}
+.composerNote b {
+  margin: 0 4px;
+  font-weight: 400;
+}
+.composerNote {
+  min-height: 15px;
+}
+.attachButton:hover:not(:disabled) {
+  background: var(--subtle);
+  color: var(--brand-blue);
+}
+.sendButton,
+.attachButton {
+  transition:
+    background 150ms,
+    color 150ms;
+}
+.sendButton:active:not(:disabled) {
+  background: var(--brand-blue);
+}
+.messages {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.conversationStart {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  padding-bottom: 24px;
+}
+.message {
+  position: relative;
+  min-width: 0;
+  margin: 28px 0 36px;
+  overflow-wrap: anywhere;
+}
+.message header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.signature {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--brand-blue);
+}
+.message time {
+  font-size: 10px;
+  color: var(--muted);
+}
+.messageActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 4px;
+}
+.copyButton,
+.latestButton {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    opacity 150ms,
+    background 150ms,
+    color 150ms;
+}
+.copyButton svg {
+  width: 17px;
+  height: 17px;
+}
+.copyButton:hover:not(:disabled),
+.latestButton:hover {
+  background: var(--blue-tint);
+  color: var(--brand-blue);
+}
+.copyButton:active:not(:disabled),
+.latestButton:active {
+  background: var(--hover);
+}
+.copyButton:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+.copyFeedback,
+.copyError {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.copyFeedback {
+  color: var(--brand-blue);
+}
+.copyError,
+.messageError {
+  color: var(--brand-red);
+}
+.messageError {
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+.latestAction {
+  position: absolute;
+  inset: auto 0 12px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.latestButton {
+  pointer-events: auto;
+  border-color: var(--border);
+  border-radius: 50%;
+  color: var(--brand-blue);
+  box-shadow: 0 2px 8px #0000000d;
+}
+@media (hover: hover) and (pointer: fine) {
+  .copyButton {
+    opacity: 0;
+  }
+  .assistantMessage:hover .copyButton,
+  .assistantMessage:focus-within .copyButton,
+  .copyButton[data-feedback="true"] {
+    opacity: 1;
+  }
+}
+.messageBody {
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.messageBody p {
+  white-space: pre-wrap;
+  margin: 0 0 14px;
+}
+.messageBody > :last-child {
+  margin-bottom: 0;
+}
+.messageBody strong {
+  font-weight: 600;
+}
+.messageBody ul,
+.messageBody ol {
+  padding-left: 24px;
+  margin: 12px 0;
+}
+.messageBody li + li {
+  margin-top: 6px;
+}
+.messageBody a {
+  color: var(--brand-blue);
+  text-underline-offset: 3px;
+}
+.userMessage {
+  width: fit-content;
+  max-width: 82%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.userMessage header {
+  order: 2;
+  margin: 6px 4px 0;
+}
+.userMessage .messageBody {
+  padding: 12px 18px;
+  border-radius: 18px 18px 4px 18px;
+  background: var(--blue-tint);
+  color: var(--ink);
+  max-width: 100%;
+}
+.assistantMessage {
+  padding-right: 12px;
+}
+.references > div {
+  margin-top: 16px;
+}
+.references strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+.references p {
+  margin: 4px 0;
+}
+.references summary {
+  padding: 10px 0;
+  min-height: 44px;
+}
+@media (max-width: 600px) {
+  .userMessage {
+    max-width: 92%;
+  }
+  .assistantMessage {
+    padding-right: 0;
+  }
+  .message {
+    margin-block: 24px 30px;
+  }
+  .userMessage .messageBody {
+    padding: 12px 15px;
+  }
+}
+.unavailable {
+  margin-top: 26px;
+  border-left: 2px solid var(--brand-yellow);
+  padding: 4px 0 4px 18px;
+}
+.unavailable p {
+  max-width: 460px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+@media (max-width: 1100px) {
+  .intro {
+    margin-top: -12px;
+  }
+  .art {
+    transform: scale(0.85);
+    transform-origin: top right;
+  }
+}
+@media (max-width: 600px) {
+  .composer textarea {
+    font-size: 16px;
+  }
+  .content {
+    padding: 0 22px;
+  }
+  .welcome {
+    padding-top: 28px;
+  }
+  .welcomeTop > span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .art {
+    flex-basis: 90px;
+    transform: scale(0.65);
+    height: 85px;
+    margin-right: 0;
+  }
+  .intro {
+    margin-top: -18px;
+  }
+  .intro h1 {
+    font-size: 42px;
+  }
+  .hello {
+    font-size: 21px;
+  }
+  .intro p {
+    font-size: 13px;
+  }
+  .suggestions {
+    margin-top: 28px;
+  }
+  .suggestions button {
+    font-size: 12px;
+    gap: 12px;
+    min-height: 52px;
+  }
+  .composerArea {
+    padding: 12px 16px max(12px, env(safe-area-inset-bottom));
+  }
+  .composer {
+    padding: 14px 12px 8px;
+  }
+  .composerNote {
+    font-size: 10px;
+  }
+
+  .storageNote {
+    text-align: left;
+  }
+  .desktopBreak {
+    display: none;
+  }
+}
+@media (max-height: 780px) and (min-width: 601px) {
+  .welcome {
+    padding-top: 24px;
+  }
+  .art {
+    height: 85px;
+    transform: scale(0.8);
+  }
+  .intro h1 {
+    font-size: 44px;
+    margin-bottom: 16px;
+  }
+  .suggestions {
+    margin-top: 24px;
+  }
+}
+
+@media (max-height: 650px) {
+  .welcome {
+    padding-block: 16px;
+  }
+  .welcomeTop {
+    align-items: center;
+  }
+  .art {
+    height: 64px;
+    transform: scale(0.6);
+    transform-origin: top right;
+  }
+  .intro {
+    margin-top: 0;
+  }
+  .intro h1 {
+    font-size: 34px;
+    margin-block: 6px 10px;
+  }
+  .suggestions {
+    margin-top: 16px;
+  }
+  .composerNote {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .composer textarea {
+    min-height: 68px;
+  }
+}
+
+.pendingFiles {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+.pendingFiles li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--subtle);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  max-width: 100%;
+}
+.pendingFiles li span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pendingFiles button {
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.processing,
+.references {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.references summary {
+  cursor: pointer;
+  color: var(--brand-blue);
+}
+.references blockquote {
+  margin: 8px 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--brand-yellow);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.guidedIntro h1 {
+  max-width: 520px;
+  font-size: clamp(24px, 2.7vw, 34px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin: 0 0 24px;
+}
+.supportMenu h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 16px 0;
+}
+.topicList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+}
+.topicList button,
+.questionList button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  text-align: left;
+  padding: 10px 2px;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.topicList button > span:last-child,
+.questionList button > span:last-child {
+  margin-left: auto;
+  color: var(--brand-blue);
+}
+.topicList button:hover:not(:disabled),
+.questionList button:hover:not(:disabled) {
+  color: var(--brand-blue);
+  background: var(--subtle);
+}
+.topicList button:disabled,
+.questionList button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+.backTopics {
+  background: none;
+  border: 0;
+  color: var(--brand-blue);
+  padding: 10px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.menuDescription {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.continueSupport {
+  margin: 24px 0;
+  font-size: 12px;
+  color: var(--brand-blue);
+}
+.continueSupport > summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 12px 0;
+}
+@media (max-width: 600px) {
+  .topicList {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .guidedIntro h1 {
+    font-size: 26px;
+  }
+  .questionList button {
+    font-size: 12px;
+  }
+}
+
+.instructorFlow {
+  margin: 18px 0 24px;
+  font-size: 13px;
+  max-width: 100%;
+}
+.instructorFlow label {
+  display: block;
+  margin-bottom: 8px;
+}
+.instructorFlow input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: var(--surface);
+  font-size: 16px;
+}
+.instructorFlow button {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--brand-blue);
+  text-align: left;
+  padding: 10px 12px;
+  min-height: 44px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.instructorFlow button:hover:not(:disabled) {
+  background: var(--blue-tint);
+}
+.instructorFlow button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+.flowActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+.flowCount {
+  color: var(--muted);
+  font-size: 12px;
+}
+.instructorList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 210px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.instructorList button {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.instructorList li + li {
+  border-top: 1px solid var(--line);
+}
+
+.cardCode {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+/* Keep the greeting and brand visible while the empty home fits its viewport. */
+@container history (max-height: 620px) {
+  .homeContent .welcome {
+    padding-block: 16px;
+  }
+  .homeContent .art {
+    height: 100px;
+    margin-bottom: -30px;
+    transform: scale(0.65);
+  }
+  .homeContent .intro {
+    margin-top: -20px;
+  }
+  .homeContent .intro h1 {
+    font-size: 36px;
+    margin-block: 6px 16px;
+  }
+  .homeContent .topicList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+  }
+  .homeContent .questionList {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 16px;
+  }
+  .homeContent .selectedSupport .fullSupport {
+    display: none;
+  }
+  .homeContent .selectedSupport .compactSupport {
+    display: grid;
+  }
+}
+@container history (max-height: 460px) {
+  .homeContent .welcome {
+    padding-block: 8px;
+  }
+  .homeContent .welcomeTop {
+    align-items: flex-start;
+  }
+  .homeContent .art {
+    height: 100px;
+    margin-bottom: -48px;
+    transform: scale(0.5);
+  }
+  .homeContent .intro {
+    margin-top: -12px;
+  }
+  .homeContent .hello {
+    font-size: 18px;
+  }
+  .homeContent .intro h1 {
+    font-size: 30px;
+    margin-block: 4px 12px;
+  }
+  .homeContent .topicList button {
+    font-size: 12px;
+    line-height: 1.3;
+    padding-block: 8px;
+    gap: 6px;
+  }
+}
+@container history (max-height: 330px) {
+  .homeContent .fullSupport {
+    display: none;
+  }
+  .homeContent .compactSupport {
+    display: grid;
+  }
+}
+@container history (max-height: 160px) {
+  .homeContent .welcome {
+    position: relative;
+    padding-block: 0;
+  }
+  .homeContent .welcomeTop {
+    height: 12px;
+  }
+  .homeContent .welcomeTop > span {
+    padding-top: 0;
+    font-size: 6px;
+    letter-spacing: 0.5px;
+  }
+  .homeContent .art {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 138px;
+    height: 100px;
+    transform: scale(0.35);
+  }
+  .homeContent .intro {
+    margin: 0;
+  }
+  .homeContent .hello {
+    font-size: 12px;
+  }
+  .homeContent .intro h1 {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    margin: 0 0 6px;
+  }
+  .homeContent .intro h1 br {
+    display: none;
+  }
+}

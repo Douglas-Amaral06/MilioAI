@@ -1,0 +1,524 @@
+{
+  "version": "1.0.0",
+  "expected_card_count": 33,
+  "source_card_codes": [
+    "10394",
+    "10398",
+    "10420",
+    "1071",
+    "10771",
+    "155",
+    "15504",
+    "15506",
+    "15508",
+    "15510",
+    "15511",
+    "15512",
+    "15515",
+    "15566",
+    "15723",
+    "15779",
+    "15780",
+    "164",
+    "182",
+    "1892",
+    "200",
+    "216",
+    "2337",
+    "3845",
+    "3854",
+    "472",
+    "503",
+    "5631",
+    "7099",
+    "738",
+    "89",
+    "9156",
+    "937"
+  ],
+  "cards": [
+    {
+      "benefit_code": "10398",
+      "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 1,
+      "evidence_id": "vt-10398",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-10398"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "10420",
+      "name": "Viação Botucatu - Cartão Municipal Botucatu",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 2,
+      "evidence_id": "vt-10420",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-10420"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "164",
+      "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 3,
+      "evidence_id": "vt-164",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-164"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15515",
+      "name": "AETUR Del Rey - Cartão Pec - Municipal Carapicuíba",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 4,
+      "evidence_id": "vt-15515",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15515"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15566",
+      "name": "BB Turismo - Cartão Itapevi Integração",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 5,
+      "evidence_id": "vt-15566",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15566"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15510",
+      "name": "BB Turismo - Cartão Municipal Barueri",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 6,
+      "evidence_id": "vt-15510",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15510"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15511",
+      "name": "BB Turismo - Cartão Municipal Itapevi",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 7,
+      "evidence_id": "vt-15511",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15511"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15512",
+      "name": "BB Turismo - Cartão Municipal Jandira",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 8,
+      "evidence_id": "vt-15512",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15512"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15780",
+      "name": "Bem Osasco - Cartão Municipal Osasco",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 9,
+      "evidence_id": "vt-15780",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15780"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15779",
+      "name": "Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 10,
+      "evidence_id": "vt-15779",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15779"
+      ],
+      "issue_ids": [
+        "vt-15779-address"
+      ]
+    },
+    {
+      "benefit_code": "7099",
+      "name": "Consórcio Bus Mais",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 11,
+      "evidence_id": "vt-7099",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-7099"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "216",
+      "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 12,
+      "evidence_id": "vt-216",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-216",
+        "CTX-04"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "2337",
+      "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 13,
+      "evidence_id": "vt-2337",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-2337"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "5631",
+      "name": "Expresso Itamarati - Cartão Votuporanga Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 14,
+      "evidence_id": "vt-5631",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-5631"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "182",
+      "name": "Guarupas - Cartão Guarulhos - Municipal / Guarulhos",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 15,
+      "evidence_id": "vt-182",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-182"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15508",
+      "name": "Moratense - Cartão Municipal Francisco Morato",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 16,
+      "evidence_id": "vt-15508",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15508",
+        "CTX-05"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "10771",
+      "name": "Mov - Avaré - Cartão Municipal Avaré",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 17,
+      "evidence_id": "vt-10771",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-10771"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "10394",
+      "name": "Mov Itu - Cartão Municipal Itu",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 18,
+      "evidence_id": "vt-10394",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-10394"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15504",
+      "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 19,
+      "evidence_id": "vt-15504",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15504"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15506",
+      "name": "Onpag - Cartão Suzano Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 20,
+      "evidence_id": "vt-15506",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15506"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "3854",
+      "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 21,
+      "evidence_id": "vt-3854",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-3854"
+      ],
+      "issue_ids": [
+        "vt-3854-fee"
+      ]
+    },
+    {
+      "benefit_code": "3845",
+      "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 22,
+      "evidence_id": "vt-3845",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-3845"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "1071",
+      "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 23,
+      "evidence_id": "vt-1071",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-1071"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "1892",
+      "name": "Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)",
+      "document_id": "vt-segunda-via",
+      "page": 1,
+      "row_on_page": 24,
+      "evidence_id": "vt-1892",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-1892"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "503",
+      "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 1,
+      "evidence_id": "vt-503",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-503"
+      ],
+      "issue_ids": [
+        "vt-503-requester"
+      ]
+    },
+    {
+      "benefit_code": "89",
+      "name": "SPTRANS - Bilhete Único",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 2,
+      "evidence_id": "vt-89",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-89",
+        "CTX-01",
+        "CTX-02",
+        "CTX-08"
+      ],
+      "issue_ids": [
+        "source-originals-missing"
+      ]
+    },
+    {
+      "benefit_code": "9156",
+      "name": "TOP - Cartão Top",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 3,
+      "evidence_id": "vt-9156",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-9156",
+        "CTX-03",
+        "CTX-09"
+      ],
+      "issue_ids": [
+        "vt-9156-channel"
+      ]
+    },
+    {
+      "benefit_code": "738",
+      "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 4,
+      "evidence_id": "vt-738",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-738"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "472",
+      "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 5,
+      "evidence_id": "vt-472",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-472"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "155",
+      "name": "Transurc Campinas - Municipal Campinas",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 6,
+      "evidence_id": "vt-155",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-155",
+        "CONFLICT-02"
+      ],
+      "issue_ids": [
+        "vt-155-phone"
+      ]
+    },
+    {
+      "benefit_code": "200",
+      "name": "Urbes Sorocaba - Cartão Sorocaba Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 7,
+      "evidence_id": "vt-200",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-200"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "937",
+      "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 8,
+      "evidence_id": "vt-937",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-937"
+      ],
+      "issue_ids": []
+    },
+    {
+      "benefit_code": "15723",
+      "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+      "document_id": "vt-segunda-via",
+      "page": 2,
+      "row_on_page": 9,
+      "evidence_id": "vt-15723",
+      "extraction_status": "snapshot_verified",
+      "validation_status": "pending_institutional",
+      "test_ids": [
+        "VT-15723",
+        "CTX-06"
+      ],
+      "issue_ids": []
+    }
+  ]
+}

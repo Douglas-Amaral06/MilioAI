@@ -1,0 +1,12 @@
+{
+  "run_id": "PREENCHER_COM_EXECUCAO_REAL",
+  "run_kind": "template",
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+  "evidence_catalog_sha256": "745c64dae08a09c17ff636838cca7e089abcb7809ea9bd9d606fed50d91d94f1",
+  "document_registry_sha256": "5f68edd2eb5808b106c1d7d4667671d86bbcaa731ca799ea476d9779ed831ad6",
+  "conflicts_sha256": "52e0b503475b1ff09c06155061b0d11c56a33efbf66702fd7e9b3039294a5f20",
+  "card_coverage_sha256": "293568ee6ad3038e831d5f73c24797deb15c936449a9ee8808ee210bc794dcf3",
+  "executed_at": null,
+  "results": []
+}

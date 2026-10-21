@@ -1,0 +1,125 @@
+{
+  "sample_size": 6,
+  "top_k": 3,
+  "hit_rate_at_k": 0.5,
+  "recall_at_k": 0.5,
+  "mrr_at_k": 0.5,
+  "cases": [
+    {
+      "case": "prazo",
+      "hit": true,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "expected_page": 1,
+      "candidates": [
+        {
+          "id": "6318bd24-ef7e-427c-8b5f-2c745ce187a5",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "2. Periodicidade e Prazo",
+          "page": 1,
+          "score": 0.619956
+        },
+        {
+          "id": "89124cde-2425-426d-9cfc-9b90e0e4d6f2",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "score": 0.613782
+        }
+      ]
+    },
+    {
+      "case": "horarios",
+      "hit": false,
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "expected_page": 1,
+      "candidates": []
+    },
+    {
+      "case": "curso",
+      "hit": true,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "expected_page": 1,
+      "candidates": [
+        {
+          "id": "063547d8-23c4-42e4-9f6c-fc84c5814aa1",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "3. Como preencher corretamente",
+          "page": 1,
+          "score": 0.567831
+        }
+      ]
+    },
+    {
+      "case": "assinaturas",
+      "hit": false,
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "expected_page": 2,
+      "candidates": []
+    },
+    {
+      "case": "envio",
+      "hit": false,
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "expected_page": 2,
+      "candidates": [
+        {
+          "id": "89124cde-2425-426d-9cfc-9b90e0e4d6f2",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "score": 0.587503
+        },
+        {
+          "id": "6318bd24-ef7e-427c-8b5f-2c745ce187a5",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "2. Periodicidade e Prazo",
+          "page": 1,
+          "score": 0.583898
+        },
+        {
+          "id": "cf73f639-4597-4adb-b538-bd848a6386c4",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "score": 0.573295
+        }
+      ]
+    },
+    {
+      "case": "atraso",
+      "hit": true,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "expected_page": 1,
+      "candidates": [
+        {
+          "id": "6318bd24-ef7e-427c-8b5f-2c745ce187a5",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "2. Periodicidade e Prazo",
+          "page": 1,
+          "score": 0.651749
+        },
+        {
+          "id": "cf73f639-4597-4adb-b538-bd848a6386c4",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "score": 0.6192
+        },
+        {
+          "id": "89124cde-2425-426d-9cfc-9b90e0e4d6f2",
+          "document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+          "section": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "score": 0.612784
+        }
+      ]
+    }
+  ],
+  "limitation": "Six curated questions from one local-review PDF; this is not an estimate of general accuracy."
+}

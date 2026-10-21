@@ -1,0 +1,170 @@
+{
+  "version": "1.0.0",
+  "conflicts": [
+    {
+      "conflict_id": "source-originals-missing",
+      "kind": "missing_source",
+      "severity": "high",
+      "title": "PDFs originais ausentes",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "fp-deadline",
+        "vt-89"
+      ],
+      "observations": [
+        "Somente renderizações e extrações preexistentes estão disponíveis.",
+        "Não é possível calcular o hash dos PDFs originais nem comprovar seus nomes/versões."
+      ],
+      "next_action": "Obter os originais autorizados, conferir integridade e revisar todas as evidências derivadas.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "vt-3854-fee",
+      "kind": "potential_conflict",
+      "severity": "high",
+      "title": "Rápido D'Oeste: unidades de taxa não conciliadas",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "vt-3854"
+      ],
+      "observations": [
+        "Coluna Taxa: 6 tarifas.",
+        "Procedimento: taxa de 21,30, sem comprovação de equivalência entre unidades."
+      ],
+      "next_action": "Confirmar taxa e unidade com a área/operadora; preservar ambos os registros sem converter tarifas em reais.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "vt-503-requester",
+      "kind": "potential_conflict",
+      "severity": "high",
+      "title": "SOU Diadema: solicitante",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "vt-503"
+      ],
+      "observations": [
+        "Coluna Quem solicita: Jovem.",
+        "Procedimento: qualquer pessoa pode solicitar; retirada também permite outra pessoa com documento do titular."
+      ],
+      "next_action": "Confirmar regras de solicitação, representação e retirada; não escolher uma interpretação silenciosamente.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "fp-send-vs-portal",
+      "kind": "potential_conflict",
+      "severity": "high",
+      "title": "Folha Ponto / Conecta Jovem: canais de envio",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "fp-send",
+        "op-send"
+      ],
+      "observations": [
+        "PDF, seção 6, página 2: e-mail/WhatsApp do RH Jovem.",
+        "Orientação operacional /services/send_timesheet: Conecta Jovem.",
+        "Não há documento de substituição ou revogação dos canais anteriores."
+      ],
+      "next_action": "Pedir confirmação institucional da convivência ou substituição de canais; não declarar nenhum canal revogado.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "vt-15779-address",
+      "kind": "missing_information",
+      "severity": "medium",
+      "title": "Bem Santana: endereço ausente e referência sem protocolo",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "vt-15779"
+      ],
+      "observations": [
+        "O procedimento remete ao endereço mencionado abaixo, mas a linha não traz o endereço.",
+        "A referência www.bemsantana.com.br não contém protocolo; acessibilidade não testada."
+      ],
+      "next_action": "Obter endereço completo e URL confirmada, sem completar ou consultar serviços externos nesta sprint.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "vt-9156-channel",
+      "kind": "missing_information",
+      "severity": "medium",
+      "title": "TOP: autoatendimento e WhatsApp sem destino",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "vt-9156"
+      ],
+      "observations": [
+        "Procedimento menciona chat/autoatendimento e WhatsApp, sem URL ou número."
+      ],
+      "next_action": "Confirmar canais oficiais e vigência da taxa; não inferir URL ou telefone.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "vt-155-phone",
+      "kind": "missing_information",
+      "severity": "medium",
+      "title": "Transurc Campinas: 0800 incompleto",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "vt-155"
+      ],
+      "observations": [
+        "Procedimento menciona 0800 sem número completo.",
+        "Taxa varia conforme a via; a faixa agregada não é uma taxa única."
+      ],
+      "next_action": "Solicitar número completo e confirmação dos valores por via; não completar número nem uniformizar a faixa.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "instructor-missing-contact",
+      "kind": "missing_information",
+      "severity": "medium",
+      "title": "Diretório: contato não informado",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "instructor-missing"
+      ],
+      "observations": [
+        "16 registros no diretório local; 15 possuem e-mail e um tem email:null. Nenhum nome/e-mail pessoal foi republicado."
+      ],
+      "next_action": "Validar diretório restrito e confirmar contato pendente; não deduzir e-mail pelo nome.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    },
+    {
+      "conflict_id": "operational-validation",
+      "kind": "missing_approval",
+      "severity": "high",
+      "title": "Serviços e contatos operacionais pendentes",
+      "status": "pending_validation",
+      "evidence_ids": [
+        "op-calendar",
+        "op-course-certificate",
+        "education-inventory"
+      ],
+      "observations": [
+        "validation_status=pending e enabled=true no arquivo de configuração.",
+        "Habilitação técnica não representa aprovação ou vigência institucional."
+      ],
+      "next_action": "Validar serviços, permissões, contatos e responsáveis; manter uso corporativo bloqueado na política de avaliação.",
+      "responsible_reviewer": null,
+      "review_date": null,
+      "resolution_notes": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+:root {
+  --brand-blue: #402fdd;
+  --brand-yellow: #ed9e06;
+  --brand-red: #d42c4d;
+  --brand-white: #ffffff;
+  --brand-carbon: #000000;
+  --surface: var(--brand-white);
+  --ink: var(--brand-carbon);
+  --sidebar: #f8f8fa;
+  --subtle: #fafafc;
+  --muted: #656570;
+  --line: #e7e7ed;
+  --border: #cbcbd5;
+  --hover: #ededf2;
+  --blue-tint: #eeecfc;
+  --blue-hover: #3424bd;
+  --font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}

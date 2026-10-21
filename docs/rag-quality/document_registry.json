@@ -1,0 +1,206 @@
+{
+  "registry_version": "1.0.0",
+  "technical_inspection_date": "2026-10-20",
+  "documents": [
+    {
+      "document_id": "folha-ponto",
+      "document_name": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO(1).pdf",
+      "domain": "folha_ponto",
+      "source_path": null,
+      "source_version": "snapshot-local-v1",
+      "document_hash": null,
+      "document_date": null,
+      "last_review_date": null,
+      "responsible_department": null,
+      "responsible_reviewer": null,
+      "approval_status": "pending_validation",
+      "validity_status": "not_verified",
+      "source_availability": "original_missing",
+      "evidence_level": "derived_snapshot",
+      "page_count": 2,
+      "source_pointer": null,
+      "required_scopes": [
+        "local_review"
+      ],
+      "runtime_kb_version_reference": "folha-ponto-local-v1",
+      "identified_issues": [
+        "source-originals-missing",
+        "fp-send-vs-portal"
+      ],
+      "next_action": "Obter o PDF original, conferir hash/versão e solicitar validação institucional de regras, valores e canais.",
+      "review_notes": "Conferência técnica das renderizações e artefatos locais. Não comprova integridade do original nem aprovação/vigência institucional. Nome solicitado não confirmado por hash.",
+      "artifacts": [
+        {
+          "path": "tmp/pdfs/rag02/page-1.png",
+          "sha256": "a7e51f06b12056d7db5bf0dc3ff2a512eb60aeffaf138b45828f192558a0c28c",
+          "kind": "render"
+        },
+        {
+          "path": "tmp/pdfs/rag02/page-2.png",
+          "sha256": "b5485d2e53c9a502fdfcce92217996b74aae13c84d59fc03aeb97c8be6e75fcb",
+          "kind": "render"
+        }
+      ]
+    },
+    {
+      "document_id": "vt-segunda-via",
+      "document_name": "orientações segunda via cartões vt (1).pdf",
+      "domain": "vale_transporte",
+      "source_path": null,
+      "source_version": "snapshot-local-v1",
+      "document_hash": null,
+      "document_date": null,
+      "last_review_date": null,
+      "responsible_department": null,
+      "responsible_reviewer": null,
+      "approval_status": "pending_validation",
+      "validity_status": "not_verified",
+      "source_availability": "original_missing",
+      "evidence_level": "derived_snapshot",
+      "page_count": 2,
+      "source_pointer": null,
+      "required_scopes": [
+        "local_review"
+      ],
+      "runtime_kb_version_reference": "vt-segunda-via-local-v1",
+      "identified_issues": [
+        "source-originals-missing",
+        "vt-3854-fee",
+        "vt-503-requester",
+        "vt-15779-address",
+        "vt-9156-channel",
+        "vt-155-phone"
+      ],
+      "next_action": "Obter o PDF original, conferir hash/versão e solicitar validação institucional de regras, valores e canais.",
+      "review_notes": "Conferência técnica das renderizações e artefatos locais. Não comprova integridade do original nem aprovação/vigência institucional. Nome solicitado não confirmado por hash.",
+      "artifacts": [
+        {
+          "path": "tmp/vt-pdf/page-1.png",
+          "sha256": "88afe736d5fa3a6daa7af4e9bdcdeb059a86fbc9fc9a2f370588323d28e548ae",
+          "kind": "render"
+        },
+        {
+          "path": "tmp/vt-pdf/page-2.png",
+          "sha256": "911dca221265cfdad36dc4bb36c0176b847d6d2c419c87c217e1478362fa9643",
+          "kind": "render"
+        },
+        {
+          "path": "tmp/vt-pdf/reviewed-rows.json",
+          "sha256": "bce2447afcb9eaa9d6fa1b911c72939fc6569f8975e2c8d33a6a3622af554648",
+          "kind": "extraction"
+        },
+        {
+          "path": "tmp/vt-pdf/pypdf-1.txt",
+          "sha256": "2d06ecec8ee692192f630c3f4784e085bf7fa139f1a8aac417bc54756a379f65",
+          "kind": "extraction"
+        },
+        {
+          "path": "tmp/vt-pdf/pypdf-2.txt",
+          "sha256": "aedcadf6a9b1bfb5b163a5457af67ecbf811d9c6b3f1a22f75a4baed68f5c91e",
+          "kind": "extraction"
+        }
+      ]
+    },
+    {
+      "document_id": "operational-services",
+      "document_name": "Orientações operacionais — serviços/Conecta Jovem",
+      "domain": "operational",
+      "source_path": "backend/app/support/operational_guidance.json",
+      "source_version": "operational-snapshot-v1",
+      "document_hash": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+      "document_date": null,
+      "last_review_date": null,
+      "responsible_department": null,
+      "responsible_reviewer": null,
+      "approval_status": "pending_validation",
+      "validity_status": "not_verified",
+      "source_availability": "available",
+      "evidence_level": "local_source",
+      "page_count": null,
+      "source_pointer": "/services",
+      "required_scopes": [],
+      "runtime_kb_version_reference": null,
+      "identified_issues": [
+        "fp-send-vs-portal",
+        "operational-validation"
+      ],
+      "next_action": "Confirmar origem, responsáveis, disponibilidade e vigência com a instituição antes de uso corporativo.",
+      "review_notes": "Origem declarada no arquivo: Orientações operacionais fornecidas pelo solicitante em 2026-10-20; validation_status=pending. enabled não equivale a aprovação. Não foi copiado o diretório pessoal ou o URL específico do polo.",
+      "artifacts": [
+        {
+          "path": "backend/app/support/operational_guidance.json",
+          "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+          "kind": "configuration"
+        }
+      ]
+    },
+    {
+      "document_id": "instructor-directory",
+      "document_name": "Diretório de instrutores — inventário sem contatos publicados",
+      "domain": "operational",
+      "source_path": "backend/app/support/operational_guidance.json",
+      "source_version": "operational-snapshot-v1",
+      "document_hash": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+      "document_date": null,
+      "last_review_date": null,
+      "responsible_department": null,
+      "responsible_reviewer": null,
+      "approval_status": "pending_validation",
+      "validity_status": "not_verified",
+      "source_availability": "available",
+      "evidence_level": "local_source",
+      "page_count": null,
+      "source_pointer": "/instructors",
+      "required_scopes": [
+        "education:contacts"
+      ],
+      "runtime_kb_version_reference": null,
+      "identified_issues": [
+        "instructor-missing-contact"
+      ],
+      "next_action": "Confirmar origem, responsáveis, disponibilidade e vigência com a instituição antes de uso corporativo.",
+      "review_notes": "Origem declarada no arquivo: Orientações operacionais fornecidas pelo solicitante em 2026-10-20; validation_status=pending. enabled não equivale a aprovação. Não foi copiado o diretório pessoal ou o URL específico do polo.",
+      "artifacts": [
+        {
+          "path": "backend/app/support/operational_guidance.json",
+          "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+          "kind": "configuration"
+        }
+      ]
+    },
+    {
+      "document_id": "education-contacts",
+      "document_name": "Contatos do Educacional — inventário sem contatos publicados",
+      "domain": "operational",
+      "source_path": "backend/app/support/operational_guidance.json",
+      "source_version": "operational-snapshot-v1",
+      "document_hash": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+      "document_date": null,
+      "last_review_date": null,
+      "responsible_department": null,
+      "responsible_reviewer": null,
+      "approval_status": "pending_validation",
+      "validity_status": "not_verified",
+      "source_availability": "available",
+      "evidence_level": "local_source",
+      "page_count": null,
+      "source_pointer": "/education",
+      "required_scopes": [
+        "education:contacts"
+      ],
+      "runtime_kb_version_reference": null,
+      "identified_issues": [
+        "operational-validation"
+      ],
+      "next_action": "Confirmar origem, responsáveis, disponibilidade e vigência com a instituição antes de uso corporativo.",
+      "review_notes": "Origem declarada no arquivo: Orientações operacionais fornecidas pelo solicitante em 2026-10-20; validation_status=pending. enabled não equivale a aprovação. Não foi copiado o diretório pessoal ou o URL específico do polo.",
+      "artifacts": [
+        {
+          "path": "backend/app/support/operational_guidance.json",
+          "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+          "kind": "configuration"
+        }
+      ]
+    }
+  ]
+}

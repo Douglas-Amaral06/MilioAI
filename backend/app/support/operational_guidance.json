@@ -1,0 +1,177 @@
+{
+  "portal_url": "https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/",
+  "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+  "updated_at": "2026-10-20",
+  "validation_status": "pending",
+  "enabled": true,
+  "services": [
+    {
+      "id": "generate_timesheet",
+      "domain": "folha_ponto",
+      "intent": "generate_timesheet",
+      "description": "Gerar ou baixar a folha ponto",
+      "enabled": true,
+      "guidance": "gerar ou obter sua Folha Ponto"
+    },
+    {
+      "id": "calendar",
+      "domain": "falta_curso",
+      "intent": "calendar",
+      "description": "Consultar dias e programação de curso",
+      "enabled": true,
+      "guidance": "consultar seu calendário educacional"
+    },
+    {
+      "id": "vacation",
+      "domain": "outros",
+      "intent": "vacation",
+      "description": "Consultar férias no calendário",
+      "enabled": true,
+      "guidance": "consultar as informações disponíveis sobre suas férias no calendário"
+    },
+    {
+      "id": "send_timesheet",
+      "domain": "folha_ponto",
+      "intent": "send_timesheet",
+      "description": "Enviar folha ponto preenchida ou assinada",
+      "enabled": true,
+      "guidance": "encaminhar sua Folha Ponto assinada"
+    },
+    {
+      "id": "school_documents",
+      "domain": "outros",
+      "intent": "school_documents",
+      "description": "Enviar declaração ou documentos escolares",
+      "enabled": true,
+      "guidance": "encaminhar seus documentos escolares"
+    },
+    {
+      "id": "work_certificate",
+      "domain": "falta_trabalho",
+      "intent": "work_certificate",
+      "description": "Enviar atestado referente à ausência no trabalho",
+      "enabled": true,
+      "guidance": "consultar o serviço de envio de atestados referentes a faltas no trabalho"
+    },
+    {
+      "id": "course_certificate",
+      "domain": "falta_curso",
+      "intent": "course_certificate",
+      "description": "Enviar atestado referente à ausência no curso",
+      "enabled": true,
+      "guidance": "consultar o serviço de envio de atestados referentes a faltas no curso"
+    },
+    {
+      "id": "payslip",
+      "domain": "salario",
+      "intent": "payslip",
+      "description": "Consultar ou baixar holerite ou contracheque",
+      "enabled": true,
+      "guidance": "consultar ou baixar seu holerite"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "instructor-01",
+      "name": "Adriana Cristina Correia",
+      "email": "adriana.correia@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-02",
+      "name": "Marcio Frederico Oliveira da Silva",
+      "email": "marcio.silva@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-03",
+      "name": "Vinícius Willians Maia",
+      "email": "vinicius.maia@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-04",
+      "name": "Fabiola Dalprat Teixeira",
+      "email": "fabiola.teixeira@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-05",
+      "name": "Gabriela Oliveira França",
+      "email": "gabriela.franca@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-06",
+      "name": "Claudia Lupoli de Almeida",
+      "email": "claudia.almeida@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-07",
+      "name": "Rafaela Gomes Nogara Basilio",
+      "email": "rafaela.basilio@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-08",
+      "name": "Claudia Cardoso Mignella",
+      "email": "claudia.mignella@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-09",
+      "name": "Nilma Aparecida dos Santos",
+      "email": "nilma.santos@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-10",
+      "name": "Jefferson Lopes da Silva",
+      "email": "jefferson.silva@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-11",
+      "name": "Letícia da Silva Lima",
+      "email": null,
+      "enabled": true
+    },
+    {
+      "id": "instructor-12",
+      "name": "Albelice Vilma Magalhães",
+      "email": "albelice.magalhaes@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-13",
+      "name": "André Martins de Souza",
+      "email": "andre.souza@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-14",
+      "name": "Danielle Pereira Rosa de Souza",
+      "email": "danielle.souza@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-15",
+      "name": "Sara Cristina Oliveira Pinheiro",
+      "email": "sara.pinheiro@renapsi.org.br",
+      "enabled": true
+    },
+    {
+      "id": "instructor-16",
+      "name": "Ana Luiza Gama d' Oliveira Landa",
+      "email": "ana.landa@renapsi.org.br",
+      "enabled": true
+    }
+  ],
+  "education": {
+    "phone": "11 99803-0631",
+    "phone_uri": "tel:+5511998030631",
+    "email": "educacional.sp@renapsi.org.br"
+  },
+  "link_label": "Conecta Jovem"
+}
