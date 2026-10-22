@@ -18,6 +18,7 @@ export type SupportAction = {
   benefit_code?: string;
 };
 export interface Message {
+  contacts?: InstitutionalContact[];
   id: string;
   role: "user" | "assistant";
   status?: "processing" | "complete" | "failed" | "cancelled";
@@ -27,6 +28,27 @@ export interface Message {
   questionId?: string | null;
   content: string;
   createdAt: string;
+}
+export interface InstitutionalContact {
+  contact_id: string;
+  team: string;
+  domain: string;
+  phone: string;
+  phone_digits: string;
+  channel: "whatsapp" | "phone";
+  whatsapp_enabled?: boolean;
+  whatsapp_validation_status?: string;
+  url: string | null;
+  label: string;
+  email: string;
+  email_url: string | null;
+  validation_status: string;
+  availability_status: string;
+  provenance: {
+    version: string;
+    directory_version: string;
+    institutionally_approved: boolean;
+  };
 }
 export interface DocumentReference {
   id: string;

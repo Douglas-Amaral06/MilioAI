@@ -127,7 +127,7 @@ def setup_graph(tmp_path, monkeypatch, outputs, *, supported=True, transport_fai
     generated = iter(outputs)
 
     async def chat(messages):
-        yield next(generated)
+        yield next(generated, NO_EVIDENCE)
 
     model.chat = chat
 

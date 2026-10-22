@@ -43,7 +43,7 @@ describe("Instructor flow", () => {
     const html = renderToStaticMarkup(
       <MessageContent content="[Conecta Jovem](https://conectajovem.dema.org.br/) [Educacional](mailto:educacional.sp@renapsi.org.br) [Telefone](tel:+5511998030631)" />,
     );
-    expect(html).toContain('href="tel:+5511998030631"');
+    expect(html).not.toContain('href="tel:');
     expect(html).toContain('href="mailto:educacional.sp@renapsi.org.br"');
     expect(html).toContain('rel="noopener noreferrer"');
   });

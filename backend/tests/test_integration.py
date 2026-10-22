@@ -157,12 +157,15 @@ async def test_stream_persistence_idempotency_and_cancellation(resources, monkey
         "is_test": True,
     }
 
-    async def retrieve(*args):
+    async def retrieve(*args, **kwargs):
         return [chunk]
 
     monkeypatch.setattr("app.orchestration.graph.retrieve", retrieve)
 
     class Model:
+        async def select_document_rule(self, question, rules):
+            return rules[0]["id"]
+
         async def operational_intent(self, *args):
             return "documental"
 
@@ -177,7 +180,7 @@ async def test_stream_persistence_idempotency_and_cancellation(resources, monkey
                 yield part
 
     app.state.graph = build_graph(app.state.sessions, Model(), app.state.settings)
-    payload = {"request_id": str(uuid.uuid4()), "content": "Qual prazo do atestado?"}
+    payload = {"request_id": str(uuid.uuid4()), "content": "Qual prazo do atestado do trabalho?"}
     response = await client.post(f"/api/v1/conversations/{cid}/stream", json=payload)
     assert response.status_code == 200
     assert all(

@@ -126,6 +126,7 @@ export interface RemoteConversation {
   topic_id?: string | null;
 }
 export interface RemoteMessage {
+  contacts?: Message["contacts"];
   id: string;
   role: "user" | "assistant";
   content: string;
@@ -155,6 +156,7 @@ export const toConversation = (c: RemoteConversation): Conversation => ({
   supportState: c.support_state,
 });
 export const toMessage = (m: RemoteMessage): Message => ({
+  contacts: m.contacts ?? [],
   id: m.id,
   role: m.role,
   content: m.content,
@@ -229,6 +231,7 @@ export async function streamMessage(
   }
 }
 export type StreamEvent =
+  | { event: "contacts"; contacts: NonNullable<Message["contacts"]> }
   | { event: "start"; user: RemoteMessage; assistant: RemoteMessage }
   | { event: "delta"; text: string }
   | { event: "sources"; sources: NonNullable<Message["sources"]> }

@@ -151,13 +151,24 @@ async def prepare(sessions, principal, cid, payload, settings):
 
 
 async def finalize(
-    sessions, cid, principal, mid, *, content="", sources=None, status, outcome, support_state=None
+    sessions,
+    cid,
+    principal,
+    mid,
+    *,
+    content="",
+    sources=None,
+    contacts=None,
+    status,
+    outcome,
+    support_state=None,
 ):
     async with sessions() as session:
         conversation = await owned(session, cid, principal.id, lock=True)
         message = await session.get(Message, mid)
         if message and message.status == "processing":
             message.content, message.sources = content, sources or []
+            message.contacts = contacts or []
             message.status, message.outcome = status, outcome
             conversation.updated_at = datetime.now(UTC)
             if support_state is not None:
@@ -193,6 +204,7 @@ async def execute(app, principal, cid, payload, prepared):
                     "action": payload.action.model_dump() if payload.action else None,
                     "chunks": [],
                     "sources": [],
+                    "contacts": [],
                 },
                 stream_mode=["custom", "updates"],
             ):
@@ -209,6 +221,7 @@ async def execute(app, principal, cid, payload, prepared):
             assistant.id,
             content=result["answer"],
             sources=result.get("sources", []),
+            contacts=result.get("contacts", []),
             status="complete",
             outcome=result.get("outcome", "answered"),
             support_state=result.get("support_state", support_state),

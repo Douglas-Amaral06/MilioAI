@@ -1,0 +1,250 @@
+{
+  "id": "FP-13-P1-R1",
+  "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+  "http_status": 201,
+  "technical_contract_passed": true,
+  "persisted": true,
+  "human_acceptance": null,
+  "duration_ms": 1485,
+  "message": {
+    "id": "4260a291-80ec-42dd-8e9e-a6965d436cf1",
+    "role": "assistant",
+    "content": "Em caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1]",
+    "status": "complete",
+    "sources": [
+      {
+        "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+        "benefit_code": null,
+        "attributes": {},
+        "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+        "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+        "version": "folha-ponto-local-v1",
+        "page": 2,
+        "section": "8. Dúvidas",
+        "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+        "chunk": 8,
+        "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+        "is_test": false,
+        "validation_only": true,
+        "score": 0.518417,
+        "status": "approved"
+      }
+    ],
+    "contacts": [
+      {
+        "contact_id": "rh_frequency",
+        "team": "RH Jovem — Frequência",
+        "domain": "folha_ponto",
+        "phone": "+55 11 97080-6028",
+        "phone_digits": "5511970806028",
+        "channel": "whatsapp",
+        "url": "https://wa.me/5511970806028",
+        "label": "WhatsApp da Frequência",
+        "email": "frequência.sp@renapsi.org.br",
+        "email_url": null,
+        "validation_status": "pending_institutional",
+        "availability_status": "not_verified",
+        "provenance": {
+          "kind": "document",
+          "file": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "section": "8. Dúvidas",
+          "page": 2,
+          "version": "folha-ponto-local-v1",
+          "directory_version": "1.0.0",
+          "directory_sha256": "4473c11b731bf0de6a4b685c7bc130e413d34a437f3e9b7c8ce0ac9daa3716ac",
+          "institutionally_approved": false,
+          "source_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "source_sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+          "knowledge_id": "kb-2739227d24855a20"
+        }
+      }
+    ],
+    "created_at": "2026-10-22T12:13:46.274754Z",
+    "outcome": "answered",
+    "topic_id": "folha_ponto",
+    "question_id": null
+  },
+  "trace": [
+    {
+      "entry": {
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Com quem tiro dúvidas quando devo procurar ajuda?"
+          ]
+        ],
+        "deadline": 3064.015
+      }
+    },
+    {
+      "transport_gate": {
+        "vt_route": false
+      }
+    },
+    {
+      "operational_router": {
+        "detected_intent": "documental",
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        }
+      }
+    },
+    {
+      "validate_context": {
+        "topic_id": "folha_ponto",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true
+      }
+    },
+    {
+      "retrieve": {
+        "chunks": [
+          {
+            "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "8. Dúvidas",
+            "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+            "chunk": 8,
+            "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.518417,
+            "status": "approved"
+          },
+          {
+            "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "5. Assinaturas obrigatórias",
+            "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+            "chunk": 5,
+            "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.431209,
+            "status": "approved"
+          },
+          {
+            "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "3. Como preencher corretamente",
+            "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+            "chunk": 3,
+            "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.369005,
+            "status": "approved"
+          }
+        ],
+        "retrieval_question": "Folha Ponto: Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "document_question": "Com quem tiro dúvidas e quando devo procurar ajuda?"
+      }
+    },
+    {
+      "assess": {
+        "coverage": "sufficient",
+        "chunks": [
+          {
+            "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "8. Dúvidas",
+            "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+            "chunk": 8,
+            "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.518417,
+            "status": "approved"
+          }
+        ]
+      }
+    },
+    {
+      "generate": {
+        "answer": "Em caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1]",
+        "outcome": "answered",
+        "generation_mode": "source_rule"
+      }
+    },
+    {
+      "validate": {
+        "answer": "Em caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1]",
+        "sources": [
+          {
+            "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "8. Dúvidas",
+            "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+            "chunk": 8,
+            "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.518417,
+            "status": "approved"
+          }
+        ],
+        "contacts": [
+          {
+            "contact_id": "rh_frequency",
+            "team": "RH Jovem — Frequência",
+            "domain": "folha_ponto",
+            "phone": "+55 11 97080-6028",
+            "phone_digits": "5511970806028",
+            "channel": "whatsapp",
+            "url": "https://wa.me/5511970806028",
+            "label": "WhatsApp da Frequência",
+            "email": "frequência.sp@renapsi.org.br",
+            "email_url": null,
+            "validation_status": "pending_institutional",
+            "availability_status": "not_verified",
+            "provenance": {
+              "kind": "document",
+              "file": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "section": "8. Dúvidas",
+              "page": 2,
+              "version": "folha-ponto-local-v1",
+              "directory_version": "1.0.0",
+              "directory_sha256": "4473c11b731bf0de6a4b685c7bc130e413d34a437f3e9b7c8ce0ac9daa3716ac",
+              "institutionally_approved": false,
+              "source_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+              "source_sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+              "knowledge_id": "kb-2739227d24855a20"
+            }
+          }
+        ],
+        "outcome": "answered"
+      }
+    },
+    {
+      "finish_document": null
+    }
+  ]
+}

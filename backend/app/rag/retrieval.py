@@ -8,7 +8,11 @@ from app.agents.rh_frequency import normalize
 from app.db.models import Document, DocumentChunk
 
 
-def authorized_corpus(settings, scopes, domain, benefit_code=None):
+def authorized_corpus(settings, scopes, domain, benefit_code=None, *, agent_id=None):
+    if agent_id is not None:
+        from app.agents.policies import authorize_tool
+
+        authorize_tool(agent_id, "documents", domain)
     authorized = (
         select(
             DocumentChunk.id,
@@ -39,15 +43,32 @@ def authorized_corpus(settings, scopes, domain, benefit_code=None):
             Document.embedding_profile == settings.embedding_profile,
         )
     )
+    if agent_id is not None:
+        from app.agents.policies import SPECIALISTS
+        from app.support.contacts import CONTACTS
+
+        authorized = authorized.where(
+            Document.media_type.in_(("application/pdf", "text/plain", "text/markdown"))
+        )
+        for contact in CONTACTS.values():
+            if contact["owner_domain"] != SPECIALISTS[agent_id].domain:
+                for value in (
+                    contact["phone"].removeprefix("+55 "),
+                    contact["phone_digits"],
+                    contact["email"],
+                ):
+                    authorized = authorized.where(~DocumentChunk.content.contains(value))
     if benefit_code is not None:
         authorized = authorized.where(DocumentChunk.benefit_code == benefit_code)
     if settings.app_env != "development":
-        authorized = authorized.where(Document.validation_only.is_(False))
+        authorized = authorized.where(
+            Document.validation_only.is_(False), Document.scope != "local_review"
+        )
     return authorized.cte("authorized").prefix_with("MATERIALIZED")
 
 
-def retrieval_query(vector, settings, scopes, domain, benefit_code=None):
-    corpus = authorized_corpus(settings, scopes, domain, benefit_code)
+def retrieval_query(vector, settings, scopes, domain, benefit_code=None, *, agent_id=None):
+    corpus = authorized_corpus(settings, scopes, domain, benefit_code, agent_id=agent_id)
     distance = corpus.c.embedding.cosine_distance(vector)
     return (
         select(corpus, distance.label("distance"))
@@ -88,17 +109,27 @@ def lexical_rank(question, rows):
     return [row for _, row in sorted(scored, key=lambda pair: (-pair[0], str(pair[1]["id"])))]
 
 
-async def retrieve(session, ollama, settings, question, scopes, domain, benefit_code=None):
+async def retrieve(
+    session, ollama, settings, question, scopes, domain, benefit_code=None, *, agent_id=None
+):
+    from app.agents.policies import authorize_tool
+
+    if agent_id is not None:
+        authorize_tool(agent_id, "documents", domain)
     if not scopes:
         return []
     vector = (await ollama.embed([question], query=True))[0]
     rows = (
-        (await session.execute(retrieval_query(vector, settings, scopes, domain, benefit_code)))
+        (
+            await session.execute(
+                retrieval_query(vector, settings, scopes, domain, benefit_code, agent_id=agent_id)
+            )
+        )
         .mappings()
         .all()
     )
     if domain == "rh_frequency" and benefit_code is None:
-        corpus = authorized_corpus(settings, scopes, domain)
+        corpus = authorized_corpus(settings, scopes, domain, agent_id=agent_id)
         candidates = (
             (
                 await session.execute(
@@ -118,6 +149,20 @@ async def retrieve(session, ollama, settings, question, scopes, domain, benefit_
             combined[key]
             for key in sorted(scores, key=lambda key: (-scores[key], key))[: settings.rag_top_k]
         ]
+    if agent_id is not None:
+        from app.agents.policies import SPECIALISTS
+        from app.support.contacts import CONTACTS
+        from app.support.exact import EMAIL, PHONE, phone_key
+
+        policy = SPECIALISTS[agent_id]
+        foreign = [c for c in CONTACTS.values() if c["owner_domain"] != policy.domain]
+
+        def safe(row):
+            phones = {phone_key(m.group()) for m in PHONE.finditer(row["content"])}
+            emails = {m.group() for m in EMAIL.finditer(row["content"])}
+            return not any(phone_key(c["phone"]) in phones or c["email"] in emails for c in foreign)
+
+        rows = [r for r in rows if safe(r)]
     return [
         {
             "id": str(r["id"]),

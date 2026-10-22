@@ -1,0 +1,77 @@
+{
+  "isolated_database": "milioai_multiagent_20261022_130738",
+  "main_database_migrated": false,
+  "main_revision_before": "0004",
+  "main_messages_before": 1136,
+  "inventory": [
+    {
+      "name": "orientações segunda via cartões vt (1).pdf",
+      "domain": "beneficios.vale_transporte.segunda_via",
+      "scope": "local_review",
+      "version": "vt-segunda-via-local-v1",
+      "status": "approved",
+      "approved": true,
+      "validation_only": true,
+      "media_type": "application/pdf"
+    },
+    {
+      "name": "folha-ponto.pdf",
+      "domain": "rh_frequency",
+      "scope": "local_review",
+      "version": "folha-ponto-local-v1",
+      "status": "approved",
+      "approved": true,
+      "validation_only": true,
+      "media_type": "application/pdf"
+    },
+    {
+      "name": "frequency-test.md",
+      "domain": "rh_frequency",
+      "scope": "test",
+      "version": "test-v1",
+      "status": "approved",
+      "approved": true,
+      "validation_only": false,
+      "media_type": "text/markdown"
+    },
+    {
+      "name": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+      "domain": "rh_frequency",
+      "scope": "local_review",
+      "version": "folha-ponto-local-v1",
+      "status": "approved",
+      "approved": true,
+      "validation_only": true,
+      "media_type": "application/pdf"
+    }
+  ],
+  "upgrade_0004": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "upgrade_0005": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "migration_preserves_existing_message": true,
+  "copied_authorized_corpus": {
+    "documents": 4,
+    "chunks": 53,
+    "reindexed": false
+  },
+  "regression": {
+    "returncode": 0,
+    "stdout": "........................................................................ [ 34%]\n........................................................................ [ 68%]\n...................................................................      [100%]\n211 passed, 29 deselected in 17.54s\n",
+    "stderr": ""
+  },
+  "live": {
+    "returncode": 0,
+    "stdout": "{\"scenario\": \"generate_timesheet\", \"turn\": 1, \"question\": \"Onde gero minha Folha Ponto?\", \"agent\": \"frequency_agent\", \"expected_agent\": \"frequency_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"contextual\", \"latency_ms\": 2453}\n{\"scenario\": \"generate_timesheet\", \"turn\": 2, \"question\": \"E onde gero mesmo?\", \"agent\": \"frequency_agent\", \"expected_agent\": \"frequency_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"contextual\", \"latency_ms\": 1793}\n{\"scenario\": \"course_certificate\", \"turn\": 1, \"question\": \"Como envio um atestado de falta no curso?\", \"agent\": \"educational_agent\", \"expected_agent\": \"educational_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"contextual\", \"latency_ms\": 3474}\n{\"scenario\": \"course_certificate\", \"turn\": 2, \"question\": \"Onde envio o atestado do curso mesmo?\", \"agent\": \"educational_agent\", \"expected_agent\": \"educational_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"contextual\", \"latency_ms\": 2755}\n{\"scenario\": \"work_certificate\", \"turn\": 1, \"question\": \"Onde entrego um atestado de falta no trabalho?\", \"agent\": \"frequency_agent\", \"expected_agent\": \"frequency_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"contextual\", \"latency_ms\": 1862}\n{\"scenario\": \"work_certificate\", \"turn\": 2, \"question\": \"E onde envio esse atestado do trabalho?\", \"agent\": \"frequency_agent\", \"expected_agent\": \"frequency_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"contextual\", \"latency_ms\": 1548}\n{\"scenario\": \"benefit_discount\", \"turn\": 1, \"question\": \"Quem é responsável pelo desconto indevido no VT?\", \"agent\": \"service_agent\", \"expected_agent\": \"service_agent\", \"route_pass\": true, \"outcome\": \"no_evidence\", \"generation_mode\": \"contextual\", \"latency_ms\": 5686}\n{\"scenario\": \"benefit_discount\", \"turn\": 2, \"question\": \"Com quem falo sobre o desconto no VT?\", \"agent\": \"service_agent\", \"expected_agent\": \"service_agent\", \"route_pass\": true, \"outcome\": \"no_evidence\", \"generation_mode\": \"contextual\", \"latency_ms\": 5496}\n{\"scenario\": \"sptrans\", \"turn\": 1, \"question\": \"Como solicito a segunda via do SPTrans?\", \"agent\": \"service_agent\", \"expected_agent\": \"service_agent\", \"route_pass\": true, \"outcome\": \"answered\", \"generation_mode\": \"safe_fallback\", \"latency_ms\": 8125}\n{\"scenario\": \"sptrans\", \"turn\": 2, \"question\": \"Quanto custa a segunda via do SPTrans?\", \"agent\": \"service_agent\", \"expected_agent\": \"service_agent\", \"route_pass\": true, \"outcome\": \"answered\", \"generation_mode\": \"safe_fallback\", \"latency_ms\": 5674}\n{\"scenario\": \"instructor\", \"turn\": 1, \"question\": \"Com quem falo sobre meu instrutor?\", \"agent\": \"educational_agent\", \"expected_agent\": \"educational_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"deterministic\", \"latency_ms\": 636}\n{\"scenario\": \"instructor\", \"turn\": 2, \"question\": \"Não sei quem é meu instrutor.\", \"agent\": \"educational_agent\", \"expected_agent\": \"educational_agent\", \"route_pass\": true, \"outcome\": \"operational\", \"generation_mode\": \"deterministic\", \"latency_ms\": 4}\n",
+    "stderr": ""
+  },
+  "main_revision_after": "0004",
+  "main_messages_after": 1136,
+  "main_revision_unchanged": true
+}

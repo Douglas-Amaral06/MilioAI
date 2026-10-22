@@ -34,7 +34,7 @@ def test_directory_exact_and_missing_contact():
     assert instructor("instructor-11")["email"] is None
     missing = contact_text("instructor-11")
     assert "educacional.sp@renapsi.org.br" in missing and "leticia@" not in missing
-    assert "tel:+5511998030631" in missing and "WhatsApp" not in missing
+    assert "+55 11 99803-0631" in missing and "WhatsApp" not in missing
     with pytest.raises(AppError):
         instructor("unlisted")
 
@@ -102,6 +102,9 @@ async def test_classifier_constrained_output_and_failure(tmp_path):
 
 async def test_graph_flow_no_retrieval_repeat_and_topic_switch(tmp_path, monkeypatch):
     model = AsyncMock()
+    async def generated(messages):
+        yield "Não há suporte para esta reformulação."
+    model.chat = generated
     retrieval = AsyncMock(side_effect=AssertionError("Operational route must not retrieve"))
     monkeypatch.setattr("app.orchestration.graph.retrieve", retrieval)
     graph = build_graph(None, model, config(tmp_path))
@@ -134,7 +137,10 @@ async def test_graph_flow_no_retrieval_repeat_and_topic_switch(tmp_path, monkeyp
     retrieval.assert_not_called()
     for intent in SERVICES:
         model.operational_intent.return_value = intent
-        result = await graph.ainvoke(base)
+        topic = "folha_ponto" if intent in {"generate_timesheet", "send_timesheet"} else "falta_trabalho" if intent == "work_certificate" else "salario" if intent == "payslip" else "falta_curso"
+        prompts = {"generate_timesheet": "Onde gero minha Folha Ponto?", "send_timesheet": "Onde envio minha Folha Ponto?", "work_certificate": "Onde envio atestado do trabalho?", "course_certificate": "Onde envio atestado do curso?", "calendar": "Onde vejo o calendário do curso?", "vacation": "Quando vejo minhas férias no calendário?", "school_documents": "Onde envio documentos escolares?", "payslip": "Onde baixo meu holerite?"}
+        scoped_base = {**base, "question": prompts[intent], "question_id": None, "topic_id": topic}
+        result = await graph.ainvoke(scoped_base)
         assert CONFIG["portal_url"] in result["answer"] and result["sources"] == []
     model.operational_intent.return_value = "ambiguous_document"
     assert "Qual documento" in (await graph.ainvoke(base))["answer"]

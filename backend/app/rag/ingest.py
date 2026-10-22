@@ -22,6 +22,14 @@ def chunks(pages):
 
 async def ingest(args):
     settings = get_settings()
+    from app.agents.policies import specialist_settings
+
+    agent_id = {
+        "education": "educational_agent",
+        "rh_frequency": "frequency_agent",
+        "benefits": "service_agent",
+    }[getattr(args, "domain", "rh_frequency")]
+    settings = specialist_settings(settings, agent_id)
     if not args.approve:
         raise SystemExit("Explicit --approve is required for administrative indexing")
     if args.test and args.scope != "test":
@@ -48,6 +56,10 @@ async def ingest(args):
                 )
             )
             if existing:
+                if existing.domain != getattr(args, "domain", "rh_frequency"):
+                    raise ValueError(
+                        "Existing source belongs to a different domain; review classification and version explicitly"
+                    )
                 if getattr(args, "display_name", None):
                     existing.name = args.display_name[:255]
                     await session.commit()
@@ -74,7 +86,7 @@ async def ingest(args):
             document = Document(
                 name=(getattr(args, "display_name", None) or name)[:255],
                 media_type=media_type,
-                domain="rh_frequency",
+                domain=getattr(args, "domain", "rh_frequency"),
                 approved=True,
                 status="approved",
                 validation_only=local_review,
@@ -120,6 +132,9 @@ if __name__ == "__main__":
     parser.add_argument("path", type=Path)
     parser.add_argument("--approve", action="store_true")
     parser.add_argument("--scope", required=True)
+    parser.add_argument(
+        "--domain", choices=["rh_frequency", "education", "benefits"], default="rh_frequency"
+    )
     parser.add_argument("--test", action="store_true")
     parser.add_argument("--display-name", help="Original document name for source attribution")
     parser.add_argument(

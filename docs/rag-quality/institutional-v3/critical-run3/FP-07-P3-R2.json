@@ -1,0 +1,128 @@
+{
+  "id": "FP-07-P3-R2",
+  "question": "Posso trocar CURSO por FALTA?",
+  "http_status": 201,
+  "technical_contract_passed": false,
+  "persisted": true,
+  "human_acceptance": null,
+  "duration_ms": 4391,
+  "message": {
+    "id": "15117a9d-5041-463c-8393-9df599d8ae3b",
+    "role": "assistant",
+    "content": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.\n\nVocê sabe quem é seu instrutor do curso?",
+    "status": "complete",
+    "sources": [],
+    "contacts": [],
+    "created_at": "2026-10-22T12:08:20.354502Z",
+    "outcome": "no_evidence",
+    "topic_id": "falta_curso",
+    "question_id": null
+  },
+  "trace": [
+    {
+      "entry": {
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "falta_curso",
+            "Posso trocar CURSO por FALTA?"
+          ]
+        ],
+        "deadline": 2738.093
+      }
+    },
+    {
+      "transport_gate": {
+        "vt_route": false
+      }
+    },
+    {
+      "operational_router": {
+        "detected_intent": "course_document",
+        "support_state": {
+          "vt_stage": "idle"
+        }
+      }
+    },
+    {
+      "validate_context": {
+        "topic_id": "falta_curso",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true
+      }
+    },
+    {
+      "retrieve": {
+        "chunks": [
+          {
+            "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "3. Como preencher corretamente",
+            "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+            "chunk": 3,
+            "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.445753,
+            "status": "approved"
+          },
+          {
+            "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "1. O que é a Folha Ponto?",
+            "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+            "chunk": 1,
+            "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.274898,
+            "status": "approved"
+          }
+        ],
+        "retrieval_question": "Falta no Curso: Posso trocar CURSO por FALTA?",
+        "document_question": "Posso trocar CURSO por FALTA?"
+      }
+    },
+    {
+      "assess": {
+        "coverage": "none",
+        "chunks": []
+      }
+    },
+    {
+      "generate": {
+        "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+        "outcome": "no_evidence"
+      }
+    },
+    {
+      "validate": {
+        "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+        "sources": [],
+        "contacts": [],
+        "outcome": "no_evidence"
+      }
+    },
+    {
+      "finish_document": {
+        "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.\n\nVocê sabe quem é seu instrutor do curso?",
+        "support_state": {
+          "vt_stage": "idle",
+          "asked": true,
+          "stage": "confirmation"
+        }
+      }
+    }
+  ]
+}

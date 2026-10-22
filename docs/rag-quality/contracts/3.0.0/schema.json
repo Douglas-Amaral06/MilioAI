@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MilioAI institutional critical observation v3",
+  "type": "object",
+  "required": [
+    "id",
+    "question",
+    "http_status",
+    "technical_contract_passed",
+    "persisted",
+    "human_acceptance",
+    "message",
+    "trace"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "http_status": {
+      "type": "integer"
+    },
+    "technical_contract_passed": {
+      "type": "boolean"
+    },
+    "persisted": {
+      "type": "boolean"
+    },
+    "human_acceptance": {
+      "type": "null"
+    },
+    "message": {
+      "type": "object"
+    },
+    "trace": {
+      "type": "array"
+    }
+  }
+}

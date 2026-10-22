@@ -1,0 +1,11 @@
+{
+  "route_pass": 12,
+  "total": 12,
+  "contextual": 6,
+  "safe_fallback": 4,
+  "deterministic": 2,
+  "mean_latency_ms": 3216.1,
+  "min_latency_ms": 4,
+  "max_latency_ms": 8125,
+  "historical_76_rerun": false
+}

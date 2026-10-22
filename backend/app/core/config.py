@@ -28,10 +28,14 @@ class Settings(BaseSettings):
     embedding_document_prefix: str = "search_document: "
     ollama_timeout: float = Field(default=120, ge=1, le=600)
     generation_limit: int = Field(default=600, ge=32, le=2048)
+    response_temperature: float = Field(default=0.25, ge=0, le=0.5)
+    response_top_p: float = Field(default=0.9, ge=0.5, le=1)
     context_size: int = Field(default=4096, ge=2048, le=16384)
     history_chars: int = Field(default=4000, ge=100, le=16000)
     vt_kb_version: str = "vt-segunda-via-local-v1"
     active_kb_version: str = "test-v1"
+    education_kb_version: str = ""
+    benefits_kb_version: str = ""
     rag_top_k: int = Field(default=3, ge=1, le=10)
     rag_profile: str = "legacy"
     dev_document_scopes: list[str] = []

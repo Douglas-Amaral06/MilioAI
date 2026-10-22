@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "version": "1.1.0",
+  "approved_at": null,
+  "approved_by": null,
+  "history": [
+    {
+      "version": "1.0.0",
+      "reason": "Sprint 2: dados fornecidos pelo solicitante; sem aprovação institucional automática"
+    },
+    {
+      "version": "1.1.0",
+      "reason": "Dados operacionais informados pelo responsável em 2026-10-22; sem aprovação institucional automática"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "education",
+      "team": "Time Educacional",
+      "domains": [
+        "falta_curso"
+      ],
+      "purposes": [
+        "faltas no curso",
+        "identificar instrutor",
+        "orientação educacional"
+      ],
+      "phone": "+55 11 99803-0631",
+      "phone_digits": "5511998030631",
+      "email": "educacional.sp@renapsi.org.br",
+      "email_link_enabled": true,
+      "source_kind": "operational_configuration",
+      "source_file": "operational_guidance.json",
+      "source_section": "education",
+      "source_version": "2026-10-20",
+      "source_page": null,
+      "validation_status": "pending_institutional",
+      "availability_status": "not_verified",
+      "required_scopes": [
+        "education:contacts"
+      ],
+      "restrictions": [
+        "development_only_until_approved"
+      ],
+      "approved_at": null,
+      "approved_by": null,
+      "origin": "Migração do campo education da configuração operacional de 2026-10-20; valores reafirmados pelo solicitante na Sprint 2",
+      "source_snapshot_sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+      "owner_domain": "education",
+      "enabled": true,
+      "whatsapp_enabled": true,
+      "whatsapp_validation_status": "confirmed_by_requester"
+    },
+    {
+      "id": "rh_frequency",
+      "team": "RH Jovem — Frequência",
+      "domains": [
+        "folha_ponto",
+        "falta_trabalho"
+      ],
+      "purposes": [
+        "folha ponto",
+        "preenchimento",
+        "prazo",
+        "envio",
+        "frequência"
+      ],
+      "phone": "+55 11 97080-6028",
+      "phone_digits": "5511970806028",
+      "email": "frequencia.sp@renapsi.org.br",
+      "email_link_enabled": true,
+      "email_verification": "provided_by_requester_2026-10-22",
+      "source_kind": "document",
+      "source_file": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+      "source_section": "8. Dúvidas",
+      "source_version": "folha-ponto-local-v1",
+      "source_page": 2,
+      "validation_status": "pending_institutional",
+      "availability_status": "not_verified",
+      "required_scopes": [
+        "local_review"
+      ],
+      "restrictions": [
+        "development_only_until_approved",
+        "authorized_retrieved_source_required"
+      ],
+      "approved_at": null,
+      "approved_by": null,
+      "owner_domain": "rh_frequency",
+      "enabled": true,
+      "whatsapp_enabled": true,
+      "whatsapp_validation_status": "confirmed_by_requester",
+      "email_provenance": {
+        "kind": "operational_override",
+        "date": "2026-10-22",
+        "reason": "Correção informada pelo responsável; PDF original preservado"
+      }
+    },
+    {
+      "id": "service",
+      "team": "Atendimento",
+      "owner_domain": "benefits",
+      "domains": [
+        "vale_transporte",
+        "vale_refeicao_alimentacao",
+        "beneficios"
+      ],
+      "purposes": [
+        "benefícios",
+        "segunda via",
+        "descontos em benefícios"
+      ],
+      "phone": "+55 61 8606-0081",
+      "phone_digits": "556186060081",
+      "email": "atendimento.sp@renapsi.org.br",
+      "email_link_enabled": true,
+      "source_kind": "operational_configuration",
+      "source_file": "institutional_contacts.json",
+      "source_section": "service",
+      "source_version": "2026-10-22",
+      "source_page": null,
+      "validation_status": "pending_institutional",
+      "availability_status": "not_verified",
+      "required_scopes": [
+        "local_review"
+      ],
+      "restrictions": [
+        "development_only_until_approved"
+      ],
+      "approved_at": null,
+      "approved_by": null,
+      "enabled": true,
+      "whatsapp_enabled": false,
+      "whatsapp_validation_status": "pending_confirmation"
+    }
+  ]
+}

@@ -5,7 +5,19 @@ from app.support.catalog import get_topic
 
 
 def explicit_topic(question):
+    from app.support.routing import topic_for
+    procedure = topic_for(question)
+    if procedure:
+        return procedure
     text = normalize(question)
+    if re.search(r"\b(educacional|instrutor|instrutora|professor)\b", text) and not re.search(
+        r"folha|ponto|frequencia", text
+    ):
+        return "falta_curso"
+    if re.search(r"\b(curso|aula|capacitacao)\b", text) and re.search(
+        r"\b(falt\w*|ausencia\w*)\b", text
+    ):
+        return "falta_curso"
     if re.search(r"\b(ferias|rescisao|decimo terceiro)\b", text):
         return "outros"
     if re.search(r"vale.?transporte|\bvt\b|sptrans|bilhete unico|cartao top", text):

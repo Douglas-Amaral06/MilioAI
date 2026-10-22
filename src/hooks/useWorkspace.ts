@@ -311,9 +311,11 @@ export function useWorkspace() {
                             ? { ...m, content: m.content + event.text }
                             : event.event === "sources"
                               ? { ...m, sources: event.sources }
-                              : event.event === "done"
-                                ? toMessage(event.message)
-                                : m
+                              : event.event === "contacts"
+                                ? { ...m, contacts: event.contacts }
+                                : event.event === "done"
+                                  ? toMessage(event.message)
+                                  : m
                           : m,
                       ),
                     };

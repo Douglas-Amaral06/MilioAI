@@ -2,13 +2,14 @@ import { Fragment, type ReactNode } from "react";
 import { safeLink } from "./safeLink";
 
 // Deliberately limited Markdown: React escapes all text; HTML is never interpreted.
-function inline(text: string): ReactNode[] {
+function inline(text: string, trustedLinks: string[]): ReactNode[] {
   return text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
     if (part.startsWith("**") && part.endsWith("**"))
       return <strong key={i}>{part.slice(2, -2)}</strong>;
     const link = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
     if (link)
-      return safeLink(link[2]) ? (
+      return safeLink(link[2]) &&
+        (trustedLinks.length === 0 || trustedLinks.includes(link[2])) ? (
         <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer">
           {link[1]}
         </a>
@@ -18,7 +19,13 @@ function inline(text: string): ReactNode[] {
     return <Fragment key={i}>{part}</Fragment>;
   });
 }
-export function MessageContent({ content }: { content: string }) {
+export function MessageContent({
+  content,
+  trustedLinks = [],
+}: {
+  content: string;
+  trustedLinks?: string[];
+}) {
   const lines = content.replace(/\r\n?/g, "\n").split("\n");
   const blocks: ReactNode[] = [];
   let index = 0;
@@ -35,7 +42,7 @@ export function MessageContent({ content }: { content: string }) {
       while (index < lines.length) {
         const next = /^\s*(?:([-*+])|([0-9]+)[.)])\s+(.+)$/.exec(lines[index]);
         if (!next || Boolean(next[2]) !== ordered) break;
-        items.push(<li key={index}>{inline(next[3])}</li>);
+        items.push(<li key={index}>{inline(next[3], trustedLinks)}</li>);
         index++;
       }
       blocks.push(
@@ -56,7 +63,9 @@ export function MessageContent({ content }: { content: string }) {
         lines[index].trim() &&
         !/^\s*(?:[-*+]|[0-9]+[.)])\s+/.test(lines[index])
       );
-      blocks.push(<p key={index}>{inline(paragraph.join("\n"))}</p>);
+      blocks.push(
+        <p key={index}>{inline(paragraph.join("\n"), trustedLinks)}</p>,
+      );
     }
   }
   return <>{blocks}</>;

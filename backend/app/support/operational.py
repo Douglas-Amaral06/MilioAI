@@ -8,6 +8,7 @@ from urllib.parse import urlparse
 
 from app.agents.rh_frequency import normalize
 from app.core.errors import AppError
+from app.support.contacts import CONTACTS
 
 CONFIG = json.loads(
     Path(__file__).with_name("operational_guidance.json").read_text(encoding="utf-8")
@@ -124,10 +125,10 @@ def validate_action(action, state, scopes):
 
 
 def education_text():
-    data = CONFIG["education"]
+    data = CONTACTS["education"]
     return (
         "Entre em contato com o time educacional para identificar o profissional responsável pelo seu curso."
-        f"\n\nTelefone: [{data['phone']}]({data['phone_uri']})\nE-mail: [{data['email']}](mailto:{data['email']})"
+        f"\n\nTelefone: {data['phone']}\nE-mail: {data['email']}"
     )
 
 
@@ -190,6 +191,11 @@ async def detect(ollama, question, question_id, topic_id, history, state):
     response = confirmation_action(question, state)
     if response:
         return response
+    if re.search(
+        r"\bnao (?:sei|conheco)\b.*\b(instrutor|instrutora|professor|profissional responsavel)\b",
+        text,
+    ):
+        return "instructor_unknown"
     if re.search(r"instructor-\d+", text):
         return (
             "course_contact"

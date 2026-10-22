@@ -1,0 +1,93 @@
+{
+  "version": "3.0.0",
+  "human_acceptance": null,
+  "original_queue_cases": 26,
+  "original_queue_files": {
+    "01-FP-07.json": "e19e8747648340dea5894615586451727979fdcb1e89dff8dea6d4814e6387f8",
+    "01-FP-07.md": "05a8570007f6d9278512b36e17605a1752a837e262fb17fd38345ba92cdfab0b",
+    "02-FP-04.json": "ff483a2499de640ef5eedea5c155b26a34090cd7e53d3417b68d57fbecf335bf",
+    "02-FP-04.md": "9c58a57815f6ded514969d8b298c5e9eca1dbb8d6eb09d7a59373ca929dbcec9",
+    "03-FP-06.json": "8632aabe833ca0e4d6a63dfc1d93c502583b884dd15373f847036f9bb84bf425",
+    "03-FP-06.md": "9ed63c5b65c122f99c140b9fde6d19c1692f04d22247dd52578f85642a9d92e9",
+    "04-FP-10.json": "37064a96c4903d71c2dfcbe1cdfd33ac0c073f584edb009160666aa4bdf1fbdc",
+    "04-FP-10.md": "70b9396c303144e5bbdf91f497717cb3003134312e827e7966696d351605f65d",
+    "05-CONFLICT-01.json": "5dded68f7639b058ffc56992b0a838ebc0451d6984cdb1d4fdd2b47d63e95a5e",
+    "05-CONFLICT-01.md": "1158b34a3ab5f9e34e3fb282c49de7a91e09dc36473164c01e2e2ac85894fd8a",
+    "06-OP-01.json": "b21ec1eaa7da170eb2120c832ffd8de5a81e2a9363a130dbdb2d99015d536eb9",
+    "06-OP-01.md": "78abdee7fa8de966407a2e98d1e424e053f68a027d5b61a934a4d9556cb5fbd7",
+    "07-OP-02.json": "63ff5ffe8c6d96dbe59b0958625239deaa55a18cbd897f7137cc5cb06881f0ab",
+    "07-OP-02.md": "093a6bc9099c833fe10f7928bc3b4fa4a9cb2926ef5891d90abde0cfb02a24ef",
+    "08-OP-03.json": "56173cdbabb60f2c93eb755beb5e471d7413946c278f8107ba0344c31b13feff",
+    "08-OP-03.md": "a0902df1c9adc1e5123f10f220b4c24e0c83126d8ab70e07b31ed182989c5514",
+    "09-OP-04.json": "b9f53abfb8439f0dec43715b8bdcb68a972e7b180d8339e23251bbbd88c16b3b",
+    "09-OP-04.md": "3e8e0273f809882fd65755bb6634f80ea5ff8f9f6116bb8442f41ed0a7e67fbc",
+    "10-FP-12.json": "b3d7f7bb2a73d8d367e521ae44d2e56e8afc377aa78036cbc5c2e36ce61026b9",
+    "10-FP-12.md": "8483d65a8822d6479bb6b7f7b69306ba1511ca40da554eaf2eb45dc7cac23f8e",
+    "11-VT-10398.json": "880144410c832b40b6a9de03bbbc4ba9b78b848cf0ecde8d00103215acc036eb",
+    "11-VT-10398.md": "10d8842f34f1cf3403e3e9d5d5d31590d79a87483c53a06f71d2247fdc9cd928",
+    "12-CTX-04.json": "52929540ae22fe6658a2aaa02ad364d09577ccc11a1a4569aba9701b4b2acec7",
+    "12-CTX-04.md": "a49ed181c65866574a0ce7ca415c52754185ee8badca690140fafd16aa171ad3",
+    "13-FP-03.json": "eb69e5274a4476c605bb218d3ce444cc9e7a0f562c00e28ec35dfbab2108bab4",
+    "13-FP-03.md": "e615e300fa98ddac0a32061c27f80ef1f8432e696a47e5d3fcbe3a8c8c32868c",
+    "14-VT-155.json": "23bc1c8fa8cff7da8ebc78e93db4909dc15b4f2c3279d33e8d86a858d9741ed4",
+    "14-VT-155.md": "f0a101a212be8312310cb331447e5b41153a5f510495577e3a9784cff9b49b59",
+    "15-FP-09.json": "64b16ad8339c80f635e1f06d5c9123e8e11da28551cd78f8ada756fc2a3b0347",
+    "15-FP-09.md": "3d257f54748d1ef4db8d467aa9a31d65ae1088d341f7754e6ab4439e5dda00e6",
+    "16-AUTH-01.json": "e1f7548b29fdb64a9ea6c4e721b1b531480eff88cca58a9d33a9b71dec67be9e",
+    "16-AUTH-01.md": "e06de63581302afa56d430664c24a7c05cb42000e0ddeb5e9f4116de98d4252c",
+    "17-FP-14.json": "2ac99b554dc496b11fb1e40d58d171bebfb314a8255f614c3088ae58153a48e6",
+    "17-FP-14.md": "a6c662818a954e6deaa622c1f849cc884a58f40ac787f4fde702017320df7e29",
+    "18-NEG-02.json": "e3706922415023afcf8169d8d12d1de5749cbcb5238c75e9177fd34e1a460f92",
+    "18-NEG-02.md": "7ca9ad17875effcd9d9dccd399f3b8e03ce352df6531db159536937bd2c00aa9",
+    "19-NEG-06.json": "01e06c9f451628bc42bb081e6be954608636b0989dfb22408e9798923f601b25",
+    "19-NEG-06.md": "d976427facc0a4fb40d68181c39c61ed12339e8df8a97e8fbc1d0ff0d7794a33",
+    "20-VT-15779.json": "a872fd45dd4956aceba9fb7149540a7ddab436b37f008da44aab1237af917e5b",
+    "20-VT-15779.md": "5db3a5ad9008a37d917c9d61544bdafb03e0295f0d64360b7538a9fd2c5f1941",
+    "21-VT-503.json": "8605f12a71c0f19b050a59aa303627429ae416868811722502b80d64e4b58c8c",
+    "21-VT-503.md": "c6732be6731226341df7d25131a035ddef431a9946078d400ec7e912bd47a246",
+    "22-VT-9156.json": "efdc5ad02846cf2383db232f4024935c55c9db990f0271320f047dd599e0bf27",
+    "22-VT-9156.md": "13ad2395461c3f0daec4d9597cb53bfabf81f3e59f3150d8f82430a61ae6c7f0",
+    "23-CONFLICT-02.json": "454af5556d798b630e5f283580b5ee64801f4473e4828ffca320c8845cf629e2",
+    "23-CONFLICT-02.md": "2a73e375683ac34050502a1a1c5fdd4fa98137114fe3e95c234fc886c8d7af15",
+    "24-AUTH-03.json": "15c4e11a0ba18d496c235ec1e97ea7c92a68ee4630bf70911b79669d0ae0c06f",
+    "24-AUTH-03.md": "33bb577f1a27b127e50e3a09420189b760c97a7c4ee675dfbb39c19a5eab7bc7",
+    "25-CTX-06.json": "9d94027c6e27270085eb98964b0a8a12f471797d117ff9612ba45e59f3642343",
+    "25-CTX-06.md": "0d0baa04a35ae33775b8ff7c1cc397c45ac98cea2f648eb75d4316c39aa25250",
+    "26-FP-02.json": "3b4cfe0799b3f4f9879505052cac5ca52ba7d12287ffea0962c86e96264c5780",
+    "26-FP-02.md": "ef1b73d51ba7efeeb40c73e2dd78ac065c37eb0433066742b6868134586f9531",
+    "queue.json": "b66a2d6fd0868a5e9e966e13fdf9010765830df5cdbe9c84feb62383d4cffa26",
+    "README.md": "6430a3bfe08177207391e359c8795e995a2eab982727214fa932981b5a9a1bcf",
+    "supplemental-input-review.json": "5eee53bce8475fba11961352b4ea42a63366d2945db355032fa08ce85629ca9d"
+  },
+  "review_items": [
+    {
+      "case": "FP-07",
+      "existing_entry": "01-FP-07",
+      "status": "pending_human",
+      "focus": "Condição de falta no curso, manutenção de CURSO, inversões e quatro classificações partial no run5",
+      "evidence": "critical-run5"
+    },
+    {
+      "case": "FP-13",
+      "status": "pending_human",
+      "focus": "Contato Frequência, antes do prazo final, dados exatos, domínio e wa.me; conferir e-mail SMTPUTF8 e titularidade institucional",
+      "evidence": "critical-run5"
+    },
+    {
+      "case": "contacts",
+      "status": "pending_institutional",
+      "focus": "Titularidade, disponibilidade WhatsApp e vigência das duas equipes; não inferidas por URL válida"
+    },
+    {
+      "case": "channels",
+      "existing_entry": "05-CONFLICT-01",
+      "status": "pending_institutional",
+      "focus": "Preservar PDF versus Conecta Jovem; sem precedência aprovada"
+    },
+    {
+      "case": "document-validity",
+      "status": "pending_institutional",
+      "focus": "Originais PDF ainda constam como ausentes no inventário existente; anotações derivadas não comprovam aprovação"
+    }
+  ]
+}

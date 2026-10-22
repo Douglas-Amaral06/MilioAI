@@ -142,16 +142,17 @@ async def test_real_graph_no_evidence_and_unsupported(tmp_path, monkeypatch):
     ollama.operational_intent.return_value = "documental"
     graph = build_graph(Session, ollama, config(tmp_path))
     initial = {
-        "question": "Como envio atestado?",
+        "question": "Como envio atestado de falta no trabalho?",
         "history": [],
         "scopes": ("test",),
         "conversation_id": str(uuid.uuid4()),
     }
     result = await graph.ainvoke(initial)
-    assert result["agent"] == "rh_frequency"
+    assert result["agent"] == "frequency_agent"
     assert result["answer"] == NO_EVIDENCE
     result = await graph.ainvoke({**initial, "question": "Quero informações de vale transporte"})
-    assert result["outcome"] == "out_of_scope"
+    assert result["agent"] == "service_agent"
+    assert result["outcome"] == "no_evidence"
     ollama.chat.assert_not_called()
 
 

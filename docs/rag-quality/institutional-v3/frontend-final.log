@@ -1,0 +1,14 @@
+
+> milioai@0.1.0 test
+> vitest run --reporter=dot
+
+
+ RUN  v3.2.7 C:/Users/douglas.amaral/Documents/Codex/2026-10-22/files-pasted-by-the-user-milioai/work/MilioAI
+
+···········································
+
+ Test Files  9 passed (9)
+      Tests  43 passed (43)
+   Start at  09:19:35
+   Duration  2.66s (transform 640ms, setup 0ms, collect 1.88s, tests 2.01s, environment 1ms, prepare 2.24s)
+

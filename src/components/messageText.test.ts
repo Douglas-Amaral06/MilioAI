@@ -12,10 +12,10 @@ describe("texto copiado da resposta", () => {
   it("copia links presentes na resposta, sem referências técnicas", () => {
     expect(
       clipboardMessageText(
-        "[Portal](https://example.com)\n[Email](mailto:demo@example.invalid) [fonte:documento-privado]",
+        "[Portal](https://conectajovem.dema.org.br)\n[Email](mailto:educacional.sp@renapsi.org.br) [fonte:documento-privado]",
       ),
     ).toBe(
-      "Portal (https://example.com)\nEmail (mailto:demo@example.invalid) ",
+      "Portal (https://conectajovem.dema.org.br)\nEmail (mailto:educacional.sp@renapsi.org.br) ",
     );
     expect(visibleMessageText("Texto [fonte:incompleta")).toBe("Texto ");
   });

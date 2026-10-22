@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0.0",
+  "version": "1.0.0",
+  "entries": [
+    {
+      "id": "kb-2739227d24855a20",
+      "domain": "folha_ponto",
+      "subject": "8. Dúvidas",
+      "original_source": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+      "page": 2,
+      "section": "8. Dúvidas",
+      "version": "1.0.0",
+      "source_version": "folha-ponto-local-v1",
+      "source_sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+      "documentary_text": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+      "structured_facts": {
+        "team": "RH Jovem — Frequência",
+        "subject": "Dúvidas sobre Folha Ponto: preenchimento, envio e frequência",
+        "contact_id": "rh_frequency",
+        "when": "antes do prazo final"
+      },
+      "conditions": [],
+      "exceptions": [],
+      "contact_ids": [
+        "rh_frequency"
+      ],
+      "restrictions": [
+        "local_review",
+        "not_institutionally_approved"
+      ],
+      "validation_status": "pending_institutional",
+      "approved_at": null,
+      "approved_by": null,
+      "source_artifact": "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-13.json",
+      "rules": [],
+      "change_history": [
+        {
+          "version": "1.0.0",
+          "date": "2026-10-22",
+          "reason": "Anotação derivada com hash exato; aprovação institucional pendente"
+        }
+      ]
+    },
+    {
+      "id": "kb-183ef6aeddd6b6a5",
+      "domain": "folha_ponto",
+      "subject": "5. Assinaturas obrigatórias",
+      "original_source": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+      "page": 2,
+      "section": "5. Assinaturas obrigatórias",
+      "version": "1.0.0",
+      "source_version": "folha-ponto-local-v1",
+      "source_sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+      "documentary_text": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+      "structured_facts": {},
+      "conditions": [],
+      "exceptions": [],
+      "contact_ids": [],
+      "restrictions": [
+        "local_review",
+        "not_institutionally_approved"
+      ],
+      "validation_status": "pending_institutional",
+      "approved_at": null,
+      "approved_by": null,
+      "source_artifact": "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P1-R1.json",
+      "rules": [],
+      "change_history": [
+        {
+          "version": "1.0.0",
+          "date": "2026-10-22",
+          "reason": "Anotação derivada com hash exato; aprovação institucional pendente"
+        }
+      ]
+    },
+    {
+      "id": "kb-ccc6ed6bd236a7bc",
+      "domain": "folha_ponto",
+      "subject": "3. Como preencher corretamente",
+      "original_source": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+      "page": 1,
+      "section": "3. Como preencher corretamente",
+      "version": "1.0.0",
+      "source_version": "folha-ponto-local-v1",
+      "source_sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+      "documentary_text": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+      "structured_facts": {
+        "register": "CURSO",
+        "action": "manter",
+        "reason": "evitar desconto duplicado"
+      },
+      "conditions": [
+        "falta no dia de curso"
+      ],
+      "exceptions": [],
+      "contact_ids": [],
+      "restrictions": [
+        "local_review",
+        "not_institutionally_approved"
+      ],
+      "validation_status": "pending_institutional",
+      "approved_at": null,
+      "approved_by": null,
+      "source_artifact": "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P1-R1.json",
+      "rules": [
+        {
+          "id": "course-register",
+          "documentary_text": "Caso haja falta no dia de curso, manter o preenchimento como CURSO, para que não ocorra o desconto duplicado da falta.",
+          "condition": "falta no dia de curso",
+          "action": "manter",
+          "object": "preenchimento",
+          "value": "CURSO",
+          "modality": "obligation",
+          "exception_to": "registro geral de faltas",
+          "claim_triggers": [
+            "\\bcurso\\b.*\\b(falta|registr\\w*|preench\\w*|trocar|substitu\\w*)\\b",
+            "\\b(falta|registr\\w*|preench\\w*|trocar|substitu\\w*)\\b.*\\bcurso\\b"
+          ]
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0.0",
+          "date": "2026-10-22",
+          "reason": "Anotação derivada com hash exato; aprovação institucional pendente"
+        }
+      ]
+    },
+    {
+      "id": "kb-9ff104c5a41bfdab",
+      "domain": "folha_ponto",
+      "subject": "1. O que é a Folha Ponto?",
+      "original_source": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+      "page": 1,
+      "section": "1. O que é a Folha Ponto?",
+      "version": "1.0.0",
+      "source_version": "folha-ponto-local-v1",
+      "source_sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+      "documentary_text": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+      "structured_facts": {},
+      "conditions": [],
+      "exceptions": [],
+      "contact_ids": [],
+      "restrictions": [
+        "local_review",
+        "not_institutionally_approved"
+      ],
+      "validation_status": "pending_institutional",
+      "approved_at": null,
+      "approved_by": null,
+      "source_artifact": "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P1-R1.json",
+      "rules": [],
+      "change_history": [
+        {
+          "version": "1.0.0",
+          "date": "2026-10-22",
+          "reason": "Anotação derivada com hash exato; aprovação institucional pendente"
+        }
+      ]
+    }
+  ]
+}

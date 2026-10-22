@@ -7,14 +7,22 @@ from typing import Any, TypedDict
 from langgraph.config import get_stream_writer
 from langgraph.graph import END, START, StateGraph
 
+from app.agents.policies import (
+    SPECIALISTS,
+    authorize_tool,
+    history_for,
+    owner,
+    specialist_prompt,
+    specialist_settings,
+)
 from app.agents.rh_frequency import (
     NO_EVIDENCE,
     OUT_OF_SCOPE,
     document_rules,
     normalize,
-    prompt,
     render_document_rule,
     requires_document_rule,
+    source_body,
     validate_references,
 )
 from app.api.schemas import SendInput
@@ -23,8 +31,13 @@ from app.rag.retrieval import retrieve
 from app.rag.transport_extract import DOMAIN as TRANSPORT_DOMAIN
 from app.rag.transport_ingest import transport_settings
 from app.support.catalog import TOPICS, get_topic, resolve_question
+from app.support.contacts import contacts_for_sources, resolve_contact
 from app.support.context import resolve_context
+from app.support.exact import has_exact_fields
+from app.support.generation import verbalize
+from app.support.grounding import deterministic_grounding
 from app.support.intents import plan, social_response
+from app.support.knowledge import bound_rules
 from app.support.operational import (
     CONFIG,
     CONTACT_SCOPE,
@@ -37,11 +50,12 @@ from app.support.operational import (
     education_text,
     transition,
 )
+from app.support.routing import clarification, topic_for
 from app.support.transport import card_candidates, cards, format_answer, identify_card, is_transport
 
 log = logging.getLogger("milioai")
 CLARIFY = "Não consegui entender sua dúvida. Pode reformular a pergunta?"
-AGENTS: dict[str, dict[str, Any]] = {"rh_frequency": {"domain": "rh_frequency", "prompt": prompt}}
+AGENTS: dict[str, dict[str, Any]] = {key: {"domain": p.domain} for key, p in SPECIALISTS.items()}
 
 
 class AgentState(TypedDict, total=False):
@@ -70,13 +84,81 @@ class AgentState(TypedDict, total=False):
     generation_mode: str
     deadline: float
     retrieval_question: str
+    contacts: list[dict]
 
 
 def build_graph(sessions, ollama, settings):
     async def entry(state):
         deadline = state.get("deadline", time.monotonic() + settings.ollama_timeout - 2)
-        if state.get("skip_plan") or state.get("action") or state.get("question_id"):
-            return {"entry_route": "transport_gate", "deadline": deadline}
+        assignment = {}
+        pending_flow = state.get("support_state", {})
+        pending_request = pending_flow.get("pending_clarification")
+        reply = normalize(state["question"]).strip(" .!?")
+        if pending_request and reply in {
+            "curso",
+            "no curso",
+            "trabalho",
+            "no trabalho",
+            "vt",
+            "vale transporte",
+            "vale-transporte",
+        }:
+            state = dict(
+                state,
+                question=pending_request["question"] + " referente a " + state["question"],
+                support_state=dict(pending_flow, pending_clarification=None),
+            )
+            assignment.update(question=state["question"], support_state=state["support_state"])
+        action = state.get("action") or {}
+        topic = topic_for(state["question"]) or state.get("topic_id")
+        if not topic and state.get("history"):
+            topic = resolve_context(
+                state["question"], None, None, state["history"], state.get("scopes", ())
+            )["topic_id"]
+        if action.get("kind", "").startswith("instructor_"):
+            topic = "falta_curso"
+        elif action.get("kind", "").startswith("card_"):
+            topic = "vale_transporte"
+        agent = owner(topic)
+        if agent:
+            flow = dict(state.get("support_state", {}))
+            previous_agent = flow.get("active_agent")
+            if not previous_agent:
+                previous_agent = (
+                    "service_agent"
+                    if flow.get("vt_stage") in {"active", "selection"}
+                    else "educational_agent"
+                    if flow.get("asked") or flow.get("selected_instructor_id")
+                    else agent
+                )
+            states = dict(flow.get("agent_states", {}))
+            private_keys = {
+                "stage",
+                "asked",
+                "selected_instructor_id",
+                "selected_service",
+                "vt_stage",
+                "selected_card_code",
+                "operational_provenance",
+                "detected_intent",
+            }
+            if previous_agent and previous_agent != agent:
+                states[previous_agent] = {k: v for k, v in flow.items() if k in private_keys}
+                flow = {k: v for k, v in flow.items() if k not in private_keys}
+                flow.update(states.get(agent, {}))
+            flow.update(
+                active_agent=agent, active_domain=SPECIALISTS[agent].domain, agent_states=states
+            )
+            assignment = {
+                **assignment,
+                "agent": agent,
+                "domain": SPECIALISTS[agent].domain,
+                "topic_id": topic,
+                "history": history_for(agent, state.get("history", [])),
+                "support_state": flow,
+            }
+        if state.get("skip_plan") or action or state.get("question_id"):
+            return dict(assignment, entry_route="transport_gate", deadline=deadline)
         social = social_response(state["question"])
         if social:
             get_stream_writer()({"event": "delta", "text": social})
@@ -85,6 +167,21 @@ def build_graph(sessions, ollama, settings):
                 "answer": social,
                 "sources": [],
                 "outcome": "social",
+                "deadline": deadline,
+            }
+        pending = clarification(state["question"], state.get("history", []))
+        if pending:
+            get_stream_writer()({"event": "delta", "text": pending})
+            return {
+                "entry_route": "end",
+                "answer": pending,
+                "support_state": dict(
+                    state.get("support_state", {}),
+                    pending_clarification={"question": state["question"]},
+                ),
+                "sources": [],
+                "contacts": [],
+                "outcome": "clarify",
                 "deadline": deadline,
             }
         planned = plan(state["question"])
@@ -107,13 +204,14 @@ def build_graph(sessions, ollama, settings):
                 "deadline": deadline,
             }
         return {
+            **(assignment if len(planned) <= 1 else {}),
             "entry_route": "multiple" if len(planned) > 1 else "transport_gate",
             "planned": planned,
             "deadline": deadline,
         }
 
     async def multiple(state):
-        sections, sources, outcomes = [], [], []
+        sections, sources, outcomes, contacts = [], [], [], []
         flow = dict(state.get("support_state", {}))
         for index, (topic, question) in enumerate(state["planned"]):
             started = time.monotonic()
@@ -126,6 +224,7 @@ def build_graph(sessions, ollama, settings):
                 skip_plan=True,
                 chunks=[],
                 sources=[],
+                contacts=[],
                 answer="",
                 history=[m for m in state["history"] if m.get("topic_id") == topic],
                 support_state=flow,
@@ -158,6 +257,7 @@ def build_graph(sessions, ollama, settings):
                     text,
                 )
                 sources.extend(local)
+                contacts.extend(result.get("contacts", []))
                 outcomes.append(result.get("outcome", "error"))
                 flow = result.get("support_state", flow)
             except Exception as error:
@@ -195,16 +295,37 @@ def build_graph(sessions, ollama, settings):
         writer = get_stream_writer()
         writer({"event": "delta", "text": answer})
         writer({"event": "sources", "sources": sources})
-        return {"answer": answer, "sources": sources, "outcome": outcome, "support_state": flow}
+        writer({"event": "contacts", "contacts": contacts})
+        return {
+            "answer": answer,
+            "sources": sources,
+            "contacts": contacts,
+            "outcome": outcome,
+            "support_state": flow,
+        }
+
+    async def specialist_boundary(state):
+        policy = authorize_tool(state["agent"], "documents")
+        return {
+            "domain": policy.domain,
+            "history": history_for(state["agent"], state.get("history", [])),
+        }
 
     async def transport_gate(state):
         action = state.get("action") or {}
         flow = state.get("support_state", {})
+        if state.get("agent") not in {None, "service_agent"}:
+            return {"vt_route": False}
         routed = action.get("kind", "").startswith("card_") or is_transport(
             state["question"], flow, state.get("question_id")
         )
         if (
             not routed
+            and (
+                state.get("topic_id") in {None, "vale_transporte"}
+                or flow.get("vt_stage") in {"selection", "active"}
+                or re.search(r"cartao|bilhete|transporte|codigo", normalize(state["question"]))
+            )
             and (
                 flow.get("vt_stage") in {"selection", "active"}
                 or re.search(
@@ -224,6 +345,7 @@ def build_graph(sessions, ollama, settings):
         return {"vt_route": routed}
 
     async def transport_response(state):
+        authorize_tool(state.get("agent", "service_agent"), "transport", TRANSPORT_DOMAIN)
         writer = get_stream_writer()
         flow = dict(state.get("support_state", {}), stage="idle")
         action = state.get("action") or {}
@@ -283,6 +405,7 @@ def build_graph(sessions, ollama, settings):
                 state["scopes"],
                 TRANSPORT_DOMAIN,
                 benefit_code=chosen,
+                agent_id="service_agent",
             )
         if len(chunks) != 1 or chunks[0]["benefit_code"] != chosen:
             raise AppError(
@@ -294,6 +417,22 @@ def build_graph(sessions, ollama, settings):
         if full:
             fields = ["requester", "payer", "fee", "payment", "procedure"]
         answer = format_answer(chunks[0]["attributes"], fields)
+        factual = answer
+        # Exact projection remains authoritative; the model may organize the explanation,
+        # but may not alter any selected row or its applicability warnings.
+        protected = [
+            re.sub(r"\s*\[fonte:F1\]", "", block).strip() for block in factual.split("\n\n")
+        ]
+        answer, generation_mode = await verbalize(
+            ollama,
+            "service_agent",
+            state["question"],
+            state.get("history", []),
+            factual,
+            state["deadline"],
+            protected_spans=protected,
+            preserve_references=True,
+        )
         sources = validate_references(answer, chunks)
         flow.update(vt_stage="active", selected_card_code=chosen)
         writer({"event": "delta", "text": answer})
@@ -304,6 +443,7 @@ def build_graph(sessions, ollama, settings):
             "sources": sources,
             "outcome": "answered",
             "support_state": flow,
+            "generation_mode": generation_mode,
         }
 
     async def operational_router(state):
@@ -319,8 +459,35 @@ def build_graph(sessions, ollama, settings):
             state.get("question_id"),
             state.get("topic_id"),
             state["history"],
-            flow,
+            {key: value for key, value in flow.items() if key != "agent_states"},
         )
+        education_intents = {
+            "course_contact",
+            "course_certificate",
+            "course_document",
+            "instructor_known",
+            "instructor_unknown",
+            "education_contact",
+            "education_validation",
+            "instructor_selection_required",
+            "calendar",
+            "school_documents",
+        }
+        if state.get("agent") == "service_agent":
+            intent = "documental"
+        elif state.get("agent") == "frequency_agent" and intent in education_intents:
+            intent = "documental"
+        elif state.get("agent") == "educational_agent" and intent in {
+            "work_certificate",
+            "generate_timesheet",
+            "send_timesheet",
+            "transport_replacement",
+        }:
+            intent = "documental"
+        if state.get("agent") == "educational_agent" and re.search(
+            r"descont", normalize(state["question"])
+        ):
+            intent = "education_referral"
         if intent != "transport_replacement":
             flow["vt_stage"] = "idle"
         if intent not in {
@@ -352,6 +519,12 @@ def build_graph(sessions, ollama, settings):
             authorize(state["scopes"])
             text = "Selecione o instrutor na lista abaixo para confirmar o contato. Informar um identificador na mensagem não confirma a seleção."
             flow.update(asked=True, stage="selection")
+        elif intent == "education_referral":
+            authorize(state["scopes"])
+            text = (
+                "Procure o Educacional para dúvidas sobre desconto relacionado à falta no curso. A documentação disponível não confirma um procedimento de contestação.\n\n"
+                + education_text()
+            )
         elif intent == "education_contact":
             authorize(state["scopes"])
             text = education_text()
@@ -383,7 +556,33 @@ def build_graph(sessions, ollama, settings):
                     else:
                         extra, flow = confirmation(flow, state["scopes"])
                         text += extra
+        generation_mode = "deterministic"
+        if intent in SERVICES or intent == "education_referral":
+            text, generation_mode = await verbalize(
+                ollama,
+                state.get("agent"),
+                state["question"],
+                state.get("history", []),
+                text,
+                state["deadline"],
+                protected_spans=[
+                    paragraph
+                    for paragraph in text.split("\n\n")
+                    if re.search(r"Confirme|não substitui|Você sabe quem", paragraph)
+                ],
+            )
         get_stream_writer()({"event": "delta", "text": text})
+        contacts = []
+        education = (
+            resolve_contact(
+                "education", "falta_curso", state["scopes"], settings, agent_id=state.get("agent")
+            )
+            if state.get("agent") == "educational_agent"
+            else None
+        )
+        if education and education["phone"].removeprefix("+55 ") in text:
+            contacts.append(education)
+        get_stream_writer()({"event": "contacts", "contacts": contacts})
         from app.support.operational import provenance
 
         if intent != "personal_unavailable":
@@ -408,6 +607,8 @@ def build_graph(sessions, ollama, settings):
             "outcome": outcome,
             "support_state": flow,
             "domain": domain,
+            "contacts": contacts,
+            "generation_mode": generation_mode,
         }
 
     async def finish_document(state):
@@ -444,13 +645,20 @@ def build_graph(sessions, ollama, settings):
                 ),
                 state["scopes"],
             )
-        return resolve_context(
+        context = resolve_context(
             state["question"],
             state.get("topic_id"),
             state.get("question_id"),
             state["history"],
             state["scopes"],
         )
+        procedure_topic = topic_for(state["question"])
+        if procedure_topic:
+            context["topic_id"] = procedure_topic
+        agent = owner(context["topic_id"])
+        if agent:
+            context.update(agent=agent, domain=SPECIALISTS[agent].domain)
+        return context
 
     async def unavailable(state):
         text = OUT_OF_SCOPE if state["comprehensible"] else CLARIFY
@@ -481,7 +689,13 @@ def build_graph(sessions, ollama, settings):
             query += " Contexto: " + previous[-1]
         async with sessions() as session:
             chunks = await retrieve(
-                session, ollama, settings, query[-2000:], state["scopes"], state["domain"]
+                session,
+                ollama,
+                specialist_settings(settings, state["agent"]),
+                query[-2000:],
+                state["scopes"],
+                state["domain"],
+                agent_id=state["agent"],
             )
         log.info("retrieval_complete", extra={"agent": state["agent"], "chunk_count": len(chunks)})
         return {"chunks": chunks, "retrieval_question": query, "document_question": question}
@@ -505,11 +719,18 @@ def build_graph(sessions, ollama, settings):
         return result
 
     async def generate(state):
-        writer = get_stream_writer()
         if not state["chunks"]:
-            writer({"event": "delta", "text": NO_EVIDENCE})
-            return {"answer": NO_EVIDENCE, "outcome": "no_evidence"}
-        if requires_document_rule(state["question"]):
+            text = NO_EVIDENCE
+            if state.get("agent") == "educational_agent" and re.search(
+                r"onde.*curso|local|endereco", normalize(state["question"])
+            ):
+                text = "Qual é o nome do curso e a unidade ou município? Preciso identificar a capacitação e confirmar uma fonte autorizada para informar o endereço."
+            return {"answer": text, "outcome": "clarify" if text != NO_EVIDENCE else "no_evidence"}
+        if (
+            requires_document_rule(state["question"])
+            or any(has_exact_fields(source_body(c)) for c in state["chunks"])
+            or bound_rules(state["chunks"])
+        ):
             rules = document_rules(state["chunks"])
             selected = await ollama.select_document_rule(state["retrieval_question"], rules)
             answer = render_document_rule(selected, rules)
@@ -531,7 +752,8 @@ def build_graph(sessions, ollama, settings):
             for m in state["history"]
             if (not m.get("topic_id") or m.get("topic_id") == state["topic_id"])
         ]
-        messages = AGENTS[state["agent"]]["prompt"](
+        messages = specialist_prompt(
+            state["agent"],
             state.get("document_question", state["question"]),
             history,
             state["chunks"],
@@ -554,12 +776,14 @@ def build_graph(sessions, ollama, settings):
         }
 
     async def validate(state):
+        generation_mode = state.get("generation_mode", "documental")
         answer = state["answer"]
         sources = []
-        for attempt in range(2):
+        for attempt in range(0 if not state["chunks"] else 2):
             try:
                 sources = validate_references(answer, state["chunks"])
                 if sources:
+                    deterministic_grounding(answer, state["chunks"])
                     try:
                         async with asyncio.timeout(
                             max(0.1, (state["deadline"] - time.monotonic()) / 2)
@@ -586,7 +810,8 @@ def build_graph(sessions, ollama, settings):
                 log.info(
                     "grounding_repair", extra={"conversation_id": state.get("conversation_id")}
                 )
-                messages = prompt(
+                messages = specialist_prompt(
+                    state["agent"],
                     state.get("document_question", state["question"]),
                     [],
                     state["chunks"],
@@ -605,14 +830,59 @@ def build_graph(sessions, ollama, settings):
                     answer, sources = NO_EVIDENCE, []
                     break
         writer = get_stream_writer()
-        # Empty-evidence generation already emitted the trusted fallback.
-        if state["chunks"]:
-            writer({"event": "delta", "text": answer})
+        contacts = contacts_for_sources(
+            state.get("topic_id"),
+            state["scopes"],
+            settings,
+            sources,
+            answer,
+            agent_id=state["agent"],
+        )
+        if state.get("agent") == "service_agent":
+            contact = resolve_contact(
+                "service",
+                state.get("topic_id"),
+                state["scopes"],
+                settings,
+                agent_id="service_agent",
+            )
+            if contact:
+                contacts.append(contact)
+                if not state["chunks"]:
+                    factual = (
+                        "O Atendimento é responsável por dúvidas sobre benefícios. Não há documentação autorizada suficiente para confirmar o procedimento ou a elegibilidade solicitados. "
+                        + f"Telefone informado: {contact['phone']}. E-mail: {contact['email']}. WhatsApp pendente de confirmação."
+                    )
+                    answer, generation_mode = await verbalize(
+                        ollama,
+                        "service_agent",
+                        state["question"],
+                        state.get("history", []),
+                        factual,
+                        state["deadline"],
+                        protected_spans=[
+                            "Não há documentação autorizada suficiente para confirmar o procedimento ou a elegibilidade solicitados.",
+                            "WhatsApp pendente de confirmação.",
+                        ],
+                    )
+                else:
+                    generation_mode = state.get("generation_mode", "documental")
+        if state.get("agent") == "frequency_agent" and contacts:
+            # The obsolete PDF address is evidence of a historical channel, not a current destination.
+            # Remove only that labelled entity after grounding; the corrected address is backend-owned.
+            answer = re.sub(
+                r"e-mail:\s*frequência\.sp@renapsi\.org\.br\s*ou\s*", "", answer, flags=re.I
+            )
+        # Publish only the completed validated answer, including trusted empty-corpus fallbacks.
+        writer({"event": "delta", "text": answer})
         writer({"event": "sources", "sources": sources})
+        writer({"event": "contacts", "contacts": contacts})
         return {
             "answer": answer,
             "sources": sources,
+            "contacts": contacts,
             "outcome": "no_evidence" if answer == NO_EVIDENCE else state["outcome"],
+            "generation_mode": generation_mode,
         }
 
     def observed(name, function):
@@ -635,6 +905,9 @@ def build_graph(sessions, ollama, settings):
 
     graph = StateGraph(AgentState)
     graph.add_node("entry", observed("entry", entry))
+    for identifier in SPECIALISTS:
+        graph.add_node(identifier, observed(identifier, specialist_boundary))
+        graph.add_edge(identifier, "transport_gate")
     graph.add_node("multiple", observed("multiple", multiple))
     graph.add_node("transport_gate", observed("transport_gate", transport_gate))
     graph.add_node("transport", observed("transport", transport_response))
@@ -649,7 +922,14 @@ def build_graph(sessions, ollama, settings):
     graph.add_node("validate", observed("validate", validate))
     graph.add_edge(START, "entry")
     graph.add_conditional_edges(
-        "entry", lambda s: END if s["entry_route"] == "end" else s["entry_route"]
+        "entry",
+        lambda s: (
+            END
+            if s["entry_route"] == "end"
+            else s["agent"]
+            if s["entry_route"] == "transport_gate" and s.get("agent") in SPECIALISTS
+            else s["entry_route"]
+        ),
     )
     graph.add_edge("multiple", END)
     graph.add_conditional_edges(

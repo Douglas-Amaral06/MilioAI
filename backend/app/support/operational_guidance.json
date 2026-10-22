@@ -168,10 +168,5 @@
       "enabled": true
     }
   ],
-  "education": {
-    "phone": "11 99803-0631",
-    "phone_uri": "tel:+5511998030631",
-    "email": "educacional.sp@renapsi.org.br"
-  },
   "link_label": "Conecta Jovem"
 }

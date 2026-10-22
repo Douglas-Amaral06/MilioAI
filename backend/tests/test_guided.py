@@ -10,7 +10,7 @@ from app.support.context import resolve_context
 
 
 def test_catalog_unique_and_canonical_questions():
-    assert len(TOPICS) == 8
+    assert len(TOPICS) == 9
     ids = [q.question_id for t in TOPICS for q in t.questions]
     assert len(ids) == len(set(ids))
     assert len(get_topic("outros", ()).questions) == 3
@@ -69,7 +69,7 @@ def test_context_switch_followup_and_outros():
         resolve_context("Onde é creditado meu vale-transporte?", "folha_ponto", None, history, ())[
             "agent"
         ]
-        == "unavailable"
+        == "service_agent"
     )
     assert (
         resolve_context("Como solicito minhas férias?", "folha_ponto", None, history, ())[
@@ -79,7 +79,7 @@ def test_context_switch_followup_and_outros():
     )
     assert (
         resolve_context("Quem precisa assinar minha folha?", "outros", None, history, ())["agent"]
-        == "rh_frequency"
+        == "frequency_agent"
     )
     assert resolve_context("???", "outros", None, [], ())["comprehensible"] is False
     assert (

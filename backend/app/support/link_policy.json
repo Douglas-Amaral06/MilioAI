@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "https_hosts": ["conectajovem.dema.org.br", "santoandre.pagmob.com.br", "www.benfacil.com", "www.bemsantana.com.br"],
+  "email_domains": ["renapsi.org.br"],
+  "entity_hosts": ["wa.me"]
+}

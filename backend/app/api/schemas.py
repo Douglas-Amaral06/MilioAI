@@ -81,6 +81,7 @@ class MessageOut(BaseModel):
     content: str
     status: str
     sources: list[dict]
+    contacts: list[dict] = Field(default_factory=list)
     created_at: datetime
     outcome: str | None
     topic_id: str | None = None

@@ -1,0 +1,2602 @@
+{
+  "docs/rag-quality/sprint2-stabilization/backend-tests-final.xml": {
+    "sha256": "b2ed83e01ef1498c58202e1750afd157d9ed35760f7623316d652b3314cdb79a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/backend-tests.xml": {
+    "sha256": "c2048cacc8c776c41a70b1cb0fc3ebc6743c09d468e6ef349b385816ddb07187",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/boundaries-summary-output.json": {
+    "sha256": "6370800bc559c0bf4de73f8005c4200f42a0a5e8aae40e2fe71c8b75171b7c4d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/build_review.py": {
+    "sha256": "39404f40e9b750b975e31264941296ae5a31a408d813c90c06b9c1c9f0811ef0",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/full-summary-output.json": {
+    "sha256": "0bc4978f89ab60082697d6a67a49578b5684a2a19663af306fc814246baf641d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/historical-hashes-before.json": {
+    "sha256": "3fda36da0e3fa511a0e0cec751b0ed101941bf3a037c20e341b3c2dbdf16e86e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/integrity.json": {
+    "sha256": "e8cf4e6f049af156967503a1bf8409ef6a796b69878a5af0594a7011519acb5a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/interface-static-evidence.json": {
+    "sha256": "011b4ab23aeabc65b3058451f42cbb9d1298165d96c81ffe66d0a617104f484b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/observe_contract.py": {
+    "sha256": "bb71ad4bad157085c21ada516e88e6e7e449a0f65b9706e06b85850761f8cf14",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/prepare_contract.py": {
+    "sha256": "8b43ecb01024e19ce3f983aea7f5dd21ae848d94693706eee33d0e2f44861503",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/quality-tests.log": {
+    "sha256": "ca18a908d16169115201e15dc0eff14046b343a022d6d27d6252d11695ed902e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/render_conclusion.py": {
+    "sha256": "8a199cc49e5f528d3fe4d799972ef3567d30821f14d307be23d92e77018e2da5",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/source-full-run.zip": {
+    "sha256": "024d82463bf6820ab01b11975162e97edc0ee55787ab39849bf1f5083f7ca2d1",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/test_contract.py": {
+    "sha256": "d38bd5bab679c33b4ab5825773bf20e2a8fb3f51f8bb85bbffd8168b7204c021",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/v2-summary-output.json": {
+    "sha256": "99b270110d723d5fa4775cba662cf30700991aa519096e03ee7d44db89efec79",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/validate_contract.py": {
+    "sha256": "b6d28ea860c5c6521df0a4abb40f8837d07273bfbac6cc7394cd108da86f17d5",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/01-FP-07.json": {
+    "sha256": "e19e8747648340dea5894615586451727979fdcb1e89dff8dea6d4814e6387f8",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/01-FP-07.md": {
+    "sha256": "05a8570007f6d9278512b36e17605a1752a837e262fb17fd38345ba92cdfab0b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/02-FP-04.json": {
+    "sha256": "ff483a2499de640ef5eedea5c155b26a34090cd7e53d3417b68d57fbecf335bf",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/02-FP-04.md": {
+    "sha256": "9c58a57815f6ded514969d8b298c5e9eca1dbb8d6eb09d7a59373ca929dbcec9",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/03-FP-06.json": {
+    "sha256": "8632aabe833ca0e4d6a63dfc1d93c502583b884dd15373f847036f9bb84bf425",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/03-FP-06.md": {
+    "sha256": "9ed63c5b65c122f99c140b9fde6d19c1692f04d22247dd52578f85642a9d92e9",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/04-FP-10.json": {
+    "sha256": "37064a96c4903d71c2dfcbe1cdfd33ac0c073f584edb009160666aa4bdf1fbdc",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/04-FP-10.md": {
+    "sha256": "70b9396c303144e5bbdf91f497717cb3003134312e827e7966696d351605f65d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/05-CONFLICT-01.json": {
+    "sha256": "5dded68f7639b058ffc56992b0a838ebc0451d6984cdb1d4fdd2b47d63e95a5e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/05-CONFLICT-01.md": {
+    "sha256": "1158b34a3ab5f9e34e3fb282c49de7a91e09dc36473164c01e2e2ac85894fd8a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/06-OP-01.json": {
+    "sha256": "b21ec1eaa7da170eb2120c832ffd8de5a81e2a9363a130dbdb2d99015d536eb9",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/06-OP-01.md": {
+    "sha256": "78abdee7fa8de966407a2e98d1e424e053f68a027d5b61a934a4d9556cb5fbd7",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/07-OP-02.json": {
+    "sha256": "63ff5ffe8c6d96dbe59b0958625239deaa55a18cbd897f7137cc5cb06881f0ab",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/07-OP-02.md": {
+    "sha256": "093a6bc9099c833fe10f7928bc3b4fa4a9cb2926ef5891d90abde0cfb02a24ef",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/08-OP-03.json": {
+    "sha256": "56173cdbabb60f2c93eb755beb5e471d7413946c278f8107ba0344c31b13feff",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/08-OP-03.md": {
+    "sha256": "a0902df1c9adc1e5123f10f220b4c24e0c83126d8ab70e07b31ed182989c5514",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/09-OP-04.json": {
+    "sha256": "b9f53abfb8439f0dec43715b8bdcb68a972e7b180d8339e23251bbbd88c16b3b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/09-OP-04.md": {
+    "sha256": "3e8e0273f809882fd65755bb6634f80ea5ff8f9f6116bb8442f41ed0a7e67fbc",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/10-FP-12.json": {
+    "sha256": "b3d7f7bb2a73d8d367e521ae44d2e56e8afc377aa78036cbc5c2e36ce61026b9",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/10-FP-12.md": {
+    "sha256": "8483d65a8822d6479bb6b7f7b69306ba1511ca40da554eaf2eb45dc7cac23f8e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/11-VT-10398.json": {
+    "sha256": "880144410c832b40b6a9de03bbbc4ba9b78b848cf0ecde8d00103215acc036eb",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/11-VT-10398.md": {
+    "sha256": "10d8842f34f1cf3403e3e9d5d5d31590d79a87483c53a06f71d2247fdc9cd928",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/12-CTX-04.json": {
+    "sha256": "52929540ae22fe6658a2aaa02ad364d09577ccc11a1a4569aba9701b4b2acec7",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/12-CTX-04.md": {
+    "sha256": "a49ed181c65866574a0ce7ca415c52754185ee8badca690140fafd16aa171ad3",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/13-FP-03.json": {
+    "sha256": "eb69e5274a4476c605bb218d3ce444cc9e7a0f562c00e28ec35dfbab2108bab4",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/13-FP-03.md": {
+    "sha256": "e615e300fa98ddac0a32061c27f80ef1f8432e696a47e5d3fcbe3a8c8c32868c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/14-VT-155.json": {
+    "sha256": "23bc1c8fa8cff7da8ebc78e93db4909dc15b4f2c3279d33e8d86a858d9741ed4",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/14-VT-155.md": {
+    "sha256": "f0a101a212be8312310cb331447e5b41153a5f510495577e3a9784cff9b49b59",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/15-FP-09.json": {
+    "sha256": "64b16ad8339c80f635e1f06d5c9123e8e11da28551cd78f8ada756fc2a3b0347",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/15-FP-09.md": {
+    "sha256": "3d257f54748d1ef4db8d467aa9a31d65ae1088d341f7754e6ab4439e5dda00e6",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/16-AUTH-01.json": {
+    "sha256": "e1f7548b29fdb64a9ea6c4e721b1b531480eff88cca58a9d33a9b71dec67be9e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/16-AUTH-01.md": {
+    "sha256": "e06de63581302afa56d430664c24a7c05cb42000e0ddeb5e9f4116de98d4252c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/17-FP-14.json": {
+    "sha256": "2ac99b554dc496b11fb1e40d58d171bebfb314a8255f614c3088ae58153a48e6",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/17-FP-14.md": {
+    "sha256": "a6c662818a954e6deaa622c1f849cc884a58f40ac787f4fde702017320df7e29",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/18-NEG-02.json": {
+    "sha256": "e3706922415023afcf8169d8d12d1de5749cbcb5238c75e9177fd34e1a460f92",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/18-NEG-02.md": {
+    "sha256": "7ca9ad17875effcd9d9dccd399f3b8e03ce352df6531db159536937bd2c00aa9",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/19-NEG-06.json": {
+    "sha256": "01e06c9f451628bc42bb081e6be954608636b0989dfb22408e9798923f601b25",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/19-NEG-06.md": {
+    "sha256": "d976427facc0a4fb40d68181c39c61ed12339e8df8a97e8fbc1d0ff0d7794a33",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/20-VT-15779.json": {
+    "sha256": "a872fd45dd4956aceba9fb7149540a7ddab436b37f008da44aab1237af917e5b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/20-VT-15779.md": {
+    "sha256": "5db3a5ad9008a37d917c9d61544bdafb03e0295f0d64360b7538a9fd2c5f1941",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/21-VT-503.json": {
+    "sha256": "8605f12a71c0f19b050a59aa303627429ae416868811722502b80d64e4b58c8c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/21-VT-503.md": {
+    "sha256": "c6732be6731226341df7d25131a035ddef431a9946078d400ec7e912bd47a246",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/22-VT-9156.json": {
+    "sha256": "efdc5ad02846cf2383db232f4024935c55c9db990f0271320f047dd599e0bf27",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/22-VT-9156.md": {
+    "sha256": "13ad2395461c3f0daec4d9597cb53bfabf81f3e59f3150d8f82430a61ae6c7f0",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/23-CONFLICT-02.json": {
+    "sha256": "454af5556d798b630e5f283580b5ee64801f4473e4828ffca320c8845cf629e2",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/23-CONFLICT-02.md": {
+    "sha256": "2a73e375683ac34050502a1a1c5fdd4fa98137114fe3e95c234fc886c8d7af15",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/24-AUTH-03.json": {
+    "sha256": "15c4e11a0ba18d496c235ec1e97ea7c92a68ee4630bf70911b79669d0ae0c06f",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/24-AUTH-03.md": {
+    "sha256": "33bb577f1a27b127e50e3a09420189b760c97a7c4ee675dfbb39c19a5eab7bc7",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/25-CTX-06.json": {
+    "sha256": "9d94027c6e27270085eb98964b0a8a12f471797d117ff9612ba45e59f3642343",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/25-CTX-06.md": {
+    "sha256": "0d0baa04a35ae33775b8ff7c1cc397c45ac98cea2f648eb75d4316c39aa25250",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/26-FP-02.json": {
+    "sha256": "3b4cfe0799b3f4f9879505052cac5ca52ba7d12287ffea0962c86e96264c5780",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/26-FP-02.md": {
+    "sha256": "ef1b73d51ba7efeeb40c73e2dd78ac065c37eb0433066742b6868134586f9531",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/queue.json": {
+    "sha256": "b66a2d6fd0868a5e9e966e13fdf9010765830df5cdbe9c84feb62383d4cffa26",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/README.md": {
+    "sha256": "6430a3bfe08177207391e359c8795e995a2eab982727214fa932981b5a9a1bcf",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/human-review/supplemental-input-review.json": {
+    "sha256": "5eee53bce8475fba11961352b4ea42a63366d2945db355032fa08ce85629ca9d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/manifest.json": {
+    "sha256": "9428ad17373480e712e4e0a07a426c6edd395aa8b4c6fa5afa3ec6f42585f71d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/observations.json": {
+    "sha256": "b4a4378d524ea2fe1b677b344c10b71bb9c68e8f9b0b9ffb0dc5446051b1333e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/verifier-probes.json": {
+    "sha256": "e782e298f27accb606a2c2956436fabc346a9aa17281d2c35a9c8fec6f14bc92",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/manifest.json": {
+    "sha256": "332772fb8bf756588e0ec78be7055a09e82bdfc4eeb4ff3f9254e306a46eddde",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/observations.json": {
+    "sha256": "75d20b41cb87f843ac7711bd376beb5a3226fc08c5b71144ff30946a1155d89b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/verifier-probes.json": {
+    "sha256": "e782e298f27accb606a2c2956436fabc346a9aa17281d2c35a9c8fec6f14bc92",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/execution.log": {
+    "sha256": "164892bc6d1accf89dbcc85c004dec5fda74ae0e7d69c84324af3b345debdc6c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/manifest.json": {
+    "sha256": "04b7e2b1d9d0512c3d387ff896b69f7c4d1cbb5e98ce44cc2014359a05852471",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/observations.json": {
+    "sha256": "5edf3d9b00cdd36478c293872767ab11eb39504c7d5e3561fa5a26ad7f8983bb",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/verifier-probes.json": {
+    "sha256": "e782e298f27accb606a2c2956436fabc346a9aa17281d2c35a9c8fec6f14bc92",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/manifest-retrospective.json": {
+    "sha256": "d51aabf2cbf2d5037575c5cf384c101e9abba32b83aa12ed08672a5576d1f381",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/observations.json": {
+    "sha256": "6383794e30afa13b3fc6539bd86cadad35177473f9f0f00ca0d6e99be05a7806",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/manifest.json": {
+    "sha256": "18a8241b984b94a367eed3000ae0d1a2f24acb12a4ad91b0585fc0376e7a611b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/observations.json": {
+    "sha256": "cc29567d6244042ff5359dff2ba633e6a54feb1f798c29f6a34e0c3908bd9a04",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/verifier-probes.json": {
+    "sha256": "e782e298f27accb606a2c2956436fabc346a9aa17281d2c35a9c8fec6f14bc92",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/CONTROL-1.json": {
+    "sha256": "d22fcce26c8c68c6f036e4eed1ca3f9c09872c679e719486c21565e66942b589",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/CONTROL-2.json": {
+    "sha256": "12b7cf7d5a5a387528c2cab3c42a2199f453545448d846f09f03dec25de4824a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P1-R1.json": {
+    "sha256": "3c40208794ecd65ceafd88052660a57f54c0c424a54fe0e637580630a352f9c2",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P1-R2.json": {
+    "sha256": "9c82d1181bc9638a4ab04376fa88d1503f2eeb4346cce62d115fd8ab352790b6",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P1-R3.json": {
+    "sha256": "401ef1b08dccf662fc213d3e7f67882cb0666abaf3aeadc920c4684211e0cc0a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P2-R1.json": {
+    "sha256": "aeb429d052dbdf90f6d4fcecbc0931670e1d91d3659b59240c429e60e177423f",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P2-R2.json": {
+    "sha256": "d1562dc886d22b763541f1744982e392427f1a62b5c24791d8a4d223cf4dc3bf",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P2-R3.json": {
+    "sha256": "2dac28f396b6477c6d81ed697687cd795b89561949de4380c877f48b64ee1b6b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P3-R1.json": {
+    "sha256": "3c083fa05a1721e615a8498a1b3f924eef2256e3526dac0e0261633928e76cf4",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P3-R2.json": {
+    "sha256": "da2e851a1139881a3d45084d9d5ebab3f19025494aace5bd28d2c12c78879e86",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P3-R3.json": {
+    "sha256": "efa16c969b7540ec904ac21ea05518e8215ffda1d529b47085695378f1cd6dae",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P4-R1.json": {
+    "sha256": "c4e9b5fdb59c2853571f7c5fe47368dbea893757d1b4497ab8aa8986bcbb9874",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P4-R2.json": {
+    "sha256": "2d779c1f3c54e8a27f73127783e21a5be4e74514b8dbbe597a8af1ae3551c268",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P4-R3.json": {
+    "sha256": "95974f324f5bcac401dffbf2bbb3214ccb48bd8d3fa905a5915438ae14b1708c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P5-R1.json": {
+    "sha256": "b79143db832f75e0db17b5bf08bc6501e5afb8ba3f59b0132fa5f113da6b39f3",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P5-R2.json": {
+    "sha256": "03c6bc73ecb64ac1bd8fd72fe3ec2dbd48f4e2b20217e32292a8876f054ce3f5",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-batch-verifier/cases/FP07-P5-R3.json": {
+    "sha256": "06ad60e82382fa351a48f8218c9b42c70c8126d3d62b166552403a22e6769a7b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/CONTROL-1.json": {
+    "sha256": "5eb7f5320eeda589036dbcd1b2e2438c742d361ca723dae4219622d95b4060fa",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/CONTROL-2.json": {
+    "sha256": "c69d0db14416772860a390a7bb316c2902efbc3b82de2e89b1eb731ee708d824",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P1-R1.json": {
+    "sha256": "0116666a0b053e65abe86a206906e883dbf3843223c9094c962ccee90b7588d1",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P1-R2.json": {
+    "sha256": "f330cfc400876558dfdb42ef94c546516771067147758e6ce4565573e68fbb9a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P1-R3.json": {
+    "sha256": "833ab62a3c30c422348c4c17b1a1916e1c30c159c1638eb76e693a51e87ce05c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P2-R1.json": {
+    "sha256": "e39c9ea0c5a31559d553df67183eba09ac00032b60e99365e40c3cca72c6f4c8",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P2-R2.json": {
+    "sha256": "1095eeef5c0f03071c3bfd426a2a30cf435f88ecec65462fe6dc29340be8ca78",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P2-R3.json": {
+    "sha256": "b36aa002e0a6ddb66fbd248a8b99c2e7b9c9a001dd9d655553b75598044a3210",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P3-R1.json": {
+    "sha256": "ff4bd2097d5b4e299e5e05b1f6d17a3fb5f0dc2cc166485b1b1fde5994c2e39a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P3-R2.json": {
+    "sha256": "114fe3104718ee07da0c906cd75b982e4a652b0ebf41063514c63b21981ebdc8",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P3-R3.json": {
+    "sha256": "781541b95f19bb89cd7b79af4dd646cb55546df34f288c073acd09463d4f97f2",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P4-R1.json": {
+    "sha256": "3b3936f951d52a6764f97129f19bc45a5b1d5d41b49f21750ba072687d8ff978",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P4-R2.json": {
+    "sha256": "94a8f8fa3677ea4a86fda361f3778cd7a0d692ebaa7831fe413e295878d6765b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P4-R3.json": {
+    "sha256": "fa3c6b155a6ca7f79395b163fb8ab670658a44c74c3736f9e1af8bac466bd61e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P5-R1.json": {
+    "sha256": "a85af753d2061feb6e3ffcef99ac8f51bfad37152e08556891112ced46d8d438",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P5-R2.json": {
+    "sha256": "dd3538dee1063e6839e3106a017a8c94d51feb101e24018dfd341be4ecf0fae0",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final/cases/FP07-P5-R3.json": {
+    "sha256": "2d613d885f74baad6cf25bf954e39cea53b900f36601fca0ef33bfe71b11020d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/CONTROL-1.json": {
+    "sha256": "fae1c0bfeaa702fe77bde1e1dda706f190625f1981f0bf983c62a84cd431332b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/CONTROL-2.json": {
+    "sha256": "ee734c66c788af9c189077c8a3b577e1714fc82ff99fbf56fd0ea7f07ea20a1a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P1-R1.json": {
+    "sha256": "ae9a298868ef7365d00927457b68330f89a03d1511ce98de6837c5fe6fbaa511",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P1-R2.json": {
+    "sha256": "0fdbf70cabd291d7e7f16096bc1bcad18881e94bab573cf4fb7222c471403f1c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P1-R3.json": {
+    "sha256": "0cf467c2d66bdfc711ce8b32914bfe42d1bc49c6d0ba86354e8e342cbce67f84",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P2-R1.json": {
+    "sha256": "4914b58528c8fd4ce7ca02ab4ecc44a6c50358f37af4e1dd466c0f655d307121",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P2-R2.json": {
+    "sha256": "9e2828e1cc94bb4640a17c957c21910bd5d739a4ba9cc21554f2867e68c71941",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P2-R3.json": {
+    "sha256": "7c32000bef31c087596bc84fc0e5e5d9dbe9f780d6a61b575e78924e4d151f31",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P3-R1.json": {
+    "sha256": "8e266cc92f68e98a359037b8a6416876c6754b149c33589030a2e971503f3bd8",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P3-R2.json": {
+    "sha256": "003aa65c59fc896f37a00b788dcca323cc400d23a680e7ea7894219177664fbc",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P3-R3.json": {
+    "sha256": "7608ba356714540f52812729ebb09a1676d8567142d8475eeeaba317ac955b20",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P4-R1.json": {
+    "sha256": "779aabb8c0feee612c040c919dec64c835b860863645cf39b1a0e7581756d55f",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P4-R2.json": {
+    "sha256": "89bd5fb9feeab8c65c409ca926289d31e434e1f44eb9b07895ef8c4b49cc4ee6",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P4-R3.json": {
+    "sha256": "e81a97649373cc3c1b95222f245492b14b8c85c8ba4dd89f47cf91a7a4f0f54a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P5-R1.json": {
+    "sha256": "d6c70e16e57485ab65401abfba406ae1f63d45e3d92bb5c6efadd80a3119a0f4",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P5-R2.json": {
+    "sha256": "8138058cc0077c43c9731d2a65cf85a1c951d4f756f763f741808934a785194c",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-final-list-context/cases/FP07-P5-R3.json": {
+    "sha256": "bab8f13855f01f0fce9ff6988c2eac7002c6fdfa86845a06c51b0c853d234971",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/CONTROL-1.json": {
+    "sha256": "8f6837f1ce0e36913bb14298a9d4a47ed800216ccae777714314707967d2a902",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/CONTROL-2.json": {
+    "sha256": "25fd4673ef67c44bc991022f653dc225542d21fb8d591b93054903f1f47ac99b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P1-R1.json": {
+    "sha256": "6bd7898ff320f642128210bda9f85f3450a2c6ad9ae972386219b14d3febe5e0",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P1-R2.json": {
+    "sha256": "9de8222f21a6d963470a64a48d4b1e76324859313a160fa1e45334fccbedc12b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P1-R3.json": {
+    "sha256": "4c919f5b1dea10cec9d478f6073ed4133583125328dee195ce000f516671df67",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P2-R1.json": {
+    "sha256": "b013b17d97118f5817e151689339f48ce8647814cb1217a18cdc3ee249eccee5",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P2-R2.json": {
+    "sha256": "f8d63403da5dbbcd98895d9090b3f961dcd5efc2c13a76997d29fb0753ff5339",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P2-R3.json": {
+    "sha256": "9499a0cd7feb3316c62b343106a94dabc6ae4ed781ee6d43eb0c733a9f51dbb2",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P3-R1.json": {
+    "sha256": "02609583f36c2c5ab8f36d182605b4217add12a0d07402fe21c5d1625e18b55e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P3-R2.json": {
+    "sha256": "5362c4045cf48cc42c74adfda3959d083a15f512f86c771809331e37dbf8baf4",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P3-R3.json": {
+    "sha256": "af0ecbcee21d3df4c6174f0f83d19e9f35ebc7a9a8a1207bed7b29da75f5c81f",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P4-R1.json": {
+    "sha256": "f01f6c9bfcfe0c782412e948f1ee1a317066d786086c3f57bd55caeb673b6121",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P4-R2.json": {
+    "sha256": "bcd5722d735891d683968e9992f67314bef41b8c0d924775b085cd8c0cbf431e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P4-R3.json": {
+    "sha256": "adcc3c7ed5b686a2cab9f4f25d147e60745e8533d3b44311793a6615c066a47e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P5-R1.json": {
+    "sha256": "1abc53696ce75d5e4aa1b6cead94c7856418d5ccdfbee1c1ff2cf744485a6c91",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P5-R2.json": {
+    "sha256": "5c731f64cbac8bcad618c72fb834629214301b397e1b8dabd3de71fc6691529f",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-initial/cases/FP07-P5-R3.json": {
+    "sha256": "9fa7c5e58f9bff47030276b439203db943d7fd5f5dbf224a41ecc4c25f00ff52",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/CONTROL-1.json": {
+    "sha256": "61184e2c3ebdf9e2a2cf8d15f46a2645dcda3a07a0704abe785d5721c5211f6a",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/CONTROL-2.json": {
+    "sha256": "034b154c75d41ee34a7257f40c270fcacfb2f3fe195a2794a5903d7dc4e86b5d",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P1-R1.json": {
+    "sha256": "df42e21848b821965f6341feb802b840560d0323bc4caac18c64aeb591c81f24",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P1-R2.json": {
+    "sha256": "890480aeff0e800a6688933906efb75814020d7806121787371b6a6ada95886e",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P1-R3.json": {
+    "sha256": "011f3979f96eb8a61270cdddb1b93b62163a7a5186f54bf5681d7dfe4768195b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P2-R1.json": {
+    "sha256": "a915b629bb7c604c2d33c1b829b443b777684f9dd63cc1cdf6ed29eb953f7a1b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P2-R2.json": {
+    "sha256": "47c9cdef9f5fbfcf99e3f65eedd6fd829943b064e6b94c2dafe2996d892611e2",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P2-R3.json": {
+    "sha256": "5f83b8ca77bddfe2f5e377fe1e40dc5dd94df2bdf0e39f585175e09d7aaa3fcc",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P3-R1.json": {
+    "sha256": "3d5e73573efe2c1504c0695187c7ad8fda9ac9706931facac372a9af49986b38",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P3-R2.json": {
+    "sha256": "25a93406cefb165d7b97964b1a1f9fbe2b2906fa7953e91f12c2ff81f8d60cb8",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P3-R3.json": {
+    "sha256": "e42396c3400d15fcbae04d2f1afcb36d94d4c122a26d309868c11372928a3d20",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P4-R1.json": {
+    "sha256": "8fa1ea32cd489c76b4e53d6eb91d4a616bc136a5fd57ebc69ba71a068311d174",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P4-R2.json": {
+    "sha256": "6fb6f80e144388c3b4413f5e337ae75361958c56d773f09949a2056058801d00",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P4-R3.json": {
+    "sha256": "cd44d355674be72be3d63543eff5b0725c0ff28d48b5d834052164c69eec8cc1",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P5-R1.json": {
+    "sha256": "2f00857bd5e2f45157114c4f432c95a11176476e0916f676a2fb707721d22a2b",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P5-R2.json": {
+    "sha256": "8d28359598769519aa6021103ee372115440de4a037c1ddcd044577aba1a1fb4",
+    "unchanged": true
+  },
+  "docs/rag-quality/sprint2-stabilization/stability-sufficient-only/cases/FP07-P5-R3.json": {
+    "sha256": "346f82487902a5918060321c0376ddf37a46b9820aa1c5307efb432f2baaae62",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/perspective-fp09/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/perspective-fp09/manifest.json": {
+    "sha256": "69af5294b6870dcfc5d43bfa21e0a5c18f1d481fde40f5eb8396fa3ce4c90902",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/perspective-fp09/quality-report.json": {
+    "sha256": "10093acddc69a90cb85d8160c10a4647c38344c513b43ba9a385228aea866ef1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/perspective-fp09/results.json": {
+    "sha256": "21e9a69d48ad33b2e09e2557408161dc9647dffbb8c62ce9d494ffa500982f08",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/manifest.json": {
+    "sha256": "9947b278fb6c0dc5801dd9acfc44ea48505ba788d911b58e7f4e96ba762b700a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/quality-report.json": {
+    "sha256": "b7e1d7ec6e89651e21bea7ed08eb327b3012ed8e36b6fc6695246ccf1ab72e9b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/results.json": {
+    "sha256": "4849f9bcf2282d9886903b267b212c52adb82f134bea948bcb559134c19782ea",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/execution.log": {
+    "sha256": "6fe5b387be3f04c76efb5d89aeb7d1bfbef71338524daf9df0d35bf0b4594fef",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/manifest.json": {
+    "sha256": "f608c85ed2c26676828418ae18b1c999f5c3c37963ef1951d0ddaac6d00463a0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/quality-report.json": {
+    "sha256": "d8e27184e205403079973e1eb60c33e8baa9d9cfa19ad43e78b588c8ff172ec8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/results.json": {
+    "sha256": "bc4fe906b9180353a0bbe9b6b93b616fae3e0374b70960b0c8fde4a8a78ded2a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/summary.json": {
+    "sha256": "5d8b498ab33517d2893a36de9643d8134b9363a4726e27cadb66dcf4e6c65166",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/manifest.json": {
+    "sha256": "a35f0276914be72007b3a5317ef52e0edb230704104f05935fab5d4ba986bc59",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/quality-report.json": {
+    "sha256": "b459640b03e2370f0ace89fec72f31027a21a3a4f27461d487e2e32227ee3aa9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/results.json": {
+    "sha256": "1b1a35a3413ae961c253023881250252b1fe068c0a3a5b1800fe69aeff5c230d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/manifest.json": {
+    "sha256": "08b0778c415e8cbcc690d12d58b4861164729940a0f191b50df598ab559cce14",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/quality-report.json": {
+    "sha256": "e58cd58f422f617c5dc8bc8046a785c370928560d8d72aea35437c46464f7fc0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/results.json": {
+    "sha256": "9c1e02f3e0cc08892339eff8e38c2a9b8550165fe6f30b098d52730fe231756c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/case-verdicts.csv": {
+    "sha256": "2415fd65caf4d3c2672fcf48c739842239a1049d272d1584a42379e996eba8c3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/execution.log": {
+    "sha256": "0bb1add33c30bd1f5392bd56cf75c722f14e4080ab3894c9a00aed7b3614519c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/manifest.json": {
+    "sha256": "86a7f4419d3bb9712d383379ab3eee10db5c322df633f9f16a7478ffde041fb2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/quality-report.json": {
+    "sha256": "e42379770c175197c46ca0a74ddd80eb757255dd22fd7bbcff314f3d74fe6f63",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/results.json": {
+    "sha256": "d82af5bc38a7e889fe818bdeaf0e7ab0304a1814d3801889d9940a17bd203a23",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/summary.json": {
+    "sha256": "685cf41f32192b47b4ba4996d79dcf502511a5f6c5aa1ec1add1ff5815bd2ce9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/execution.log": {
+    "sha256": "2360dcb8ca0ffdddab991e333feb41fe8554634e0aea3e2fab64aea119ff8438",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/manifest.json": {
+    "sha256": "01efda1dd69d4b3abc3821a5cd3b3c39af4b223c5441e5cbcd67dfa91f73967e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/quality-report.json": {
+    "sha256": "2b95b84e67c93c3e02ef68d6ae262886bbacb75874c20eb2c37f2370c54812d3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/results.json": {
+    "sha256": "4f16c1fb4445a951b5907a6df688850add848df96f13de0766411bffdf705130",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/summary.json": {
+    "sha256": "f3c7de49f26e2a4dc6591608c1ff4b3f48284ae1c469fefeb6d120017a2e11a8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/case-verdicts.csv": {
+    "sha256": "5374f866ce036e7211e3bd1530541b8269963435cae8eaf46785ffe86ef8546c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/execution.log": {
+    "sha256": "e5c0e10baa65ca42964ee8d0132ea63826f40fc7c2a7a40a791553379e27f5c5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/manifest.json": {
+    "sha256": "178846fabeecb54d624a7e4811c86d61aaceee4dd56e576e76f80add1629204e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/quality-report.json": {
+    "sha256": "e37a8509530a87d326167a048009901824b07df5090befd8ffe5fc0541bd03df",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/results.json": {
+    "sha256": "1007af6144ecd3b0c1d289a6caef8e03e31772f1059c378588d994fb32ae9d27",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/summary.json": {
+    "sha256": "3a35406b8926575b9424b934b6e2227a51f60b41f6514e5ff276feaff1e3272a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/case-verdicts.csv": {
+    "sha256": "becbd9a2e09ec5f74fd2105d30edbe2604140af715eb7465ff6b9c084ee79529",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/crosswalk-validation.json": {
+    "sha256": "ec19c363a8f8318f37108cc539c9dd2fc815f63f39372c518163b1ee9e24dc13",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/domain-metrics.json": {
+    "sha256": "d1696fdd991150bc09849729a27d6447eaa5e1b2270264d29b0b106a9e22717c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/execution-rh_frequency.py": {
+    "sha256": "6daf7de418d85b5dec420e7a57c06cced7ba8d5a4a9ba353cef3c83819388a5a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/execution-runner.py": {
+    "sha256": "9ec1b7b8ef2f7fb7c508edb8540aeb13768faa0e3dbef5ddbdc2e1ae5e9d3db5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/governance-query-probe.json": {
+    "sha256": "50f8be4a09c1d52df70857b1f7797ff0313d1bbeb4c18eb8190f133e8dacc4e2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/manifest.json": {
+    "sha256": "3c1ff9e878bf0aeb54f6cccda48be8881ab413eda1215047c9ea202801122cc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/postprocessing-manifest.json": {
+    "sha256": "83a3570267bf159668feb138642e7784c7f11bbec65b7bdac6b89d51d6adba99",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/progress.jsonl": {
+    "sha256": "343b97986a83a359127fbba8083b959371d6c1f22a8a6d668c16c6d516066f53",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/quality-cli-output.json": {
+    "sha256": "b0385fc646cd6c5b1ebfca439ad5ecc6613bbd299912d5588711723da686e819",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/quality-report.cli.json": {
+    "sha256": "b0385fc646cd6c5b1ebfca439ad5ecc6613bbd299912d5588711723da686e819",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/quality-report.initial-export.json": {
+    "sha256": "0e1dbb0316ec41b05d74d31f581fb96c7e0e46d9ff8addff734282f9a4061ab3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/quality-report.json": {
+    "sha256": "6055e68dc76f0013bfb756f85fe4bc74bf5df5dbd2fa0c0ce6e3b317cc44fc24",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/results.initial-export.json": {
+    "sha256": "95b03c7731672f681338a327c44219b49cf4a840fbf31945409976e214ebb54f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/results.json": {
+    "sha256": "61f3e2971303a4ebd27ec574733a5c813f1049b065e751925e7033598cdf24e4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/resume-progress.jsonl": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/resume-runtime.jsonl": {
+    "sha256": "9d0b73632e9ae18f72eaed7f1fa841289b106a649ca6ca24c3a85cb9c21d084d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/review-overrides.json": {
+    "sha256": "798384a5bbe43b080a63702612796f14552dbf117f1a6e960c3cc629c4296e7e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/runtime-logs.jsonl": {
+    "sha256": "23c2c61be8e7e772892fc0a025027d8c69bd344a62e669c38cc73f06bb5370d2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/summary.json": {
+    "sha256": "24fe421ff3cb3effad7f00d0464606ef32bb62f38751b027068bb37db54245b8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/manifest.json": {
+    "sha256": "90205edd40a5992ace0e1b865b9ae0ce49ef73bf126c2bb026a70063ba6052b9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/quality-report.json": {
+    "sha256": "9f81945f07964c94b7411df153e6e25914e2d5375ac12606935e3e78b65693db",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/results.json": {
+    "sha256": "48fb7be60ad1854c91f8c6d177758d86021f293392c3596265eacf7eebf4f698",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/sample-validation.json": {
+    "sha256": "ce0a43c7e39d4fba0b618360696cfaf1c62d22165b6d71403381329b23a3f8da",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/summary.json": {
+    "sha256": "06a82c03fa74cfb5aa803114f2cb08484b88e0c450f172bf5fbce6bfd6b7716c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/case-verdicts.csv": {
+    "sha256": "28d97d8db1cf331e3ef75106baf6b0f8e477250b7e713c259b33348149b23795",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/execution.log": {
+    "sha256": "fce94ebcf7fbf21991d06d3c0be2f4f557b76688ef3d4e92232c3219db5d466c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/manifest.json": {
+    "sha256": "ef5c20165ee5c347507f427f21a0bc8019cce08504779b7bb6ce64d5bb020a72",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/quality-report.json": {
+    "sha256": "c70e0ca3f7847b5e75979ea2f88fa807a0fafd7c5aec0bcec8586eb369eba488",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/results.json": {
+    "sha256": "a70edd406c84cf8a4795ffb46bbdbab93d73de55ed62b5bb6d45af26369876b3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/summary.json": {
+    "sha256": "5037c341c2ec45aecd398f66a13d20365a7a465c0a5ccd47d728d574154f13b7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/case-verdicts.csv": {
+    "sha256": "8bcb6ee6d31636ba4d3e5fc83fa4d19df325751633ee3b98c6efbaa6d96d2751",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/contract-v2-observations.json": {
+    "sha256": "921b64fd992d50e4b44de33402bec0c7200c604ab225bcf593fd380411f40de7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/execution.log": {
+    "sha256": "c4c0d7e8d2575f9af53138a805de29040f595efa19f8a09da8c40e2245640b92",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/manifest.json": {
+    "sha256": "0177de470a51793dd1d29a8861b464c675e52cc4157dd4bf6f5af1a668cb2333",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/quality-report.json": {
+    "sha256": "ee42bfcf8175e780417f76fc1ca2d6f6ee019579c4c3f2c683c5bf623490758b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/results.json": {
+    "sha256": "16545106861c611239515b80fac5135a2db2005ccf657cec3743f19cc54e15f8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/summary.json": {
+    "sha256": "d5bccbf9e2a0e2e3f0b567344ba4b7f70520ad4ff09f18588941cc7ac7ea9b1e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/case-verdicts.csv": {
+    "sha256": "e6d6492d71f1d8d56834dd0d9d17cececc6fa438cc18bf5287a9039759c3cca2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/contract-v2-observations.json": {
+    "sha256": "790eb13b8d16b5c7de959b6291e9470759d743adbe6759998291ebc620f523e8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/document-crosswalk.json": {
+    "sha256": "49c0c58ad3572d319fb908648395ad68ba94c19188d8161f589e9956f8724bc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/execution.log": {
+    "sha256": "8c916af9aa6c5b1e19a3987eef0b8e8ee4ecbfc5cbb671826be899c6e1773aef",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/manifest.json": {
+    "sha256": "5ca39ff770cef42385f725dfa2e2179455e5e73bd64238643b98f37c6fb3fdb5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/quality-report.json": {
+    "sha256": "6d0e8177b8ccb3d46a92664496f537c6f3d9698e968991aeb3be69b736ab0ea6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/results.json": {
+    "sha256": "8a5d5b40876888c963e72ccbdf3c77f3baecb9fabd403d5ca30a7ecc195ec52d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/summary.json": {
+    "sha256": "1ed0a63c16b82cbbf97350c57303de8bcb5b26c545ad6fd6dfce4ddd1c5dd891",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/perspective-fp09/cases/FP-09.json": {
+    "sha256": "53e69c3a31ef77811b7f50ba6db19eff05fa33fc35fc8813adc859a385bcc9ed",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/CONFLICT-01.json": {
+    "sha256": "ce0e9092512dc9cb9f49a237b4d616bd0eb5563c8c2d4854c216c7a92f6976c1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/CTX-04.json": {
+    "sha256": "92a92345770b2e17344a6a4e11f4d58d80584951afffa51fa1f82cadcbb5085e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/CTX-06.json": {
+    "sha256": "b81e586bba7bb4191bf29b0271ec37a728653b6c1dc5587d866d9f951db6be3a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/FP-03.json": {
+    "sha256": "1dbe7f0e9ae0aba02c5497ae4d3e01b251c0e2bbdbfb381b73b1823285f75869",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/FP-04.json": {
+    "sha256": "10c55bbc0f22b223599c127d3ba2074436c28c17239802966457c9920dc8dcbd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/FP-06.json": {
+    "sha256": "71c7e8b169f63435f43e5d8eb81ae1ecf3717948f7d2f72f03a7e0e784303cc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/FP-10.json": {
+    "sha256": "06583ad73a46e83fd5f5e519d732a05d59c632d29bede440dbb6dd19bf0c29f0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-final-pilot/cases/VT-10398.json": {
+    "sha256": "56f65aee07d79b1f91ea9e43c27e75049c46121ea8c469e948c9fa5ee8530fa9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/AUTH-01.json": {
+    "sha256": "bb4db2c571e5c71f9f1425c3d2f38c8166b64c0ca50f49856d1b2dc53361ffae",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/AUTH-02.json": {
+    "sha256": "4f2207bb8d4c5fae0c1b7aaf809f131270edaf58685c4752011bd6f13c28a59a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/AUTH-03.json": {
+    "sha256": "ed38c770c5dfb1e0a189e41b6feb774367a379163d382b8e5e827c947b16641c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/AUTH-04.json": {
+    "sha256": "0d9c697ae863ca5813ea72aedb0c03ce19828c46bf2301e43e25677023106f9a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CONFLICT-01.json": {
+    "sha256": "dc65fe3ce8b8a4f7493b97bc0efb34c63bc60436979ca607ad8c721dfe4c070f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CONFLICT-02.json": {
+    "sha256": "263d0bb47852e1ffcbd56e0c6bba38630b1f1376acd0573bd55b3fc4cb484fef",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-01.json": {
+    "sha256": "4b0c67edbe6f21c0e10f0bb47b6dc0d7aedbae869781a68a8481cd58197a8787",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-02.json": {
+    "sha256": "236ae5271b2916b9d835f546ed6642c4b71e7eba1eae3968315911fc91495c13",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-03.json": {
+    "sha256": "564bfc90d5f3a32df0420ffa2bd06f247ad4e23971be5d45b310e77650fcf5da",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-04.json": {
+    "sha256": "d3023b748462c041338f294d365e25d7c5df53a9c86b28f60af9d1b287ac049b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-05.json": {
+    "sha256": "9af9e297df84993d1b0fbb74b0524453fd83994f0e6de9fe8bd4bd084210528f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-06.json": {
+    "sha256": "dd79298dc19405ea4e5f9ff746cf658b6f3625595628f51dcc24b59b64204cb2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-07.json": {
+    "sha256": "6ba266ae602e2c0f556f04a41f4e0ec999053d8a4801489b5cbf6daf900c52de",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-08.json": {
+    "sha256": "505758a9cabac62b5ed0b0909bc4470bf0bc774919cf9350d8ec07b7e9a57a29",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/CTX-09.json": {
+    "sha256": "cb949bdd8ddd5f1a3335407dc7007fdf5d5164b13c7a483ff16d5c24a83a71e3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-01.json": {
+    "sha256": "306cfce7a68c1eb5b1912190207b646adde4e2558a3c91b2f53b23ceecbc2de4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-02.json": {
+    "sha256": "0b94cc740b3dc1b347d9640b838bb50a8c402ea648d0adfc5dcc23dbaf17adfc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-03.json": {
+    "sha256": "185a0a78f5c46aafa435e1733b7d0121906f0421db92bed32a699338a75f4fe4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-04.json": {
+    "sha256": "e8136fa1fa01b754b9411ef24b4f230bac6a5564c8f20ce414b7ca273dcc88b3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-05.json": {
+    "sha256": "1b8705a042523bfeed59e30ca7d5f6a1d9aa0218531772617697d599b9b975b1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-06.json": {
+    "sha256": "1838d8dcd66331c33a0d2bef86394fc0b9d4b2a7c65f7cf19abd83df4d3958c5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-07.json": {
+    "sha256": "d03ac3341c33fcc6925271cd8952a316bf5fde9b94520ca403d2592d4745b94b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-08.json": {
+    "sha256": "336132d4827c50ad11b6b1fb12ca57f13793eb81396ee941e895384f0d01fa35",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-09.json": {
+    "sha256": "343c4f62ceeff87b8ca93afcbe80ba1a6773e7769368cd5cf2ade2a37c2155c8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-10.json": {
+    "sha256": "b87b733b541f603c1da7eae183bb68c75d737c71fa883404df2556ed5fa41906",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-11.json": {
+    "sha256": "014edd24ae2513300a3afb85091b443727493af54a74bf9eb08623061264bf89",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-12.json": {
+    "sha256": "e9a41327e02ba5d785b770207e462782b2f412dadbe3dd5f2b01dccd93a343c0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-13.json": {
+    "sha256": "bd1aab9f43434dff0f128aa71d742d0ac47b05cdaabaf2993eb697ced7c63477",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-14.json": {
+    "sha256": "ee5d24d04b318b06b77a4f08c57527236e2ba64562adb526e0189595d7da2aba",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-15.json": {
+    "sha256": "dca7f512e08f4088452630ab0fda586c31950fe8ffaff22ee2c7350e20c469d9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/FP-16.json": {
+    "sha256": "8b0399253fd3694fae1ea406dbd66a87ee22fa97430d77b667b206f0b3ce42a5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-01.json": {
+    "sha256": "62eef55589ea40bde58c0d459ac916f286b7358ce16e6b979031006c2f83c3bc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-02.json": {
+    "sha256": "004cce230895e8ebba35234fd34c1cb1b29dde0dfedca7b7ed81c3093d633245",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-03.json": {
+    "sha256": "963a779c4b8836788383da26569d701ab3ef349986d3003c5626c439c4d55e1c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-04.json": {
+    "sha256": "073d0ea4efa3ebb4888702fc079b71344c4a2b8f8c8fecf68e7ae2079a2dbdda",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-05.json": {
+    "sha256": "5e1484c0c0000d1879ebef484a326fdc96e2a5a0a64d250803bcb243c772b1a3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-06.json": {
+    "sha256": "a274649eeaf814bbcf9bfe8c7af0d0d37fd3aeee80345ce0a382b4e5b47df9ec",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-07.json": {
+    "sha256": "adf76c41f713c37a29e421f559b336b59033df3d0773de5c802329e57edadfa7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/NEG-08.json": {
+    "sha256": "713eb8a1eaa85d5bf4a691245a3e1c3c6b49a38dd8f1151303f64920c33b98c3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/OP-01.json": {
+    "sha256": "e5432a84aa22ec28943dae5375b3e501f205676e09d88b305a4a2ca3e296fbb4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/OP-02.json": {
+    "sha256": "560eeeef70b5371c556063176d2f0ba63127dc3f9d60f052f4e3831eedd4fb19",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/OP-03.json": {
+    "sha256": "8b83c3a242c6f0da3052a0226275bac6e2c6d21b0b5c83c7d43ebd3d730c1403",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/OP-04.json": {
+    "sha256": "bd4165ca0d1e858117339a994f304a1796c5ea91ecf19c248e3e5146ea4d417d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-10394.json": {
+    "sha256": "06226bd8b6a01285d957b22bf7880a620a1a0534bf299492d96d0020f75a1ee2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-10398.json": {
+    "sha256": "ab115c03c304772c9216400ad32a805f17c8017ff16fee76b9289b03d79c9a63",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-10420.json": {
+    "sha256": "2dfc3787d48a4e8c8036b651fbf91a0efe44a11f4567b3ca665fe533cf41e1dc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-1071.json": {
+    "sha256": "0fd25409435aad311094ddb5347ae53de6bac47b65282eb212ab345ca9179b98",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-10771.json": {
+    "sha256": "cbe6ddad0ca15d1f18b7b602bbd424558333f16d83af753075d868c36be045bd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-155.json": {
+    "sha256": "fd33ec7d85c86c11c9e8b69e606886cfdff4535c25124c7bfa84b93f914c5596",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15504.json": {
+    "sha256": "f35759fa1facbe1688bc9c64d4bed84288d5c7a626f96c7ef2d3ede5dc75ac1d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15506.json": {
+    "sha256": "a31bf8865e6de8fa2a664988e1e0f6187316bc3d593802651507a08f9d248383",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15508.json": {
+    "sha256": "c0cb7c7510a8d3f75f8cc631dc4f5101406510ab22b8bb80acca89b031f426e1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15510.json": {
+    "sha256": "3086df7f777f4bdf78ca53608e90037de8572db920ccdeb0c29bc4d13ce383ad",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15511.json": {
+    "sha256": "0260cbd5c4dc80f6a463601f660033810e05ea3b22e1c850f3de935f0226aff4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15512.json": {
+    "sha256": "6cfa97b9031b9f1fc602b52b436af7a0e78f57816ea5bbfa2fd8bbe6cbb2e9c0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15515.json": {
+    "sha256": "5b5cf914875ac40f43834e5ab5ef852f258f9c5cc4292db684fb14b3bb4d0ae0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15566.json": {
+    "sha256": "7f54267e2bcdb1b07ec87c4dc355c274e9f2a2e213fe11229816aa273c469188",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15723.json": {
+    "sha256": "7fe70e55618ef147aea7e997b94c1d1054d8973b9aec7f10855575fa63870f47",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15779.json": {
+    "sha256": "22ce50970bc0e1617aedc8b9661ac6224ebb8d6264daae2bdadc3156f583c078",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-15780.json": {
+    "sha256": "62b8c2d12bf2e9cffd349f2932dbd968de5ba5e683c2660a3405f528de8aa852",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-164.json": {
+    "sha256": "e756d44ddcbf4f114741f25c74768abd9091ebdfc9eaaa2157736ef088287edd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-182.json": {
+    "sha256": "21d16ce241f07e6c52b48b7ff2fc9f2f8579590a27a29ccf6b5327cf5e7fbf51",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-1892.json": {
+    "sha256": "f664beb1811a9a3117b08c1986179747be24bc229e85297b671c7dbd47f8e290",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-200.json": {
+    "sha256": "e44f2cbc12332f380e5787da086fa95f800fc9226493bdec245b7047ff82546b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-216.json": {
+    "sha256": "3317af3784bad4cbd9e78072aa8bfbd8d42ebf4e3b047281e189243ce8f88fdc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-2337.json": {
+    "sha256": "7c0251ed4c59bc4ed2dae4f5a5e31ba5173dbe031b0853c6468611b5a241d9c6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-3845.json": {
+    "sha256": "7ee382c9a4fa45451a66caf64539200cfc50bd6728a255b111b45e7798e2a523",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-3854.json": {
+    "sha256": "1daea69d3ee0760ce62050f9584c5864ba061b58e4732031bc3e48cc06663653",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-472.json": {
+    "sha256": "46cb3d1fdf37aa0fab0d0c0980774ab61e61d467711e6efea431a7b632d1d12c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-503.json": {
+    "sha256": "1dfa7623d4a640e13f58b196b026939846fffec946c1219ee36ec7c02dcd165d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-5631.json": {
+    "sha256": "045eaafd21e6d1345d26a01ca9ead74725748394cef08acfc4490facea231d30",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-7099.json": {
+    "sha256": "e45aa14e618bb35f6433290094e4d63e8270fdd261283659b1a3049d30f8141e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-738.json": {
+    "sha256": "f054a851323d5b0d0b0b0f530bf310135a8b451a7273cc0a9a44eacc7d0e5e0b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-89.json": {
+    "sha256": "1b4a1b56862fa664934c332365f392f91f947919de0860642d55fc09870c87d6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-9156.json": {
+    "sha256": "f06a7623ac53e00498e6408c30fecf1cc506df6232618e986212eb0c7abdf022",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-full/cases/VT-937.json": {
+    "sha256": "70197600de3834ecd7f041e285b2916186ca81cfe32eb17e0783b3675cb5b342",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/CTX-04.json": {
+    "sha256": "743101ad44ca13f340a1c8a9b19c2e6a82fbb34bc100f6e1d58a72b8631c512e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/CTX-06.json": {
+    "sha256": "67e851494ed02d27e0ddbfe71dc530bf04aecb21517f970304f9f7d8a0aaaca3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/FP-03.json": {
+    "sha256": "4d593a51ea6d81848b588a2bf583062d0ecd23eb511a668530d089ec08f1e383",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/FP-04.json": {
+    "sha256": "5249d0ad75c04fe28b113f011b73522d3d8988bff317422ceeb9073db37c0ebb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/FP-06.json": {
+    "sha256": "1d0e3e510f5729f6b8887d2de2acad06a9e0bc15ea7375a59cda7055b0d970e6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/FP-10.json": {
+    "sha256": "62e44d0b9a527664fae2da081ef4b224a6e49cbbc3c7bf9babc337cc6631f2a1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/NEG-06.json": {
+    "sha256": "01030229b25254b9e4d65b9faa4635de459a9807674dd4906d488699a99c6879",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-pilot/cases/VT-10398.json": {
+    "sha256": "06ed152408a27144ee0dbc6476493bcc080e4f08f376c68bce008eb29b5e9ce3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/AUTH-01.json": {
+    "sha256": "bebde783dac6e5297de3b850876a3269a0b909c2c838d43605e25ee74ecc8460",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/AUTH-03.json": {
+    "sha256": "b94f078f3112fc0f450b56f85f1074ab2b664f68e9e63a498816b228ea7fea68",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/CONFLICT-01.json": {
+    "sha256": "f171e2d8c19cf0349d242b81467d2feb339532f379cca26edeaf1386408d8705",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/CONFLICT-02.json": {
+    "sha256": "a472fd97881c379faabe025119ff500cd954c6f90769ed957edaa645a0b1f722",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/CTX-04.json": {
+    "sha256": "0a30aee5f8a06cb097f210cc2c32035dc79a3a1ca11a4b53a3306710c639d889",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/CTX-06.json": {
+    "sha256": "60e0db93b0d0841442e8e8b2ca4d1ac6859724ca698c8a6012b4f8cc0129cfff",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-02.json": {
+    "sha256": "afd7278ee466a6b9d4abcda0b45abb004a7605041533b065087407df8218ad17",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-03.json": {
+    "sha256": "33b13031f77190ea9a1b39cb165abf390bcd3e03ebbdba9fbd5cc5d13e992205",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-04.json": {
+    "sha256": "551dd6931e6d8d0cc36ee603287b3dc6ddee0bf3115a20db82d5a646e087a5ff",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-06.json": {
+    "sha256": "eb186b4a9e6221746fd6b6526130c921b040d643bf018a0d3d64fde8b6454804",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-09.json": {
+    "sha256": "56cc0a02b540ab37cc5641908451addc6397cb9876cd82cd8481cbd9ac802436",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-10.json": {
+    "sha256": "3ca5f54c212dfaca713c4c36ef7252f5ccca1381f00f0c09d0d70a0c2b5f55de",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/FP-14.json": {
+    "sha256": "d6b6fe8d048fd647c68bb98d6e5aa6d4fcbfec8e18b1384fc1af53dc9ed05627",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/NEG-02.json": {
+    "sha256": "eb8bacbe580a0ef3d5b801d784d117150c54909822612205c7e78acd9b995388",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/NEG-06.json": {
+    "sha256": "22a366f5e2015f42387a113fa06d76ccb11207a145eb02dfb2cc6548ed75e6ed",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/OP-01.json": {
+    "sha256": "96d40acb66dba6dba4afc4fba9f85e1ebfde8d419057a0b325bb2b01f9579b61",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/OP-02.json": {
+    "sha256": "9f23f46d5ed340a2754a04790739567b9a4dee6e43e2f1fdfcc34c013b0c0f90",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/OP-03.json": {
+    "sha256": "b9461d40b2f24ccc8ef18a6c771c1f9d78cc475e0c0da02bb0938598dd8d84ae",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/OP-04.json": {
+    "sha256": "3778631adeb9dc13bf2af5a8be888feffc9e84fb9f09780f09278cdb0e1ea08e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/VT-10398.json": {
+    "sha256": "8751a35dfd70d567f4e7aee05b731c4c409e45d18894e2a852bc6d2feabd444f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/VT-155.json": {
+    "sha256": "bd9233859f6be095d10d3aeef36ff4fa289f9eda845a50591bf96dbf2720c788",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/VT-15779.json": {
+    "sha256": "c3be7677bfcfa861b7c6e912dece0c40c69a3fe46c932b06513a87825ec5c001",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/VT-503.json": {
+    "sha256": "440efe4eaa1ac2e6b6a6f5cb477693377002f954a20848582283ad58adba05e7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-review24/cases/VT-9156.json": {
+    "sha256": "66b8fecff83c5a8adfd5495090888a7ee694bbece7ac7ff6296a90c2bc7a1d02",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/FP-05.json": {
+    "sha256": "d185563a3ebbd9faee15787813576b0e1adba3f796fc632f670aa6182a5d26a0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/FP-11.json": {
+    "sha256": "fb20da53fb04007499c8bede4f58440627bbe5a8caca7ffa3a003b29c855d0c4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/FP-13.json": {
+    "sha256": "ce00fcabc6d5dbca2a72b6c9738fd4e4c94e32023c3e6853676a003f3f805611",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/FP-14.json": {
+    "sha256": "25ae51d33536636c264206fb5850936234b558102ce7078d7e859224ca926fd8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/FP-15.json": {
+    "sha256": "61eb123503404dc0646650bc99ef541d4f8373901a562d3d5eec4cf3e3f22172",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/FP-16.json": {
+    "sha256": "975720b31ebbe8c5767dfc0f900edfaa3a0aa747b1ded1ffbdc0fb8e1240f9a2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-scenarios/cases/OP-03.json": {
+    "sha256": "9dfc86a6aaf66f4d561b2f09817e1011b071b3e95e8fca79ecc4dd617ce3e0e1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/AUTH-01.json": {
+    "sha256": "c124d9b3aefea2bda4f81210edd48f4c067472d198a201e3c274d4e6452a313a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/AUTH-02.json": {
+    "sha256": "740885fbb304394c0d0bbc0db202772d005a3f3b57a93e903c6f448efa55a60b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/AUTH-03.json": {
+    "sha256": "e300c09990217859cba3fea6b1a63b5843fbea98d8ebd1cb9d32fa6bc4ef076d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/AUTH-04.json": {
+    "sha256": "093e7caa232dd2fe65fb7d8e08c5cb95967d15cf956adcc3052d9f1ecc175e5d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CONFLICT-01.json": {
+    "sha256": "98d7571faa64f296c2cd55d04595fc83bfac7ad949a83b2bf40ae76805c8b8fe",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CONFLICT-02.json": {
+    "sha256": "ead3a9cf5bd73248ed5e9530e501167c7b60093ee70cb4f76018f98b325d55a2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-01.json": {
+    "sha256": "2fbc8739f22bb33d5ad7f9df21d7a99b9115cbb7416d1e4ed50e8814d44b210d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-02.json": {
+    "sha256": "931e6f1bdd64cf795595a8c0fdefc7477eed514ccca69a794a5d572f103f5d5e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-03.json": {
+    "sha256": "4526b65b95a44c1f2431cec46eae19dfcaecd2689998862e6135aaa06b9811e0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-04.json": {
+    "sha256": "d3d718b838c20dcc602741038cec6dd58368a812e8aad08eac48c9bfd4b12906",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-05.json": {
+    "sha256": "163d0fbbc342a9dd104c489547917e1341d0b0088a238898ea1749a161982146",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-06.json": {
+    "sha256": "f6aedff9d37419e66f1fedf9f644cd96cd46b7c09bd34ad02ffba3ba2d703a83",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-07.json": {
+    "sha256": "8077441acb925970dc21e1ce86752bf08edbee1bd9c450d34260d3dcc84a2f38",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-08.json": {
+    "sha256": "3d7ebb4dc65eeeec0828e2c7c7e23ef627d41ba05e8639d7b8d34b8fb824b514",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/CTX-09.json": {
+    "sha256": "513e143e888d6315b8bc41bfc40b3e6870be55e8ff00336fe6671e2077896e96",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-01.json": {
+    "sha256": "e24d4e76d04d601b5e0e3a41f7f045751a13b67bd6053a98bd3ce58f0f8c2e4e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-02.json": {
+    "sha256": "c882cf6c36058d56aecaf685c7ca3356683e346d35159ab887088c2760a4f874",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-03.json": {
+    "sha256": "20c319796290359c5bb68a5ca533a25aa661c25f2e3e9f6532f3b56add44f9e1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-04.json": {
+    "sha256": "3726b60f8805f0063c41fc25ff7927126cf5c3cfa7e5988636b8855930ec6f2c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-05.json": {
+    "sha256": "bc200e0713ca44666347c5e2d849673578bd38e39c0c401ed6c287cdec0e5970",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-06.json": {
+    "sha256": "60d808a9dab701ace5608fb28ce4042b0058bf4a87ff9bc6b0720d367e9ab01e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-07.json": {
+    "sha256": "cfedb914352b7cd7d4e778afdc3425e8442432836c4a8447f47c2732a4f39262",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-08.json": {
+    "sha256": "79f9c4c209eef6b644e3cd3d13c32f15f882d744d9a8804607e3906d10f06ca1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-09.json": {
+    "sha256": "d1ebb4509338cd5007c3c8b6711905780e515c8fa6eacbda9051ee10027c6b36",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-10.json": {
+    "sha256": "3a6cf9556951e47ff7de967c984344c0c78a611dd59eb27d6d94baa6148fbc43",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-11.json": {
+    "sha256": "a8604863db570f48cbe5e6cf991c1aa07f5b5311a1d1b7773d462743c54a9ad8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-12.json": {
+    "sha256": "72682fb2cc430482eb0388ddfd8544abffefd150b5a95c64a96c8da4d2d31a52",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-13.json": {
+    "sha256": "59cde8dac64adaabba0731f960b014908bd2c73d3cb254bc95fd82b05e6b6668",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-14.json": {
+    "sha256": "93b8860227c4f67eaeb0d6e1f439bd6cb5a4ba2f60d5664c2f54941a2bde4a8a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-15.json": {
+    "sha256": "0ba958ef7652f7cc97a6a6028a61d2a88018b30ed6b645fffa7c6b19c9c9da49",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/FP-16.json": {
+    "sha256": "cb174e03051636c8337f4659631ffbc654ade16b07b5161456455c42d7226cfb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-01.json": {
+    "sha256": "f1de6b4efa6d771db6db2deaf6b720b3c2aeeeda5d26f9aaf2b953189aa2c3fa",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-02.json": {
+    "sha256": "7e950fbad08ea98e8e1c7af38ba9e5784e02c0480be039b2f1365b76ea7e9a7b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-03.json": {
+    "sha256": "59746ecc7c385bce746ab76910d508cf20fbca770bab32756961a81e6400ab1c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-04.json": {
+    "sha256": "b68fc3848057a802a23ef0538c84ab26df0cdfe2122833881a5fa60e59240b5d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-05.json": {
+    "sha256": "a027b3d1d2ce07e63e2ca9c8b487fd8919a09c22c480020efe962f4d7d34e0fe",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-06.json": {
+    "sha256": "60b6070624de5c5d733a815f4f938d7662fbfb7fe5102522a7ca5136867e566f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-07.json": {
+    "sha256": "367598002d2d2b3e2920b3759c5c6d528cbec32e2710263e4a3026f19959cb79",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/NEG-08.json": {
+    "sha256": "c7d76c38973e1bfded45fff22f3275ecad4a6d9497563426eb97d9355bb525ec",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/OP-01.json": {
+    "sha256": "8b79440925d5420d6aeeb9eafeb030beeacc5c8351c5c79f5fe06fbe4d783484",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/OP-02.json": {
+    "sha256": "ad6e14c708062c7c4c95f471dc729dd3ccb79b4dbd60024f731bb1d07c80d8bc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/OP-03.json": {
+    "sha256": "8722409f67ab6a9a2f27d5ab785962b8a23a38fde4cf256ca24c3489b0f7d30c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/OP-04.json": {
+    "sha256": "bec3cc32c053fab8ba63466e69bfc654fc5d240d10bf4dbf1450be9d36dd1486",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-10394.json": {
+    "sha256": "3864d1f282107267ec5934e3aecac4fb18ec9b8a0809a3b19eaef2142202fa50",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-10398.json": {
+    "sha256": "0322e73e24d7d53578e91af51b6c106e9e662671e01eb6f4de11722de26227a2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-10420.json": {
+    "sha256": "8f46f72b02aaada77708649060155ef108bd3ff3ec7ce01919bea0d43b1ebaff",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-1071.json": {
+    "sha256": "1eabceb2a51b7a84806fd1ff127f8e95f6b888934459bcc218e80be6d0457c15",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-10771.json": {
+    "sha256": "7e7b868db3bef6cf11f804ebda3f8109ba4643dc9bfa782b72e9e8e5862cc5f4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-155.json": {
+    "sha256": "2112cde8413f0ab0305b6dd60943baf69a5b85cdab5661f5886f4cb6896624dd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15504.json": {
+    "sha256": "84b879fe600bc04ff0682640526ea572ce57d346d59b7ce51a34dc34a3141534",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15506.json": {
+    "sha256": "d514bf4274ebb3711c2a44812068ad15c7f7c8fe4ae1e02bfabb7321d618195e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15508.json": {
+    "sha256": "75649199b2c9e31c1204885acbc47a4ebdf74c51b8ff2f19c34111e74b4e127f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15510.json": {
+    "sha256": "cd811eed375db20ce7fc01c90e1a99eb0c007fa0b67b2c879e2b3713eba5d19b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15511.json": {
+    "sha256": "449a4aae1c41a9812267cc0c2bc59d2bb80fccbda345eee5eb8dabd897e179f3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15512.json": {
+    "sha256": "916bd5572140ed0c17adf0f98a80bd69c73d7126af043d6363bbe01dc53694ac",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15515.json": {
+    "sha256": "cde56b42ca49778638c7453d69b51c53f425221aedbd6823d408d17ad237716b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15566.json": {
+    "sha256": "0f63d7f8e6249b8ce590f6dc0e39d7a16768fe3ce858ad5d1a0e42f0c1030bb4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15723.json": {
+    "sha256": "6137ce221ab5900dc0537c2ca790864ef748cb5ab7a4c38c268a1f7badf89015",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15779.json": {
+    "sha256": "47168b52d3d2e326bb3616594e708200a7f45a8408e6fdc8b9ded8d6e7240503",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-15780.json": {
+    "sha256": "6619ce6c728f6a68382cdd830deed03697bdad0a9b3c062be798177678e9ea65",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-164.json": {
+    "sha256": "1ca41748f893a03329877b680b6b001af057e69c0ec6148e7263f2ef9371c12c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-182.json": {
+    "sha256": "91673ca907c6a77821589b817c740e1d1208a8a6a48cd843f55fb7678e59f77f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-1892.json": {
+    "sha256": "bd88b81651506e9d6e28be3be008483afa171f8dd6c83f499059ce9dc73ea66b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-200.json": {
+    "sha256": "11232a30989ca11af6172917418a81d1cb6a0336b78a0163ed3d1c652abf344e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-216.json": {
+    "sha256": "234c2161a499d42eb9ace0c4f517d04405ef6d6d6dc61b3a861c24248762df81",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-2337.json": {
+    "sha256": "38b201f4fe890ea7f108eca5e60bab2fd8a2a88b972360137238043e0f7005d8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-3845.json": {
+    "sha256": "c792f59e5b7dec64e1767b252da2639552cd6189a1229b3c8ff6a2fcee1ce6fc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-3854.json": {
+    "sha256": "cd13d3f024c330686aa54dd56aae655cab044edb21ce1366fece5d6c3b94f308",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-472.json": {
+    "sha256": "56747522fa40fbc581a177f34909fdcd6940b145ec7b00ca01ffc61a8a8a28f2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-503.json": {
+    "sha256": "76e0c888ff20f27bc58c687ce614b4dc621036d7b29b395fec780033b23d3862",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-5631.json": {
+    "sha256": "cac4691e4c3decb2253580b1827270fd95c9c83b4e19a2dd76b43bcc72f90e9c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-7099.json": {
+    "sha256": "c132e3e54336a2956aa00bcdc4dab1ae16a1fd192ed0006e67bcb8956e1d5bd3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-738.json": {
+    "sha256": "d65030c7af8399d441e350644c0daff828a99b7d8458c4ef4f485ec6bf27de1f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-89.json": {
+    "sha256": "d301c4c8dc1e0ff6f85acbe8ee1f50ee90837cde4bd00a565d84221559eaacc5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-9156.json": {
+    "sha256": "2bc789dda1f29579929fd367b2b3e11c10f5ae76ec3f11105154a2d807d5f7fb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-full/cases/VT-937.json": {
+    "sha256": "6efc75b03f465bd46e69ce2ed8dab0b722fe8aad5c01711565a1300e5eee4d72",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/FP-05.json": {
+    "sha256": "3cd09f4393a835b1c4bfc06f86400a6f0aafa3dc65992b8d07d7407ae9117dcb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/FP-11.json": {
+    "sha256": "1523982d4e6ff2b7ca6ea2bd8550462e94b852921971dac270954d66616b39cd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/FP-13.json": {
+    "sha256": "03ffaebf6b0644d67a346a25e463840e8d9ac53cb40ae219226c7a4d3e7f0584",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/FP-14.json": {
+    "sha256": "cbe41e434f298636ba0f6b76381ea540040f3ffa4324af7266a43ca877a88a8c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/FP-15.json": {
+    "sha256": "722f51e6fabb42c8be78be9a1e98e8b9cfb67ed362a2e57530948c6f7f01d170",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/FP-16.json": {
+    "sha256": "90d3c5ebc54144b2bd9dbd8b587221574953890165d1b6008586ef52a2ae3a83",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-fixes-verified-scenarios/cases/OP-03.json": {
+    "sha256": "1054d3211541d25286f3f20fd23cef610f3747932df4bb8fdc4a981f894408b4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/AUTH-01.json": {
+    "sha256": "a886fdc459439de79bf1f0efbaaaf1cda95fc6a893640af0d5c9e7fa0bbc0eed",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/AUTH-02.json": {
+    "sha256": "cbdf7112f9a1a8bb30fa279ff786f1254e4383ec379e2f988c32c698e02cddad",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/AUTH-03.json": {
+    "sha256": "d7aeb20e37190bd79ed3cf086e29e7fe5466edecf9cf6d5e96eacda9dc80b6b2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/AUTH-04.json": {
+    "sha256": "9a14719186252b1b13c28ff8ec117a6dabcfda5ee85dd3c6ad7cbbc1d4c83c1c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CONFLICT-01.json": {
+    "sha256": "a0d216be8522b23c6dda7a8ba14f54b49362021739e00093f28531317c45e8e9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CONFLICT-02.json": {
+    "sha256": "502ce3dc75d4bad30adddc0febeeee5509e818a319ab04e6cef19a044c4a681c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-01.json": {
+    "sha256": "49dae47ef6de39b3956130541165a4e9ec6686684fcb2a3d4b05a52b556a2bcc",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-02.json": {
+    "sha256": "29fd5f32627e9748336c39dcb12cd980e33cbb464120acef5f76579c662b105c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-03.json": {
+    "sha256": "d241f5e35e057cd6165a4da8666019ec4c11d909369297be2a63226f4f7e2817",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-04.json": {
+    "sha256": "dd959a2552c6d6a5f5e22f2fa750a24347d50775d5069e277799e6291d1fceac",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-05.json": {
+    "sha256": "4f15aa330adc5c734a33304c4ca91cd01783d7fc91662b163fdd9d4c06cc8ab8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-06.json": {
+    "sha256": "27e174a3ed7c6825c3548c7272f34f14e9e22938bafb8617f6f4179f71eacb0a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-07.json": {
+    "sha256": "5a85fa6db8af2c4138326e2fae52a67b3ffb864431bd3b542cc6948d43acd6b0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-08.json": {
+    "sha256": "b8e2fbc6ef41bd70be3eeeecd4169f4c2fa2b9cd8cb478071926568273aa3648",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/CTX-09.json": {
+    "sha256": "b5af2fa0a7fa64fca9c9b51f706a095cabe25c3d5c02a31a7582916b74dbe336",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-01.json": {
+    "sha256": "6c9dc0f26980de16df152292e877ac956a63b6ca93275653a7dcbb59cada4fbb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-02.json": {
+    "sha256": "f7965c46381d82161b7b5cf40b38056952c56d3642f2bc879f01de70d3aba821",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-03.json": {
+    "sha256": "64079b7e5ba89254e5a265b8d473e47cca5052a1001e25f39e5a1c2eb78fddd4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-04.json": {
+    "sha256": "615d729e15298140f7021caddd8f17c20c8b6ca57d79e4dbd27075752efcf54e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-05.json": {
+    "sha256": "690482554c71b39c2e18862f288eece1f260e5ce5bf476c280571b5c463340d6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-06.json": {
+    "sha256": "607173002db46f336a3961b7fbec02a5b51ea9ffe1bf9d756ae4f0de5b3b5857",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-07.json": {
+    "sha256": "b9098d2b27d77da69b0a323e87a659d99020d8167ff099746c1799bbe4c4f9fd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-08.json": {
+    "sha256": "ec6b328bbc379b5ce60f4c592b1c528c7afbbf6d350175e4b74be9d30d77d235",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-09.json": {
+    "sha256": "28a5b20ece7c7290177a92824fe2143737c1b82d7445c8b0d036bf630ee45767",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-10.json": {
+    "sha256": "f56107855ddcad8ab42e9b178a11e4d63e584cb7119b131f472db58b4d027f8c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-11.json": {
+    "sha256": "dd2e272399c4cbd40e2eff5e5eb6b1360d9c93aac05b774aa1c25db49d8dce82",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-12.json": {
+    "sha256": "ee57a18df3fc39b113289bc748330563f2b8c5a1ca43da6ee7268e68887f1768",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-13.json": {
+    "sha256": "c58d2b6e465db729d875ceb4c7c3f7a3a9cbc65b06492233453c3cbe83e75345",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-14.json": {
+    "sha256": "247eb91c476b5d2afec5259240941fc6c776e29c3ee76f1a4e1ba02aec815462",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-15.json": {
+    "sha256": "6791785bf719e7ca4996f4e7efbf5c9d500c718db367713784eb63bd69fd1091",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/FP-16.json": {
+    "sha256": "ce8c9f158f2d3066e8da6fb95f7d681a2accfa41bcef0c1c32f0a7253f09893e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-01.json": {
+    "sha256": "552543b47dfca1a7df01b64a9a9d15a5485fa95e9b48a2b64cf0f49b3cdb2969",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-02.json": {
+    "sha256": "58f0b9567052b2372657113b0e40e9d0fb3e2ebb79252a83139962e040d84242",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-03.json": {
+    "sha256": "8cc6fd6401f0d8bb23919ace16de9e31c07ada25dafc1a180c164a5f5d2fd495",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-04.json": {
+    "sha256": "dd7e5760b4e860fc799d896a3510f06ce7e0dc50cfb7b389891dac51e026ad47",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-05.json": {
+    "sha256": "7a7f48798ad09895d5408df3c8b54cd2ca8f320d8b8124f4d81281366a3e8e4d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-06.json": {
+    "sha256": "66b28f7d564dadc14a40d2115f9aaabf659ba7f42eeb7ea7f54bcf632c2f45d6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-07.json": {
+    "sha256": "60b54f77ae1321395d22069a7e1b33d13c6962465210bb08235fcd9cde5781ff",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/NEG-08.json": {
+    "sha256": "13160736650de88b0ac28dff0f0fcc57f16591e19335e84f6179cfe9310c52ed",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/OP-01.json": {
+    "sha256": "8fa08bd1a1b6ff2bfa1d17a5d6c675588f42ed4aa83cf183175f32a9e0a397d8",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/OP-02.json": {
+    "sha256": "ede757af3d429d49e7984281f9b81ab539a525cc86ecffab16cc5e6cb0010be6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/OP-03.json": {
+    "sha256": "551ae6e302ca7010641d8cda2ad831651d0854c6cca4c37fe90b1f51a93f0577",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/OP-04.json": {
+    "sha256": "ca379b9ca67e1aaf35ebc4bd9d4cd47afaa4014fee2835e6e3dd1bfd1bd6dba2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-10394.json": {
+    "sha256": "a039e9d210b860cff6c3de76fb9660240310dcb7dc59ce13f71e013f59e521f3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-10398.json": {
+    "sha256": "5b720d1ab21512edaf20a3c65b7759e0337d5e858f8e190c2351e8b34f6db9df",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-10420.json": {
+    "sha256": "564c7800fcf827e34f5a30f1a90341c83fd67a4e914d353225c3abbdcc0fb89a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-1071.json": {
+    "sha256": "a8d2fcd0f6a203c94cb1086084f9df050559521b0592975f50a49f3163777093",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-10771.json": {
+    "sha256": "80f10b6d6cc8e452212bbe8df0834bfad051c0c53ac88333dd2e749ae3b15189",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-155.json": {
+    "sha256": "4c1e87c99815d4780c8cb65348bff29068e25544550dec3f38541ca5824a5ce7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15504.json": {
+    "sha256": "0932538ca79efe77e49cd1e19a92d12293a7eebd3cb597ece4e05c3a826a343a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15506.json": {
+    "sha256": "175b3e4ef09dbb58d1ffc327a6ede607f9357ecc45c0a4cfea5a83d6dac61a55",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15508.json": {
+    "sha256": "46bfb65d8c28b9c288c65ef0c314feed516060d13b590c8c1b661737a16444bb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15510.json": {
+    "sha256": "7666e8ce0ec794510f173bc3a751f2ce570c992c7d5c66496d3acb33b03eccb1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15511.json": {
+    "sha256": "ac42b6af14d29e68f2cc898f9ba7f03f92df2b2d49c654f2f3a0200bb2cce652",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15512.json": {
+    "sha256": "299a587c3ef66cb006fe9ff5985db1f2c283afb1e745294c4155b10ab3955364",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15515.json": {
+    "sha256": "be9f6d7388b4e782c07c788577a915f31a92c1b00e7a1202bbc7fe9c4edb205e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15566.json": {
+    "sha256": "0938f9d8422b56a709856ca665aa3449b74c6251f6e4a17d1875693ed5a7b52f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15723.json": {
+    "sha256": "fa1d64872b63a1915cf59f4809972ecd891396ec68d537b190a5d992d40fefc7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15779.json": {
+    "sha256": "4ff2fff269065eaf272eb96169d9575e062e317e7e90e75f8a7118000f18fab4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-15780.json": {
+    "sha256": "69ace89cdddd1d017d0c56971981b6855ff8a5902351d73b371e324f96005042",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-164.json": {
+    "sha256": "fdcd765cbf1ff5277fe60139eae854768e0982d83e69e93102d6d8e74bdfc0f1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-182.json": {
+    "sha256": "cafc0189991222aa1f82a353055f8d4fe4406633fc52561a712219b7517f4476",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-1892.json": {
+    "sha256": "35b09761935e740f0dab664f541ff59d830535bc9786dcdba5ef1ad590b7c24e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-200.json": {
+    "sha256": "f2cabf055b124ede58e8fc5460d2babe5262f57b2c2311e898c0e74da749f1aa",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-216.json": {
+    "sha256": "95508d77261d3d58490a2e8648db5eb460ca6a091e73b3753fe97402e5f5cca4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-2337.json": {
+    "sha256": "8f4cc8faae376da571c10639caa534bbddabb52805d2f25ca5fcfa023d54de60",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-3845.json": {
+    "sha256": "5b457515059f1bf972c413fe9fddd33d28068ea7635339df9c8bb13a64a33fc9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-3854.json": {
+    "sha256": "378d8b4591f9c54b6e352c3f5009f4ddbaea715e0605bd734b35ac4f33d3c632",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-472.json": {
+    "sha256": "b8406255061123bb97263645a435cb2360bb13eadfd7801b38d3edf2238111d5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-503.json": {
+    "sha256": "7a1776f988294d799fada772664ca90d2289f2d6b0915f8c8b6a7cd3bca31ee6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-5631.json": {
+    "sha256": "8d05fa1c9b689a90a009cad12b7a85537f086a9935670735425ffd424e3e5ec4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-7099.json": {
+    "sha256": "534e0082451d95428a28ae0fe8c6b741dc655e4437809e8ae99f7ab6ddf4f085",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-738.json": {
+    "sha256": "0001be92202a301e4b664cf0a03aa5ea45c18f7f955447ff55231abc6fd16b7e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-89.json": {
+    "sha256": "bac5c46f6dc6df0074281b87b253eb7962dfec724fb91dd873807aa0da214660",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-9156.json": {
+    "sha256": "4bc730b1b20de0e13cdf3b11d43740ee5c3c47a8b7c12e6a142791f8cfc648d6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-full/cases/VT-937.json": {
+    "sha256": "f3e1e5143467ad945d77f867c37e8aae4676b0577a65dc3ee37cdb562294f9e6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/AUTH-02.json": {
+    "sha256": "0c614f2c19ac83d3c83cf0653880830edfb0aa3e6a5be05c4254ab80a65d14a1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/CTX-01.json": {
+    "sha256": "6b1fca67d1dcfe8cc87ef1b8c18ad8af5ad1c82d8ad314985c7d48608976485c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/CTX-08.json": {
+    "sha256": "b7cd5ba8a3a973d4b9592be72c111d4307710e921dc7815885fa7e3a95286d9b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/FP-02.json": {
+    "sha256": "f5a905838d23034318a567af315b6d17ffec210b4b61c1ee66a10afed094c0b9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/FP-07.json": {
+    "sha256": "026a5112a01c1e331b7ef4f9f36634d0b1654519a29d1bb6c5a93b9ba579782e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/NEG-06.json": {
+    "sha256": "4e0ab82570d4079e12b499ddf133ad4ea20a103309a475bf0034d8b0e2611de1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/VT-3854.json": {
+    "sha256": "664870b420b55242be5b6de8279da6a71e3fc59668142d643a1484171943f214",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-sample/cases/VT-89.json": {
+    "sha256": "dfbca9d4e9517705cfff48a58fa0c9634d4380ac2168fa5dadcdee2d3214bbf3",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/cases/FP-04.json": {
+    "sha256": "cf40bcd7b39966027a47ed43b1e1509cc13e4afb4f3ce1d9d14806d1c434d785",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/cases/FP-07.json": {
+    "sha256": "f689caae73058706cc23614881f3cd6e0663a0036f26444d9c6c5b0a025bd0b4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-boundaries/cases/FP-12.json": {
+    "sha256": "6e3b0d9e4b55280d1fa5e7df39ad953a13dc1d80c14e80e2701e9ecae6b4169f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/AUTH-01.json": {
+    "sha256": "c8a30b98da39df77ad4de89509fbb0bdaf146c0f90d4690fe5f4eb9697799bb4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/AUTH-02.json": {
+    "sha256": "54c6c115015bcddee2a58395775c364e57e69da97f9c0afa9ad823dce4551dfe",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/AUTH-03.json": {
+    "sha256": "7937610cb46bee9e38ac507533b8104caa92b97abfe54cba823d357e54edbaf9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/AUTH-04.json": {
+    "sha256": "d9226166afc13077617e4ff5f04dad719f16c13a032c0d8ca8b61896c1f2b80e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CONFLICT-01.json": {
+    "sha256": "2d31ab2227fdad7c50c53c833ddb1e766ed7537eb754c544eefb286f43fc22e1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CONFLICT-02.json": {
+    "sha256": "bd0fe30a5f936f6f02a9ba5715a00c40444490cac55ab939ad446ac160ba50ec",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-01.json": {
+    "sha256": "f85619672eed1c8bb179fc856bfe85605719efae33bcc6983f50ec86ffe96745",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-02.json": {
+    "sha256": "aefcbc2d69acbf8e81466a77844e13bb6b4dafa8b196ba8b1980f93e8a15585e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-03.json": {
+    "sha256": "7666ff12add305a59517f22c47f5900e78292ca1fe4eb3277e31369ae0fa3452",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-04.json": {
+    "sha256": "76a364ead51fa7d43bd112325ddb0e075cec910e02a8e8dd905f9d71c2e5ef86",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-05.json": {
+    "sha256": "ec722d0821c14fa347a669513f9b6a775344f6ce51ef525a22cc537d881a737e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-06.json": {
+    "sha256": "0a2b258773cc020291123b0c31ce57c9d9fbbe260a0d1c009cf9671eddf78886",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-07.json": {
+    "sha256": "cd5a10df4087845767b7ec29825aaaf34b1c545686cf34b49d3a40dc8c4b23bd",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-08.json": {
+    "sha256": "33c488b89142b9f7158a2eca44930cab4d7c715f8a7d9b4cecaa71de1c55697e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/CTX-09.json": {
+    "sha256": "14c617296c404d57946d093dd8d2ea9a552eb3223fc646afc1fb7aa737aa1222",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-01.json": {
+    "sha256": "a127b4998d790e1f2b506a7ed88633ab9b32bfd588092c383c833b9d53a046d1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-02.json": {
+    "sha256": "ff9eb194c0623cd75aaaaead0d9d12cd575297051a090a8a76a0f0be5f2aa322",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-03.json": {
+    "sha256": "0be7a0663ac1461f37d09f1383578d713656f1936f86801ec6b8e069b9d8b5a5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-04.json": {
+    "sha256": "d5c53697022dffa68c4fbe11dd26410112bf774afc74f1ab47d8659909b6df99",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-05.json": {
+    "sha256": "881f579fb7aed0d54f06fbfd0edca74a1fe52c47bd66519aeedfcbf46a2cec47",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-06.json": {
+    "sha256": "7f115e6ecdba82e513c7f3be0782a7ad989f58f5f7d251a6a02fd4e4ff075b35",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-07.json": {
+    "sha256": "dae9b3db47d04d3cffd5595bff05c1cb7e8f84cec40e2dcd9e0d5972370afe1d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-08.json": {
+    "sha256": "e35134e398e889bb24c95d8fb2bd53adb8bc33d596502de55af44b39e3152ab4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-09.json": {
+    "sha256": "87cb0e07c15b50c747af1d0d2f5fe96d99a165efbf0a4977f232b12a54d05058",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-10.json": {
+    "sha256": "6300368f0c2bb4376da3e52de590dbd3143c05934c9396d3f07a0cf15bd44f82",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-11.json": {
+    "sha256": "2f70eeac607b9ee5c14f0ba23e0c8d7bf636aef479ec41e7bec99a2b258ac135",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-12.json": {
+    "sha256": "230fc2ee2738c751ca233936b15d364ee5db49ec81f648c2d15a07b9b85e83df",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-13.json": {
+    "sha256": "6536bfc6462723e7ff7f86816572d8924e57292ba9e58771374b4cc6eb268b67",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-14.json": {
+    "sha256": "78e5cebad38a8f2bfcf50fb7e3095a9abd6345341a720d11ae18bdf688dc3481",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-15.json": {
+    "sha256": "76f9127bc08a839545d1ad6939ed0417bfffcce9350eec6d290d8d13b8bc4ae1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/FP-16.json": {
+    "sha256": "3caf27d946403af409b101f99b1ec7297b0cb111b11a0559aecdfce78f1fe557",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-01.json": {
+    "sha256": "f738f2f600a7ae20172de384f454d3812e8a6b5edb84ffe733e46a96a9097c46",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-02.json": {
+    "sha256": "c783b2f8f12d7fd2dfe2361f56aa157dcfb735617f05611cc12164cef1e3e27c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-03.json": {
+    "sha256": "3b2475620e10e44b4e7fb5b74ee6352bb45affa311105b775ff679dc4ab562fa",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-04.json": {
+    "sha256": "f6a110cadbe681d1a956679749576760a00c29d99562b3e49f2746170361a946",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-05.json": {
+    "sha256": "bb985a6713c6c35c3c55dafd014e6faa3f8319597a9e84a1c14bc99e4ce87518",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-06.json": {
+    "sha256": "57aebe2b3510f26e8799d84a4eed2caf0e355d68253a0339bac23e2d52991100",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-07.json": {
+    "sha256": "22556f4e6b0e9dba54f3c4e012fb2defc260fb403691981322bb48a27b120a79",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/NEG-08.json": {
+    "sha256": "e3119ce4ea402690395ff2a3fb1f8b163b3bdf1908b65a7bbfdd999c8adf6d8c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/OP-01.json": {
+    "sha256": "1e57b7f553251d222f4cfa638106ad6281e1589b9b9bd7a2f601c2667f80cb4d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/OP-02.json": {
+    "sha256": "cd1919dd1265c241138ad418eb4f3d9e31ffb50fb38ef5316823926645c19759",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/OP-03.json": {
+    "sha256": "40881638620dd54aff97022786a8f94d65e7cb3fe38c2b9355482d7dd3a3166d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/OP-04.json": {
+    "sha256": "78ab7abb8e7d8b1187b894a2fbc388fd30ee39f6126e2ac732c6dec2ac88bc93",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-10394.json": {
+    "sha256": "0622fae546a3a3c5bd259b3b7993f6fd5a5f1f439d986f8b6468a517923a241e",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-10398.json": {
+    "sha256": "e889ba6843e033be836d485bfd112aecd3830ae3ccc3413a37d5f351823c0452",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-10420.json": {
+    "sha256": "be709be79cb7abdc7b9dfd61a6cc112b42d765df8215459c83c6b29f39cdf575",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-1071.json": {
+    "sha256": "bba787676b384905087b3a5bbc7579fbadd74f99421011e3779d9248b6d508e0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-10771.json": {
+    "sha256": "29f6ef980d815d4a0e4cdeddb173f255f0374f64976291005371a39f10764f2f",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-155.json": {
+    "sha256": "e415b4b075a05437a9ef73250916c619182895532a13c06ccf7566919786c1b4",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15504.json": {
+    "sha256": "840d7a3e6178f05d7a68a464b98649c8c3033e686e57691179dc971a6d15e6f0",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15506.json": {
+    "sha256": "1cf8d91e1def4b720d7b8bf6c4062d12e449264509fb31e9f2829d72c8fc3cd7",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15508.json": {
+    "sha256": "dac75bd7acea3d384558772d53b4b4717e6b86bcc1ff2322ed8c0bc7ee5fd001",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15510.json": {
+    "sha256": "0978722159cff8910b2cf665ff286e709282738b9f164106fa6a8995609cd1ce",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15511.json": {
+    "sha256": "e33ddb839a30221a50f0f2fa3c3f2c7ef0595ecd0fc1fd27e7baaf293c49e5fa",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15512.json": {
+    "sha256": "45116c85e5e17be134ff5413bad15afd47d2c41d1806cf337764189757394376",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15515.json": {
+    "sha256": "5a505931edf51f955d2b8b08d47536bfa2568a12c721fd9bcc0660bfe3f676e6",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15566.json": {
+    "sha256": "ab57366bb70e7567a4b23e650d7adef25530543ca03000786ffacca8bf49c66c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15723.json": {
+    "sha256": "740bb174531ec9f8ecfdbe5d728435d3b20c517b20268a2f2047a641e4fb4d7b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15779.json": {
+    "sha256": "b4e7e6b2d1c0e73ec65a4b5c12ea03d15c2a3197b5dd053118a2bf7cf765e756",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-15780.json": {
+    "sha256": "1154c502249d1204a5e8a7366bd941754570fcf1039cf4f776fc0a191f483617",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-164.json": {
+    "sha256": "01639f7f68edc859c8cc58890fa224795f6b71902e119541161b18770c6232ee",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-182.json": {
+    "sha256": "1b7d5d012650e56cc0a9ecc6da67555f2e10eeb58f31259ab30fc440f10a9cc5",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-1892.json": {
+    "sha256": "16ba515a0d2480d5c52a02905a2cfe469d8859471270eaa3cf5eec0fb39fa643",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-200.json": {
+    "sha256": "74592e41651ee2788e01c0bdc489f535a6133fb181a540a11ac0d4542ad152c9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-216.json": {
+    "sha256": "2746945f99983f6b4e5ef7d00f04801953fb4c0cb9d2fc6b0b650c512835d743",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-2337.json": {
+    "sha256": "4de3bacc7cc45a95df0781f34d273876edef663242d72cbd4e7f928b243b3e60",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-3845.json": {
+    "sha256": "7f78239afdacbd9a7e12d6213c3a057db078eb4289affa87fed6f838b07a31be",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-3854.json": {
+    "sha256": "14e3656b80b61fc9a02881fc2a9a21fcfe4f20feaa65c354cff427649a93ef36",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-472.json": {
+    "sha256": "3344f053764cff52529c21ce1ea6cfdb22c802b7776aec8c12164ca6dbc9ae52",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-503.json": {
+    "sha256": "b1c7031187599e3187afb151a3d13029799c8850ff4b20b6b1705a632541dc9a",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-5631.json": {
+    "sha256": "a6afc336670b3062224a97de8ed6b97f34b3c333b656e631ddeafbf65483b571",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-7099.json": {
+    "sha256": "059a40121089429d156858b1131e81b0969b48c6ff49ab869d618f083a1e4cd2",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-738.json": {
+    "sha256": "478cd8641e9ca4b6abbc87cb0f82c3b6f47ac859495a502f6b9c1a3da3afb8c9",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-89.json": {
+    "sha256": "c6ba098008be7ec57d75f19bbb71173882b12b623df163401bd48eb38633e533",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-9156.json": {
+    "sha256": "aab207a836a86ea186c5def5df50842a6451cf530a0c62db5d46e3158c863bd1",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-full/cases/VT-937.json": {
+    "sha256": "6bff71c7fedda527e734e0d3e90df0c3d80f5c2d9dd193d8c375e5acbe63db3d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-05.json": {
+    "sha256": "368a4c66a838955d47d5564f93b4045be811aa050dc21ed20a8bb5e400321a8c",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-11.json": {
+    "sha256": "bb121e68d4de1e43139d21a7f6e1d77fe68a2befebe70b537a82d30654198c5b",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-13.json": {
+    "sha256": "a6cfa0f26a327630cf86900b3ec29dc7986a5202d927a72418b8545d8f584e94",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-14.json": {
+    "sha256": "d0d5c29562b6b49b0a4a6b06ebed46fbcb8331d2d4579f64643b2f4aef0b3acb",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-15.json": {
+    "sha256": "a4e9b397c7672713a1cc97a472648fafbfbc5d3c4fbc2cb7553e00c23bfb625d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/FP-16.json": {
+    "sha256": "3b9bf6ca159fec56838e03c878a1d1622116440428a89663292cfcdde6c8f17d",
+    "unchanged": true
+  },
+  "docs/rag-quality/runs/sprint2-stabilization-v2-inputs/cases/OP-03.json": {
+    "sha256": "c1004557fe22aa59ddd9796b15043dbcce803139e6798e960c9df8a9acb08219",
+    "unchanged": true
+  },
+  "docs/rag-quality/contracts/2.0.0/contract.json": {
+    "sha256": "56a7d6d09338bfb720b2eac683912c2d3b1e6aa33b6e6bad4f5fca5ff69f7acb",
+    "unchanged": true
+  },
+  "docs/rag-quality/contracts/2.0.0/manifest.json": {
+    "sha256": "3780d8437700cf9e76f1e61cf1277e7287a635127b40a89037855fe70811502b",
+    "unchanged": true
+  },
+  "docs/rag-quality/contracts/2.0.0/README.md": {
+    "sha256": "47e74867b517272300d5e088ab78d94a3f0dd05caff1fc4db5358a6e6b805513",
+    "unchanged": true
+  },
+  "docs/rag-quality/contracts/2.0.0/scenario-inputs.json": {
+    "sha256": "16f3dd8dcbe747f5633e7e0bb5b3a48ffe23007ab59b5fd9d92ff74d28746f1f",
+    "unchanged": true
+  },
+  "docs/rag-quality/contracts/2.0.0/schema.json": {
+    "sha256": "2554c182e6e20e7b1041a1cc337120cc6040e92d6e2a9abcd3565bb0cca75dc8",
+    "unchanged": true
+  },
+  "docs/rag-quality/document_registry.json": {
+    "sha256": "5f68edd2eb5808b106c1d7d4667671d86bbcaa731ca799ea476d9779ed831ad6",
+    "unchanged": true
+  },
+  "docs/rag-quality/evidence_catalog.json": {
+    "sha256": "745c64dae08a09c17ff636838cca7e089abcb7809ea9bd9d606fed50d91d94f1",
+    "unchanged": true
+  },
+  "docs/rag-quality/conflicts.json": {
+    "sha256": "52e0b503475b1ff09c06155061b0d11c56a33efbf66702fd7e9b3039294a5f20",
+    "unchanged": true
+  },
+  "docs/rag-quality/conflicts.md": {
+    "sha256": "2a27f9e326dd8f3bb5401ec8592834e7e56074b008cd92662be2228c975695a3",
+    "unchanged": true
+  },
+  "docs/rag-quality/rag_eval_dataset.jsonl": {
+    "sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+    "unchanged": true
+  }
+}

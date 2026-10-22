@@ -2,6 +2,8 @@ import json
 import re
 import unicodedata
 
+from app.support.exact import cited_pairs, has_exact_fields, validate_exact
+
 NO_EVIDENCE = "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida."
 OUT_OF_SCOPE = "Ainda não tenho informações disponíveis sobre esse assunto."
 SYSTEM = """Você é o MilioAI, agente de RH Frequência. Responda em português brasileiro.
@@ -21,6 +23,8 @@ Antes de redigir, resolva qual condição documental se aplica ao cenário pergu
 Entregue somente a resposta final, em um único parágrafo curto com até três frases e referências junto das afirmações. Não exponha alternativas descartadas, rascunhos, autocorreções, análise ou conclusões repetidas. Não afirme uma orientação e sua negação. Se a fonte contiver conflito não resolvido, explicite a limitação em vez de escolher uma regra sem suporte.
 /no_think"""
 
+SYSTEM += """\nValores exatos pertencem ao backend: quando houver seleção de campos ou entidades, retorne somente os identificadores permitidos. Nunca reconstrua contatos ou destinos. Distingua Folha Ponto, Educacional e Vale-Transporte; não reutilize o contato de outro serviço. Preserve pode/deve/não pode/não deve/somente/exceto/depende. Seja objetivo e explicite dados ausentes sem suposição. Configurações operacionais só valem quando autorizadas para este ambiente; não estabeleça precedência entre canais conflitantes. /no_think"""
+
 
 def normalize(text):
     return "".join(
@@ -39,13 +43,32 @@ def requires_document_rule(question):
 
 
 def document_rules(chunks):
-    rules = []
+    from app.support.knowledge import atomic_rules
+
+    rules: list[dict] = []
     for index, chunk in enumerate(chunks, 1):
-        for part in re.split(r"(?<=[.!?])\s+", chunk["excerpt"]):
+        text = source_body(chunk)
+        # Contact channels and surrounding conditions are an atomic source unit.
+        parts = [text] if has_exact_fields(text) else re.split(r"(?<=[.!?])\s+", text)
+        for part in parts:
             text = " ".join(part.split()).strip()
             if len(re.findall(r"[A-Za-zÀ-ÿ]", text)) >= 15:
                 rules.append({"id": f"R{len(rules) + 1}", "reference": f"F{index}", "text": text})
+    for rule in atomic_rules(chunks):
+        if not any(
+            r["text"] == rule["text"] and r["reference"] == rule["reference"] for r in rules
+        ):
+            rules.append(dict(rule, id=f"R{len(rules) + 1}"))
     return rules
+
+
+def source_body(chunk):
+    """Section labels are metadata, not procedural instructions or exact values."""
+    text = " ".join(chunk["excerpt"].split())
+    section = " ".join((chunk.get("section") or "").split())
+    if section and text.startswith(section):
+        text = text[len(section) :].strip()
+    return text
 
 
 def render_document_rule(selected, rules):
@@ -131,6 +154,8 @@ def validate_references(answer: str, chunks: list[dict]):
         raise ValueError("Uncited paragraph " + ",".join(map(str, uncited)))
     if not ids:
         raise ValueError("Missing reference")
+    for claim, cited in cited_pairs(answer, chunks):
+        validate_exact(claim, " ".join(c["excerpt"] for c in cited))
     for paragraph in re.split(r"\n\s*\n", answer.strip()):
         refs = re.findall(r"\[fonte:([^\]]+)\]", paragraph)
         evidence_numbers = set(

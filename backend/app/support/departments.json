@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "version": "2026-10-22.1",
+  "approval_status": "pending_institutional",
+  "provenance": "Responsabilidades informadas pelo responsável em 2026-10-22; não constituem políticas de direitos ou elegibilidade",
+  "departments": [
+    {
+      "agent_id": "educational_agent",
+      "owner_domain": "education",
+      "team_name": "Educacional",
+      "responsibilities": [
+        "curso e capacitação",
+        "instrutores",
+        "ausências no curso",
+        "desconto por falta no curso",
+        "documentos escolares"
+      ],
+      "subjects": [
+        "curso e capacitação",
+        "instrutores",
+        "ausências no curso",
+        "desconto por falta no curso",
+        "documentos escolares"
+      ],
+      "contact_ids": [
+        "education"
+      ],
+      "source_inventory": [
+        "operational_guidance.json",
+        "institutional_contacts.json"
+      ],
+      "rules": [
+        "Identificação de instrutor exige fluxo existente e escopo education:contacts.",
+        "Registro de falta no dia de curso na Folha Ponto pertence à Frequência."
+      ],
+      "exceptions": [],
+      "conditions": [
+        "Exigir escopos, versão e aprovação de fonte.",
+        "Configuração pendente restrita a desenvolvimento."
+      ],
+      "approval_status": "pending_institutional",
+      "version": "2026-10-22.1",
+      "provenance": "Responsabilidades informadas pelo responsável em 2026-10-22; não constituem políticas de direitos ou elegibilidade",
+      "documentary_gaps": [
+        "Nenhum PDF classificado no domínio education foi encontrado no banco inspecionado.",
+        "Endereços, unidades e procedimento de contestação não documentados."
+      ]
+    },
+    {
+      "agent_id": "frequency_agent",
+      "owner_domain": "rh_frequency",
+      "team_name": "Frequência / RH Jovem",
+      "responsibilities": [
+        "Folha Ponto",
+        "ausências no trabalho",
+        "atestados, certidões e comprovantes do trabalho"
+      ],
+      "subjects": [
+        "Folha Ponto",
+        "ausências no trabalho",
+        "atestados, certidões e comprovantes do trabalho"
+      ],
+      "contact_ids": [
+        "rh_frequency"
+      ],
+      "source_inventory": [
+        "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+        "folha-ponto.pdf",
+        "operational_guidance.json",
+        "institutional_contacts.json"
+      ],
+      "rules": [
+        "Preservar condições de registro FP-07 e contato FP-13.",
+        "Não aprovar justificativas ou conceder direitos."
+      ],
+      "exceptions": [],
+      "conditions": [
+        "Exigir escopos, versão e aprovação de fonte.",
+        "Configuração pendente restrita a desenvolvimento."
+      ],
+      "approval_status": "pending_institutional",
+      "version": "2026-10-22.1",
+      "provenance": "Responsabilidades informadas pelo responsável em 2026-10-22; não constituem políticas de direitos ou elegibilidade",
+      "documentary_gaps": [
+        "Documentos específicos sobre óbito, gravidez e afastamentos não encontrados no inventário."
+      ]
+    },
+    {
+      "agent_id": "service_agent",
+      "owner_domain": "benefits",
+      "team_name": "Atendimento",
+      "responsibilities": [
+        "Vale-Transporte",
+        "Vale-Refeição e Alimentação",
+        "convênios e demais benefícios",
+        "descontos nos benefícios",
+        "segunda via de cartões"
+      ],
+      "subjects": [
+        "Vale-Transporte",
+        "Vale-Refeição e Alimentação",
+        "convênios e demais benefícios",
+        "descontos nos benefícios",
+        "segunda via de cartões"
+      ],
+      "contact_ids": [
+        "service"
+      ],
+      "source_inventory": [
+        "orientações segunda via cartões vt (1).pdf",
+        "institutional_contacts.json"
+      ],
+      "rules": [
+        "O RAG de segunda via utiliza domínio beneficios.vale_transporte.segunda_via e seleção exata por código.",
+        "Contatos de operadoras não são contatos do Atendimento."
+      ],
+      "exceptions": [],
+      "conditions": [
+        "Exigir escopos, versão e aprovação de fonte.",
+        "Configuração pendente restrita a desenvolvimento."
+      ],
+      "approval_status": "pending_institutional",
+      "version": "2026-10-22.1",
+      "provenance": "Responsabilidades informadas pelo responsável em 2026-10-22; não constituem políticas de direitos ou elegibilidade",
+      "documentary_gaps": [
+        "Não foram encontrados documentos de elegibilidade, convênios, VA, VR ou academia.",
+        "WhatsApp do Atendimento pendente de confirmação."
+      ]
+    }
+  ]
+}

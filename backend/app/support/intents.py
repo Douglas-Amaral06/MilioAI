@@ -30,18 +30,13 @@ def intent_topic(question):
 
 def plan(question):
     # Split only when a new explicit subject is present. Same-card cost follow-ups stay together.
-    pieces = re.split(
-        r"(?<=[?;])\s*|\s+e\s+(?=(?:como|qual|onde|quando|preciso|quero)\b)", question, flags=re.I
-    )
+    from app.support.routing import split_requests
+    pieces = split_requests(question)
     result = []
-    for piece in pieces:
-        if not piece.strip() or social_response(piece):
+    for topic, piece in pieces:
+        if social_response(piece):
             continue
-        topic = intent_topic(piece)
-        if result and (topic is None or topic == result[-1][0]):
-            result[-1] = (result[-1][0], result[-1][1] + " " + piece)
-        else:
-            result.append((topic, piece.strip()))
+        result.append((topic or intent_topic(piece), piece))
     # A compound subject without clear request boundaries needs clarification, never silent loss.
     for _, piece in result:
         text = normalize(piece)

@@ -1,0 +1,185 @@
+{
+  "contract": "3.0.0",
+  "cases": [
+    {
+      "id": "ADV-01",
+      "evidence": "Não assinar folha ponto em branco.",
+      "answer": "Você pode assinar folha ponto em branco, pois não há problema.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-02",
+      "evidence": "Enviar até o segundo dia útil.",
+      "answer": "Enviar até o terceiro dia útil.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-03",
+      "evidence": "Não assinar folha ponto em branco.",
+      "answer": "Você pode assinar folha ponto em branco.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-04",
+      "evidence": "Você pode enviar o documento em PDF.",
+      "answer": "Você deve enviar o documento em PDF.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-05",
+      "evidence": "Se houver autorização, envie o documento ao RH.",
+      "answer": "Envie o documento ao RH.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-06",
+      "evidence": "Em caso de falta no dia de curso, manter o registro CURSO para evitar desconto duplicado.",
+      "answer": "Quando faltar ao curso, substitua CURSO por FALTA.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-07",
+      "evidence": "Telefone 11 97080-6028.",
+      "answer": "Telefone 11 97080-6728.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-08",
+      "evidence": "Enviar até o segundo dia útil.",
+      "answer": "Enviar até o segundo dia corrido.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-09",
+      "evidence": "Envie o documento, exceto durante as férias.",
+      "answer": "Envie o documento sempre.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-10",
+      "evidence": "O jovem deve assinar o documento.",
+      "answer": "O jovem está dispensado de assinar o documento.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-11",
+      "evidence": "A taxa é R$ 23,60 e a outra taxa é R$ 47,20.",
+      "answer": "A taxa é R$ 23,20.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "ADV-12",
+      "evidence": "Prazo 3 dias úteis.",
+      "answer": "Prazo 3 dias corridos.",
+      "expected_supported": false,
+      "actual_supported": false,
+      "passed": true,
+      "model_calls": 0,
+      "duration_ms": 0,
+      "human_acceptance": null
+    },
+    {
+      "id": "citation-not-supporting",
+      "evidence": "Documento usado para apuração de frequência.",
+      "answer": "Entregue o documento amanhã.",
+      "expected_supported": false,
+      "actual_supported": true,
+      "passed": false,
+      "model_calls": 1,
+      "duration_ms": 3219,
+      "human_acceptance": null
+    },
+    {
+      "id": "positive-prohibition",
+      "evidence": "Não assinar folha ponto em branco.",
+      "answer": "Não assinar folha ponto em branco.",
+      "expected_supported": true,
+      "actual_supported": true,
+      "passed": true,
+      "model_calls": 1,
+      "duration_ms": 250,
+      "human_acceptance": null
+    },
+    {
+      "id": "positive-course",
+      "evidence": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+      "answer": "Caso haja falta no dia de curso, manter o preenchimento como CURSO, para que não ocorra o desconto duplicado da falta.",
+      "expected_supported": true,
+      "actual_supported": true,
+      "passed": true,
+      "model_calls": 1,
+      "duration_ms": 344,
+      "human_acceptance": null
+    },
+    {
+      "id": "positive-contacts",
+      "evidence": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+      "answer": "Em caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+      "expected_supported": true,
+      "actual_supported": true,
+      "passed": true,
+      "model_calls": 1,
+      "duration_ms": 234,
+      "human_acceptance": null
+    }
+  ],
+  "passed": 15,
+  "total": 16,
+  "model": "qwen3:4b-instruct",
+  "human_acceptance": null
+}

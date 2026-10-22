@@ -1,0 +1,44 @@
+{
+  "contract_version": "3.0.0",
+  "status": "technical_proposal_pending_human_acceptance",
+  "human_acceptance": null,
+  "parent_contract": {
+    "version": "2.0.0",
+    "sha256": "56a7d6d09338bfb720b2eac683912c2d3b1e6aa33b6e6bad4f5fca5ff69f7acb"
+  },
+  "scope": "Incremental institutional entities, exact values and semantic contradictions; no historical rescoring",
+  "checks": [
+    "explicit topic and instructor actions preserved",
+    "documentary assertions compared only with cited evidence",
+    "document version and content hash required for structured bindings",
+    "contact domain, purpose and existing scope required",
+    "wa.me URL derived from validated international digits",
+    "pending availability and validity surfaced in frontend",
+    "email with unverified technical form stays plain text",
+    "operational provenance remains separate from documentary evidence",
+    "exact values and units compared as complete entities",
+    "contradiction, missing conditions and uncertainty reject or fall back",
+    "outcome partial remains partial; no human approvals inferred"
+  ],
+  "technical_critical_pass": [
+    "HTTP 201",
+    "grounded documentary stage with real sources",
+    "outcome answered",
+    "expected documentary rule or exact contact and help-before-deadline",
+    "structured contacts persist after history reload"
+  ],
+  "operational_tail": "Existing instructor confirmation is evaluated as an operational action, separately from the validated documentary stage; final content is retained in full.",
+  "execution_limits": {
+    "max_seconds": 600,
+    "max_repeats": 3,
+    "default_repeats": 2,
+    "cases_per_default_run": 16,
+    "provider": "local Ollama"
+  },
+  "human_review": {
+    "existing_queue": "sprint2-stabilization/human-review",
+    "existing_cases": 26,
+    "approvals_modified": false,
+    "supplement": "institutional-v3/human-review-supplement.json"
+  }
+}

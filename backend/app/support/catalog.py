@@ -44,7 +44,7 @@ TOPICS = (
         "folha_ponto",
         "Folha Ponto",
         "rh_frequency",
-        "rh_frequency",
+        "frequency_agent",
         0,
         [
             ("prazo", "Qual é o prazo de entrega da folha ponto?"),
@@ -62,7 +62,7 @@ TOPICS = (
         "atestados",
         "Atestados",
         "rh_frequency",
-        "rh_frequency",
+        "frequency_agent",
         1,
         [
             ("justificar", "Como faço para justificar uma falta com atestado?"),
@@ -77,7 +77,7 @@ TOPICS = (
         "vale_transporte",
         "Benefício Vale-Transporte",
         "benefits",
-        None,
+        "service_agent",
         2,
         [
             ("credito", "Onde é pago ou creditado meu vale-transporte?"),
@@ -91,7 +91,7 @@ TOPICS = (
         "vale_refeicao_alimentacao",
         "Benefício Vale-Refeição / Alimentação",
         "benefits",
-        None,
+        "service_agent",
         3,
         [
             ("funcionamento", "Como funciona o benefício de refeição ou alimentação?"),
@@ -117,8 +117,8 @@ TOPICS = (
     topic(
         "falta_curso",
         "Falta no Curso",
-        "rh_frequency",
-        "rh_frequency",
+        "education",
+        "educational_agent",
         5,
         [
             ("registro", "Como registrar uma falta no dia de curso?"),
@@ -133,7 +133,7 @@ TOPICS = (
         "falta_trabalho",
         "Falta no Trabalho",
         "rh_frequency",
-        "rh_frequency",
+        "frequency_agent",
         6,
         [
             ("registro", "Como registro uma falta na folha ponto?"),
@@ -142,6 +142,7 @@ TOPICS = (
             ("atestado", "Onde envio meu atestado referente ao trabalho?"),
         ],
     ),
+    topic("beneficios", "Benefícios e Convênios", "benefits", "service_agent", 8, []),
     topic("outros", "Outros", "auto", None, 7, [("calendario", "Onde consulto meus dias de curso?"), ("ferias", "Onde vejo minhas férias no calendário?"), ("escolar", "Onde envio minha declaração escolar?")]),
 )
 

@@ -7,6 +7,7 @@ import s from "./Chat.module.css";
 import { TransportCards } from "./TransportCards";
 import { InstructorFlow } from "./InstructorFlow";
 import { MessageContent } from "./MessageContent";
+import { InstitutionalContacts } from "./InstitutionalContacts";
 import { SupportMenu } from "./SupportMenu";
 import type { SupportTopic, Attachment } from "../api/client";
 export function Chat({
@@ -116,7 +117,10 @@ export function Chat({
                   {m.role === "user" ? (
                     <p>{m.content}</p>
                   ) : (
-                    <MessageContent content={visibleMessageText(m.content)} />
+                    <>
+                      <MessageContent content={visibleMessageText(m.content)} />
+                      <InstitutionalContacts contacts={m.contacts} />
+                    </>
                   )}
                 </div>
                 {(m.status === "failed" || m.status === "cancelled") && (

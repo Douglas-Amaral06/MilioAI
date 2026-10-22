@@ -1,0 +1,387 @@
+{
+  "contract": "3.0.0",
+  "cases": [
+    {
+      "id": "continuity",
+      "turns": [
+        {
+          "input": {
+            "content": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+            "topic_id": "folha_ponto"
+          },
+          "http_status": 201,
+          "response": {
+            "id": "ac393ec4-2617-4802-8a59-d461dd378fde",
+            "role": "assistant",
+            "content": "Em caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.518417,
+                "status": "approved"
+              }
+            ],
+            "contacts": [
+              {
+                "contact_id": "rh_frequency",
+                "team": "RH Jovem — Frequência",
+                "domain": "folha_ponto",
+                "phone": "+55 11 97080-6028",
+                "phone_digits": "5511970806028",
+                "channel": "whatsapp",
+                "url": "https://wa.me/5511970806028",
+                "label": "WhatsApp da Frequência",
+                "email": "frequência.sp@renapsi.org.br",
+                "email_url": null,
+                "validation_status": "pending_institutional",
+                "availability_status": "not_verified",
+                "provenance": {
+                  "kind": "document",
+                  "file": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "section": "8. Dúvidas",
+                  "page": 2,
+                  "version": "folha-ponto-local-v1",
+                  "directory_version": "1.0.0",
+                  "directory_sha256": "2085d0037fa8c786fadcac544ae54fd9e2d3ce31f12dd3cb1c6100e9a0904672",
+                  "institutionally_approved": false,
+                  "source_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                  "source_sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                  "knowledge_id": "kb-2739227d24855a20"
+                }
+              }
+            ],
+            "created_at": "2026-10-22T12:25:16.324550Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "duration_ms": 8266
+        },
+        {
+          "input": {
+            "content": "E quando devo procurar ajuda?"
+          },
+          "http_status": 201,
+          "response": {
+            "id": "611af27f-7ea3-4840-9772-5cc1e40cfeed",
+            "role": "assistant",
+            "content": "Em caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.535852,
+                "status": "approved"
+              }
+            ],
+            "contacts": [
+              {
+                "contact_id": "rh_frequency",
+                "team": "RH Jovem — Frequência",
+                "domain": "folha_ponto",
+                "phone": "+55 11 97080-6028",
+                "phone_digits": "5511970806028",
+                "channel": "whatsapp",
+                "url": "https://wa.me/5511970806028",
+                "label": "WhatsApp da Frequência",
+                "email": "frequência.sp@renapsi.org.br",
+                "email_url": null,
+                "validation_status": "pending_institutional",
+                "availability_status": "not_verified",
+                "provenance": {
+                  "kind": "document",
+                  "file": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "section": "8. Dúvidas",
+                  "page": 2,
+                  "version": "folha-ponto-local-v1",
+                  "directory_version": "1.0.0",
+                  "directory_sha256": "2085d0037fa8c786fadcac544ae54fd9e2d3ce31f12dd3cb1c6100e9a0904672",
+                  "institutionally_approved": false,
+                  "source_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                  "source_sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                  "knowledge_id": "kb-2739227d24855a20"
+                }
+              }
+            ],
+            "created_at": "2026-10-22T12:25:24.614950Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "duration_ms": 4297
+        }
+      ],
+      "human_acceptance": null
+    },
+    {
+      "id": "education",
+      "turns": [
+        {
+          "input": {
+            "content": "Faltei no curso e não sei quem é meu instrutor.",
+            "topic_id": "falta_curso"
+          },
+          "http_status": 201,
+          "response": {
+            "id": "2bc3db50-4a77-4f9d-8f3e-cc4d9f9bb8ea",
+            "role": "assistant",
+            "content": "Sem problema! Entre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: +55 11 99803-0631\nE-mail: educacional.sp@renapsi.org.br",
+            "status": "complete",
+            "sources": [],
+            "contacts": [
+              {
+                "contact_id": "education",
+                "team": "Time Educacional",
+                "domain": "falta_curso",
+                "phone": "+55 11 99803-0631",
+                "phone_digits": "5511998030631",
+                "channel": "whatsapp",
+                "url": "https://wa.me/5511998030631",
+                "label": "WhatsApp do Educacional",
+                "email": "educacional.sp@renapsi.org.br",
+                "email_url": "mailto:educacional.sp@renapsi.org.br",
+                "validation_status": "pending_institutional",
+                "availability_status": "not_verified",
+                "provenance": {
+                  "kind": "operational_configuration",
+                  "file": "operational_guidance.json",
+                  "section": "education",
+                  "page": null,
+                  "version": "2026-10-20",
+                  "directory_version": "1.0.0",
+                  "directory_sha256": "2085d0037fa8c786fadcac544ae54fd9e2d3ce31f12dd3cb1c6100e9a0904672",
+                  "institutionally_approved": false
+                }
+              }
+            ],
+            "created_at": "2026-10-22T12:25:28.932574Z",
+            "outcome": "operational",
+            "topic_id": "falta_curso",
+            "question_id": null
+          },
+          "duration_ms": 79
+        }
+      ],
+      "human_acceptance": null
+    },
+    {
+      "id": "multiple",
+      "turns": [
+        {
+          "input": {
+            "content": "Qual o contato para dúvidas sobre a folha ponto? E qual o WhatsApp do Educacional?"
+          },
+          "http_status": 201,
+          "response": {
+            "id": "fc1d1c99-d1ca-4bc7-bbe3-3292673ed1bd",
+            "role": "assistant",
+            "content": "**Folha Ponto**\n\nEm caso de dúvidas sobre preenchimento ou envio: ➡️ Entre em contato com o RH Jovem antes do prazo final. e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:6ce755fe-36cc-40e0-af9b-05d0a6a22732]\n\n**Falta no Curso**\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: +55 11 99803-0631\nE-mail: educacional.sp@renapsi.org.br",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.645467,
+                "status": "approved"
+              }
+            ],
+            "contacts": [
+              {
+                "contact_id": "rh_frequency",
+                "team": "RH Jovem — Frequência",
+                "domain": "folha_ponto",
+                "phone": "+55 11 97080-6028",
+                "phone_digits": "5511970806028",
+                "channel": "whatsapp",
+                "url": "https://wa.me/5511970806028",
+                "label": "WhatsApp da Frequência",
+                "email": "frequência.sp@renapsi.org.br",
+                "email_url": null,
+                "validation_status": "pending_institutional",
+                "availability_status": "not_verified",
+                "provenance": {
+                  "kind": "document",
+                  "file": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "section": "8. Dúvidas",
+                  "page": 2,
+                  "version": "folha-ponto-local-v1",
+                  "directory_version": "1.0.0",
+                  "directory_sha256": "2085d0037fa8c786fadcac544ae54fd9e2d3ce31f12dd3cb1c6100e9a0904672",
+                  "institutionally_approved": false,
+                  "source_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                  "source_sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                  "knowledge_id": "kb-2739227d24855a20"
+                }
+              },
+              {
+                "contact_id": "education",
+                "team": "Time Educacional",
+                "domain": "falta_curso",
+                "phone": "+55 11 99803-0631",
+                "phone_digits": "5511998030631",
+                "channel": "whatsapp",
+                "url": "https://wa.me/5511998030631",
+                "label": "WhatsApp do Educacional",
+                "email": "educacional.sp@renapsi.org.br",
+                "email_url": "mailto:educacional.sp@renapsi.org.br",
+                "validation_status": "pending_institutional",
+                "availability_status": "not_verified",
+                "provenance": {
+                  "kind": "operational_configuration",
+                  "file": "operational_guidance.json",
+                  "section": "education",
+                  "page": null,
+                  "version": "2026-10-20",
+                  "directory_version": "1.0.0",
+                  "directory_sha256": "2085d0037fa8c786fadcac544ae54fd9e2d3ce31f12dd3cb1c6100e9a0904672",
+                  "institutionally_approved": false
+                }
+              }
+            ],
+            "created_at": "2026-10-22T12:25:29.053260Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "duration_ms": 4641
+        }
+      ],
+      "human_acceptance": null
+    },
+    {
+      "id": "transport",
+      "turns": [
+        {
+          "input": {
+            "content": "Como solicito a segunda via do meu Bilhete Único SPTrans?"
+          },
+          "http_status": 201,
+          "response": {
+            "id": "fc0865c4-af8a-4f92-a13c-2664be6dbbc4",
+            "role": "assistant",
+            "content": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "contacts": [],
+            "created_at": "2026-10-22T12:25:33.762560Z",
+            "outcome": "answered",
+            "topic_id": "vale_transporte",
+            "question_id": null
+          },
+          "duration_ms": 4312
+        }
+      ],
+      "human_acceptance": null
+    },
+    {
+      "id": "channel-conflict",
+      "turns": [
+        {
+          "input": {
+            "content": "O PDF e o Conecta Jovem indicam canais diferentes de envio da folha ponto?",
+            "topic_id": "folha_ponto"
+          },
+          "http_status": 201,
+          "response": {
+            "id": "56fa03d1-68ba-421f-987f-64d26e2a205a",
+            "role": "assistant",
+            "content": "• Enviar conforme canal oficial informado pelo RH Jovem: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 • Preferencialmente em PDF ou foto legível [fonte:F1]\n\n**Ponto para revisão:** A configuração operacional local indica o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada; seu status de validação é pending. Confirme com o RH Jovem o canal vigente. Não foi estabelecida precedência entre a orientação operacional e o documento.",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.668397,
+                "status": "approved"
+              }
+            ],
+            "contacts": [],
+            "created_at": "2026-10-22T12:25:38.111236Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "duration_ms": 4953
+        }
+      ],
+      "human_acceptance": null
+    }
+  ],
+  "human_acceptance": null
+}

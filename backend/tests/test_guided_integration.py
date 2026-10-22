@@ -18,7 +18,7 @@ async def test_catalog_api_topic_persistence_and_validation(resources, monkeypat
     app, client, user, other = resources
     catalog = (await client.get("/api/v1/support/topics")).json()
     assert (
-        len(catalog) == 8
+        len(catalog) == 9
         and len(next(t for t in catalog if t["topic_id"] == "outros")["questions"]) == 3
     )
     cid = (await client.post("/api/v1/conversations", json={"title": "Guided"})).json()["id"]
@@ -37,7 +37,7 @@ async def test_catalog_api_topic_persistence_and_validation(resources, monkeypat
     ).status_code == 422
     assert (await client.get(f"/api/v1/conversations/{cid}/messages")).json() == []
 
-    async def no_evidence(*args):
+    async def no_evidence(*args, **kwargs):
         return []
 
     monkeypatch.setattr("app.orchestration.graph.retrieve", no_evidence)
@@ -66,7 +66,7 @@ async def test_catalog_api_topic_persistence_and_validation(resources, monkeypat
     result = (
         await client.post(f"/api/v1/conversations/{cid}/messages", json=other_question)
     ).json()
-    assert result["outcome"] == "out_of_scope" and result["sources"] == []
+    assert result["outcome"] == "no_evidence" and result["sources"] == []
     assert (
         await client.patch(f"/api/v1/conversations/{cid}/topic", json={"topic_id": "outros"})
     ).status_code == 200

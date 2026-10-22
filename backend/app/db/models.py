@@ -78,6 +78,7 @@ class Message(Base):
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
     sources: Mapped[list] = mapped_column(JSONB, default=list)
+    contacts: Mapped[list] = mapped_column(JSONB, default=list, server_default=text("'[]'::jsonb"))
     outcome: Mapped[str | None] = mapped_column(String(50))
 
 

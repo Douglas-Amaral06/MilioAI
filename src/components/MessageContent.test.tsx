@@ -8,7 +8,7 @@ describe("message formatting", () => {
     const html = renderToStaticMarkup(
       <MessageContent
         content={
-          "Olá **aprendiz**.\n\n- Primeiro\n- Segundo\n\n1. Assine\n2. Envie\n\n[Portal](https://example.com)"
+          "Olá **aprendiz**.\n\n- Primeiro\n- Segundo\n\n1. Assine\n2. Envie\n\n[Portal](https://conectajovem.dema.org.br)"
         }
       />,
     );

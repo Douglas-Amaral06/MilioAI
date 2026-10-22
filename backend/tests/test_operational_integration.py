@@ -61,7 +61,10 @@ async def test_persisted_instructor_flow_and_authorization(resources, monkeypatc
     assert "educacional.sp@renapsi.org.br" in missing.json()["content"]
     await send(action={"kind": "instructor_resume"})
     unknown = await send(action={"kind": "instructor_unknown"})
-    assert "tel:+5511998030631" in unknown.json()["content"]
+    assert "+55 11 99803-0631" in unknown.json()["content"]
+    assert unknown.json()["contacts"][0]["url"] == "https://wa.me/5511998030631"
+    reloaded = (await client.get(f"/api/v1/conversations/{cid}/messages")).json()
+    assert reloaded[-1]["contacts"] == unknown.json()["contacts"]
     await send(action={"kind": "instructor_resume"})
     classifier.return_value = "payslip"
     assert "holerite" in (await send(content="Onde baixo meu holerite?")).json()["content"]
