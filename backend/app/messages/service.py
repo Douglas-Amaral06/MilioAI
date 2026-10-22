@@ -104,7 +104,7 @@ async def prepare(sessions, principal, cid, payload, settings):
         budget = settings.history_chars
         for row in reversed(history_rows):
             if len(row.content) > budget:
-                break
+                continue
             history.insert(0, {"role": row.role, "content": row.content, "topic_id": row.topic_id})
             budget -= len(row.content)
         if payload.action or confirmation_action(text, support_state):
@@ -162,6 +162,7 @@ async def finalize(
     status,
     outcome,
     support_state=None,
+    topic_id=None,
 ):
     async with sessions() as session:
         conversation = await owned(session, cid, principal.id, lock=True)
@@ -170,6 +171,14 @@ async def finalize(
             message.content, message.sources = content, sources or []
             message.contacts = contacts or []
             message.status, message.outcome = status, outcome
+            if topic_id is not None:
+                from app.support.catalog import get_topic
+                get_topic(topic_id,principal.scopes)
+                message.topic_id = topic_id
+                conversation.topic_id = topic_id
+                request_user = await session.scalar(select(Message).where(Message.conversation_id==cid,Message.request_id==message.request_id,Message.role=="user"))
+                if request_user:
+                    request_user.topic_id=topic_id
             conversation.updated_at = datetime.now(UTC)
             if support_state is not None:
                 conversation.support_state = support_state
@@ -225,6 +234,7 @@ async def execute(app, principal, cid, payload, prepared):
             status="complete",
             outcome=result.get("outcome", "answered"),
             support_state=result.get("support_state", support_state),
+            topic_id=result.get("topic_id"),
         )
         succeeded = True
         completed = result.get("outcome") not in {"partial", "no_evidence", "error"}

@@ -6,8 +6,7 @@ import type { Conversation, SupportAction } from "../types";
 import s from "./Chat.module.css";
 import { TransportCards } from "./TransportCards";
 import { InstructorFlow } from "./InstructorFlow";
-import { MessageContent } from "./MessageContent";
-import { InstitutionalContacts } from "./InstitutionalContacts";
+import { AssistantResponse } from "./AssistantResponse";
 import { SupportMenu } from "./SupportMenu";
 import type { SupportTopic, Attachment } from "../api/client";
 export function Chat({
@@ -118,8 +117,10 @@ export function Chat({
                     <p>{m.content}</p>
                   ) : (
                     <>
-                      <MessageContent content={visibleMessageText(m.content)} />
-                      <InstitutionalContacts contacts={m.contacts} />
+                      <AssistantResponse
+                        content={visibleMessageText(m.content)}
+                        contacts={m.contacts}
+                      />
                     </>
                   )}
                 </div>

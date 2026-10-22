@@ -1,6 +1,6 @@
 import type { InstitutionalContact } from "../types";
 
-function trustedContact(contact: InstitutionalContact): boolean {
+export function trustedContact(contact: InstitutionalContact): boolean {
   if (!/^[1-9]\d{7,14}$/.test(contact.phone_digits)) return false;
   if (contact.phone.replace(/\D/g, "") !== contact.phone_digits) return false;
   return (

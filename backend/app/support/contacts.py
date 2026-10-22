@@ -108,3 +108,25 @@ def contacts_for_sources(topic_id, scopes, settings, chunks, answer, *, agent_id
         if contact and phone_key(contact["phone"]) in present:
             resolved.append(contact)
     return resolved
+
+
+def conversational_contact_text(answer, contacts):
+    """Project validated entities into cards, preserving the surrounding documentary rule."""
+    for contact in contacts:
+        values=[contact["phone"],contact["phone"].removeprefix("+55 "),contact["email"]]
+        if contact.get("url"):
+            values.append(contact["url"])
+        for value in values:
+            answer=re.sub(r"\[[^\]]*\]\((?:mailto:)?"+re.escape(value)+r"\)","",answer)
+        answer=PHONE.sub(lambda m, target=phone_key(contact["phone"]): "" if phone_key(m.group())==target else m.group(),answer)
+        answer=answer.replace(contact["email"],"")
+        for value in values:
+            answer=answer.replace(value,"")
+    if contacts:
+        answer=re.sub(r"(?i)(?:telefone(?: informado)?|e-mail|whatsapp|celular)\s*:\s*(?=(?:ou\b|[.\n]|\[fonte:|$))", "",answer)
+        answer=re.sub(r"(?i)\bou\s+(?=whatsapp\s*:\s*(?:\[fonte:|$))", "",answer)
+        answer=re.sub(r"(?i)whatsapp\s*:\s*(?=\[fonte:|$)", "",answer)
+        answer=re.sub(r"(?m)^\s*(?:ou|[·.,;:]|\[fonte:[^]]+\])?\s*$", "",answer)
+        answer=re.sub(r"[ \t]+", " ",answer)
+        answer=re.sub(r"\n{3,}","\n\n",answer).strip()
+    return answer
