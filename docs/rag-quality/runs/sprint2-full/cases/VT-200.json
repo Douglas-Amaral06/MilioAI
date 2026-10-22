@@ -1,0 +1,213 @@
+{
+  "test_id": "VT-200",
+  "input": {
+    "test_id": "VT-200",
+    "question": "Quem pede e em quanto tempo retiro o Urbes Sorocaba?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:41.770183+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "76499604-3777-4160-8b79-6a9d20346d6c",
+        "content": "Quem pede e em quanto tempo retiro o Urbes Sorocaba?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 313
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 325,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem pede e em quanto tempo retiro o Urbes Sorocaba?"
+              ]
+            ],
+            "deadline": 6236.981515931
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "ambiguous_document",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "ambiguous_document"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "95d6e1e8-791e-4bde-a84a-ec795e861e3e",
+            "role": "user",
+            "content": "Quem pede e em quanto tempo retiro o Urbes Sorocaba?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:41.776711Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "49646d01-5239-45e1-a483-6d468b2c38ca",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:41.776712Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "49646d01-5239-45e1-a483-6d468b2c38ca",
+            "role": "assistant",
+            "content": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:41.776712Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "5463cc32-d3e2-4254-b122-5cb9ec21163c",
+        "deadline": 6236.981515931,
+        "question": "Quem pede e em quanto tempo retiro o Urbes Sorocaba?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "5463cc32-d3e2-4254-b122-5cb9ec21163c",
+        "deadline": 6236.981515931,
+        "question": "Quem pede e em quanto tempo retiro o Urbes Sorocaba?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "ambiguous_document"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem pede e em quanto tempo retiro o Urbes Sorocaba?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "ambiguous_document",
+        "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+        "outcome": "operational"
+      },
+      "duration_ms": 332
+    }
+  ],
+  "conversation_id": "5463cc32-d3e2-4254-b122-5cb9ec21163c",
+  "duration_ms": 335,
+  "completed_at": "2026-10-21T13:00:42.104720+00:00"
+}

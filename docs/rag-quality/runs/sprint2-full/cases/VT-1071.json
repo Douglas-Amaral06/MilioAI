@@ -1,0 +1,231 @@
+{
+  "test_id": "VT-1071",
+  "input": {
+    "test_id": "VT-1071",
+    "question": "Quanto tempo leva a retirada do Legal São Bernardo?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:24.035912+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "4e00ea0c-784f-4093-ba54-07ea9804cb51",
+        "content": "Quanto tempo leva a retirada do Legal São Bernardo?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 244
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "unavailable",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 256,
+          "outcome": "out_of_scope",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quanto tempo leva a retirada do Legal São Bernardo?"
+              ]
+            ],
+            "deadline": 6219.246798583
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "outros",
+            "domain": "auto",
+            "agent": "unavailable",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "unavailable",
+          "state": {
+            "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "sources": [],
+            "outcome": "out_of_scope"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "d482f449-72bd-439d-9295-fffde394ff8d",
+            "role": "user",
+            "content": "Quanto tempo leva a retirada do Legal São Bernardo?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:24.044983Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "d06ee1a6-0057-4098-93f2-42c2c20d62d4",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:24.044984Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Ainda não tenho informações disponíveis sobre esse assunto."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "d06ee1a6-0057-4098-93f2-42c2c20d62d4",
+            "role": "assistant",
+            "content": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:24.044984Z",
+            "outcome": "out_of_scope",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "d6bb7e4d-f9d9-43b9-b467-c55f9b6a0480",
+        "deadline": 6219.246798583,
+        "question": "Quanto tempo leva a retirada do Legal São Bernardo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "d6bb7e4d-f9d9-43b9-b467-c55f9b6a0480",
+        "deadline": 6219.246798583,
+        "question": "Quanto tempo leva a retirada do Legal São Bernardo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quanto tempo leva a retirada do Legal São Bernardo?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "auto",
+        "agent": "unavailable",
+        "comprehensible": true,
+        "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+        "outcome": "out_of_scope"
+      },
+      "duration_ms": 264
+    }
+  ],
+  "conversation_id": "d6bb7e4d-f9d9-43b9-b467-c55f9b6a0480",
+  "duration_ms": 268,
+  "completed_at": "2026-10-21T13:00:24.304078+00:00"
+}

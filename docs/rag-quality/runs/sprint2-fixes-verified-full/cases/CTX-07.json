@@ -1,0 +1,1023 @@
+{
+  "test_id": "CTX-07",
+  "input": {
+    "test_id": "CTX-07",
+    "question": "E se eu atrasar?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Até quando envio minha folha ponto?"
+        }
+      ],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:18:40.687035+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "99233673-88cb-4041-8050-99bddeccdd9b",
+        "content": "Até quando envio minha folha ponto?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: Até quando envio minha folha ponto?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "2. Periodicidade e Prazo",
+              "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+              "chunk": 2,
+              "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.672428,
+              "status": "approved"
+            },
+            {
+              "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "1. O que é a Folha Ponto?",
+              "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+              "chunk": 1,
+              "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.597371,
+              "status": "approved"
+            },
+            {
+              "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "6. Envio do documento",
+              "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+              "chunk": 6,
+              "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.612992,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2145
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 2145
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "sufficient",
+          "chunk_count": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 629
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 616
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 331
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3774,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "Até quando envio minha folha ponto?"
+              ]
+            ],
+            "deadline": 10916.480715516
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.672428,
+                "status": "approved"
+              },
+              {
+                "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "1. O que é a Folha Ponto?",
+                "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+                "chunk": 1,
+                "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.597371,
+                "status": "approved"
+              },
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.612992,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: Até quando envio minha folha ponto?",
+            "document_question": "Até quando envio minha folha ponto?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "sufficient",
+            "chunks": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.672428,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+            "outcome": "answered"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+            "sources": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.672428,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "1f4dff2f-6300-49e3-8d84-2b07bef839ed",
+            "role": "user",
+            "content": "Até quando envio minha folha ponto?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:18:40.694326Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "246f5ddd-e97b-4ed2-9215-021c9a159458",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:18:40.694327Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Deve ser enviada até o segundo dia útil do mês [fonte:F1]."
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "2. Periodicidade e Prazo",
+              "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+              "chunk": 2,
+              "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.672428,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "246f5ddd-e97b-4ed2-9215-021c9a159458",
+            "role": "assistant",
+            "content": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.672428,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:18:40.694327Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "7dda3011-cec2-424e-8de8-db17f8e4c062",
+        "deadline": 10916.480715516,
+        "question": "Até quando envio minha folha ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "7dda3011-cec2-424e-8de8-db17f8e4c062",
+        "deadline": 10916.480715516,
+        "question": "Até quando envio minha folha ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "2. Periodicidade e Prazo",
+            "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+            "chunk": 2,
+            "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.672428,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "2. Periodicidade e Prazo",
+            "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+            "chunk": 2,
+            "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.672428,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "Até quando envio minha folha ponto?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: Até quando envio minha folha ponto?",
+        "document_question": "Até quando envio minha folha ponto?",
+        "coverage": "sufficient",
+        "answer": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+        "outcome": "answered"
+      },
+      "duration_ms": 3781
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "17e605dc-59a5-48c6-821b-722185afebe2",
+        "content": "E se eu atrasar?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: E se eu atrasar? Contexto: Até quando envio minha folha ponto?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "2. Periodicidade e Prazo",
+              "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+              "chunk": 2,
+              "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.667119,
+              "status": "approved"
+            },
+            {
+              "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "8. Dúvidas",
+              "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+              "chunk": 8,
+              "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.604143,
+              "status": "approved"
+            },
+            {
+              "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "6. Envio do documento",
+              "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+              "chunk": 6,
+              "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.603053,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 97
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 98
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "sufficient",
+          "chunk_count": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 654
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 1522
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 355
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 2699,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "E se eu atrasar?"
+              ]
+            ],
+            "deadline": 10920.267461086
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.667119,
+                "status": "approved"
+              },
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.604143,
+                "status": "approved"
+              },
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.603053,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: E se eu atrasar? Contexto: Até quando envio minha folha ponto?",
+            "document_question": "E se eu atrasar?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "sufficient",
+            "chunks": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.667119,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Se você atrasar o envio da folha ponto, pode resultar em: bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1].",
+            "outcome": "answered"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Se você atrasar o envio da folha ponto, pode resultar em: bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1].",
+            "sources": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.667119,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "66106477-8aea-44a1-91a1-5abc25a99c61",
+            "role": "user",
+            "content": "E se eu atrasar?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:18:44.477715Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "9dae529a-de96-4462-8665-cf40b93ea6a2",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:18:44.477716Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Se você atrasar o envio da folha ponto, pode resultar em: bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1]."
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "2. Periodicidade e Prazo",
+              "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+              "chunk": 2,
+              "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.667119,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "9dae529a-de96-4462-8665-cf40b93ea6a2",
+            "role": "assistant",
+            "content": "Se você atrasar o envio da folha ponto, pode resultar em: bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1].",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.667119,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:18:44.477716Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "7dda3011-cec2-424e-8de8-db17f8e4c062",
+        "deadline": 10920.267461086,
+        "question": "E se eu atrasar?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Até quando envio minha folha ponto?",
+            "topic_id": "folha_ponto"
+          },
+          {
+            "role": "assistant",
+            "content": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+            "topic_id": "folha_ponto"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "7dda3011-cec2-424e-8de8-db17f8e4c062",
+        "deadline": 10920.267461086,
+        "question": "E se eu atrasar?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Até quando envio minha folha ponto?",
+            "topic_id": "folha_ponto"
+          },
+          {
+            "role": "assistant",
+            "content": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+            "topic_id": "folha_ponto"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "idle"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "2. Periodicidade e Prazo",
+            "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+            "chunk": 2,
+            "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.667119,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "2. Periodicidade e Prazo",
+            "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+            "chunk": 2,
+            "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.667119,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "E se eu atrasar?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: E se eu atrasar? Contexto: Até quando envio minha folha ponto?",
+        "document_question": "E se eu atrasar?",
+        "coverage": "sufficient",
+        "answer": "Se você atrasar o envio da folha ponto, pode resultar em: bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1].",
+        "outcome": "answered"
+      },
+      "duration_ms": 2712
+    }
+  ],
+  "conversation_id": "7dda3011-cec2-424e-8de8-db17f8e4c062",
+  "duration_ms": 6496,
+  "completed_at": "2026-10-21T14:18:47.183500+00:00"
+}

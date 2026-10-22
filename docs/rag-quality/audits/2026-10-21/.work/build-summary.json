@@ -1,0 +1,28 @@
+{
+  "cases": 76,
+  "distribution": {
+    "reprovados": {
+      "Roteamento de intenção": 23,
+      "Busca sem trecho pertinente": 3,
+      "Assunto pressuposto sem contexto enviado": 6,
+      "Resposta na pessoa do assistente": 1,
+      "Identificação do cartão": 7,
+      "Estado do cartão perdido": 2,
+      "Proveniência operacional sem contrato de citação": 2,
+      "Seleção de instrutor não estabelecida": 1
+    },
+    "inconclusivos": {
+      "Aviso exigido em canal diferente": 6,
+      "Revisão semântica pendente": 14,
+      "Limitação lexical ou taxonomia": 9,
+      "Governança fora do ambiente corporativo": 2
+    },
+    "responsabilidade_reprovados": {
+      "MilioAI": 36,
+      "Dataset/runner": 6,
+      "Compartilhado: avaliador e MilioAI": 2,
+      "Compartilhado: dataset/runner e MilioAI": 1
+    }
+  },
+  "protected_files_unchanged": 146
+}

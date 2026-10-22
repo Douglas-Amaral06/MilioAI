@@ -1,0 +1,545 @@
+{
+  "test_id": "CONFLICT-01",
+  "input": {
+    "test_id": "CONFLICT-01",
+    "question": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto",
+        "operational-services"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:16:39.941182+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "0aedcf60-2fce-4f9e-9c29-33b3b4b1b78a",
+        "content": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: Quais canais de envio da folha ponto constam na documentação?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "1. O que é a Folha Ponto?",
+              "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+              "chunk": 1,
+              "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.614315,
+              "status": "approved"
+            },
+            {
+              "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "6. Envio do documento",
+              "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+              "chunk": 6,
+              "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.668397,
+              "status": "approved"
+            },
+            {
+              "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "8. Dúvidas",
+              "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+              "chunk": 8,
+              "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.58757,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 8907
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 8909
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "sufficient",
+          "chunk_count": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 4597
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 9904
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 1738
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 25228,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?"
+              ]
+            ],
+            "deadline": 14397.677134898
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "1. O que é a Folha Ponto?",
+                "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+                "chunk": 1,
+                "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.614315,
+                "status": "approved"
+              },
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.668397,
+                "status": "approved"
+              },
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.58757,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: Quais canais de envio da folha ponto constam na documentação?",
+            "document_question": "Quais canais de envio da folha ponto constam na documentação?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "sufficient",
+            "chunks": [
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.668397,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1].",
+            "outcome": "answered"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1].",
+            "sources": [
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.668397,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered"
+          }
+        },
+        {
+          "node": "finish_document",
+          "state": {
+            "answer": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1].\n\n**Ponto para revisão:** A configuração operacional local indica o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada; seu status de validação é pending. Confirme com o RH Jovem o canal vigente. Não foi estabelecida precedência entre a orientação operacional e o documento.",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "send_timesheet",
+                "institutionally_approved": false
+              }
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "00681537-1b9b-4543-9cc0-c6020d1eb0b9",
+            "role": "user",
+            "content": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:16:40.003378Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "b9277dd0-4995-42ae-882f-89528be52271",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:16:40.003379Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1]."
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "6. Envio do documento",
+              "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+              "chunk": 6,
+              "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.668397,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "delta",
+          "text": "\n\n**Ponto para revisão:** A configuração operacional local indica o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada; seu status de validação é pending. Confirme com o RH Jovem o canal vigente. Não foi estabelecida precedência entre a orientação operacional e o documento."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "b9277dd0-4995-42ae-882f-89528be52271",
+            "role": "assistant",
+            "content": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1].\n\n**Ponto para revisão:** A configuração operacional local indica o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada; seu status de validação é pending. Confirme com o RH Jovem o canal vigente. Não foi estabelecida precedência entre a orientação operacional e o documento.",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.668397,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:16:40.003379Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "2b3042cb-ecbe-4e95-b1d4-4f1c51da54f5",
+        "deadline": 14397.677134898,
+        "question": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "2b3042cb-ecbe-4e95-b1d4-4f1c51da54f5",
+        "deadline": 14397.677134898,
+        "question": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "send_timesheet",
+            "institutionally_approved": false
+          }
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "6. Envio do documento",
+            "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+            "chunk": 6,
+            "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.668397,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "6. Envio do documento",
+            "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+            "chunk": 6,
+            "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.668397,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: Quais canais de envio da folha ponto constam na documentação?",
+        "document_question": "Quais canais de envio da folha ponto constam na documentação?",
+        "coverage": "sufficient",
+        "answer": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1].\n\n**Ponto para revisão:** A configuração operacional local indica o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada; seu status de validação é pending. Confirme com o RH Jovem o canal vigente. Não foi estabelecida precedência entre a orientação operacional e o documento.",
+        "outcome": "answered"
+      },
+      "duration_ms": 25294
+    }
+  ],
+  "conversation_id": "2b3042cb-ecbe-4e95-b1d4-4f1c51da54f5",
+  "duration_ms": 25320,
+  "completed_at": "2026-10-21T15:17:05.220863+00:00"
+}

@@ -1,0 +1,229 @@
+{
+  "test_id": "NEG-04",
+  "input": {
+    "test_id": "NEG-04",
+    "question": "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T13:01:25.815811+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "d067013f-5aef-49a8-973d-3b37547fb809",
+        "content": "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 225
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "unavailable",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 236,
+          "outcome": "out_of_scope",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?"
+              ]
+            ],
+            "deadline": 6281.033405673
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "outros",
+            "domain": "auto",
+            "agent": "unavailable",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "unavailable",
+          "state": {
+            "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "sources": [],
+            "outcome": "out_of_scope"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "2f55439c-8f52-45e1-afdc-39a4eeb2bab9",
+            "role": "user",
+            "content": "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:25.823380Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "65ecaa27-7b54-46e5-8185-9696b4626257",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:25.823381Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Ainda não tenho informações disponíveis sobre esse assunto."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "65ecaa27-7b54-46e5-8185-9696b4626257",
+            "role": "assistant",
+            "content": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:25.823381Z",
+            "outcome": "out_of_scope",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "1590f550-b97b-4b8c-ac69-4983f299b0bd",
+        "deadline": 6281.033405673,
+        "question": "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "1590f550-b97b-4b8c-ac69-4983f299b0bd",
+        "deadline": 6281.033405673,
+        "question": "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Qual a tarifa municipal vigente hoje para converter as 7 tarifas?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "auto",
+        "agent": "unavailable",
+        "comprehensible": true,
+        "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+        "outcome": "out_of_scope"
+      },
+      "duration_ms": 245
+    }
+  ],
+  "conversation_id": "1590f550-b97b-4b8c-ac69-4983f299b0bd",
+  "duration_ms": 248,
+  "completed_at": "2026-10-21T13:01:26.063978+00:00"
+}

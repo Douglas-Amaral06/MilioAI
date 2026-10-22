@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-9156",
+  "input": {
+    "test_id": "VT-9156",
+    "question": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:08:23.521220+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "925d57cd-1b94-4053-b8ee-195809ae1527",
+        "content": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. TOP - Cartão Top. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "9156",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+              "benefit_code": "9156",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 28,50",
+                "code": "9156",
+                "name": "TOP - Cartão Top",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "payment": "Pagamento Online",
+                "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "9156 · TOP - Cartão Top",
+              "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+              "chunk": 26,
+              "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.751923,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 10776
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 31
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 14354
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 14469,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Qual o WhatsApp e a taxa de segunda via do TOP?"
+              ]
+            ],
+            "deadline": 13900.785865389
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+                "benefit_code": "9156",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 28,50",
+                  "code": "9156",
+                  "name": "TOP - Cartão Top",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                  "payment": "Pagamento Online",
+                  "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "9156 · TOP - Cartão Top",
+                "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+                "chunk": 26,
+                "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.751923,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+                "benefit_code": "9156",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 28,50",
+                  "code": "9156",
+                  "name": "TOP - Cartão Top",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                  "payment": "Pagamento Online",
+                  "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "9156 · TOP - Cartão Top",
+                "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+                "chunk": 26,
+                "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.751923,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "9156"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "1812f01c-dd6c-485e-8427-497817ebb15c",
+            "role": "user",
+            "content": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:08:23.604927Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "be2e8929-d908-442a-8e7f-3ed21f41393b",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:08:23.604928Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+              "benefit_code": "9156",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 28,50",
+                "code": "9156",
+                "name": "TOP - Cartão Top",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "payment": "Pagamento Online",
+                "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "9156 · TOP - Cartão Top",
+              "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+              "chunk": 26,
+              "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.751923,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "be2e8929-d908-442a-8e7f-3ed21f41393b",
+            "role": "assistant",
+            "content": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+                "benefit_code": "9156",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 28,50",
+                  "code": "9156",
+                  "name": "TOP - Cartão Top",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                  "payment": "Pagamento Online",
+                  "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "9156 · TOP - Cartão Top",
+                "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+                "chunk": 26,
+                "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.751923,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:08:23.604928Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "30f014cb-0ab8-4a52-a797-a7cdc22253c2",
+        "deadline": 13900.785865389,
+        "question": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "30f014cb-0ab8-4a52-a797-a7cdc22253c2",
+        "deadline": 13900.785865389,
+        "question": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "9156"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+            "benefit_code": "9156",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 28,50",
+              "code": "9156",
+              "name": "TOP - Cartão Top",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "payment": "Pagamento Online",
+              "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "9156 · TOP - Cartão Top",
+            "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+            "chunk": 26,
+            "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.751923,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+            "benefit_code": "9156",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 28,50",
+              "code": "9156",
+              "name": "TOP - Cartão Top",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "payment": "Pagamento Online",
+              "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "9156 · TOP - Cartão Top",
+            "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+            "chunk": 26,
+            "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.751923,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Qual o WhatsApp e a taxa de segunda via do TOP?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 14567
+    }
+  ],
+  "conversation_id": "30f014cb-0ab8-4a52-a797-a7cdc22253c2",
+  "duration_ms": 14593,
+  "completed_at": "2026-10-21T15:08:38.103642+00:00"
+}

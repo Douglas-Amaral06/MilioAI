@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-15510",
+  "input": {
+    "test_id": "VT-15510",
+    "question": "Qual a taxa do Municipal Barueri da BB Turismo?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:02:47.359775+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "d05b0b2a-8cc5-4f12-b32f-4b8f35a7c1a3",
+        "content": "Qual a taxa do Municipal Barueri da BB Turismo?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. BB Turismo - Cartão Municipal Barueri. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15510",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+              "benefit_code": "15510",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15510",
+                "name": "BB Turismo - Cartão Municipal Barueri",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+              "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+              "chunk": 5,
+              "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.783815,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 13734
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 33
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 17127
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 17269,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Qual a taxa do Municipal Barueri da BB Turismo?"
+              ]
+            ],
+            "deadline": 13564.128464952
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**BB Turismo - Cartão Municipal Barueri** · Código 15510 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+                "benefit_code": "15510",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15510",
+                  "name": "BB Turismo - Cartão Municipal Barueri",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+                "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+                "chunk": 5,
+                "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.783815,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+                "benefit_code": "15510",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15510",
+                  "name": "BB Turismo - Cartão Municipal Barueri",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+                "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+                "chunk": 5,
+                "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.783815,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15510"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "40bf2e46-912d-4de8-a5a6-cad309a3a10b",
+            "role": "user",
+            "content": "Qual a taxa do Municipal Barueri da BB Turismo?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:02:47.440885Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "d1f26545-9e00-4921-8c1c-9cb2c6b58d51",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:02:47.440886Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**BB Turismo - Cartão Municipal Barueri** · Código 15510 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+              "benefit_code": "15510",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15510",
+                "name": "BB Turismo - Cartão Municipal Barueri",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+              "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+              "chunk": 5,
+              "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.783815,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "d1f26545-9e00-4921-8c1c-9cb2c6b58d51",
+            "role": "assistant",
+            "content": "**BB Turismo - Cartão Municipal Barueri** · Código 15510 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+                "benefit_code": "15510",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15510",
+                  "name": "BB Turismo - Cartão Municipal Barueri",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+                "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+                "chunk": 5,
+                "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.783815,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:02:47.440886Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "419b0f95-422c-422b-b275-6396653c337c",
+        "deadline": 13564.128464952,
+        "question": "Qual a taxa do Municipal Barueri da BB Turismo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "419b0f95-422c-422b-b275-6396653c337c",
+        "deadline": 13564.128464952,
+        "question": "Qual a taxa do Municipal Barueri da BB Turismo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15510"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+            "benefit_code": "15510",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15510",
+              "name": "BB Turismo - Cartão Municipal Barueri",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+            "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+            "chunk": 5,
+            "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.783815,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+            "benefit_code": "15510",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15510",
+              "name": "BB Turismo - Cartão Municipal Barueri",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+            "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+            "chunk": 5,
+            "excerpt": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.783815,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Qual a taxa do Municipal Barueri da BB Turismo?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**BB Turismo - Cartão Municipal Barueri** · Código 15510 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 17360
+    }
+  ],
+  "conversation_id": "419b0f95-422c-422b-b275-6396653c337c",
+  "duration_ms": 17389,
+  "completed_at": "2026-10-21T15:03:04.717557+00:00"
+}

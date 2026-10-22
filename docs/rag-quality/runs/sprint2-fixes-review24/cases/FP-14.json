@@ -1,0 +1,231 @@
+{
+  "test_id": "FP-14",
+  "input": {
+    "test_id": "FP-14",
+    "question": "Devo usar qual cor de caneta?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:04:33.968829+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "4d893147-1f69-46c0-b603-602fec49429e",
+        "content": "Devo usar qual cor de caneta?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 305
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "unavailable",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 315,
+          "outcome": "out_of_scope",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Devo usar qual cor de caneta?"
+              ]
+            ],
+            "deadline": 10069.495163753
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "outros",
+            "domain": "auto",
+            "agent": "unavailable",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "unavailable",
+          "state": {
+            "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "sources": [],
+            "outcome": "out_of_scope"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "3b0f6274-f6f0-4fa4-8eda-3a82342ce461",
+            "role": "user",
+            "content": "Devo usar qual cor de caneta?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:33.975680Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "d6e7b058-c0c6-4c0e-8aa3-6a5032c1063b",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:33.975681Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Ainda não tenho informações disponíveis sobre esse assunto."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "d6e7b058-c0c6-4c0e-8aa3-6a5032c1063b",
+            "role": "assistant",
+            "content": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:33.975681Z",
+            "outcome": "out_of_scope",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "cf4961e2-fed4-4921-86fe-a393294def19",
+        "deadline": 10069.495163753,
+        "question": "Devo usar qual cor de caneta?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "cf4961e2-fed4-4921-86fe-a393294def19",
+        "deadline": 10069.495163753,
+        "question": "Devo usar qual cor de caneta?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Devo usar qual cor de caneta?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "auto",
+        "agent": "unavailable",
+        "comprehensible": true,
+        "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+        "outcome": "out_of_scope"
+      },
+      "duration_ms": 322
+    }
+  ],
+  "conversation_id": "cf4961e2-fed4-4921-86fe-a393294def19",
+  "duration_ms": 325,
+  "completed_at": "2026-10-21T14:04:34.294183+00:00"
+}

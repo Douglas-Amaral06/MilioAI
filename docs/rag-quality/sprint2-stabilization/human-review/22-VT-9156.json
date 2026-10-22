@@ -1,0 +1,224 @@
+{
+  "priority": 22,
+  "test_id": "VT-9156",
+  "domain": "vale_transporte",
+  "question": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "VT-9156",
+    "question": "Qual o WhatsApp e a taxa de segunda via do TOP?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "answer_delivered": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+  "observed_behavior": "surface_conflict",
+  "expected_facts": [
+    {
+      "criterion_id": "VT-9156-fact-1",
+      "description": "R$ 28,50 e contato não informado no registro.",
+      "match": {
+        "all_of": [
+          [
+            "28,50"
+          ],
+          [
+            "whatsapp"
+          ],
+          [
+            "não informado",
+            "não consta",
+            "ausente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "vt-9156"
+      ]
+    },
+    {
+      "criterion_id": "VT-9156-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "vt-9156"
+      ]
+    }
+  ],
+  "forbidden_claims": [],
+  "historical_expected_citations": [
+    {
+      "document_id": "vt-segunda-via",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "9156",
+      "page": 2,
+      "benefit_code": "9156"
+    }
+  ],
+  "retrieval_calls": [
+    {
+      "query": "Segunda via. TOP - Cartão Top. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+      "scopes": [
+        "local_review"
+      ],
+      "domain": "beneficios.vale_transporte.segunda_via",
+      "benefit_code": "9156",
+      "app_env_filter": "development",
+      "version_filter": "vt-segunda-via-local-v1",
+      "chunks": [
+        {
+          "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "benefit_code": "9156",
+          "attributes": {
+            "uf": "SP",
+            "fee": "R$ 28,50",
+            "code": "9156",
+            "name": "TOP - Cartão Top",
+            "page": 2,
+            "payer": "Jovem",
+            "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+            "payment": "Pagamento Online",
+            "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+            "requester": "Jovem"
+          },
+          "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "title": "orientações segunda via cartões vt (1).pdf",
+          "version": "vt-segunda-via-local-v1",
+          "page": 2,
+          "section": "9156 · TOP - Cartão Top",
+          "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+          "chunk": 26,
+          "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.751923,
+          "status": "approved"
+        }
+      ],
+      "duration_ms": 10776
+    }
+  ],
+  "actual_citations": [
+    {
+      "document_id": "vt-segunda-via",
+      "source_version": "vt-segunda-via-local-v1",
+      "section_or_row": "9156 · TOP - Cartão Top",
+      "page": 2,
+      "benefit_code": "9156",
+      "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+      "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+      "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+      "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+    }
+  ],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "stage": "idle",
+    "vt_stage": "active",
+    "selected_card_code": "9156"
+  },
+  "automatic_observations": {
+    "test_id": "VT-9156",
+    "domain": "vale_transporte",
+    "automatic_status": "inconclusive_checks",
+    "final_status": "inconclusivo",
+    "reasons": [],
+    "review_alerts": [
+      "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+    ],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": true,
+      "recall_at_3": 1.0,
+      "reciprocal_rank_at_3": 1.0
+    },
+    "citation_location_completeness": 1.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.5,
+    "forbidden_lexical_alerts": [],
+    "behavior": "surface_conflict",
+    "behavior_match": false,
+    "context_match": true,
+    "card_match": true,
+    "question_duration_ms": 14567,
+    "total_case_duration_ms": 14593,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

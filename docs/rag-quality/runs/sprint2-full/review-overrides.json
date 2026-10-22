@@ -1,0 +1,11 @@
+{
+  "FP-09": {
+    "status": "reprovado",
+    "reason": "respondent_perspective_error",
+    "reviewer_type": "user_feedback_in_this_chat",
+    "scope": "Only respondent perspective; no institutional approval or full semantic review",
+    "observed_answer": "Não, não posso assinar a folha de outra pessoa ou em branco. [fonte:F1]",
+    "requested_perspective": "Não, você não pode assinar...",
+    "separate_regression_run": "../perspective-fp09"
+  }
+}

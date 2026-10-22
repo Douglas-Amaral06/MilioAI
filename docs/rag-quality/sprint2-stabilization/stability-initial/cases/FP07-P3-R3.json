@@ -1,0 +1,434 @@
+{
+  "test_id": "FP07-P3-R3",
+  "input": {
+    "test_id": "FP07-P3-R3",
+    "question": "No dia de curso em que estive ausente, como preencho minha folha ponto?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T14:35:05.764812+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "11aa551f-87f7-418b-9889-e9dea5d10048",
+        "content": "No dia de curso em que estive ausente, como preencho minha folha ponto?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: No dia de curso em que estive ausente, como preencho minha folha ponto?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "chunks": [
+            {
+              "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "3. Como preencher corretamente",
+              "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+              "chunk": 3,
+              "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.692202,
+              "status": "approved"
+            },
+            {
+              "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "2. Periodicidade e Prazo",
+              "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+              "chunk": 2,
+              "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.609187,
+              "status": "approved"
+            },
+            {
+              "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "4. O que NÃO fazer",
+              "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+              "chunk": 4,
+              "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.510951,
+              "status": "approved"
+            }
+          ]
+        }
+      ],
+      "logs": [],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "No dia de curso em que estive ausente, como preencho minha folha ponto?"
+              ]
+            ],
+            "deadline": 11901.705889458
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.692202,
+                "status": "approved"
+              },
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.609187,
+                "status": "approved"
+              },
+              {
+                "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "4. O que NÃO fazer",
+                "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                "chunk": 4,
+                "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.510951,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: No dia de curso em que estive ausente, como preencho minha folha ponto?",
+            "document_question": "No dia de curso em que estive ausente, como preencho minha folha ponto?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "partial",
+            "chunks": [
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.692202,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "No dia de curso em que estiver ausente, preencha a folha ponto como \"CURSO\", para evitar o desconto duplicado da falta [fonte:F1].",
+            "outcome": "partial"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "No dia de curso em que estiver ausente, preencha a folha ponto como \"CURSO\", para evitar o desconto duplicado da falta [fonte:F1].",
+            "sources": [
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.692202,
+                "status": "approved"
+              }
+            ],
+            "outcome": "partial"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "117cb293-1053-4698-ab93-2b864dc973c3",
+            "role": "user",
+            "content": "No dia de curso em que estive ausente, como preencho minha folha ponto?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:35:05.786649Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "cdf8aaaf-10fb-4e52-b763-db8daac54bb2",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:35:05.786650Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "No dia de curso em que estiver ausente, preencha a folha ponto como \"CURSO\", para evitar o desconto duplicado da falta [fonte:F1]."
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "3. Como preencher corretamente",
+              "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+              "chunk": 3,
+              "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.692202,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "cdf8aaaf-10fb-4e52-b763-db8daac54bb2",
+            "role": "assistant",
+            "content": "No dia de curso em que estiver ausente, preencha a folha ponto como \"CURSO\", para evitar o desconto duplicado da falta [fonte:F1].",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.692202,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:35:05.786650Z",
+            "outcome": "partial",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "ddafca0d-43b6-49c2-a39b-bf88ca16fc59",
+        "deadline": 11901.705889458,
+        "question": "No dia de curso em que estive ausente, como preencho minha folha ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "ddafca0d-43b6-49c2-a39b-bf88ca16fc59",
+        "deadline": 11901.705889458,
+        "question": "No dia de curso em que estive ausente, como preencho minha folha ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "3. Como preencher corretamente",
+            "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+            "chunk": 3,
+            "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.692202,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "3. Como preencher corretamente",
+            "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+            "chunk": 3,
+            "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.692202,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "No dia de curso em que estive ausente, como preencho minha folha ponto?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: No dia de curso em que estive ausente, como preencho minha folha ponto?",
+        "document_question": "No dia de curso em que estive ausente, como preencho minha folha ponto?",
+        "coverage": "partial",
+        "answer": "No dia de curso em que estiver ausente, preencha a folha ponto como \"CURSO\", para evitar o desconto duplicado da falta [fonte:F1].",
+        "outcome": "partial"
+      },
+      "duration_ms": 8834
+    }
+  ],
+  "conversation_id": "ddafca0d-43b6-49c2-a39b-bf88ca16fc59",
+  "duration_ms": 8842,
+  "completed_at": "2026-10-21T14:35:14.606644+00:00"
+}

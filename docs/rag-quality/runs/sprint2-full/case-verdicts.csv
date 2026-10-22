@@ -1,0 +1,77 @@
+﻿test_id,domain,final_status,automatic_status,reasons,review_alerts,behavior,context_match,question_duration_ms,total_case_duration_ms
+AUTH-01,governance,inconclusivo,inconclusive_checks,,,fallback,,19,23
+AUTH-02,governance,inconclusivo,inconclusive_checks,,,fallback,,244,248
+AUTH-03,governance,inconclusivo,inconclusive_checks,,,fallback,,240,243
+AUTH-04,governance,inconclusivo,inconclusive_checks,,,fallback,,18,22
+CONFLICT-01,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,answer,,259,264
+CONFLICT-02,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,1427,1431
+CTX-01,vale_transporte,inconclusivo,passed_checks,,,answer,True,987,4424
+CTX-02,vale_transporte,inconclusivo,passed_checks,,,answer,True,3548,4736
+CTX-03,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,3062,4422
+CTX-04,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,443,1819
+CTX-05,vale_transporte,inconclusivo,passed_checks,,,answer,True,924,4272
+CTX-06,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,505,1529
+CTX-07,folha_ponto,inconclusivo,inconclusive_checks,,,answer,True,5082,5411
+CTX-08,vale_transporte,inconclusivo,passed_checks,,,answer,True,3618,7399
+CTX-09,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,4157,5698
+FP-01,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,8717,8725
+FP-02,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4104,4107
+FP-03,folha_ponto,reprovado,failed_checks,expected_location_not_retrieved | expected_citation_location_missing,,answer,,345,349
+FP-04,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,3360,3363
+FP-05,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,16,20
+FP-06,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,2524,2527
+FP-07,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,2463,2466
+FP-08,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4461,4464
+FP-09,folha_ponto,reprovado,inconclusive_checks,respondent_perspective_error,,answer,,3763,3766
+FP-10,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,3713,3717
+FP-11,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,336,339
+FP-12,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,2683,2687
+FP-13,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,319,322
+FP-14,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,243,246
+FP-15,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,289,291
+FP-16,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,287,289
+NEG-01,folha_ponto,inconclusivo,passed_checks,,,fallback,,2340,2344
+NEG-02,vale_transporte,reprovado,failed_checks,behavior_mismatch,,answer,,328,331
+NEG-03,folha_ponto,reprovado,failed_checks,behavior_mismatch,,answer,,252,255
+NEG-04,vale_transporte,inconclusivo,inconclusive_checks,,,fallback,,245,248
+NEG-05,operational,inconclusivo,inconclusive_checks,,,fallback,,250,253
+NEG-06,vale_transporte,reprovado,failed_checks,behavior_mismatch,,fallback,,247,251
+NEG-07,vale_transporte,inconclusivo,passed_checks,,,clarify,,24,27
+NEG-08,vale_transporte,reprovado,failed_checks,behavior_mismatch,,fallback,,21,25
+OP-01,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,,437,441
+OP-02,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,,242,246
+OP-03,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,True,252,546
+OP-04,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,,262,266
+VT-10394,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,328,332
+VT-10398,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,295,298
+VT-10420,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,281,284
+VT-1071,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,264,268
+VT-10771,vale_transporte,inconclusivo,passed_checks,,,answer,True,3349,3352
+VT-155,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,3770,3773
+VT-15504,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,276,280
+VT-15506,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,247,250
+VT-15508,vale_transporte,reprovado,failed_checks,context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,answer,False,328,331
+VT-15510,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,248,251
+VT-15511,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,278,281
+VT-15512,vale_transporte,reprovado,failed_checks,context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,answer,False,243,246
+VT-15515,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,284,288
+VT-15566,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,23,27
+VT-15723,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,65,359
+VT-15779,vale_transporte,reprovado,failed_checks,context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,answer,False,251,254
+VT-15780,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,276,279
+VT-164,vale_transporte,inconclusivo,passed_checks,,,answer,True,3672,3675
+VT-182,vale_transporte,inconclusivo,passed_checks,,,answer,True,3693,3697
+VT-1892,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,263,267
+VT-200,vale_transporte,reprovado,failed_checks,context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,answer,False,332,335
+VT-216,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,463,466
+VT-2337,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,308,312
+VT-3845,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,clarify,False,265,268
+VT-3854,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,249,254
+VT-472,vale_transporte,inconclusivo,passed_checks,,,answer,True,1583,1587
+VT-503,vale_transporte,inconclusivo,passed_checks,,,surface_conflict,True,3062,3065
+VT-5631,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,19,23
+VT-7099,vale_transporte,inconclusivo,passed_checks,,,answer,True,3994,3997
+VT-738,vale_transporte,inconclusivo,passed_checks,,,answer,True,3299,3302
+VT-89,vale_transporte,inconclusivo,passed_checks,,,answer,True,3621,3624
+VT-9156,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,1687,1690
+VT-937,vale_transporte,reprovado,failed_checks,behavior_mismatch | context_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,False,274,277

@@ -169,6 +169,9 @@ async def test_stream_persistence_idempotency_and_cancellation(resources, monkey
         async def assess(self, question, chunks, topic):
             return {"coverage": "sufficient", "chunks": chunks}
 
+        async def verify_grounding(self, answer, chunks):
+            return True
+
         async def chat(self, messages):
             for part in ["Material fictício de teste: ", f"3 dias. [fonte:{chunk['id']}]"]:
                 yield part

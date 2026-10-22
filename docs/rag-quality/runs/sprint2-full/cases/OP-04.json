@@ -1,0 +1,219 @@
+{
+  "test_id": "OP-04",
+  "input": {
+    "test_id": "OP-04",
+    "question": "Os contatos locais do Educacional já foram validados?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review",
+        "education:contacts"
+      ],
+      "allowed_document_ids": [
+        "education-contacts"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:01:29.970763+00:00",
+  "effective_scopes": [
+    "education:contacts",
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "0493b6b5-03fa-46e6-af9f-437494fc0444",
+        "content": "Os contatos locais do Educacional já foram validados?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 241
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 253,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Os contatos locais do Educacional já foram validados?"
+              ]
+            ],
+            "deadline": 6285.190230163
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "education_contact",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Entre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "contact",
+              "detected_intent": "education_contact",
+              "asked": true
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "66f88bc5-928a-4418-843a-22b30ba8435b",
+            "role": "user",
+            "content": "Os contatos locais do Educacional já foram validados?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:29.979755Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "b60eab4b-5d14-49bf-b0d0-32f80e1f6ab0",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:29.979756Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Entre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "b60eab4b-5d14-49bf-b0d0-32f80e1f6ab0",
+            "role": "assistant",
+            "content": "Entre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:29.979756Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "f3bcbe3a-3573-4f85-83a4-78de84b4e81a",
+        "deadline": 6285.190230163,
+        "question": "Os contatos locais do Educacional já foram validados?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "f3bcbe3a-3573-4f85-83a4-78de84b4e81a",
+        "deadline": 6285.190230163,
+        "question": "Os contatos locais do Educacional já foram validados?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "contact",
+          "detected_intent": "education_contact",
+          "asked": true
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Os contatos locais do Educacional já foram validados?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "education_contact",
+        "answer": "Entre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+        "outcome": "operational"
+      },
+      "duration_ms": 262
+    }
+  ],
+  "conversation_id": "f3bcbe3a-3573-4f85-83a4-78de84b4e81a",
+  "duration_ms": 266,
+  "completed_at": "2026-10-21T13:01:30.236951+00:00"
+}

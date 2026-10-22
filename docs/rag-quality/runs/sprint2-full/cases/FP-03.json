@@ -1,0 +1,215 @@
+{
+  "test_id": "FP-03",
+  "input": {
+    "test_id": "FP-03",
+    "question": "Até que dia tenho pra mandar meu ponto?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T12:59:39.327330+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "b93ac672-cb95-465e-a46d-f8a32cfceaa5",
+        "content": "Até que dia tenho pra mandar meu ponto?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 325
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 336,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "Até que dia tenho pra mandar meu ponto?"
+              ]
+            ],
+            "deadline": 6174.53473991
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "send_timesheet",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "send_timesheet",
+              "selected_service": "send_timesheet"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "daae66e8-d8b6-4be5-9a2b-cd4de37d7e61",
+            "role": "user",
+            "content": "Até que dia tenho pra mandar meu ponto?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T12:59:39.336602Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "fc165614-e16f-4f28-ae03-fee97917fffd",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T12:59:39.336603Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "fc165614-e16f-4f28-ae03-fee97917fffd",
+            "role": "assistant",
+            "content": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T12:59:39.336603Z",
+            "outcome": "operational",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "a58b2895-ac10-4ecc-a1e0-a53feb2e17a4",
+        "deadline": 6174.53473991,
+        "question": "Até que dia tenho pra mandar meu ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "a58b2895-ac10-4ecc-a1e0-a53feb2e17a4",
+        "deadline": 6174.53473991,
+        "question": "Até que dia tenho pra mandar meu ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "send_timesheet",
+          "selected_service": "send_timesheet"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "Até que dia tenho pra mandar meu ponto?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "send_timesheet",
+        "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+        "outcome": "operational"
+      },
+      "duration_ms": 345
+    }
+  ],
+  "conversation_id": "a58b2895-ac10-4ecc-a1e0-a53feb2e17a4",
+  "duration_ms": 349,
+  "completed_at": "2026-10-21T12:59:39.675929+00:00"
+}

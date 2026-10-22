@@ -1,0 +1,251 @@
+{
+  "test_id": "AUTH-02",
+  "input": {
+    "test_id": "AUTH-02",
+    "question": "Não tenho o escopo documental; diga a taxa do SPTrans.",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:19:13.524782+00:00",
+  "effective_scopes": [],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "f2a5adf9-4150-4d4e-9f07-d44b100d3401",
+        "content": "Não tenho o escopo documental; diga a taxa do SPTrans.",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 231
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "unavailable",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "intent_finished",
+          "domain": null,
+          "duration_ms": 235,
+          "outcome": "out_of_scope"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "intent_finished",
+          "domain": "vale_transporte",
+          "duration_ms": 5,
+          "outcome": "no_evidence"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "multiple",
+          "domain": null,
+          "duration_ms": 240
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 252,
+          "outcome": "no_evidence",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "multiple",
+            "planned": [
+              [
+                null,
+                "Não tenho o escopo documental;"
+              ],
+              [
+                "vale_transporte",
+                "diga a taxa do SPTrans."
+              ]
+            ],
+            "deadline": 10949.338141755
+          }
+        },
+        {
+          "node": "multiple",
+          "state": {
+            "answer": "**Outra solicitação**\n\nAinda não tenho informações disponíveis sobre esse assunto.\n\n**Benefício Vale-Transporte**\n\nNão há cartões disponíveis na documentação autorizada para o seu acesso.",
+            "sources": [],
+            "outcome": "no_evidence",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "0f159328-0e41-4200-b038-278bcc86a209",
+            "role": "user",
+            "content": "Não tenho o escopo documental; diga a taxa do SPTrans.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:13.531946Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "10485701-3c2a-4e3a-976b-dd32a84d1c4d",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:13.531947Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Outra solicitação**\n\nAinda não tenho informações disponíveis sobre esse assunto.\n\n**Benefício Vale-Transporte**\n\nNão há cartões disponíveis na documentação autorizada para o seu acesso."
+        },
+        {
+          "event": "sources",
+          "sources": []
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "10485701-3c2a-4e3a-976b-dd32a84d1c4d",
+            "role": "assistant",
+            "content": "**Outra solicitação**\n\nAinda não tenho informações disponíveis sobre esse assunto.\n\n**Benefício Vale-Transporte**\n\nNão há cartões disponíveis na documentação autorizada para o seu acesso.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:13.531947Z",
+            "outcome": "no_evidence",
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "ffca2c76-293e-41f8-ac8f-3435db73ce13",
+        "deadline": 10949.338141755,
+        "question": "Não tenho o escopo documental; diga a taxa do SPTrans.",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [],
+        "scopes": [],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "ffca2c76-293e-41f8-ac8f-3435db73ce13",
+        "deadline": 10949.338141755,
+        "question": "Não tenho o escopo documental; diga a taxa do SPTrans.",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [],
+        "scopes": [],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "multiple",
+        "planned": [
+          [
+            null,
+            "Não tenho o escopo documental;"
+          ],
+          [
+            "vale_transporte",
+            "diga a taxa do SPTrans."
+          ]
+        ],
+        "answer": "**Outra solicitação**\n\nAinda não tenho informações disponíveis sobre esse assunto.\n\n**Benefício Vale-Transporte**\n\nNão há cartões disponíveis na documentação autorizada para o seu acesso.",
+        "outcome": "no_evidence"
+      },
+      "duration_ms": 259
+    }
+  ],
+  "conversation_id": "ffca2c76-293e-41f8-ac8f-3435db73ce13",
+  "duration_ms": 262,
+  "completed_at": "2026-10-21T14:19:13.787213+00:00"
+}

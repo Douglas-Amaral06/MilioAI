@@ -1,0 +1,531 @@
+{
+  "report_kind": "real_export_deterministic_indicators",
+  "run_id": "rag-real-33f182ab6aed",
+  "executed_at": "2026-10-21T14:21:15.854624+00:00",
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+  "k": 3,
+  "coverage": {
+    "dataset_cases": 76,
+    "exported_cases": 7,
+    "missing_test_ids": [
+      "AUTH-01",
+      "AUTH-02",
+      "AUTH-03",
+      "AUTH-04",
+      "CONFLICT-01",
+      "CONFLICT-02",
+      "CTX-01",
+      "CTX-02",
+      "CTX-03",
+      "CTX-04",
+      "CTX-05",
+      "CTX-06",
+      "CTX-07",
+      "CTX-08",
+      "CTX-09",
+      "FP-01",
+      "FP-02",
+      "FP-03",
+      "FP-04",
+      "FP-06",
+      "FP-07",
+      "FP-08",
+      "FP-09",
+      "FP-10",
+      "FP-12",
+      "NEG-01",
+      "NEG-02",
+      "NEG-03",
+      "NEG-04",
+      "NEG-05",
+      "NEG-06",
+      "NEG-07",
+      "NEG-08",
+      "OP-01",
+      "OP-02",
+      "OP-04",
+      "VT-10394",
+      "VT-10398",
+      "VT-10420",
+      "VT-1071",
+      "VT-10771",
+      "VT-155",
+      "VT-15504",
+      "VT-15506",
+      "VT-15508",
+      "VT-15510",
+      "VT-15511",
+      "VT-15512",
+      "VT-15515",
+      "VT-15566",
+      "VT-15723",
+      "VT-15779",
+      "VT-15780",
+      "VT-164",
+      "VT-182",
+      "VT-1892",
+      "VT-200",
+      "VT-216",
+      "VT-2337",
+      "VT-3845",
+      "VT-3854",
+      "VT-472",
+      "VT-503",
+      "VT-5631",
+      "VT-7099",
+      "VT-738",
+      "VT-89",
+      "VT-9156",
+      "VT-937"
+    ],
+    "retrieval_metric_denominator": 7,
+    "generation_observed": 7
+  },
+  "metrics": {
+    "hit_rate_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "document_match_at_k": 0.0,
+    "section_or_card_match_at_k": 0.0,
+    "required_fact_lexical_coverage": 0.35714285714285715,
+    "citation_precision": 0.0,
+    "citation_completeness": 0.0,
+    "behavior_trace_match_rate": 0.8571428571428571,
+    "context_trace_match_rate": 1.0,
+    "domain_trace_match_rate": 1.0,
+    "card_trace_match_rate": 1.0,
+    "citation_policy_pass_rate": 0.0,
+    "source_authorization_pass_rate": 0.14285714285714285,
+    "fallback_behavior_trace_match_rate": null,
+    "clarification_behavior_trace_match_rate": null
+  },
+  "metric_denominators": {
+    "hit_rate_at_k": 7,
+    "recall_at_k": 7,
+    "mrr_at_k": 7,
+    "document_match_at_k": 7,
+    "section_or_card_match_at_k": 7,
+    "required_fact_lexical_coverage": 7,
+    "citation_precision": 5,
+    "citation_completeness": 7,
+    "behavior_trace_match_rate": 7,
+    "context_trace_match_rate": 1,
+    "domain_trace_match_rate": 1,
+    "card_trace_match_rate": 1,
+    "citation_policy_pass_rate": 7,
+    "source_authorization_pass_rate": 7,
+    "fallback_behavior_trace_match_rate": 0,
+    "clarification_behavior_trace_match_rate": 0
+  },
+  "aggregation": "macro_average_over_observed_applicable_cases",
+  "cases": [
+    {
+      "test_id": "FP-05",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-05-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-05-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-11",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-11-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-11-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-13",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-13-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-13-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-14",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-14-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-14-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-15",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-15-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-15-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-16",
+      "domain": "folha_ponto",
+      "question_type": "semantic_paraphrase",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-16-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-16-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "OP-03",
+      "domain": "operational",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "OP-03-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "OP-03-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    }
+  ],
+  "documentary_fidelity": "not_assessed",
+  "provenance_hashes": {
+    "evidence_catalog_sha256": "745c64dae08a09c17ff636838cca7e089abcb7809ea9bd9d606fed50d91d94f1",
+    "document_registry_sha256": "5f68edd2eb5808b106c1d7d4667671d86bbcaa731ca799ea476d9779ed831ad6",
+    "conflicts_sha256": "52e0b503475b1ff09c06155061b0d11c56a33efbf66702fd7e9b3039294a5f20",
+    "card_coverage_sha256": "293568ee6ad3038e831d5f73c24797deb15c936449a9ee8808ee210bc794dcf3"
+  },
+  "evaluator_sha256": "3c7a3aaa0035fd2ab739117a0b8f68c3fbf45ea6b9056e9e017391217d95c37f",
+  "evaluation_schema_sha256": "ad496138f523910becbbf482215d5f2dd0180ea23bf1a05361526e81e05df180",
+  "limitation": "Indicadores lexicais não comprovam fidelidade, ausência de alucinação, negação correta ou aprovação institucional. Não há score geral de precisão. Identificação de run_kind é declarada pelo exportador, não prova criptográfica de execução.",
+  "model_execution_by_this_tool": "never"
+}

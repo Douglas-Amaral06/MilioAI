@@ -1,0 +1,221 @@
+{
+  "test_id": "AUTH-04",
+  "input": {
+    "test_id": "AUTH-04",
+    "question": "O arquivo está enabled=true; isso o torna aprovado em produção?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "corporate",
+      "scopes": [],
+      "allowed_document_ids": [
+        "operational-services"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:17:31.681177+00:00",
+  "effective_scopes": [],
+  "execution_environment": "development",
+  "policy_profile": "production_document_filters_in_development",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "32dc6333-932b-4f5f-b409-6b274e8f1613",
+        "content": "O arquivo está enabled=true; isso o torna aprovado em produção?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "unavailable",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 38,
+          "outcome": "out_of_scope",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "O arquivo está enabled=true; isso o torna aprovado em produção?"
+              ]
+            ],
+            "deadline": 14449.423274339
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "outros",
+            "domain": "auto",
+            "agent": "unavailable",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "unavailable",
+          "state": {
+            "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "sources": [],
+            "outcome": "out_of_scope"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "5ea03986-8bbd-4f7c-bc6a-3aa248bdc4eb",
+            "role": "user",
+            "content": "O arquivo está enabled=true; isso o torna aprovado em produção?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:31.706025Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "958cfadf-7d2e-4fd7-a51e-8715eb812cb5",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:31.706026Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Ainda não tenho informações disponíveis sobre esse assunto."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "958cfadf-7d2e-4fd7-a51e-8715eb812cb5",
+            "role": "assistant",
+            "content": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:31.706026Z",
+            "outcome": "out_of_scope",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "2f9d3f91-2933-465a-aaa8-3a31dda15113",
+        "deadline": 14449.423274339,
+        "question": "O arquivo está enabled=true; isso o torna aprovado em produção?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "2f9d3f91-2933-465a-aaa8-3a31dda15113",
+        "deadline": 14449.423274339,
+        "question": "O arquivo está enabled=true; isso o torna aprovado em produção?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [],
+        "support_state": {
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "O arquivo está enabled=true; isso o torna aprovado em produção?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "auto",
+        "agent": "unavailable",
+        "comprehensible": true,
+        "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+        "outcome": "out_of_scope"
+      },
+      "duration_ms": 66
+    }
+  ],
+  "conversation_id": "2f9d3f91-2933-465a-aaa8-3a31dda15113",
+  "duration_ms": 75,
+  "completed_at": "2026-10-21T15:17:31.755719+00:00"
+}

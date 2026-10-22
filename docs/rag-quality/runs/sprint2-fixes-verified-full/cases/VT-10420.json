@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-10420",
+  "input": {
+    "test_id": "VT-10420",
+    "question": "Quem pode solicitar a segunda via do Municipal Botucatu?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:17:06.352085+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "73017ec3-7d7d-4e19-aac9-da853e7a93b5",
+        "content": "Quem pode solicitar a segunda via do Municipal Botucatu?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Viação Botucatu - Cartão Municipal Botucatu. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "10420",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+              "benefit_code": "10420",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 25,00",
+                "code": "10420",
+                "name": "Viação Botucatu - Cartão Municipal Botucatu",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+              "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+              "chunk": 1,
+              "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.798012,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 56
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 905
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 922,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem pode solicitar a segunda via do Municipal Botucatu?"
+              ]
+            ],
+            "deadline": 10822.071776548
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Viação Botucatu - Cartão Municipal Botucatu** · Código 10420 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 25,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+                "benefit_code": "10420",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 25,00",
+                  "code": "10420",
+                  "name": "Viação Botucatu - Cartão Municipal Botucatu",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+                "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+                "chunk": 1,
+                "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.798012,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+                "benefit_code": "10420",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 25,00",
+                  "code": "10420",
+                  "name": "Viação Botucatu - Cartão Municipal Botucatu",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+                "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+                "chunk": 1,
+                "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.798012,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "10420"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "f9db57a0-1f14-4fac-ba53-c0aa8d628689",
+            "role": "user",
+            "content": "Quem pode solicitar a segunda via do Municipal Botucatu?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:06.359837Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "12a385ea-1e2a-424e-bdbf-6e27bfef8b17",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:06.359838Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Viação Botucatu - Cartão Municipal Botucatu** · Código 10420 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 25,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+              "benefit_code": "10420",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 25,00",
+                "code": "10420",
+                "name": "Viação Botucatu - Cartão Municipal Botucatu",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+              "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+              "chunk": 1,
+              "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.798012,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "12a385ea-1e2a-424e-bdbf-6e27bfef8b17",
+            "role": "assistant",
+            "content": "**Viação Botucatu - Cartão Municipal Botucatu** · Código 10420 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 25,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+                "benefit_code": "10420",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 25,00",
+                  "code": "10420",
+                  "name": "Viação Botucatu - Cartão Municipal Botucatu",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+                "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+                "chunk": 1,
+                "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.798012,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:17:06.359838Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "98bb92fc-5045-4c08-8bb3-d1d4363436b3",
+        "deadline": 10822.071776548,
+        "question": "Quem pode solicitar a segunda via do Municipal Botucatu?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "98bb92fc-5045-4c08-8bb3-d1d4363436b3",
+        "deadline": 10822.071776548,
+        "question": "Quem pode solicitar a segunda via do Municipal Botucatu?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "10420"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+            "benefit_code": "10420",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 25,00",
+              "code": "10420",
+              "name": "Viação Botucatu - Cartão Municipal Botucatu",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+            "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+            "chunk": 1,
+            "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.798012,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+            "benefit_code": "10420",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 25,00",
+              "code": "10420",
+              "name": "Viação Botucatu - Cartão Municipal Botucatu",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+            "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+            "chunk": 1,
+            "excerpt": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.798012,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem pode solicitar a segunda via do Municipal Botucatu?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Viação Botucatu - Cartão Municipal Botucatu** · Código 10420 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 25,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 930
+    }
+  ],
+  "conversation_id": "98bb92fc-5045-4c08-8bb3-d1d4363436b3",
+  "duration_ms": 933,
+  "completed_at": "2026-10-21T14:17:07.285497+00:00"
+}

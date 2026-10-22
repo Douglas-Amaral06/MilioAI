@@ -1,0 +1,118 @@
+[
+  {
+    "question": "Oi",
+    "outcome": "social",
+    "source_ids": [],
+    "source_domains": [],
+    "benefit_codes": [],
+    "answer": "Olá! Como posso ajudar? Posso orientar sobre Folha Ponto, Vale-Transporte, atestados e outros assuntos disponíveis.",
+    "stream_matches_final": true,
+    "duration_ms": 12
+  },
+  {
+    "question": "Bom dia",
+    "outcome": "social",
+    "source_ids": [],
+    "source_domains": [],
+    "benefit_codes": [],
+    "answer": "Olá! Como posso ajudar? Posso orientar sobre Folha Ponto, Vale-Transporte, atestados e outros assuntos disponíveis.",
+    "stream_matches_final": true,
+    "duration_ms": 7
+  },
+  {
+    "question": "Obrigado",
+    "outcome": "social",
+    "source_ids": [],
+    "source_domains": [],
+    "benefit_codes": [],
+    "answer": "Por nada! Estou à disposição.",
+    "stream_matches_final": true,
+    "duration_ms": 9
+  },
+  {
+    "question": "Qual é o prazo para entregar minha folha ponto?",
+    "outcome": "answered",
+    "source_ids": [
+      "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5"
+    ],
+    "source_domains": [
+      "rh_frequency"
+    ],
+    "benefit_codes": [
+      null
+    ],
+    "answer": "O prazo para entregar a folha ponto é até o segundo dia útil do mês [fonte:F1].",
+    "stream_matches_final": true,
+    "duration_ms": 30540
+  },
+  {
+    "question": "Oi, como solicito a segunda via do SPTrans?",
+    "outcome": "answered",
+    "source_ids": [
+      "f92226c6-cfff-4904-b41d-32b54ef8fefe"
+    ],
+    "source_domains": [
+      "beneficios.vale_transporte.segunda_via"
+    ],
+    "benefit_codes": [
+      "89"
+    ],
+    "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+    "stream_matches_final": true,
+    "duration_ms": 16759
+  },
+  {
+    "question": "Qual é o prazo para entregar minha folha ponto? E como solicito a segunda via do meu Bilhete Único SPTrans?",
+    "outcome": "answered",
+    "source_ids": [
+      "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+      "f92226c6-cfff-4904-b41d-32b54ef8fefe"
+    ],
+    "source_domains": [
+      "beneficios.vale_transporte.segunda_via",
+      "rh_frequency"
+    ],
+    "benefit_codes": [
+      null,
+      "89"
+    ],
+    "answer": "**Folha Ponto**\n\nO prazo para entregar a folha ponto é até o segundo dia útil do mês [fonte:e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5].\n\n**Benefício Vale-Transporte**\n\n**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Quem solicita:** Jovem [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Quem paga:** Jovem [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Taxa documentada:** 7 tarifas [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Forma de pagamento:** Dinheiro [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]",
+    "stream_matches_final": true,
+    "duration_ms": 32745
+  },
+  {
+    "question": "Qual o prazo da Folha Ponto e como solicito a segunda via do SPTrans?",
+    "outcome": "answered",
+    "source_ids": [
+      "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+      "f92226c6-cfff-4904-b41d-32b54ef8fefe"
+    ],
+    "source_domains": [
+      "beneficios.vale_transporte.segunda_via",
+      "rh_frequency"
+    ],
+    "benefit_codes": [
+      null,
+      "89"
+    ],
+    "answer": "**Folha Ponto**\n\nO prazo da Folha Ponto é até o segundo dia útil do mês [fonte:e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5].\n\n**Benefício Vale-Transporte**\n\n**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Quem solicita:** Jovem [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Quem paga:** Jovem [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Taxa documentada:** 7 tarifas [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Forma de pagamento:** Dinheiro [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:f92226c6-cfff-4904-b41d-32b54ef8fefe]",
+    "stream_matches_final": true,
+    "duration_ms": 30046
+  },
+  {
+    "question": "Como solicito a segunda via do SPTrans e quanto custa?",
+    "outcome": "answered",
+    "source_ids": [
+      "f92226c6-cfff-4904-b41d-32b54ef8fefe"
+    ],
+    "source_domains": [
+      "beneficios.vale_transporte.segunda_via"
+    ],
+    "benefit_codes": [
+      "89"
+    ],
+    "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+    "stream_matches_final": true,
+    "duration_ms": 13531
+  }
+]

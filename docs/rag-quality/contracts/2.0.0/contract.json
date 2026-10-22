@@ -1,0 +1,485 @@
+{
+  "contract_version": "2.0.0",
+  "status": "technical_proposal_pending_human_acceptance",
+  "baseline": {
+    "run_id": "rag-real-183dfe28d96b",
+    "dataset_version": "1.0.0",
+    "dataset_sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+    "evaluator_sha256": "3c7a3aaa0035fd2ab739117a0b8f68c3fbf45ea6b9056e9e017391217d95c37f",
+    "schema_sha256": "ad496138f523910becbbf482215d5f2dd0180ea23bf1a05361526e81e05df180"
+  },
+  "inputs": {
+    "FP-05": {
+      "topic_id": "folha_ponto"
+    },
+    "FP-11": {
+      "topic_id": "folha_ponto"
+    },
+    "FP-13": {
+      "topic_id": "folha_ponto"
+    },
+    "FP-14": {
+      "topic_id": "folha_ponto"
+    },
+    "FP-15": {
+      "topic_id": "folha_ponto"
+    },
+    "FP-16": {
+      "topic_id": "folha_ponto"
+    },
+    "OP-03": {
+      "setup_turns": [
+        {
+          "topic_id": "falta_curso",
+          "question_id": "falta_curso.instrutor"
+        },
+        {
+          "action": {
+            "kind": "instructor_known"
+          }
+        },
+        {
+          "action": {
+            "kind": "instructor_select",
+            "instructor_id": "instructor-11"
+          }
+        }
+      ]
+    }
+  },
+  "source_bindings": [
+    {
+      "runtime_document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+      "alias": "folha-ponto",
+      "runtime_version": "folha-ponto-local-v1",
+      "document_sha256": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+      "scope": "local_review",
+      "validation_only": true,
+      "institutional_approval": "pending",
+      "historical_snapshot_equivalence": "not_established",
+      "chunks": [
+        {
+          "id": "0b8c93cd-0873-4263-8bba-67a6e1e34bf5",
+          "sha256": "52e00530190aa75a111c7a274bc1180b46699b7ffa84841b8165f6c3078f825d",
+          "page": 1,
+          "section": "Documento",
+          "benefit_code": null
+        },
+        {
+          "id": "89124cde-2425-426d-9cfc-9b90e0e4d6f2",
+          "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+          "page": 1,
+          "section": "1. O que é a Folha Ponto?",
+          "benefit_code": null
+        },
+        {
+          "id": "6318bd24-ef7e-427c-8b5f-2c745ce187a5",
+          "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+          "page": 1,
+          "section": "2. Periodicidade e Prazo",
+          "benefit_code": null
+        },
+        {
+          "id": "063547d8-23c4-42e4-9f6c-fc84c5814aa1",
+          "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+          "page": 1,
+          "section": "3. Como preencher corretamente",
+          "benefit_code": null
+        },
+        {
+          "id": "629b4e38-5209-44c9-95ed-55f02f20feef",
+          "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+          "page": 2,
+          "section": "4. O que NÃO fazer",
+          "benefit_code": null
+        },
+        {
+          "id": "cf73f639-4597-4adb-b538-bd848a6386c4",
+          "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+          "page": 2,
+          "section": "5. Assinaturas obrigatórias",
+          "benefit_code": null
+        },
+        {
+          "id": "1af70102-7aaf-4557-b0c3-db2b3f1dd414",
+          "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+          "page": 2,
+          "section": "6. Envio do documento",
+          "benefit_code": null
+        },
+        {
+          "id": "13ac6cfa-4c7b-44d4-87cb-c33ff47ae474",
+          "sha256": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b",
+          "page": 2,
+          "section": "7. Responsabilidade",
+          "benefit_code": null
+        },
+        {
+          "id": "4ea277d1-b70f-4756-862f-eb94e03ca385",
+          "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+          "page": 2,
+          "section": "8. Dúvidas",
+          "benefit_code": null
+        }
+      ]
+    },
+    {
+      "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+      "alias": "vt-segunda-via",
+      "runtime_version": "vt-segunda-via-local-v1",
+      "document_sha256": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+      "scope": "local_review",
+      "validation_only": true,
+      "institutional_approval": "pending",
+      "historical_snapshot_equivalence": "not_established",
+      "chunks": [
+        {
+          "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+          "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+          "page": 1,
+          "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+          "benefit_code": "10398"
+        },
+        {
+          "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+          "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+          "page": 1,
+          "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+          "benefit_code": "10420"
+        },
+        {
+          "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+          "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+          "page": 1,
+          "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+          "benefit_code": "164"
+        },
+        {
+          "id": "eef76c2e-c63e-470c-a00c-50c2f683cb7e",
+          "sha256": "eb77a99b6f010e3370583868c21ec2f7479b50466d5b696e37532e428c51b2d3",
+          "page": 1,
+          "section": "15515 · AETUR Del Rey - Cartão Pec - Municipal Carapicuíba",
+          "benefit_code": "15515"
+        },
+        {
+          "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+          "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+          "page": 1,
+          "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+          "benefit_code": "15566"
+        },
+        {
+          "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+          "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+          "page": 1,
+          "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+          "benefit_code": "15510"
+        },
+        {
+          "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+          "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+          "page": 1,
+          "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+          "benefit_code": "15511"
+        },
+        {
+          "id": "4b2b692d-87c5-4a83-8249-df190a204fc0",
+          "sha256": "29b0370be31da7584565fb9e43318eb5408752f6371e97e1d3a1ccdc0ad9c039",
+          "page": 1,
+          "section": "15512 · BB Turismo - Cartão Municipal Jandira",
+          "benefit_code": "15512"
+        },
+        {
+          "id": "60d69991-80cb-41a8-9921-dc7076824a84",
+          "sha256": "511ec566cb512363b6baf9658952a1c57421f85e5d5f27432bb4d057b1425fc2",
+          "page": 1,
+          "section": "15780 · Bem Osasco - Cartão Municipal Osasco",
+          "benefit_code": "15780"
+        },
+        {
+          "id": "2ca272c1-5afc-4525-9d63-50e300f91678",
+          "sha256": "a31217e012d65e12689608972f50030a2c701eb0b3aaaa0e854e5cce22726b32",
+          "page": 1,
+          "section": "15779 · Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba",
+          "benefit_code": "15779"
+        },
+        {
+          "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+          "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+          "page": 1,
+          "section": "7099 · Consórcio Bus Mais",
+          "benefit_code": "7099"
+        },
+        {
+          "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+          "page": 1,
+          "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+          "benefit_code": "216"
+        },
+        {
+          "id": "b575da20-2359-47ae-8cce-4587caf01067",
+          "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+          "page": 1,
+          "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+          "benefit_code": "2337"
+        },
+        {
+          "id": "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1",
+          "sha256": "3d54ea0bf7d8ef774b4097fcb5b2ba6f571d18d2e5941e70e061dd8c4023e3cd",
+          "page": 1,
+          "section": "5631 · Expresso Itamarati - Cartão Votuporanga Municipal",
+          "benefit_code": "5631"
+        },
+        {
+          "id": "5bcac667-53d3-4baf-a522-008dbd99ceac",
+          "sha256": "fb3410ccc2aec79f43032c3df2b59f58481507cbac2a591cf496596e65eaa3e6",
+          "page": 1,
+          "section": "182 · Guarupas - Cartão Guarulhos - Municipal / Guarulhos",
+          "benefit_code": "182"
+        },
+        {
+          "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+          "page": 1,
+          "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+          "benefit_code": "15508"
+        },
+        {
+          "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+          "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+          "page": 1,
+          "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+          "benefit_code": "10771"
+        },
+        {
+          "id": "3c7400a3-4da8-40d6-9da9-67ac337cb1bd",
+          "sha256": "8d7303f389c0452efda2ac41e80c73ff3b7df6bf902d85fbfadddc70c6343c52",
+          "page": 1,
+          "section": "10394 · Mov Itu - Cartão Municipal Itu",
+          "benefit_code": "10394"
+        },
+        {
+          "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+          "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+          "page": 1,
+          "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+          "benefit_code": "15504"
+        },
+        {
+          "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+          "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+          "page": 1,
+          "section": "15506 · Onpag - Cartão Suzano Municipal",
+          "benefit_code": "15506"
+        },
+        {
+          "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+          "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+          "page": 1,
+          "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+          "benefit_code": "3854"
+        },
+        {
+          "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+          "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+          "page": 1,
+          "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+          "benefit_code": "3845"
+        },
+        {
+          "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+          "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+          "page": 1,
+          "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+          "benefit_code": "1071"
+        },
+        {
+          "id": "caac4527-ef09-4943-851d-02be7d528396",
+          "sha256": "cd3150a82d836f8e9f8e3605032571f06192becc66965c54f8a24247abf73106",
+          "page": 1,
+          "section": "1892 · Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)",
+          "benefit_code": "1892"
+        },
+        {
+          "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+          "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+          "page": 2,
+          "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+          "benefit_code": "503"
+        },
+        {
+          "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+          "page": 2,
+          "section": "89 · SPTRANS - Bilhete Único",
+          "benefit_code": "89"
+        },
+        {
+          "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+          "page": 2,
+          "section": "9156 · TOP - Cartão Top",
+          "benefit_code": "9156"
+        },
+        {
+          "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+          "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+          "page": 2,
+          "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+          "benefit_code": "738"
+        },
+        {
+          "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+          "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+          "page": 2,
+          "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+          "benefit_code": "472"
+        },
+        {
+          "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+          "page": 2,
+          "section": "155 · Transurc Campinas - Municipal Campinas",
+          "benefit_code": "155"
+        },
+        {
+          "id": "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2",
+          "sha256": "5cb888f4929fcda41a7a8c134c0063b01b42883c71b55d8cdd79b56cbe46df1e",
+          "page": 2,
+          "section": "200 · Urbes Sorocaba - Cartão Sorocaba Municipal",
+          "benefit_code": "200"
+        },
+        {
+          "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+          "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+          "page": 2,
+          "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+          "benefit_code": "937"
+        },
+        {
+          "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+          "page": 2,
+          "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+          "benefit_code": "15723"
+        }
+      ]
+    },
+    {
+      "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+      "alias": "folha-ponto",
+      "runtime_version": "folha-ponto-local-v1",
+      "document_sha256": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+      "scope": "local_review",
+      "validation_only": true,
+      "institutional_approval": "pending",
+      "historical_snapshot_equivalence": "not_established",
+      "chunks": [
+        {
+          "id": "68e29863-43f4-4efe-9169-305862b1c801",
+          "sha256": "52e00530190aa75a111c7a274bc1180b46699b7ffa84841b8165f6c3078f825d",
+          "page": 1,
+          "section": "Documento",
+          "benefit_code": null
+        },
+        {
+          "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+          "page": 1,
+          "section": "1. O que é a Folha Ponto?",
+          "benefit_code": null
+        },
+        {
+          "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+          "page": 1,
+          "section": "2. Periodicidade e Prazo",
+          "benefit_code": null
+        },
+        {
+          "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+          "page": 1,
+          "section": "3. Como preencher corretamente",
+          "benefit_code": null
+        },
+        {
+          "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+          "page": 2,
+          "section": "4. O que NÃO fazer",
+          "benefit_code": null
+        },
+        {
+          "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+          "page": 2,
+          "section": "5. Assinaturas obrigatórias",
+          "benefit_code": null
+        },
+        {
+          "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+          "page": 2,
+          "section": "6. Envio do documento",
+          "benefit_code": null
+        },
+        {
+          "id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "sha256": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b",
+          "page": 2,
+          "section": "7. Responsabilidade",
+          "benefit_code": null
+        },
+        {
+          "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+          "page": 2,
+          "section": "8. Dúvidas",
+          "benefit_code": null
+        }
+      ]
+    }
+  ],
+  "operational_configuration": {
+    "path": "backend/app/support/operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "institutional_approval": "pending",
+    "citation_kind": "operational_configuration",
+    "pdf_citation_required": false,
+    "instructor_action_scope": "education:contacts"
+  },
+  "warning_policy": {
+    "documentary_channel": "source_metadata.validation_only",
+    "ui_render_verification": "pending_human_review",
+    "answer_body_warning_required_by_v2": false,
+    "historical_lexical_criterion": "preserved_and_reported_separately"
+  },
+  "scoring_policy": {
+    "historical_evaluator": "unchanged",
+    "historical_scores": "immutable",
+    "cross_version_equivalence": false,
+    "runtime_source_binding": "exact_version_document_hash_chunk_hash_and_id",
+    "operational_provenance": "exact_configuration_hash_and_origin_and_validation_status",
+    "semantic_approval": "human_decision_only",
+    "contract_checks": "observations_only_not_semantic_grades",
+    "comparability": "same_input_full_run_plus_separate_seven_case_input_overlay"
+  },
+  "review_protocol": {
+    "dimensions": [
+      "fidelity",
+      "completeness",
+      "conditions_and_exceptions",
+      "citations",
+      "institutional_conflicts",
+      "access_restrictions"
+    ],
+    "reviewer": null,
+    "decision": null,
+    "reviewed_at": null,
+    "institutional_approval": "external_owner_required"
+  }
+}

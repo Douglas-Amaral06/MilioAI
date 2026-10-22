@@ -1,0 +1,676 @@
+{"level": "INFO", "event": "request", "request_id": "9b0bcc2d-ecfe-4911-b5b3-9a1637093c19", "duration_ms": 27, "status": 200}
+{"level": "INFO", "event": "intents_identified", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 1, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 1, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 0, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 0, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 2489, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 731, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 1347, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 324, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 0, "conversation_id": "29b78778-9d68-490a-aed2-90a8e8fd01bf", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "b049c19a-b3c6-42e0-b6e2-109de7c408b2", "duration_ms": 5194, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-01", "duration_ms": 5260, "completed": 1}
+{"level": "INFO", "event": "intents_identified", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 0, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 0, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 0, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 0, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 2282, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 703, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 560, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 305, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 0, "conversation_id": "356e791b-f373-4bc2-8131-d22687ee2c67", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "782b42f5-5b4e-46a1-bd2d-e7976ce8ace5", "duration_ms": 3913, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-02", "duration_ms": 3939, "completed": 2}
+{"level": "INFO", "event": "intents_identified", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 0, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 0, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 0, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 0, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 2204, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 835, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 637, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 314, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 0, "conversation_id": "5b8699ee-ad9e-4465-979c-8c025c3335ec", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "c9675666-8346-4ab8-bbd4-a8db3abde00d", "duration_ms": 4005, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-03", "duration_ms": 4016, "completed": 3}
+{"level": "INFO", "event": "intents_identified", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 0, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 0, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 0, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 0, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "agent": "rh_frequency", "chunk_count": 2}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 2184, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "agent": "rh_frequency", "chunk_count": 1, "coverage": "partial"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 706, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 1821, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 370, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 0, "conversation_id": "2da45f56-19fe-4a0b-a9b4-13f67b83ef3d", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "812a9bbc-290f-4e09-ab57-2d5e43199754", "duration_ms": 5095, "agent": "rh_frequency", "outcome": "partial", "success": false}
+{"test_id": "FP-04", "duration_ms": 5107, "completed": 4}
+{"level": "INFO", "event": "intents_identified", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 0, "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 0, "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 0, "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 0, "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 0, "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 0, "conversation_id": "2d58da3a-3fb5-4cb3-b709-4f63bf205b7c", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "05f8b2ed-8c41-493f-96d3-fcb4877c3062", "duration_ms": 10, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "FP-05", "duration_ms": 23, "completed": 5}
+{"level": "INFO", "event": "intents_identified", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domains": ["falta_trabalho"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 0, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 0, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 402, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 0, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "agent": "rh_frequency", "chunk_count": 2}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 2265, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 668, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 1311, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 338, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 0, "conversation_id": "61537fc0-42ee-4e45-8d28-1e264f8b5c5c", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "6a970cf1-4192-4596-bf04-bbec259447ba", "duration_ms": 5180, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-06", "duration_ms": 5194, "completed": 6}
+{"level": "INFO", "event": "intents_identified", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domains": ["falta_curso"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 0, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 0, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 0, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 0, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 2174, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 775, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 954, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 354, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 0, "conversation_id": "bbc00f38-48b8-40bf-9e9b-f0c88a9d9b7f", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "cda436f3-ba13-4efc-b02d-535812ef9b8e", "duration_ms": 4270, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-07", "duration_ms": 4292, "completed": 7}
+{"level": "INFO", "event": "intents_identified", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 0, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 0, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 0, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 0, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 2227, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 609, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 1043, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 304, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 0, "conversation_id": "fe90d005-786f-4f3d-9fa6-ef3f052df92b", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "c5c01be9-8c31-4c9b-91ac-b4bafbe2fb13", "duration_ms": 4197, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-08", "duration_ms": 4239, "completed": 8}
+{"level": "INFO", "event": "intents_identified", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 0, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 0, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 0, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 0, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 73, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "agent": "rh_frequency", "chunk_count": 2, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 697, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 700, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 319, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 0, "conversation_id": "31ad529f-ea39-4d63-aae7-309a5fa2e612", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "d577bef2-217c-4948-8a5e-ad5e12923252", "duration_ms": 1802, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-09", "duration_ms": 1814, "completed": 9}
+{"level": "INFO", "event": "intents_identified", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 0, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 0, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 0, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 0, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 2261, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "agent": "rh_frequency", "chunk_count": 2, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 685, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 737, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 293, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 0, "conversation_id": "a8e0d5ec-b849-480a-b884-f867e9265898", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "68c0137d-22df-4806-bb78-c085fc2299e6", "duration_ms": 3989, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-10", "duration_ms": 4001, "completed": 10}
+{"level": "INFO", "event": "intents_identified", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 0, "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 0, "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 272, "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 0, "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 0, "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 0, "conversation_id": "015b76cd-ebc2-4841-9f76-fd6596585d00", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "b4e0aab5-9978-4a55-ac98-e4fe5e7c34c8", "duration_ms": 283, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "FP-11", "duration_ms": 296, "completed": 11}
+{"level": "INFO", "event": "intents_identified", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 0, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 0, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 0, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 0, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 2194, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 847, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 1526, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 344, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 0, "conversation_id": "4e6ab698-c729-4dc5-b9ec-bb1e9ec1ad2b", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "d784d2de-410d-45ff-a9c3-8d04236f71ae", "duration_ms": 4933, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-12", "duration_ms": 4944, "completed": 12}
+{"level": "INFO", "event": "intents_identified", "request_id": "bd72a68b-0f36-4e54-bafa-0be36b507b6d", "conversation_id": "9a0a8abf-d55f-4fa5-a530-85fc2af56ee7", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "bd72a68b-0f36-4e54-bafa-0be36b507b6d", "duration_ms": 0, "conversation_id": "9a0a8abf-d55f-4fa5-a530-85fc2af56ee7", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "bd72a68b-0f36-4e54-bafa-0be36b507b6d", "duration_ms": 0, "conversation_id": "9a0a8abf-d55f-4fa5-a530-85fc2af56ee7", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "bd72a68b-0f36-4e54-bafa-0be36b507b6d", "duration_ms": 368, "conversation_id": "9a0a8abf-d55f-4fa5-a530-85fc2af56ee7", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "bd72a68b-0f36-4e54-bafa-0be36b507b6d", "duration_ms": 0, "conversation_id": "9a0a8abf-d55f-4fa5-a530-85fc2af56ee7", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "bd72a68b-0f36-4e54-bafa-0be36b507b6d", "duration_ms": 379, "agent": null, "outcome": "operational", "success": true}
+{"test_id": "FP-13", "duration_ms": 393, "completed": 13}
+{"level": "INFO", "event": "intents_identified", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 0, "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 0, "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 262, "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 0, "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 0, "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 0, "conversation_id": "b8a422f8-0ef0-4019-b2d2-26254ae1b527", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "717554f4-a436-49a9-bb75-e42e3a83e6fa", "duration_ms": 591, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "FP-14", "duration_ms": 602, "completed": 14}
+{"level": "INFO", "event": "intents_identified", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 0, "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 0, "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 224, "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 0, "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 0, "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 0, "conversation_id": "0d9952ff-126f-4409-9be4-a3b399926f85", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "74dc2011-a428-4b8b-83e0-3f6454dd2d7a", "duration_ms": 318, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "FP-15", "duration_ms": 335, "completed": 15}
+{"level": "INFO", "event": "intents_identified", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 0, "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 0, "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 228, "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 0, "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 0, "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 0, "conversation_id": "69f5614a-9d15-4b7e-868b-f3f0c24a909f", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "55642ed5-45d1-46a4-9fc0-ae95a1aedf9b", "duration_ms": 342, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "FP-16", "duration_ms": 358, "completed": 16}
+{"level": "INFO", "event": "intents_identified", "request_id": "8bb58a05-8826-40dd-b6c5-7addbc509f37", "conversation_id": "ed5616b5-7662-4bf2-8f33-ae266e37cd8a", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "8bb58a05-8826-40dd-b6c5-7addbc509f37", "duration_ms": 0, "conversation_id": "ed5616b5-7662-4bf2-8f33-ae266e37cd8a", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "8bb58a05-8826-40dd-b6c5-7addbc509f37", "duration_ms": 6, "conversation_id": "ed5616b5-7662-4bf2-8f33-ae266e37cd8a", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "8bb58a05-8826-40dd-b6c5-7addbc509f37", "duration_ms": 3209, "conversation_id": "ed5616b5-7662-4bf2-8f33-ae266e37cd8a", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "8bb58a05-8826-40dd-b6c5-7addbc509f37", "duration_ms": 3229, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-10398", "duration_ms": 3246, "completed": 17}
+{"level": "INFO", "event": "intents_identified", "request_id": "92a69561-8bca-495e-8893-1a90a57b2729", "conversation_id": "3778c10f-4876-42f6-8291-0d156a95ea22", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "92a69561-8bca-495e-8893-1a90a57b2729", "duration_ms": 0, "conversation_id": "3778c10f-4876-42f6-8291-0d156a95ea22", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "92a69561-8bca-495e-8893-1a90a57b2729", "duration_ms": 3, "conversation_id": "3778c10f-4876-42f6-8291-0d156a95ea22", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "92a69561-8bca-495e-8893-1a90a57b2729", "duration_ms": 3055, "conversation_id": "3778c10f-4876-42f6-8291-0d156a95ea22", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "92a69561-8bca-495e-8893-1a90a57b2729", "duration_ms": 3072, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-10420", "duration_ms": 3097, "completed": 18}
+{"level": "INFO", "event": "intents_identified", "request_id": "e53b8ce3-8971-413c-93cc-d50057de82ab", "conversation_id": "bac950d0-1c88-43d2-a8a0-8c8e0800abf5", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "e53b8ce3-8971-413c-93cc-d50057de82ab", "duration_ms": 0, "conversation_id": "bac950d0-1c88-43d2-a8a0-8c8e0800abf5", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e53b8ce3-8971-413c-93cc-d50057de82ab", "duration_ms": 3, "conversation_id": "bac950d0-1c88-43d2-a8a0-8c8e0800abf5", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e53b8ce3-8971-413c-93cc-d50057de82ab", "duration_ms": 921, "conversation_id": "bac950d0-1c88-43d2-a8a0-8c8e0800abf5", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "e53b8ce3-8971-413c-93cc-d50057de82ab", "duration_ms": 935, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-164", "duration_ms": 947, "completed": 19}
+{"level": "INFO", "event": "intents_identified", "request_id": "c5f65761-53d9-439e-9f3a-bc2e3dcc6302", "conversation_id": "d1d481f4-1c2e-40f1-9461-d208335e61b3", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5f65761-53d9-439e-9f3a-bc2e3dcc6302", "duration_ms": 0, "conversation_id": "d1d481f4-1c2e-40f1-9461-d208335e61b3", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5f65761-53d9-439e-9f3a-bc2e3dcc6302", "duration_ms": 3, "conversation_id": "d1d481f4-1c2e-40f1-9461-d208335e61b3", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5f65761-53d9-439e-9f3a-bc2e3dcc6302", "duration_ms": 3349, "conversation_id": "d1d481f4-1c2e-40f1-9461-d208335e61b3", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "c5f65761-53d9-439e-9f3a-bc2e3dcc6302", "duration_ms": 3364, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15515", "duration_ms": 3377, "completed": 20}
+{"level": "INFO", "event": "intents_identified", "request_id": "54a83799-549c-48da-b496-c4eb63bf164d", "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "54a83799-549c-48da-b496-c4eb63bf164d", "duration_ms": 0, "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "54a83799-549c-48da-b496-c4eb63bf164d", "duration_ms": 6, "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "54a83799-549c-48da-b496-c4eb63bf164d", "duration_ms": 933, "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "54a83799-549c-48da-b496-c4eb63bf164d", "duration_ms": 950, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15566", "duration_ms": 965, "completed": 21}
+{"level": "INFO", "event": "intents_identified", "request_id": "aa816bb4-3a31-41d7-947d-4ec3873fc8a5", "conversation_id": "99807fd6-b387-44db-98fb-38b06c1c2334", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "aa816bb4-3a31-41d7-947d-4ec3873fc8a5", "duration_ms": 0, "conversation_id": "99807fd6-b387-44db-98fb-38b06c1c2334", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "aa816bb4-3a31-41d7-947d-4ec3873fc8a5", "duration_ms": 3, "conversation_id": "99807fd6-b387-44db-98fb-38b06c1c2334", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "aa816bb4-3a31-41d7-947d-4ec3873fc8a5", "duration_ms": 826, "conversation_id": "99807fd6-b387-44db-98fb-38b06c1c2334", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "aa816bb4-3a31-41d7-947d-4ec3873fc8a5", "duration_ms": 840, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15510", "duration_ms": 852, "completed": 22}
+{"level": "INFO", "event": "intents_identified", "request_id": "58e1d2b2-90af-4273-a660-7d7cdaad46cf", "conversation_id": "4a97d1ab-ee20-47f7-8624-9317bef311b5", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "58e1d2b2-90af-4273-a660-7d7cdaad46cf", "duration_ms": 0, "conversation_id": "4a97d1ab-ee20-47f7-8624-9317bef311b5", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "58e1d2b2-90af-4273-a660-7d7cdaad46cf", "duration_ms": 3, "conversation_id": "4a97d1ab-ee20-47f7-8624-9317bef311b5", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "58e1d2b2-90af-4273-a660-7d7cdaad46cf", "duration_ms": 3644, "conversation_id": "4a97d1ab-ee20-47f7-8624-9317bef311b5", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "58e1d2b2-90af-4273-a660-7d7cdaad46cf", "duration_ms": 3658, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15511", "duration_ms": 3670, "completed": 23}
+{"level": "INFO", "event": "intents_identified", "request_id": "2516088b-efd6-4ef3-9aa1-5f26f6a6ad7a", "conversation_id": "fbbd15d0-779a-4815-831b-bebadffa596e", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2516088b-efd6-4ef3-9aa1-5f26f6a6ad7a", "duration_ms": 0, "conversation_id": "fbbd15d0-779a-4815-831b-bebadffa596e", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2516088b-efd6-4ef3-9aa1-5f26f6a6ad7a", "duration_ms": 5, "conversation_id": "fbbd15d0-779a-4815-831b-bebadffa596e", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2516088b-efd6-4ef3-9aa1-5f26f6a6ad7a", "duration_ms": 1094, "conversation_id": "fbbd15d0-779a-4815-831b-bebadffa596e", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "2516088b-efd6-4ef3-9aa1-5f26f6a6ad7a", "duration_ms": 1111, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15512", "duration_ms": 1129, "completed": 24}
+{"level": "INFO", "event": "intents_identified", "request_id": "b86874af-eca5-4d17-a7ad-804bec18023f", "conversation_id": "92000d16-f98a-49ff-9de8-815330b4b822", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b86874af-eca5-4d17-a7ad-804bec18023f", "duration_ms": 0, "conversation_id": "92000d16-f98a-49ff-9de8-815330b4b822", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b86874af-eca5-4d17-a7ad-804bec18023f", "duration_ms": 2, "conversation_id": "92000d16-f98a-49ff-9de8-815330b4b822", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b86874af-eca5-4d17-a7ad-804bec18023f", "duration_ms": 3878, "conversation_id": "92000d16-f98a-49ff-9de8-815330b4b822", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "b86874af-eca5-4d17-a7ad-804bec18023f", "duration_ms": 3889, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15780", "duration_ms": 3900, "completed": 25}
+{"level": "INFO", "event": "intents_identified", "request_id": "31af22b9-1b0c-456d-aa1d-d6e601769031", "conversation_id": "c3a798be-7c11-4e99-8ad6-44426f9fb3e8", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "31af22b9-1b0c-456d-aa1d-d6e601769031", "duration_ms": 0, "conversation_id": "c3a798be-7c11-4e99-8ad6-44426f9fb3e8", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "31af22b9-1b0c-456d-aa1d-d6e601769031", "duration_ms": 3, "conversation_id": "c3a798be-7c11-4e99-8ad6-44426f9fb3e8", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "31af22b9-1b0c-456d-aa1d-d6e601769031", "duration_ms": 1317, "conversation_id": "c3a798be-7c11-4e99-8ad6-44426f9fb3e8", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "31af22b9-1b0c-456d-aa1d-d6e601769031", "duration_ms": 1503, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15779", "duration_ms": 1514, "completed": 26}
+{"level": "INFO", "event": "intents_identified", "request_id": "771388f2-1e6d-4654-adf8-d1a21e98cf05", "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "771388f2-1e6d-4654-adf8-d1a21e98cf05", "duration_ms": 0, "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "771388f2-1e6d-4654-adf8-d1a21e98cf05", "duration_ms": 0, "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "771388f2-1e6d-4654-adf8-d1a21e98cf05", "duration_ms": 3503, "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "771388f2-1e6d-4654-adf8-d1a21e98cf05", "duration_ms": 3516, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-7099", "duration_ms": 3526, "completed": 27}
+{"level": "INFO", "event": "intents_identified", "request_id": "24d1ae85-c00b-4e0f-8c00-0f7ecc4cb691", "conversation_id": "8d085bbf-52e0-4cf3-8ea1-7f5f3406ae40", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "24d1ae85-c00b-4e0f-8c00-0f7ecc4cb691", "duration_ms": 0, "conversation_id": "8d085bbf-52e0-4cf3-8ea1-7f5f3406ae40", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "24d1ae85-c00b-4e0f-8c00-0f7ecc4cb691", "duration_ms": 3, "conversation_id": "8d085bbf-52e0-4cf3-8ea1-7f5f3406ae40", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "24d1ae85-c00b-4e0f-8c00-0f7ecc4cb691", "duration_ms": 1324, "conversation_id": "8d085bbf-52e0-4cf3-8ea1-7f5f3406ae40", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "24d1ae85-c00b-4e0f-8c00-0f7ecc4cb691", "duration_ms": 1337, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-216", "duration_ms": 1354, "completed": 28}
+{"level": "INFO", "event": "intents_identified", "request_id": "b434a74f-9069-4afb-b5fd-395b9168c95a", "conversation_id": "23e2c729-b650-4583-971e-7292bae97669", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b434a74f-9069-4afb-b5fd-395b9168c95a", "duration_ms": 0, "conversation_id": "23e2c729-b650-4583-971e-7292bae97669", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b434a74f-9069-4afb-b5fd-395b9168c95a", "duration_ms": 3, "conversation_id": "23e2c729-b650-4583-971e-7292bae97669", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b434a74f-9069-4afb-b5fd-395b9168c95a", "duration_ms": 3222, "conversation_id": "23e2c729-b650-4583-971e-7292bae97669", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "b434a74f-9069-4afb-b5fd-395b9168c95a", "duration_ms": 3234, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-2337", "duration_ms": 3262, "completed": 29}
+{"level": "INFO", "event": "intents_identified", "request_id": "67524a04-4903-413e-8ada-9d552f308ea1", "conversation_id": "12876128-5c3c-4d99-8951-02aa11fad7bb", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "67524a04-4903-413e-8ada-9d552f308ea1", "duration_ms": 0, "conversation_id": "12876128-5c3c-4d99-8951-02aa11fad7bb", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "67524a04-4903-413e-8ada-9d552f308ea1", "duration_ms": 5, "conversation_id": "12876128-5c3c-4d99-8951-02aa11fad7bb", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "67524a04-4903-413e-8ada-9d552f308ea1", "duration_ms": 925, "conversation_id": "12876128-5c3c-4d99-8951-02aa11fad7bb", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "67524a04-4903-413e-8ada-9d552f308ea1", "duration_ms": 942, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-5631", "duration_ms": 955, "completed": 30}
+{"level": "INFO", "event": "intents_identified", "request_id": "884a67f1-a73d-483a-9abb-5731a17cba30", "conversation_id": "01ad46ce-9e05-4e6a-a383-b7f8b4ef1053", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "884a67f1-a73d-483a-9abb-5731a17cba30", "duration_ms": 0, "conversation_id": "01ad46ce-9e05-4e6a-a383-b7f8b4ef1053", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "884a67f1-a73d-483a-9abb-5731a17cba30", "duration_ms": 0, "conversation_id": "01ad46ce-9e05-4e6a-a383-b7f8b4ef1053", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "884a67f1-a73d-483a-9abb-5731a17cba30", "duration_ms": 1302, "conversation_id": "01ad46ce-9e05-4e6a-a383-b7f8b4ef1053", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "884a67f1-a73d-483a-9abb-5731a17cba30", "duration_ms": 1312, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-182", "duration_ms": 1322, "completed": 31}
+{"level": "INFO", "event": "intents_identified", "request_id": "1d01a968-2d14-4686-af13-62a43eb84be9", "conversation_id": "9d640743-ac89-4763-aec1-c2bc45a80e62", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "1d01a968-2d14-4686-af13-62a43eb84be9", "duration_ms": 0, "conversation_id": "9d640743-ac89-4763-aec1-c2bc45a80e62", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1d01a968-2d14-4686-af13-62a43eb84be9", "duration_ms": 3, "conversation_id": "9d640743-ac89-4763-aec1-c2bc45a80e62", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1d01a968-2d14-4686-af13-62a43eb84be9", "duration_ms": 3302, "conversation_id": "9d640743-ac89-4763-aec1-c2bc45a80e62", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "1d01a968-2d14-4686-af13-62a43eb84be9", "duration_ms": 3315, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15508", "duration_ms": 3327, "completed": 32}
+{"level": "INFO", "event": "intents_identified", "request_id": "811fe5e8-b134-45c3-b492-3842f3efdbd9", "conversation_id": "9f76f64f-91f3-44f7-8d24-0d732496a918", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "811fe5e8-b134-45c3-b492-3842f3efdbd9", "duration_ms": 0, "conversation_id": "9f76f64f-91f3-44f7-8d24-0d732496a918", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "811fe5e8-b134-45c3-b492-3842f3efdbd9", "duration_ms": 3, "conversation_id": "9f76f64f-91f3-44f7-8d24-0d732496a918", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "811fe5e8-b134-45c3-b492-3842f3efdbd9", "duration_ms": 833, "conversation_id": "9f76f64f-91f3-44f7-8d24-0d732496a918", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "811fe5e8-b134-45c3-b492-3842f3efdbd9", "duration_ms": 845, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-10771", "duration_ms": 899, "completed": 33}
+{"level": "INFO", "event": "intents_identified", "request_id": "ead7c6ce-3012-4f64-a34f-0a8b626ebe76", "conversation_id": "086c167b-7e1c-46a5-ad7d-1e954e70d5dc", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "ead7c6ce-3012-4f64-a34f-0a8b626ebe76", "duration_ms": 0, "conversation_id": "086c167b-7e1c-46a5-ad7d-1e954e70d5dc", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ead7c6ce-3012-4f64-a34f-0a8b626ebe76", "duration_ms": 2, "conversation_id": "086c167b-7e1c-46a5-ad7d-1e954e70d5dc", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ead7c6ce-3012-4f64-a34f-0a8b626ebe76", "duration_ms": 3845, "conversation_id": "086c167b-7e1c-46a5-ad7d-1e954e70d5dc", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "ead7c6ce-3012-4f64-a34f-0a8b626ebe76", "duration_ms": 3859, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-10394", "duration_ms": 3870, "completed": 34}
+{"level": "INFO", "event": "intents_identified", "request_id": "e833fb20-ab63-4ae7-ae02-4cccad5c8bfa", "conversation_id": "0ded5ef8-ae79-42ca-be6e-527fff4bef2a", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "e833fb20-ab63-4ae7-ae02-4cccad5c8bfa", "duration_ms": 0, "conversation_id": "0ded5ef8-ae79-42ca-be6e-527fff4bef2a", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e833fb20-ab63-4ae7-ae02-4cccad5c8bfa", "duration_ms": 2, "conversation_id": "0ded5ef8-ae79-42ca-be6e-527fff4bef2a", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e833fb20-ab63-4ae7-ae02-4cccad5c8bfa", "duration_ms": 856, "conversation_id": "0ded5ef8-ae79-42ca-be6e-527fff4bef2a", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "e833fb20-ab63-4ae7-ae02-4cccad5c8bfa", "duration_ms": 868, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15504", "duration_ms": 881, "completed": 35}
+{"level": "INFO", "event": "intents_identified", "request_id": "244e9215-d0fd-4f06-b679-06e9b3aa13ab", "conversation_id": "bd0ff3a6-179b-4c81-b93c-d86894f773da", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "244e9215-d0fd-4f06-b679-06e9b3aa13ab", "duration_ms": 0, "conversation_id": "bd0ff3a6-179b-4c81-b93c-d86894f773da", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "244e9215-d0fd-4f06-b679-06e9b3aa13ab", "duration_ms": 3, "conversation_id": "bd0ff3a6-179b-4c81-b93c-d86894f773da", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "244e9215-d0fd-4f06-b679-06e9b3aa13ab", "duration_ms": 3489, "conversation_id": "bd0ff3a6-179b-4c81-b93c-d86894f773da", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "244e9215-d0fd-4f06-b679-06e9b3aa13ab", "duration_ms": 3501, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15506", "duration_ms": 3512, "completed": 36}
+{"level": "INFO", "event": "intents_identified", "request_id": "77f45a19-6013-4139-8c1a-d3724bf0e7b7", "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "77f45a19-6013-4139-8c1a-d3724bf0e7b7", "duration_ms": 0, "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "77f45a19-6013-4139-8c1a-d3724bf0e7b7", "duration_ms": 3, "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "77f45a19-6013-4139-8c1a-d3724bf0e7b7", "duration_ms": 1323, "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "77f45a19-6013-4139-8c1a-d3724bf0e7b7", "duration_ms": 1419, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-3854", "duration_ms": 1430, "completed": 37}
+{"level": "INFO", "event": "intents_identified", "request_id": "2e5bee47-64d3-49e9-831f-7b662feedd0d", "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2e5bee47-64d3-49e9-831f-7b662feedd0d", "duration_ms": 0, "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2e5bee47-64d3-49e9-831f-7b662feedd0d", "duration_ms": 2, "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2e5bee47-64d3-49e9-831f-7b662feedd0d", "duration_ms": 3014, "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "2e5bee47-64d3-49e9-831f-7b662feedd0d", "duration_ms": 3025, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-3845", "duration_ms": 3036, "completed": 38}
+{"level": "INFO", "event": "intents_identified", "request_id": "c27c8f05-c309-4f32-92b4-59bc05b0450f", "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c27c8f05-c309-4f32-92b4-59bc05b0450f", "duration_ms": 0, "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c27c8f05-c309-4f32-92b4-59bc05b0450f", "duration_ms": 2, "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c27c8f05-c309-4f32-92b4-59bc05b0450f", "duration_ms": 3067, "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "c27c8f05-c309-4f32-92b4-59bc05b0450f", "duration_ms": 3078, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-1071", "duration_ms": 3089, "completed": 39}
+{"level": "INFO", "event": "intents_identified", "request_id": "2004a0f7-c0f1-4936-b71f-e6e8c9ae7631", "conversation_id": "26be57b6-84c5-4563-b530-b7d8b697445d", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2004a0f7-c0f1-4936-b71f-e6e8c9ae7631", "duration_ms": 0, "conversation_id": "26be57b6-84c5-4563-b530-b7d8b697445d", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2004a0f7-c0f1-4936-b71f-e6e8c9ae7631", "duration_ms": 2, "conversation_id": "26be57b6-84c5-4563-b530-b7d8b697445d", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2004a0f7-c0f1-4936-b71f-e6e8c9ae7631", "duration_ms": 1060, "conversation_id": "26be57b6-84c5-4563-b530-b7d8b697445d", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "2004a0f7-c0f1-4936-b71f-e6e8c9ae7631", "duration_ms": 1070, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-1892", "duration_ms": 1084, "completed": 40}
+{"level": "INFO", "event": "intents_identified", "request_id": "abfc9f62-b6e5-46ca-9129-ad47087d58f5", "conversation_id": "c8d1ca74-f511-4c5c-b070-2de87808a9f0", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "abfc9f62-b6e5-46ca-9129-ad47087d58f5", "duration_ms": 0, "conversation_id": "c8d1ca74-f511-4c5c-b070-2de87808a9f0", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "abfc9f62-b6e5-46ca-9129-ad47087d58f5", "duration_ms": 0, "conversation_id": "c8d1ca74-f511-4c5c-b070-2de87808a9f0", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "abfc9f62-b6e5-46ca-9129-ad47087d58f5", "duration_ms": 3178, "conversation_id": "c8d1ca74-f511-4c5c-b070-2de87808a9f0", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "abfc9f62-b6e5-46ca-9129-ad47087d58f5", "duration_ms": 3186, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-503", "duration_ms": 3200, "completed": 41}
+{"level": "INFO", "event": "intents_identified", "request_id": "f5318d0e-3b13-4f0b-a2fa-9ac43b0f67f5", "conversation_id": "1669e03d-ab70-43b8-a812-07416f084b69", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "f5318d0e-3b13-4f0b-a2fa-9ac43b0f67f5", "duration_ms": 0, "conversation_id": "1669e03d-ab70-43b8-a812-07416f084b69", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "f5318d0e-3b13-4f0b-a2fa-9ac43b0f67f5", "duration_ms": 0, "conversation_id": "1669e03d-ab70-43b8-a812-07416f084b69", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "f5318d0e-3b13-4f0b-a2fa-9ac43b0f67f5", "duration_ms": 1291, "conversation_id": "1669e03d-ab70-43b8-a812-07416f084b69", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "f5318d0e-3b13-4f0b-a2fa-9ac43b0f67f5", "duration_ms": 1299, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-89", "duration_ms": 1316, "completed": 42}
+{"level": "INFO", "event": "intents_identified", "request_id": "2881a651-6207-4906-a5e4-31eda1c566d7", "conversation_id": "2c71647b-f05f-4727-acf5-1a3f222be303", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2881a651-6207-4906-a5e4-31eda1c566d7", "duration_ms": 0, "conversation_id": "2c71647b-f05f-4727-acf5-1a3f222be303", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2881a651-6207-4906-a5e4-31eda1c566d7", "duration_ms": 3, "conversation_id": "2c71647b-f05f-4727-acf5-1a3f222be303", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2881a651-6207-4906-a5e4-31eda1c566d7", "duration_ms": 1341, "conversation_id": "2c71647b-f05f-4727-acf5-1a3f222be303", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "2881a651-6207-4906-a5e4-31eda1c566d7", "duration_ms": 1353, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-9156", "duration_ms": 1364, "completed": 43}
+{"level": "INFO", "event": "intents_identified", "request_id": "adce66cd-fd42-4f6f-a172-939087baffd2", "conversation_id": "7ca420b4-e9c1-464c-a73f-e7b36f3348a0", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "adce66cd-fd42-4f6f-a172-939087baffd2", "duration_ms": 0, "conversation_id": "7ca420b4-e9c1-464c-a73f-e7b36f3348a0", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "adce66cd-fd42-4f6f-a172-939087baffd2", "duration_ms": 2, "conversation_id": "7ca420b4-e9c1-464c-a73f-e7b36f3348a0", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "adce66cd-fd42-4f6f-a172-939087baffd2", "duration_ms": 3059, "conversation_id": "7ca420b4-e9c1-464c-a73f-e7b36f3348a0", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "adce66cd-fd42-4f6f-a172-939087baffd2", "duration_ms": 3074, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-738", "duration_ms": 3086, "completed": 44}
+{"level": "INFO", "event": "intents_identified", "request_id": "99751d45-968f-458b-8774-a5a182c28c2b", "conversation_id": "11e95fb6-a8fa-4bdd-973d-b6afb00deae1", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "99751d45-968f-458b-8774-a5a182c28c2b", "duration_ms": 0, "conversation_id": "11e95fb6-a8fa-4bdd-973d-b6afb00deae1", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "99751d45-968f-458b-8774-a5a182c28c2b", "duration_ms": 3, "conversation_id": "11e95fb6-a8fa-4bdd-973d-b6afb00deae1", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "99751d45-968f-458b-8774-a5a182c28c2b", "duration_ms": 877, "conversation_id": "11e95fb6-a8fa-4bdd-973d-b6afb00deae1", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "99751d45-968f-458b-8774-a5a182c28c2b", "duration_ms": 890, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-472", "duration_ms": 901, "completed": 45}
+{"level": "INFO", "event": "intents_identified", "request_id": "b5471f60-4169-4098-b091-f035128b0050", "conversation_id": "eaa1847e-830a-43fa-8cab-bcb835cccd3c", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b5471f60-4169-4098-b091-f035128b0050", "duration_ms": 0, "conversation_id": "eaa1847e-830a-43fa-8cab-bcb835cccd3c", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b5471f60-4169-4098-b091-f035128b0050", "duration_ms": 3, "conversation_id": "eaa1847e-830a-43fa-8cab-bcb835cccd3c", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b5471f60-4169-4098-b091-f035128b0050", "duration_ms": 3291, "conversation_id": "eaa1847e-830a-43fa-8cab-bcb835cccd3c", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "b5471f60-4169-4098-b091-f035128b0050", "duration_ms": 3303, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-155", "duration_ms": 3315, "completed": 46}
+{"level": "INFO", "event": "intents_identified", "request_id": "75fa1543-2f69-41ec-9ddd-d4451ad4d2dc", "conversation_id": "efee7815-e4d7-4c9b-be80-9b722579e5f4", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "75fa1543-2f69-41ec-9ddd-d4451ad4d2dc", "duration_ms": 1, "conversation_id": "efee7815-e4d7-4c9b-be80-9b722579e5f4", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "75fa1543-2f69-41ec-9ddd-d4451ad4d2dc", "duration_ms": 7, "conversation_id": "efee7815-e4d7-4c9b-be80-9b722579e5f4", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "75fa1543-2f69-41ec-9ddd-d4451ad4d2dc", "duration_ms": 1336, "conversation_id": "efee7815-e4d7-4c9b-be80-9b722579e5f4", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "75fa1543-2f69-41ec-9ddd-d4451ad4d2dc", "duration_ms": 1358, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-200", "duration_ms": 1423, "completed": 47}
+{"level": "INFO", "event": "intents_identified", "request_id": "2ca218f9-12c6-4da8-b20d-37a18b1093b8", "conversation_id": "b2f87c4b-d118-4b50-bedc-0959b28e799d", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2ca218f9-12c6-4da8-b20d-37a18b1093b8", "duration_ms": 0, "conversation_id": "b2f87c4b-d118-4b50-bedc-0959b28e799d", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2ca218f9-12c6-4da8-b20d-37a18b1093b8", "duration_ms": 3, "conversation_id": "b2f87c4b-d118-4b50-bedc-0959b28e799d", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2ca218f9-12c6-4da8-b20d-37a18b1093b8", "duration_ms": 984, "conversation_id": "b2f87c4b-d118-4b50-bedc-0959b28e799d", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "2ca218f9-12c6-4da8-b20d-37a18b1093b8", "duration_ms": 997, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-937", "duration_ms": 1011, "completed": 48}
+{"level": "INFO", "event": "intents_identified", "request_id": "3119d093-ce5f-411b-be27-1cbe14028826", "conversation_id": "ba66b97e-9d0f-4ff2-887c-03a70e3d1e58", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "3119d093-ce5f-411b-be27-1cbe14028826", "duration_ms": 0, "conversation_id": "ba66b97e-9d0f-4ff2-887c-03a70e3d1e58", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "3119d093-ce5f-411b-be27-1cbe14028826", "duration_ms": 3, "conversation_id": "ba66b97e-9d0f-4ff2-887c-03a70e3d1e58", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "3119d093-ce5f-411b-be27-1cbe14028826", "duration_ms": 3387, "conversation_id": "ba66b97e-9d0f-4ff2-887c-03a70e3d1e58", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "3119d093-ce5f-411b-be27-1cbe14028826", "duration_ms": 3399, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "VT-15723", "duration_ms": 3412, "completed": 49}
+{"level": "INFO", "event": "intents_identified", "request_id": "17b8d496-d686-4530-a730-e6fba9544939", "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "17b8d496-d686-4530-a730-e6fba9544939", "duration_ms": 0, "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "17b8d496-d686-4530-a730-e6fba9544939", "duration_ms": 0, "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "17b8d496-d686-4530-a730-e6fba9544939", "duration_ms": 1205, "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "17b8d496-d686-4530-a730-e6fba9544939", "duration_ms": 1213, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "e9014e3b-d784-46bb-bdf9-0cb01bec9257", "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "e9014e3b-d784-46bb-bdf9-0cb01bec9257", "duration_ms": 0, "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e9014e3b-d784-46bb-bdf9-0cb01bec9257", "duration_ms": 0, "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e9014e3b-d784-46bb-bdf9-0cb01bec9257", "duration_ms": 3000, "conversation_id": "f753074a-7d99-4508-9b49-e0604fdb1a9c", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "e9014e3b-d784-46bb-bdf9-0cb01bec9257", "duration_ms": 3039, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-01", "duration_ms": 4273, "completed": 50}
+{"level": "INFO", "event": "intents_identified", "request_id": "31a80675-037a-4ae9-aaeb-6c1b04da4f8c", "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "31a80675-037a-4ae9-aaeb-6c1b04da4f8c", "duration_ms": 0, "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "31a80675-037a-4ae9-aaeb-6c1b04da4f8c", "duration_ms": 0, "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "31a80675-037a-4ae9-aaeb-6c1b04da4f8c", "duration_ms": 1202, "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "31a80675-037a-4ae9-aaeb-6c1b04da4f8c", "duration_ms": 1213, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "4fc9d7c1-05e3-4bda-8efa-33e90550b832", "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fc9d7c1-05e3-4bda-8efa-33e90550b832", "duration_ms": 0, "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fc9d7c1-05e3-4bda-8efa-33e90550b832", "duration_ms": 0, "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fc9d7c1-05e3-4bda-8efa-33e90550b832", "duration_ms": 3506, "conversation_id": "60689e58-1b98-4d5c-8fab-aa7203b19fbf", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "4fc9d7c1-05e3-4bda-8efa-33e90550b832", "duration_ms": 3611, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-02", "duration_ms": 5150, "completed": 51}
+{"level": "INFO", "event": "intents_identified", "request_id": "40275a48-94b9-4074-9be9-4259e2a89198", "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "40275a48-94b9-4074-9be9-4259e2a89198", "duration_ms": 0, "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "40275a48-94b9-4074-9be9-4259e2a89198", "duration_ms": 0, "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "40275a48-94b9-4074-9be9-4259e2a89198", "duration_ms": 1307, "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "40275a48-94b9-4074-9be9-4259e2a89198", "duration_ms": 1344, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "87be1de5-1159-4b30-bc7d-cb6d6e90800c", "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "87be1de5-1159-4b30-bc7d-cb6d6e90800c", "duration_ms": 0, "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "87be1de5-1159-4b30-bc7d-cb6d6e90800c", "duration_ms": 0, "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "87be1de5-1159-4b30-bc7d-cb6d6e90800c", "duration_ms": 3161, "conversation_id": "9d61088e-8983-4328-add6-c1ead17eda76", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "87be1de5-1159-4b30-bc7d-cb6d6e90800c", "duration_ms": 3175, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-03", "duration_ms": 4558, "completed": 52}
+{"level": "INFO", "event": "intents_identified", "request_id": "c5836f9b-b47b-4175-85c5-d67b31d9d675", "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5836f9b-b47b-4175-85c5-d67b31d9d675", "duration_ms": 0, "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5836f9b-b47b-4175-85c5-d67b31d9d675", "duration_ms": 0, "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5836f9b-b47b-4175-85c5-d67b31d9d675", "duration_ms": 1375, "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "c5836f9b-b47b-4175-85c5-d67b31d9d675", "duration_ms": 1388, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "1509f4ed-c28e-4072-a291-f3259aa99697", "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "1509f4ed-c28e-4072-a291-f3259aa99697", "duration_ms": 0, "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1509f4ed-c28e-4072-a291-f3259aa99697", "duration_ms": 0, "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1509f4ed-c28e-4072-a291-f3259aa99697", "duration_ms": 3019, "conversation_id": "d3a96d0d-59ce-4c7a-b5a7-8e12eec779a5", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "1509f4ed-c28e-4072-a291-f3259aa99697", "duration_ms": 3029, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-04", "duration_ms": 4562, "completed": 53}
+{"level": "INFO", "event": "intents_identified", "request_id": "00fd9c72-85fe-48b8-ae84-0339775258f0", "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "00fd9c72-85fe-48b8-ae84-0339775258f0", "duration_ms": 1, "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "00fd9c72-85fe-48b8-ae84-0339775258f0", "duration_ms": 0, "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "00fd9c72-85fe-48b8-ae84-0339775258f0", "duration_ms": 3208, "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "00fd9c72-85fe-48b8-ae84-0339775258f0", "duration_ms": 3224, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "85e0a7d6-2709-4410-8444-02cc49965a28", "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "85e0a7d6-2709-4410-8444-02cc49965a28", "duration_ms": 0, "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "85e0a7d6-2709-4410-8444-02cc49965a28", "duration_ms": 0, "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "85e0a7d6-2709-4410-8444-02cc49965a28", "duration_ms": 979, "conversation_id": "5842dafa-d25a-45c4-b2b3-80071616a9d4", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "85e0a7d6-2709-4410-8444-02cc49965a28", "duration_ms": 987, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-05", "duration_ms": 4571, "completed": 54}
+{"level": "INFO", "event": "intents_identified", "request_id": "c65e0525-38d0-4767-8503-e495da25e587", "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c65e0525-38d0-4767-8503-e495da25e587", "duration_ms": 0, "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c65e0525-38d0-4767-8503-e495da25e587", "duration_ms": 0, "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c65e0525-38d0-4767-8503-e495da25e587", "duration_ms": 3339, "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "c65e0525-38d0-4767-8503-e495da25e587", "duration_ms": 3350, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "1b462fc2-77ed-4331-a54d-11458d143824", "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b462fc2-77ed-4331-a54d-11458d143824", "duration_ms": 0, "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b462fc2-77ed-4331-a54d-11458d143824", "duration_ms": 0, "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b462fc2-77ed-4331-a54d-11458d143824", "duration_ms": 2944, "conversation_id": "8f486478-176b-4b78-801b-b03add65dafe", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "1b462fc2-77ed-4331-a54d-11458d143824", "duration_ms": 2952, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-06", "duration_ms": 6323, "completed": 55}
+{"level": "INFO", "event": "intents_identified", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 80, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 677, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 648, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 269, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "2279d0dc-65ca-4f32-829d-7331d058fabd", "duration_ms": 1768, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 2062, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 607, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 1445, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 321, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 0, "conversation_id": "3a154713-0071-479b-8dbb-c7b102d5497b", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "01a23e8b-0948-402b-8076-2a49949fc4f5", "duration_ms": 4466, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "CTX-07", "duration_ms": 6274, "completed": 56}
+{"level": "INFO", "event": "intents_identified", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 2191, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "agent": "rh_frequency", "chunk_count": 1, "coverage": "partial"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 719, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 743, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 282, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "0357ed2a-1999-4234-85e9-6759fcd46ed5", "duration_ms": 3948, "agent": "rh_frequency", "outcome": "partial", "success": false}
+{"level": "INFO", "event": "intents_identified", "request_id": "13f374d0-721f-4dfc-a928-fd7d118da6c3", "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "13f374d0-721f-4dfc-a928-fd7d118da6c3", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "13f374d0-721f-4dfc-a928-fd7d118da6c3", "duration_ms": 0, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "13f374d0-721f-4dfc-a928-fd7d118da6c3", "duration_ms": 1394, "conversation_id": "1a73af76-f48f-493e-828f-35de2b7c9e7b", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "13f374d0-721f-4dfc-a928-fd7d118da6c3", "duration_ms": 1404, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-08", "duration_ms": 5387, "completed": 57}
+{"level": "INFO", "event": "intents_identified", "request_id": "a714182a-7185-45bf-9f0a-3827c994bbbb", "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "a714182a-7185-45bf-9f0a-3827c994bbbb", "duration_ms": 0, "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "a714182a-7185-45bf-9f0a-3827c994bbbb", "duration_ms": 0, "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "a714182a-7185-45bf-9f0a-3827c994bbbb", "duration_ms": 3834, "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "a714182a-7185-45bf-9f0a-3827c994bbbb", "duration_ms": 3844, "agent": null, "outcome": "answered", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "ec2de881-8209-4767-a653-8f08ed0ac6c7", "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "ec2de881-8209-4767-a653-8f08ed0ac6c7", "duration_ms": 0, "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ec2de881-8209-4767-a653-8f08ed0ac6c7", "duration_ms": 0, "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ec2de881-8209-4767-a653-8f08ed0ac6c7", "duration_ms": 1211, "conversation_id": "e4ddb083-cc58-4f06-bfa9-ddfd5f1a9c34", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "ec2de881-8209-4767-a653-8f08ed0ac6c7", "duration_ms": 1330, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CTX-09", "duration_ms": 5193, "completed": 58}
+{"level": "INFO", "event": "intents_identified", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domains": ["atestados"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 2424, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "agent": "rh_frequency", "chunk_count": 0, "coverage": "none"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 533, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 0, "conversation_id": "9110d643-7d44-4172-ae94-4382d07d0dde", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "e5fc3f9b-adfe-4ee6-927f-00327dcf55d7", "duration_ms": 2970, "agent": "rh_frequency", "outcome": "no_evidence", "success": false}
+{"test_id": "NEG-01", "duration_ms": 2983, "completed": 59}
+{"level": "INFO", "event": "intents_identified", "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b", "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b", "duration_ms": 0, "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b", "duration_ms": 3, "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b", "duration_ms": 0, "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b", "duration_ms": 0, "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b", "duration_ms": 12, "agent": null, "outcome": "no_evidence", "success": false}
+{"test_id": "NEG-02", "duration_ms": 24, "completed": 60}
+{"level": "INFO", "event": "intents_identified", "request_id": "690e5e48-6a2c-4dd6-9c42-1976f887583e", "conversation_id": "b07823ca-91f1-4a71-8eef-64b5762e02a2", "domains": ["salario"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "690e5e48-6a2c-4dd6-9c42-1976f887583e", "duration_ms": 0, "conversation_id": "b07823ca-91f1-4a71-8eef-64b5762e02a2", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "690e5e48-6a2c-4dd6-9c42-1976f887583e", "duration_ms": 0, "conversation_id": "b07823ca-91f1-4a71-8eef-64b5762e02a2", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "690e5e48-6a2c-4dd6-9c42-1976f887583e", "duration_ms": 0, "conversation_id": "b07823ca-91f1-4a71-8eef-64b5762e02a2", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "690e5e48-6a2c-4dd6-9c42-1976f887583e", "duration_ms": 0, "conversation_id": "b07823ca-91f1-4a71-8eef-64b5762e02a2", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "690e5e48-6a2c-4dd6-9c42-1976f887583e", "duration_ms": 7, "agent": null, "outcome": "no_evidence", "success": false}
+{"test_id": "NEG-03", "duration_ms": 20, "completed": 61}
+{"level": "INFO", "event": "intents_identified", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 0, "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 2, "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 339, "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 0, "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 0, "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 0, "conversation_id": "b8bca377-05dd-4474-b31d-b31ebf26822f", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "941e5795-a645-44be-9033-4db1f144bb36", "duration_ms": 352, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "NEG-04", "duration_ms": 362, "completed": 62}
+{"level": "INFO", "event": "intents_identified", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 0, "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 0, "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 227, "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 0, "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 0, "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 0, "conversation_id": "451d3547-65f6-43b2-95b5-599a4a2ef77b", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "164c98f3-6b73-4a09-8029-5317d7491dca", "duration_ms": 257, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "NEG-05", "duration_ms": 269, "completed": 63}
+{"level": "INFO", "event": "intents_identified", "request_id": "7a110e28-7f1b-4f62-979c-a526f626b560", "conversation_id": "46cb5391-df77-47ed-ad44-5f2594be0f16", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "7a110e28-7f1b-4f62-979c-a526f626b560", "duration_ms": 0, "conversation_id": "46cb5391-df77-47ed-ad44-5f2594be0f16", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "7a110e28-7f1b-4f62-979c-a526f626b560", "duration_ms": 0, "conversation_id": "46cb5391-df77-47ed-ad44-5f2594be0f16", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "7a110e28-7f1b-4f62-979c-a526f626b560", "duration_ms": 4, "conversation_id": "46cb5391-df77-47ed-ad44-5f2594be0f16", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "7a110e28-7f1b-4f62-979c-a526f626b560", "duration_ms": 12, "agent": null, "outcome": "card_selection", "success": true}
+{"test_id": "NEG-06", "duration_ms": 39, "completed": 64}
+{"level": "INFO", "event": "intents_identified", "request_id": "e9ecb7c0-660a-4fae-9263-736aa66d00f2", "conversation_id": "0229b942-9cb9-4456-83af-e93594950efb", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "e9ecb7c0-660a-4fae-9263-736aa66d00f2", "duration_ms": 0, "conversation_id": "0229b942-9cb9-4456-83af-e93594950efb", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e9ecb7c0-660a-4fae-9263-736aa66d00f2", "duration_ms": 0, "conversation_id": "0229b942-9cb9-4456-83af-e93594950efb", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e9ecb7c0-660a-4fae-9263-736aa66d00f2", "duration_ms": 3, "conversation_id": "0229b942-9cb9-4456-83af-e93594950efb", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "e9ecb7c0-660a-4fae-9263-736aa66d00f2", "duration_ms": 11, "agent": null, "outcome": "card_selection", "success": true}
+{"test_id": "NEG-07", "duration_ms": 23, "completed": 65}
+{"level": "INFO", "event": "intents_identified", "request_id": "c3017e78-951b-4ad0-b58e-e93c3a34f53c", "conversation_id": "791dfb89-3556-4048-aa28-ebc1e3516eaa", "domains": ["vale_transporte"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "c3017e78-951b-4ad0-b58e-e93c3a34f53c", "duration_ms": 0, "conversation_id": "791dfb89-3556-4048-aa28-ebc1e3516eaa", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c3017e78-951b-4ad0-b58e-e93c3a34f53c", "duration_ms": 0, "conversation_id": "791dfb89-3556-4048-aa28-ebc1e3516eaa", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c3017e78-951b-4ad0-b58e-e93c3a34f53c", "duration_ms": 3, "conversation_id": "791dfb89-3556-4048-aa28-ebc1e3516eaa", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "c3017e78-951b-4ad0-b58e-e93c3a34f53c", "duration_ms": 11, "agent": null, "outcome": "card_selection", "success": true}
+{"test_id": "NEG-08", "duration_ms": 23, "completed": 66}
+{"level": "INFO", "event": "intents_identified", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domains": ["folha_ponto"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 0, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 0, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 0, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 0, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 2192, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 687, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 1204, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 288, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 0, "conversation_id": "27ca9138-51c8-4e9d-bcd5-718b839446aa", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "ad0a971a-73ca-41ef-beab-8c8f3f1561ff", "duration_ms": 4382, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "CONFLICT-01", "duration_ms": 4394, "completed": 67}
+{"level": "INFO", "event": "intents_identified", "request_id": "2735e4c3-b2fe-47db-8d44-ad1e3aa5b21b", "conversation_id": "b2d62bb7-465e-4ac8-bc10-70b38229444b", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "2735e4c3-b2fe-47db-8d44-ad1e3aa5b21b", "duration_ms": 0, "conversation_id": "b2d62bb7-465e-4ac8-bc10-70b38229444b", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2735e4c3-b2fe-47db-8d44-ad1e3aa5b21b", "duration_ms": 0, "conversation_id": "b2d62bb7-465e-4ac8-bc10-70b38229444b", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2735e4c3-b2fe-47db-8d44-ad1e3aa5b21b", "duration_ms": 367, "conversation_id": "b2d62bb7-465e-4ac8-bc10-70b38229444b", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "2735e4c3-b2fe-47db-8d44-ad1e3aa5b21b", "duration_ms": 3657, "conversation_id": "b2d62bb7-465e-4ac8-bc10-70b38229444b", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "response_finished", "request_id": "2735e4c3-b2fe-47db-8d44-ad1e3aa5b21b", "duration_ms": 4053, "agent": null, "outcome": "answered", "success": true}
+{"test_id": "CONFLICT-02", "duration_ms": 4064, "completed": 68}
+{"level": "INFO", "event": "intents_identified", "request_id": "a63a3ce6-3bf4-4973-9a79-217634a48c17", "conversation_id": "16dfad6e-d775-4b9b-9253-a3f1e0209dc2", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "a63a3ce6-3bf4-4973-9a79-217634a48c17", "duration_ms": 0, "conversation_id": "16dfad6e-d775-4b9b-9253-a3f1e0209dc2", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "a63a3ce6-3bf4-4973-9a79-217634a48c17", "duration_ms": 0, "conversation_id": "16dfad6e-d775-4b9b-9253-a3f1e0209dc2", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "a63a3ce6-3bf4-4973-9a79-217634a48c17", "duration_ms": 331, "conversation_id": "16dfad6e-d775-4b9b-9253-a3f1e0209dc2", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "a63a3ce6-3bf4-4973-9a79-217634a48c17", "duration_ms": 0, "conversation_id": "16dfad6e-d775-4b9b-9253-a3f1e0209dc2", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "a63a3ce6-3bf4-4973-9a79-217634a48c17", "duration_ms": 371, "agent": null, "outcome": "operational", "success": true}
+{"test_id": "OP-01", "duration_ms": 695, "completed": 69}
+{"level": "INFO", "event": "intents_identified", "request_id": "d3c2595e-dc9e-44ef-8533-4e9400e4c3c3", "conversation_id": "3ae2770e-6e8f-49cc-a36f-8ca7ffa6fbf3", "domains": ["atestados"], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "d3c2595e-dc9e-44ef-8533-4e9400e4c3c3", "duration_ms": 0, "conversation_id": "3ae2770e-6e8f-49cc-a36f-8ca7ffa6fbf3", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d3c2595e-dc9e-44ef-8533-4e9400e4c3c3", "duration_ms": 0, "conversation_id": "3ae2770e-6e8f-49cc-a36f-8ca7ffa6fbf3", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d3c2595e-dc9e-44ef-8533-4e9400e4c3c3", "duration_ms": 264, "conversation_id": "3ae2770e-6e8f-49cc-a36f-8ca7ffa6fbf3", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "d3c2595e-dc9e-44ef-8533-4e9400e4c3c3", "duration_ms": 0, "conversation_id": "3ae2770e-6e8f-49cc-a36f-8ca7ffa6fbf3", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "d3c2595e-dc9e-44ef-8533-4e9400e4c3c3", "duration_ms": 344, "agent": null, "outcome": "operational", "success": true}
+{"test_id": "OP-02", "duration_ms": 359, "completed": 70}
+{"level": "INFO", "event": "intents_identified", "request_id": "3b557d98-c179-4753-ab90-db2ae2e56c5c", "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "3b557d98-c179-4753-ab90-db2ae2e56c5c", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "3b557d98-c179-4753-ab90-db2ae2e56c5c", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "3b557d98-c179-4753-ab90-db2ae2e56c5c", "duration_ms": 282, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "3b557d98-c179-4753-ab90-db2ae2e56c5c", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "3b557d98-c179-4753-ab90-db2ae2e56c5c", "duration_ms": 401, "agent": null, "outcome": "operational", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "4fdfed50-38d8-4e55-ab33-ecd528190246", "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fdfed50-38d8-4e55-ab33-ecd528190246", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fdfed50-38d8-4e55-ab33-ecd528190246", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fdfed50-38d8-4e55-ab33-ecd528190246", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4fdfed50-38d8-4e55-ab33-ecd528190246", "duration_ms": 0, "conversation_id": "ab95fddf-3d52-43fb-bc0e-20eb58c6168f", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "4fdfed50-38d8-4e55-ab33-ecd528190246", "duration_ms": 40, "agent": null, "outcome": "clarify", "success": true}
+{"test_id": "OP-03", "duration_ms": 864, "completed": 71}
+{"level": "INFO", "event": "intents_identified", "request_id": "234e6f56-da8a-447c-87e8-4693a8444171", "conversation_id": "e5d68029-bb66-4123-b8b7-fa6573faa390", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "234e6f56-da8a-447c-87e8-4693a8444171", "duration_ms": 0, "conversation_id": "e5d68029-bb66-4123-b8b7-fa6573faa390", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "234e6f56-da8a-447c-87e8-4693a8444171", "duration_ms": 3, "conversation_id": "e5d68029-bb66-4123-b8b7-fa6573faa390", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "234e6f56-da8a-447c-87e8-4693a8444171", "duration_ms": 0, "conversation_id": "e5d68029-bb66-4123-b8b7-fa6573faa390", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "234e6f56-da8a-447c-87e8-4693a8444171", "duration_ms": 0, "conversation_id": "e5d68029-bb66-4123-b8b7-fa6573faa390", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "234e6f56-da8a-447c-87e8-4693a8444171", "duration_ms": 12, "agent": null, "outcome": "operational", "success": true}
+{"test_id": "OP-04", "duration_ms": 22, "completed": 72}
+{"level": "INFO", "event": "intents_identified", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 0, "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 0, "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 0, "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 0, "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 0, "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 0, "conversation_id": "3e5dd146-743b-4672-8c17-ffe3a9a71f9c", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "12139040-2860-432c-9801-f90d1c2e00c0", "duration_ms": 9, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "AUTH-01", "duration_ms": 20, "completed": 73}
+{"level": "INFO", "event": "intents_identified", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domains": [null, "vale_transporte"], "intent_count": 2}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 250, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "intent_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 256, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "outcome": "out_of_scope"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 0, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 6, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "transport"}
+{"level": "INFO", "event": "intent_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 10, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": "vale_transporte", "outcome": "no_evidence"}
+{"level": "INFO", "event": "stage_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 266, "conversation_id": "ec6e2e5b-de7c-4503-aea4-601f20ee3194", "domain": null, "stage": "multiple"}
+{"level": "INFO", "event": "response_finished", "request_id": "96031b61-b7da-4de7-9043-7882c6177531", "duration_ms": 280, "agent": null, "outcome": "no_evidence", "success": false}
+{"test_id": "AUTH-02", "duration_ms": 292, "completed": 74}
+{"level": "INFO", "event": "intents_identified", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 0, "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 0, "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 254, "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 0, "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 0, "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 0, "conversation_id": "131b84cc-ae4b-4855-b258-3d4a842ea8b6", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "da0ba7cd-b17a-4941-92fd-1865a70de654", "duration_ms": 266, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "AUTH-03", "duration_ms": 278, "completed": 75}
+{"level": "INFO", "event": "intents_identified", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 0, "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 0, "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 0, "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 0, "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 0, "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domain": "auto", "stage": "unavailable"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 0, "conversation_id": "02f06e84-e538-46bd-8eaa-bc348690bb58", "domain": "auto", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "4885edf6-e423-4a06-b007-44b7abe76f28", "duration_ms": 10, "agent": "unavailable", "outcome": "out_of_scope", "success": true}
+{"test_id": "AUTH-04", "duration_ms": 29, "completed": 76}

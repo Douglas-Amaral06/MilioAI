@@ -1,0 +1,77 @@
+﻿test_id,domain,final_status,automatic_status,reasons,review_alerts,behavior,context_match,question_duration_ms,total_case_duration_ms
+AUTH-01,governance,inconclusivo,inconclusive_checks,,,fallback,,98,116
+AUTH-02,governance,inconclusivo,inconclusive_checks,,,fallback,,1756,1768
+AUTH-03,governance,inconclusivo,inconclusive_checks,,,fallback,,1672,1681
+AUTH-04,governance,inconclusivo,inconclusive_checks,,,fallback,,66,75
+CONFLICT-01,folha_ponto,inconclusivo,inconclusive_checks,,,surface_conflict,,25294,25320
+CONFLICT-02,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,15614,15625
+CTX-01,vale_transporte,inconclusivo,passed_checks,,,answer,True,10135,21157
+CTX-02,vale_transporte,inconclusivo,passed_checks,,,answer,True,12741,24112
+CTX-03,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,11659,23416
+CTX-04,vale_transporte,inconclusivo,passed_checks,,,answer,True,12602,24814
+CTX-05,vale_transporte,inconclusivo,passed_checks,,,answer,True,11065,22134
+CTX-06,vale_transporte,inconclusivo,passed_checks,,,answer,True,15538,30170
+CTX-07,folha_ponto,inconclusivo,inconclusive_checks,,,answer,True,26155,47472
+CTX-08,vale_transporte,inconclusivo,passed_checks,,,answer,True,41919,84585
+CTX-09,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,39308,80150
+FP-01,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,14885,14904
+FP-02,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,19144,19171
+FP-03,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,24024,24050
+FP-04,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,20658,20690
+FP-05,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,220,244
+FP-06,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,22609,22637
+FP-07,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,21471,21500
+FP-08,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,20710,20737
+FP-09,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,27711,27736
+FP-10,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,36266,36314
+FP-11,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,2035,2065
+FP-12,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,21311,21339
+FP-13,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,1365,1394
+FP-14,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,939,969
+FP-15,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,1556,1583
+FP-16,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_location_not_retrieved | expected_citation_location_missing,,fallback,,1230,1258
+NEG-01,folha_ponto,inconclusivo,passed_checks,,,fallback,,28071,28113
+NEG-02,vale_transporte,inconclusivo,passed_checks,,,fallback,,348,385
+NEG-03,folha_ponto,inconclusivo,passed_checks,,,fallback,,344,384
+NEG-04,vale_transporte,inconclusivo,inconclusive_checks,,,fallback,,4244,4287
+NEG-05,operational,inconclusivo,inconclusive_checks,,,fallback,,3119,3168
+NEG-06,vale_transporte,inconclusivo,passed_checks,,,clarify,,256,292
+NEG-07,vale_transporte,inconclusivo,passed_checks,,,clarify,,213,243
+NEG-08,vale_transporte,inconclusivo,passed_checks,,,clarify,,227,257
+OP-01,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,,1648,1657
+OP-02,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,,1710,1721
+OP-03,operational,reprovado,failed_checks,behavior_mismatch | expected_citation_location_missing,,clarify,True,80,1856
+OP-04,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,,105,117
+VT-10394,vale_transporte,inconclusivo,passed_checks,,,answer,True,14865,14890
+VT-10398,vale_transporte,inconclusivo,passed_checks,,,answer,True,17662,17689
+VT-10420,vale_transporte,inconclusivo,passed_checks,,,answer,True,15354,15380
+VT-1071,vale_transporte,inconclusivo,passed_checks,,,answer,True,14692,14703
+VT-10771,vale_transporte,inconclusivo,passed_checks,,,answer,True,15203,15229
+VT-155,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,10720,10746
+VT-15504,vale_transporte,inconclusivo,passed_checks,,,answer,True,16363,16391
+VT-15506,vale_transporte,inconclusivo,passed_checks,,,answer,True,14957,14992
+VT-15508,vale_transporte,inconclusivo,passed_checks,,,answer,True,14259,14285
+VT-15510,vale_transporte,inconclusivo,passed_checks,,,answer,True,17360,17389
+VT-15511,vale_transporte,inconclusivo,passed_checks,,,answer,True,21894,21922
+VT-15512,vale_transporte,inconclusivo,passed_checks,,,answer,True,20714,21183
+VT-15515,vale_transporte,inconclusivo,passed_checks,,,answer,True,15852,15887
+VT-15566,vale_transporte,inconclusivo,passed_checks,,,answer,True,15790,15817
+VT-15723,vale_transporte,inconclusivo,passed_checks,,,answer,True,13460,13485
+VT-15779,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,17667,17692
+VT-15780,vale_transporte,inconclusivo,passed_checks,,,answer,True,20007,20034
+VT-164,vale_transporte,inconclusivo,passed_checks,,,answer,True,15364,15388
+VT-182,vale_transporte,inconclusivo,passed_checks,,,answer,True,17425,17452
+VT-1892,vale_transporte,inconclusivo,passed_checks,,,answer,True,11951,11960
+VT-200,vale_transporte,inconclusivo,passed_checks,,,answer,True,11726,11753
+VT-216,vale_transporte,inconclusivo,passed_checks,,,answer,True,11657,11690
+VT-2337,vale_transporte,inconclusivo,passed_checks,,,answer,True,14237,14262
+VT-3845,vale_transporte,inconclusivo,passed_checks,,,answer,True,15048,15072
+VT-3854,vale_transporte,inconclusivo,passed_checks,,,surface_conflict,True,17611,17636
+VT-472,vale_transporte,inconclusivo,passed_checks,,,answer,True,11453,11478
+VT-503,vale_transporte,inconclusivo,passed_checks,,,surface_conflict,True,11724,11748
+VT-5631,vale_transporte,inconclusivo,passed_checks,,,answer,True,14305,14333
+VT-7099,vale_transporte,inconclusivo,passed_checks,,,answer,True,14533,14562
+VT-738,vale_transporte,inconclusivo,passed_checks,,,answer,True,12570,12598
+VT-89,vale_transporte,inconclusivo,passed_checks,,,answer,True,12882,12913
+VT-9156,vale_transporte,inconclusivo,inconclusive_checks,,answer_includes_explicit_review_notice; behavior_taxonomy_needs_review,surface_conflict,True,14567,14593
+VT-937,vale_transporte,inconclusivo,passed_checks,,,answer,True,13196,13220

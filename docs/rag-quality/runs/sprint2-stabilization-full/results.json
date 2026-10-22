@@ -1,0 +1,2725 @@
+{
+  "run_id": "rag-real-b5cacfd7101c",
+  "run_kind": "real",
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+  "evidence_catalog_sha256": "745c64dae08a09c17ff636838cca7e089abcb7809ea9bd9d606fed50d91d94f1",
+  "document_registry_sha256": "5f68edd2eb5808b106c1d7d4667671d86bbcaa731ca799ea476d9779ed831ad6",
+  "conflicts_sha256": "52e0b503475b1ff09c06155061b0d11c56a33efbf66702fd7e9b3039294a5f20",
+  "card_coverage_sha256": "293568ee6ad3038e831d5f73c24797deb15c936449a9ee8808ee210bc794dcf3",
+  "executed_at": "2026-10-21T14:57:28.156039+00:00",
+  "results": [
+    {
+      "test_id": "AUTH-01",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "AUTH-02",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "**Outra solicitação**\n\nAinda não tenho informações disponíveis sobre esse assunto.\n\n**Benefício Vale-Transporte**\n\nNão há cartões disponíveis na documentação autorizada para o seu acesso.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": null,
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "AUTH-03",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Seu acesso não permite consultar os contatos educacionais. Solicite autorização para este atendimento.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "AUTH-04",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "CONFLICT-01",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "8. Dúvidas",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Os canais de envio da folha ponto constam na documentação como: e-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028 [fonte:F1].\n\n**Ponto para revisão:** A configuração operacional local indica o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada; seu status de validação é pending. Confirme com o RH Jovem o canal vigente. Não foi estabelecida precedência entre a orientação operacional e o documento.",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "CONFLICT-02",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "155 · Transurc Campinas - Municipal Campinas",
+          "page": 2,
+          "benefit_code": "155",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "155 · Transurc Campinas - Municipal Campinas",
+          "page": 2,
+          "benefit_code": "155",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "155"
+      }
+    },
+    {
+      "test_id": "CTX-01",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "89"
+      }
+    },
+    {
+      "test_id": "CTX-02",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "89"
+      }
+    },
+    {
+      "test_id": "CTX-03",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "9156 · TOP - Cartão Top",
+          "page": 2,
+          "benefit_code": "9156",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "9156 · TOP - Cartão Top",
+          "page": 2,
+          "benefit_code": "9156",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "9156"
+      }
+    },
+    {
+      "test_id": "CTX-04",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+          "page": 1,
+          "benefit_code": "216",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+          "page": 1,
+          "benefit_code": "216",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "216"
+      }
+    },
+    {
+      "test_id": "CTX-05",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15508 · Moratense - Cartão Municipal Francisco Morato",
+          "page": 1,
+          "benefit_code": "15508",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15508 · Moratense - Cartão Municipal Francisco Morato",
+          "page": 1,
+          "benefit_code": "15508",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15508"
+      }
+    },
+    {
+      "test_id": "CTX-06",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+          "page": 2,
+          "benefit_code": "15723",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+          "page": 2,
+          "benefit_code": "15723",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Viação São Bento - Cartão Ribeirão Preto X Serrana** · Código 15723 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 37,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15723"
+      }
+    },
+    {
+      "test_id": "CTX-07",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "8. Dúvidas",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Se você atrasar o envio da folha ponto, pode resultar em bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "CTX-08",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "89"
+      }
+    },
+    {
+      "test_id": "CTX-09",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "9156 · TOP - Cartão Top",
+          "page": 2,
+          "benefit_code": "9156",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "9156 · TOP - Cartão Top",
+          "page": 2,
+          "benefit_code": "9156",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "9156"
+      }
+    },
+    {
+      "test_id": "FP-01",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "7. Responsabilidade",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "A finalidade da Folha Ponto é registrar a frequência mensal do Jovem Aprendiz nas atividades práticas e teóricas, sendo utilizada para apuração de salário, pagamento de benefícios (VT), verificação de faltas e descontos e controle legal do contrato de aprendizagem [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-02",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-03",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você deve enviar a Folha Ponto até o segundo dia útil do mês [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-04",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "o Horários corretos de entrada e saída (Não usar horário britânico) [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-05",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-06",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você deve indicar \"Falta\" para ausência sem justificativa e \"Falta justificada\" quando houver documento comprovativo, conforme orientação da Folha Ponto [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-07",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Caso haja falta no dia de curso, manter o preenchimento como CURSO, para que não ocorra o desconto duplicado da falta. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-08",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "A folha ponto precisa ter assinatura do aprendiz, assinatura e carimbo do gestor/mentor responsável e data correta [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-09",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "4. O que NÃO fazer",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "4. O que NÃO fazer",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você não pode assinar a folha de ponto em branco ou por outra pessoa [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-10",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "4. O que NÃO fazer",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você pode enviar a folha ponto como foto, desde que seja legível [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-11",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-12",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "7. Responsabilidade",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "7. Responsabilidade",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "• Empresa parceira O RH Jovem realiza conferência, mas não substitui o preenchimento na origem. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-13",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Seu acesso não permite consultar os contatos educacionais. Solicite autorização para este atendimento.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-14",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-15",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-16",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-01",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "8. Dúvidas",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-02",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-03",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "salario",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-04",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-05",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+      "behavior": "fallback",
+      "context_status": "observed",
+      "context": {
+        "domain": "auto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-06",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Claro! Qual cartão de transporte você utiliza?",
+      "behavior": "clarify",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-07",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Claro! Qual cartão de transporte você utiliza?",
+      "behavior": "clarify",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "NEG-08",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Claro! Qual cartão de transporte você utiliza?",
+      "behavior": "clarify",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "OP-01",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional.",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "OP-02",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar o serviço de envio de atestados referentes a faltas no curso.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "OP-03",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Selecione o instrutor na lista abaixo para confirmar o contato. Informar um identificador na mensagem não confirma a seleção.",
+      "behavior": "clarify",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "OP-04",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "A configuração local dos contatos educacionais tem status pending. Não há confirmação de validação institucional desses contatos.",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "VT-10394",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10394 · Mov Itu - Cartão Municipal Itu",
+          "page": 1,
+          "benefit_code": "10394",
+          "chunk_id": "3c7400a3-4da8-40d6-9da9-67ac337cb1bd",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "8d7303f389c0452efda2ac41e80c73ff3b7df6bf902d85fbfadddc70c6343c52"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10394 · Mov Itu - Cartão Municipal Itu",
+          "page": 1,
+          "benefit_code": "10394",
+          "chunk_id": "3c7400a3-4da8-40d6-9da9-67ac337cb1bd",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "8d7303f389c0452efda2ac41e80c73ff3b7df6bf902d85fbfadddc70c6343c52"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Mov Itu - Cartão Municipal Itu** · Código 10394 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 25,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "10394"
+      }
+    },
+    {
+      "test_id": "VT-10398",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+          "page": 1,
+          "benefit_code": "10398",
+          "chunk_id": "6633c388-cc8f-4b24-885c-c93f52641464",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+          "page": 1,
+          "benefit_code": "10398",
+          "chunk_id": "6633c388-cc8f-4b24-885c-c93f52641464",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano** · Código 10398 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "10398"
+      }
+    },
+    {
+      "test_id": "VT-10420",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+          "page": 1,
+          "benefit_code": "10420",
+          "chunk_id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+          "page": 1,
+          "benefit_code": "10420",
+          "chunk_id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Viação Botucatu - Cartão Municipal Botucatu** · Código 10420 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 25,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "10420"
+      }
+    },
+    {
+      "test_id": "VT-1071",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+          "page": 1,
+          "benefit_code": "1071",
+          "chunk_id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+          "page": 1,
+          "benefit_code": "1071",
+          "chunk_id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Sbctrans - Cartão Legal São Bernardo do Campo Municipal** · Código 1071 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Pix ou dinheiro. [fonte:F1]\n\n**Procedimento:** Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "1071"
+      }
+    },
+    {
+      "test_id": "VT-10771",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+          "page": 1,
+          "benefit_code": "10771",
+          "chunk_id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+          "page": 1,
+          "benefit_code": "10771",
+          "chunk_id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Mov - Avaré - Cartão Municipal Avaré** · Código 10771 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 30,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "10771"
+      }
+    },
+    {
+      "test_id": "VT-155",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "155 · Transurc Campinas - Municipal Campinas",
+          "page": 2,
+          "benefit_code": "155",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "155 · Transurc Campinas - Municipal Campinas",
+          "page": 2,
+          "benefit_code": "155",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "155"
+      }
+    },
+    {
+      "test_id": "VT-15504",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+          "page": 1,
+          "benefit_code": "15504",
+          "chunk_id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+          "page": 1,
+          "benefit_code": "15504",
+          "chunk_id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Onpag - Cartão Ferraz de Vasconcelos Municipal** · Código 15504 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15504"
+      }
+    },
+    {
+      "test_id": "VT-15506",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15506 · Onpag - Cartão Suzano Municipal",
+          "page": 1,
+          "benefit_code": "15506",
+          "chunk_id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15506 · Onpag - Cartão Suzano Municipal",
+          "page": 1,
+          "benefit_code": "15506",
+          "chunk_id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Onpag - Cartão Suzano Municipal** · Código 15506 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15506"
+      }
+    },
+    {
+      "test_id": "VT-15508",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15508 · Moratense - Cartão Municipal Francisco Morato",
+          "page": 1,
+          "benefit_code": "15508",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15508 · Moratense - Cartão Municipal Francisco Morato",
+          "page": 1,
+          "benefit_code": "15508",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15508"
+      }
+    },
+    {
+      "test_id": "VT-15510",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15510 · BB Turismo - Cartão Municipal Barueri",
+          "page": 1,
+          "benefit_code": "15510",
+          "chunk_id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15510 · BB Turismo - Cartão Municipal Barueri",
+          "page": 1,
+          "benefit_code": "15510",
+          "chunk_id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**BB Turismo - Cartão Municipal Barueri** · Código 15510 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15510"
+      }
+    },
+    {
+      "test_id": "VT-15511",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15511 · BB Turismo - Cartão Municipal Itapevi",
+          "page": 1,
+          "benefit_code": "15511",
+          "chunk_id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15511 · BB Turismo - Cartão Municipal Itapevi",
+          "page": 1,
+          "benefit_code": "15511",
+          "chunk_id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**BB Turismo - Cartão Municipal Itapevi** · Código 15511 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15511"
+      }
+    },
+    {
+      "test_id": "VT-15512",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15512 · BB Turismo - Cartão Municipal Jandira",
+          "page": 1,
+          "benefit_code": "15512",
+          "chunk_id": "4b2b692d-87c5-4a83-8249-df190a204fc0",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "29b0370be31da7584565fb9e43318eb5408752f6371e97e1d3a1ccdc0ad9c039"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15512 · BB Turismo - Cartão Municipal Jandira",
+          "page": 1,
+          "benefit_code": "15512",
+          "chunk_id": "4b2b692d-87c5-4a83-8249-df190a204fc0",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "29b0370be31da7584565fb9e43318eb5408752f6371e97e1d3a1ccdc0ad9c039"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**BB Turismo - Cartão Municipal Jandira** · Código 15512 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15512"
+      }
+    },
+    {
+      "test_id": "VT-15515",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15515 · AETUR Del Rey - Cartão Pec - Municipal Carapicuíba",
+          "page": 1,
+          "benefit_code": "15515",
+          "chunk_id": "eef76c2e-c63e-470c-a00c-50c2f683cb7e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "eb77a99b6f010e3370583868c21ec2f7479b50466d5b696e37532e428c51b2d3"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15515 · AETUR Del Rey - Cartão Pec - Municipal Carapicuíba",
+          "page": 1,
+          "benefit_code": "15515",
+          "chunk_id": "eef76c2e-c63e-470c-a00c-50c2f683cb7e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "eb77a99b6f010e3370583868c21ec2f7479b50466d5b696e37532e428c51b2d3"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**AETUR Del Rey - Cartão Pec - Municipal Carapicuíba** · Código 15515 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 26,50 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Para bloquear o cartão (extravio, perda, furto, roubo e etc) entre em contato através dos telefones: 4164-3700 ou 4164-4141 Para solicitar a 2ª via do cartão, comparecer pessoalmente em nossa Central de Atendimento e apresentar um documento de identificação com foto, o cartão fica pronto na hora (Considerar disponibilidade de sistema ou estoque) [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15515"
+      }
+    },
+    {
+      "test_id": "VT-15566",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15566 · BB Turismo - Cartão Itapevi Integração",
+          "page": 1,
+          "benefit_code": "15566",
+          "chunk_id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15566 · BB Turismo - Cartão Itapevi Integração",
+          "page": 1,
+          "benefit_code": "15566",
+          "chunk_id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**BB Turismo - Cartão Itapevi Integração** · Código 15566 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15566"
+      }
+    },
+    {
+      "test_id": "VT-15723",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+          "page": 2,
+          "benefit_code": "15723",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+          "page": 2,
+          "benefit_code": "15723",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Viação São Bento - Cartão Ribeirão Preto X Serrana** · Código 15723 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 37,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15723"
+      }
+    },
+    {
+      "test_id": "VT-15779",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15779 · Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba",
+          "page": 1,
+          "benefit_code": "15779",
+          "chunk_id": "2ca272c1-5afc-4525-9d63-50e300f91678",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "a31217e012d65e12689608972f50030a2c701eb0b3aaaa0e854e5cce22726b32"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15779 · Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba",
+          "page": 1,
+          "benefit_code": "15779",
+          "chunk_id": "2ca272c1-5afc-4525-9d63-50e300f91678",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "a31217e012d65e12689608972f50030a2c701eb0b3aaaa0e854e5cce22726b32"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba** · Código 15779 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 38,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário poderá solicitar o bloqueio através do site www.bemsantana.com.br,após o bloqueio deverá comparecer ao posto de atendimento e pagar taxa e levar o RG ORIGINAL no endereço mencionado abaixo e no ato já retira o cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona endereço abaixo, mas nenhum endereço é informado nesta linha. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15779"
+      }
+    },
+    {
+      "test_id": "VT-15780",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15780 · Bem Osasco - Cartão Municipal Osasco",
+          "page": 1,
+          "benefit_code": "15780",
+          "chunk_id": "60d69991-80cb-41a8-9921-dc7076824a84",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "511ec566cb512363b6baf9658952a1c57421f85e5d5f27432bb4d057b1425fc2"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "15780 · Bem Osasco - Cartão Municipal Osasco",
+          "page": 1,
+          "benefit_code": "15780",
+          "chunk_id": "60d69991-80cb-41a8-9921-dc7076824a84",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "511ec566cb512363b6baf9658952a1c57421f85e5d5f27432bb4d057b1425fc2"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Bem Osasco - Cartão Municipal Osasco** · Código 15780 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 5 Tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário poderá solicitar o bloqueio pelo telefone (11)3658-7776 ou comparecer ao posto de atendimento [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "15780"
+      }
+    },
+    {
+      "test_id": "VT-164",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+          "page": 1,
+          "benefit_code": "164",
+          "chunk_id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+          "page": 1,
+          "benefit_code": "164",
+          "chunk_id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**AESA - Bilhete Único Andreense - Santo André Municipal** · Código 164 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O jovem deve solicitar a 2ª via através do site [https://santoandre.pagmob.com.br/login](https://santoandre.pagmob.com.br/login) ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "164"
+      }
+    },
+    {
+      "test_id": "VT-182",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "182 · Guarupas - Cartão Guarulhos - Municipal / Guarulhos",
+          "page": 1,
+          "benefit_code": "182",
+          "chunk_id": "5bcac667-53d3-4baf-a522-008dbd99ceac",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "fb3410ccc2aec79f43032c3df2b59f58481507cbac2a591cf496596e65eaa3e6"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "182 · Guarupas - Cartão Guarulhos - Municipal / Guarulhos",
+          "page": 1,
+          "benefit_code": "182",
+          "chunk_id": "5bcac667-53d3-4baf-a522-008dbd99ceac",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "fb3410ccc2aec79f43032c3df2b59f58481507cbac2a591cf496596e65eaa3e6"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Guarupas - Cartão Guarulhos - Municipal / Guarulhos** · Código 182 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 40,80 [fonte:F1]\n\n**Forma de pagamento:** Debito, PIX e/ou dinheiro [fonte:F1]\n\n**Procedimento:** Realizar abertura de chamado na plataforma BF,o cartão será bloqueado e será disponibilizada a carta para retirada do cartão [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "182"
+      }
+    },
+    {
+      "test_id": "VT-1892",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "1892 · Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)",
+          "page": 1,
+          "benefit_code": "1892",
+          "chunk_id": "caac4527-ef09-4943-851d-02be7d528396",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "cd3150a82d836f8e9f8e3605032571f06192becc66965c54f8a24247abf73106"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "1892 · Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)",
+          "page": 1,
+          "benefit_code": "1892",
+          "chunk_id": "caac4527-ef09-4943-851d-02be7d528396",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "cd3150a82d836f8e9f8e3605032571f06192becc66965c54f8a24247abf73106"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)** · Código 1892 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 55,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro, cartão ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via deve ser solicitada pelo Jovem diretamente no posto, apresentando nome completo e CPF. Emissão imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "1892"
+      }
+    },
+    {
+      "test_id": "VT-200",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "200 · Urbes Sorocaba - Cartão Sorocaba Municipal",
+          "page": 2,
+          "benefit_code": "200",
+          "chunk_id": "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "5cb888f4929fcda41a7a8c134c0063b01b42883c71b55d8cdd79b56cbe46df1e"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "200 · Urbes Sorocaba - Cartão Sorocaba Municipal",
+          "page": 2,
+          "benefit_code": "200",
+          "chunk_id": "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "5cb888f4929fcda41a7a8c134c0063b01b42883c71b55d8cdd79b56cbe46df1e"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Urbes Sorocaba - Cartão Sorocaba Municipal** · Código 200 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 4,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de um chamado na plataforma BF, jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais e a autorização anexa no retorno chamado em 3 dias úteis. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "200"
+      }
+    },
+    {
+      "test_id": "VT-216",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+          "page": 1,
+          "benefit_code": "216",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+          "page": 1,
+          "benefit_code": "216",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "216"
+      }
+    },
+    {
+      "test_id": "VT-2337",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+          "page": 1,
+          "benefit_code": "2337",
+          "chunk_id": "b575da20-2359-47ae-8cce-4587caf01067",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+          "page": 1,
+          "benefit_code": "2337",
+          "chunk_id": "b575da20-2359-47ae-8cce-4587caf01067",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João** · Código 2337 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "2337"
+      }
+    },
+    {
+      "test_id": "VT-3845",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+          "page": 1,
+          "benefit_code": "3845",
+          "chunk_id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+          "page": 1,
+          "benefit_code": "3845",
+          "chunk_id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal** · Código 3845 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "3845"
+      }
+    },
+    {
+      "test_id": "VT-3854",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+          "page": 1,
+          "benefit_code": "3854",
+          "chunk_id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+          "page": 1,
+          "benefit_code": "3854",
+          "chunk_id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho** · Código 3854 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "3854"
+      }
+    },
+    {
+      "test_id": "VT-472",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+          "page": 2,
+          "benefit_code": "472",
+          "chunk_id": "535efd97-2daf-49c5-b87a-098ab925937d",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+          "page": 2,
+          "benefit_code": "472",
+          "chunk_id": "535efd97-2daf-49c5-b87a-098ab925937d",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal** · Código 472 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "472"
+      }
+    },
+    {
+      "test_id": "VT-503",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+          "page": 2,
+          "benefit_code": "503",
+          "chunk_id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+          "page": 2,
+          "benefit_code": "503",
+          "chunk_id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**SOU Diadema - Cartão SOU - Diadema Municipal** · Código 503 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 5 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via pode ser solicitada por qualquer pessoa via e-mail ([sac@soudiadema.com.br](mailto:sac@soudiadema.com.br)) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "503"
+      }
+    },
+    {
+      "test_id": "VT-5631",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "5631 · Expresso Itamarati - Cartão Votuporanga Municipal",
+          "page": 1,
+          "benefit_code": "5631",
+          "chunk_id": "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3d54ea0bf7d8ef774b4097fcb5b2ba6f571d18d2e5941e70e061dd8c4023e3cd"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "5631 · Expresso Itamarati - Cartão Votuporanga Municipal",
+          "page": 1,
+          "benefit_code": "5631",
+          "chunk_id": "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3d54ea0bf7d8ef774b4097fcb5b2ba6f571d18d2e5941e70e061dd8c4023e3cd"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Expresso Itamarati - Cartão Votuporanga Municipal** · Código 5631 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 2,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** Solicitação presencial com documento; prazo de 7 dias; bloqueio em caso de perda com RG e CPF. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "5631"
+      }
+    },
+    {
+      "test_id": "VT-7099",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "7099 · Consórcio Bus Mais",
+          "page": 1,
+          "benefit_code": "7099",
+          "chunk_id": "57b81d0e-003c-4052-873a-cb97461a8299",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "7099 · Consórcio Bus Mais",
+          "page": 1,
+          "benefit_code": "7099",
+          "chunk_id": "57b81d0e-003c-4052-873a-cb97461a8299",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Consórcio Bus Mais** · Código 7099 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento [https://busmais.com.br/sobre/atendimento/](https://busmais.com.br/sobre/atendimento/) para solicitar a 2°via do cartão. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "7099"
+      }
+    },
+    {
+      "test_id": "VT-738",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+          "page": 2,
+          "benefit_code": "738",
+          "chunk_id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+          "page": 2,
+          "benefit_code": "738",
+          "chunk_id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Transurb Bauru - Cartão Bauru - Comum / Municipal** · Código 738 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "738"
+      }
+    },
+    {
+      "test_id": "VT-89",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "89 · SPTRANS - Bilhete Único",
+          "page": 2,
+          "benefit_code": "89",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "89"
+      }
+    },
+    {
+      "test_id": "VT-9156",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "9156 · TOP - Cartão Top",
+          "page": 2,
+          "benefit_code": "9156",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "9156 · TOP - Cartão Top",
+          "page": 2,
+          "benefit_code": "9156",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "surface_conflict",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "9156"
+      }
+    },
+    {
+      "test_id": "VT-937",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+          "page": 2,
+          "benefit_code": "937",
+          "chunk_id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "vt-segunda-via",
+          "source_version": "vt-segunda-via-local-v1",
+          "section_or_row": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+          "page": 2,
+          "benefit_code": "937",
+          "chunk_id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+          "chunk_hash": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "**Viação Piracicabana - Cartão Praia Grande -Municipal** · Código 937 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 23,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "vale_transporte",
+        "benefit_code": "937"
+      }
+    }
+  ]
+}

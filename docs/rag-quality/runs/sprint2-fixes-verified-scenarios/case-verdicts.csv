@@ -1,0 +1,8 @@
+﻿test_id,domain,final_status,automatic_status,reasons,review_alerts,behavior,context_match,question_duration_ms,total_case_duration_ms
+FP-05,folha_ponto,reprovado,failed_checks,behavior_mismatch | expected_citation_location_missing,,fallback,,12922,13058
+FP-11,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,5376,5379
+FP-13,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4904,4913
+FP-14,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,3874,3876
+FP-15,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,3749,3752
+FP-16,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,5107,5112
+OP-03,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,True,22,1228

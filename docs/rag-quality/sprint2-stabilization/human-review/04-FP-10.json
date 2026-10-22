@@ -1,0 +1,239 @@
+{
+  "priority": 4,
+  "test_id": "FP-10",
+  "domain": "folha_ponto",
+  "question": "A folha pode ser foto? Precisa estar legível?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "Sim, a folha pode ser enviada como foto, desde que seja legível [fonte:F1].",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "FP-10",
+    "question": "A folha pode ser foto? Precisa estar legível?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "answer_delivered": "Você pode enviar a folha ponto como foto, desde que seja legível [fonte:F1].",
+  "observed_behavior": "answer",
+  "expected_facts": [
+    {
+      "criterion_id": "FP-10-fact-1",
+      "description": "PDF ou foto legível; canal depende de validação.",
+      "match": {
+        "all_of": [
+          [
+            "pdf"
+          ],
+          [
+            "foto legível"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-send"
+      ]
+    },
+    {
+      "criterion_id": "FP-10-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-send"
+      ]
+    }
+  ],
+  "forbidden_claims": [],
+  "historical_expected_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "6.",
+      "page": 2,
+      "benefit_code": null
+    }
+  ],
+  "retrieval_calls": [
+    {
+      "query": "Folha Ponto: A folha pode ser foto? Precisa estar legível?",
+      "scopes": [
+        "local_review"
+      ],
+      "domain": "rh_frequency",
+      "benefit_code": null,
+      "app_env_filter": "development",
+      "version_filter": "folha-ponto-local-v1",
+      "chunks": [
+        {
+          "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 2,
+          "section": "6. Envio do documento",
+          "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+          "chunk": 6,
+          "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.498459,
+          "status": "approved"
+        },
+        {
+          "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "2. Periodicidade e Prazo",
+          "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+          "chunk": 2,
+          "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.508274,
+          "status": "approved"
+        },
+        {
+          "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 2,
+          "section": "4. O que NÃO fazer",
+          "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+          "chunk": 4,
+          "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.524345,
+          "status": "approved"
+        }
+      ],
+      "duration_ms": 25714
+    }
+  ],
+  "actual_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "folha-ponto-local-v1",
+      "section_or_row": "6. Envio do documento",
+      "page": 2,
+      "benefit_code": null,
+      "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+      "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+      "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+      "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+    }
+  ],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "vt_stage": "idle",
+    "stage": "idle"
+  },
+  "automatic_observations": {
+    "test_id": "FP-10",
+    "domain": "folha_ponto",
+    "automatic_status": "inconclusive_checks",
+    "final_status": "inconclusivo",
+    "reasons": [],
+    "review_alerts": [],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": true,
+      "recall_at_3": 1.0,
+      "reciprocal_rank_at_3": 1.0
+    },
+    "citation_location_completeness": 1.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.0,
+    "forbidden_lexical_alerts": [],
+    "behavior": "answer",
+    "behavior_match": true,
+    "context_match": null,
+    "card_match": null,
+    "question_duration_ms": 36266,
+    "total_case_duration_ms": 36314,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

@@ -1,0 +1,113 @@
+{"level": "INFO", "event": "request", "request_id": "d7545f1c-a0e6-4bdc-9ee4-95fdbc928026", "duration_ms": 31, "status": 200}
+{"level": "INFO", "event": "intents_identified", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 0, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 0, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 0, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 0, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 2127, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "agent": "rh_frequency", "chunk_count": 1, "coverage": "partial"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 803, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 639, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 367, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 0, "conversation_id": "da45b86a-7cdf-46ff-956a-e0780ee3063a", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "1b34fd65-61fc-48b1-b94d-4c1d832fd4a3", "duration_ms": 3980, "agent": "rh_frequency", "outcome": "partial", "success": false}
+{"test_id": "FP-05", "duration_ms": 4001, "completed": 1}
+{"level": "INFO", "event": "intents_identified", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 1, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 0, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 0, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 0, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 2140, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 778, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 1362, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 281, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 0, "conversation_id": "005172fc-e1c2-462a-8c1d-f2ec016dae36", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "b2613514-23d9-4604-8cc9-cd152a931f13", "duration_ms": 4600, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-11", "duration_ms": 4688, "completed": 2}
+{"level": "INFO", "event": "intents_identified", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 0, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 0, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 0, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 0, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 2166, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "agent": "rh_frequency", "chunk_count": 1, "coverage": "partial"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 737, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 1421, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 343, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 0, "conversation_id": "8e223653-11d2-44f3-bad1-18c25b98d3a4", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "6f67d122-dc08-4e72-bc5f-b300a60004bc", "duration_ms": 4690, "agent": "rh_frequency", "outcome": "partial", "success": false}
+{"test_id": "FP-13", "duration_ms": 4704, "completed": 3}
+{"level": "INFO", "event": "intents_identified", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 0, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 0, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 0, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 0, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "agent": "rh_frequency", "chunk_count": 2}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 2312, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "agent": "rh_frequency", "chunk_count": 1, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 675, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 618, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 403, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 0, "conversation_id": "6f705c7d-f2ee-4dd0-bbe4-451fc556e95d", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "b1b2c3c9-8fe8-4137-acd8-818f8cbbd4ee", "duration_ms": 4026, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-14", "duration_ms": 4053, "completed": 4}
+{"level": "INFO", "event": "intents_identified", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 0, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 0, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 0, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 0, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 2486, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "agent": "rh_frequency", "chunk_count": 1, "coverage": "partial"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 672, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 643, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 295, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 0, "conversation_id": "22dac9cc-d410-4d67-b707-b375d42b83ae", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "4a221cba-5f76-4213-94c5-5b6364544509", "duration_ms": 4110, "agent": "rh_frequency", "outcome": "partial", "success": false}
+{"test_id": "FP-15", "duration_ms": 4122, "completed": 5}
+{"level": "INFO", "event": "intents_identified", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 0, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 0, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 0, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 0, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": null, "stage": "validate_context"}
+{"level": "INFO", "event": "retrieval_complete", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "agent": "rh_frequency", "chunk_count": 3}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 2160, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": "rh_frequency", "stage": "retrieve"}
+{"level": "INFO", "event": "evidence_assessed", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "agent": "rh_frequency", "chunk_count": 2, "coverage": "sufficient"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 726, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": "rh_frequency", "stage": "assess"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 693, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": "rh_frequency", "stage": "generate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 319, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": "rh_frequency", "stage": "validate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 0, "conversation_id": "6943561d-0ec1-45f6-ae51-7fa73d67144f", "domain": "rh_frequency", "stage": "finish_document"}
+{"level": "INFO", "event": "response_finished", "request_id": "5f296e71-5b07-4ffc-b981-5107c2e5cb42", "duration_ms": 3910, "agent": "rh_frequency", "outcome": "answered", "success": true}
+{"test_id": "FP-16", "duration_ms": 3921, "completed": 6}
+{"level": "INFO", "event": "stage_finished", "request_id": "1f463ac9-800b-4c5e-8a21-ec0d334fc41d", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1f463ac9-800b-4c5e-8a21-ec0d334fc41d", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1f463ac9-800b-4c5e-8a21-ec0d334fc41d", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1f463ac9-800b-4c5e-8a21-ec0d334fc41d", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "1f463ac9-800b-4c5e-8a21-ec0d334fc41d", "duration_ms": 16, "agent": null, "outcome": "operational", "success": true}
+{"level": "INFO", "event": "stage_finished", "request_id": "62cfa5c5-dde1-4cdb-882c-650addbdda9e", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "62cfa5c5-dde1-4cdb-882c-650addbdda9e", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "62cfa5c5-dde1-4cdb-882c-650addbdda9e", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "62cfa5c5-dde1-4cdb-882c-650addbdda9e", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "62cfa5c5-dde1-4cdb-882c-650addbdda9e", "duration_ms": 12, "agent": null, "outcome": "operational", "success": true}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5ecd503-86de-48e4-a594-cae06819dbe5", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5ecd503-86de-48e4-a594-cae06819dbe5", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5ecd503-86de-48e4-a594-cae06819dbe5", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "c5ecd503-86de-48e4-a594-cae06819dbe5", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "c5ecd503-86de-48e4-a594-cae06819dbe5", "duration_ms": 22, "agent": null, "outcome": "operational", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782", "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782", "duration_ms": 400, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782", "duration_ms": 433, "agent": null, "outcome": "operational", "success": true}
+{"level": "INFO", "event": "intents_identified", "request_id": "e13cd193-c9e3-41fe-af32-668c75849288", "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domains": [null], "intent_count": 1}
+{"level": "INFO", "event": "stage_finished", "request_id": "e13cd193-c9e3-41fe-af32-668c75849288", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "entry"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e13cd193-c9e3-41fe-af32-668c75849288", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "transport_gate"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e13cd193-c9e3-41fe-af32-668c75849288", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational_router"}
+{"level": "INFO", "event": "stage_finished", "request_id": "e13cd193-c9e3-41fe-af32-668c75849288", "duration_ms": 0, "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43", "domain": null, "stage": "operational"}
+{"level": "INFO", "event": "response_finished", "request_id": "e13cd193-c9e3-41fe-af32-668c75849288", "duration_ms": 12, "agent": null, "outcome": "operational", "success": true}
+{"test_id": "OP-03", "duration_ms": 637, "completed": 7}

@@ -1,0 +1,4 @@
+﻿test_id,domain,final_status,automatic_status,reasons,review_alerts,behavior,context_match,question_duration_ms,total_case_duration_ms
+FP-04,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,30686,30715
+FP-07,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,15836,15845
+FP-12,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,15239,15248

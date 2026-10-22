@@ -1,0 +1,22 @@
+F................                                                        [100%]
+=================================== FAILURES ===================================
+____ test_real_semantic_intents[Onde gero minha folha?-generate_timesheet] _____
+
+question = 'Onde gero minha folha?', intent = 'generate_timesheet'
+
+    @pytest.mark.parametrize("question,intent", CASES)
+    async def test_real_semantic_intents(question, intent):
+        app = create_app(get_settings())
+        async with app.router.lifespan_context(app):
+            actual = await detect(app.state.ollama, question, None, "outros", [], {})
+>           assert actual == intent, f"{question}: {actual} != {intent}"
+E           AssertionError: Onde gero minha folha?: documental != generate_timesheet
+E           assert 'documental' == 'generate_timesheet'
+E             
+E             - generate_timesheet
+E             + documental
+
+tests/test_operational_live.py:41: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_operational_live.py::test_real_semantic_intents[Onde gero minha folha?-generate_timesheet]
+1 failed, 16 passed in 13.29s

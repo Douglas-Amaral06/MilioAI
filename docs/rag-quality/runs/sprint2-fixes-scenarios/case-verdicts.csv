@@ -1,0 +1,8 @@
+﻿test_id,domain,final_status,automatic_status,reasons,review_alerts,behavior,context_match,question_duration_ms,total_case_duration_ms
+FP-05,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,3995,4001
+FP-11,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4651,4688
+FP-13,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4700,4704
+FP-14,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4042,4053
+FP-15,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,4119,4122
+FP-16,folha_ponto,inconclusivo,inconclusive_checks,,,answer,,3918,3921
+OP-03,operational,reprovado,failed_checks,expected_citation_location_missing,,answer,True,22,637

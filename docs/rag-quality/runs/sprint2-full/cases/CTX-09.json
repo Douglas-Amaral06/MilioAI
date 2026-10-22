@@ -1,0 +1,834 @@
+{
+  "test_id": "CTX-09",
+  "input": {
+    "test_id": "CTX-09",
+    "question": "Troquei para o TOP, qual a taxa?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Selecionei o SPTrans código 89."
+        }
+      ],
+      "selected_benefit_code": "89"
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:01:17.056552+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "26418b6d-eb2a-4cd5-96ec-794447bbda90",
+        "content": "Selecionei o SPTrans código 89.",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. SPTRANS - Bilhete Único. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "89",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+              "benefit_code": "89",
+              "attributes": {
+                "uf": "SP",
+                "fee": "7 tarifas",
+                "code": "89",
+                "name": "SPTRANS - Bilhete Único",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "89 · SPTRANS - Bilhete Único",
+              "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+              "chunk": 25,
+              "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.77195,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 32
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 1516
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 1525,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Selecionei o SPTrans código 89."
+              ]
+            ],
+            "deadline": 6272.272521198
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "89"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "2c392f3f-cf9a-4289-868e-473e5b083dd4",
+            "role": "user",
+            "content": "Selecionei o SPTrans código 89.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:17.065100Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "190e80e0-54c5-45c2-b09d-6564fd9824c8",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:17.065101Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+              "benefit_code": "89",
+              "attributes": {
+                "uf": "SP",
+                "fee": "7 tarifas",
+                "code": "89",
+                "name": "SPTRANS - Bilhete Único",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "89 · SPTRANS - Bilhete Único",
+              "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+              "chunk": 25,
+              "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.77195,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "190e80e0-54c5-45c2-b09d-6564fd9824c8",
+            "role": "assistant",
+            "content": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T13:01:17.065101Z",
+            "outcome": "answered",
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "2d67b0fe-cff7-4d8c-8107-03178ad2777d",
+        "deadline": 6272.272521198,
+        "question": "Selecionei o SPTrans código 89.",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "2d67b0fe-cff7-4d8c-8107-03178ad2777d",
+        "deadline": 6272.272521198,
+        "question": "Selecionei o SPTrans código 89.",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "89"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+            "benefit_code": "89",
+            "attributes": {
+              "uf": "SP",
+              "fee": "7 tarifas",
+              "code": "89",
+              "name": "SPTRANS - Bilhete Único",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "89 · SPTRANS - Bilhete Único",
+            "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+            "chunk": 25,
+            "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.77195,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+            "benefit_code": "89",
+            "attributes": {
+              "uf": "SP",
+              "fee": "7 tarifas",
+              "code": "89",
+              "name": "SPTRANS - Bilhete Único",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "89 · SPTRANS - Bilhete Único",
+            "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+            "chunk": 25,
+            "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.77195,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Selecionei o SPTrans código 89."
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 1534
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "a87002a4-3f85-4718-bcb7-ff516a53ff43",
+        "content": "Troquei para o TOP, qual a taxa?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. TOP - Cartão Top. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "9156",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+              "benefit_code": "9156",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 28,50",
+                "code": "9156",
+                "name": "TOP - Cartão Top",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "payment": "Pagamento Online",
+                "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "9156 · TOP - Cartão Top",
+              "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+              "chunk": 26,
+              "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.751923,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2752
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 4138
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 4149,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Troquei para o TOP, qual a taxa?"
+              ]
+            ],
+            "deadline": 6273.809457154
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+                "benefit_code": "9156",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 28,50",
+                  "code": "9156",
+                  "name": "TOP - Cartão Top",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                  "payment": "Pagamento Online",
+                  "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "9156 · TOP - Cartão Top",
+                "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+                "chunk": 26,
+                "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.751923,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+                "benefit_code": "9156",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 28,50",
+                  "code": "9156",
+                  "name": "TOP - Cartão Top",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                  "payment": "Pagamento Online",
+                  "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "9156 · TOP - Cartão Top",
+                "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+                "chunk": 26,
+                "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.751923,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "9156"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "0d7a6044-2ef7-40f5-bc86-898d1b4a2667",
+            "role": "user",
+            "content": "Troquei para o TOP, qual a taxa?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:18.602437Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "1b2fcd0f-933c-4638-9769-1cc5eac1ad0e",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:18.602438Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+              "benefit_code": "9156",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 28,50",
+                "code": "9156",
+                "name": "TOP - Cartão Top",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "payment": "Pagamento Online",
+                "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "9156 · TOP - Cartão Top",
+              "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+              "chunk": 26,
+              "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.751923,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "1b2fcd0f-933c-4638-9769-1cc5eac1ad0e",
+            "role": "assistant",
+            "content": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+                "benefit_code": "9156",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 28,50",
+                  "code": "9156",
+                  "name": "TOP - Cartão Top",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                  "payment": "Pagamento Online",
+                  "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "9156 · TOP - Cartão Top",
+                "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+                "chunk": 26,
+                "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.751923,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T13:01:18.602438Z",
+            "outcome": "answered",
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "2d67b0fe-cff7-4d8c-8107-03178ad2777d",
+        "deadline": 6273.809457154,
+        "question": "Troquei para o TOP, qual a taxa?",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Selecionei o SPTrans código 89.",
+            "topic_id": "vale_transporte"
+          },
+          {
+            "role": "assistant",
+            "content": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "topic_id": "vale_transporte"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "89"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "2d67b0fe-cff7-4d8c-8107-03178ad2777d",
+        "deadline": 6273.809457154,
+        "question": "Troquei para o TOP, qual a taxa?",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Selecionei o SPTrans código 89.",
+            "topic_id": "vale_transporte"
+          },
+          {
+            "role": "assistant",
+            "content": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "topic_id": "vale_transporte"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "9156"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+            "benefit_code": "9156",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 28,50",
+              "code": "9156",
+              "name": "TOP - Cartão Top",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "payment": "Pagamento Online",
+              "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "9156 · TOP - Cartão Top",
+            "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+            "chunk": 26,
+            "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.751923,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+            "benefit_code": "9156",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 28,50",
+              "code": "9156",
+              "name": "TOP - Cartão Top",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+              "payment": "Pagamento Online",
+              "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "9156 · TOP - Cartão Top",
+            "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+            "chunk": 26,
+            "excerpt": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.751923,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Troquei para o TOP, qual a taxa?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**TOP - Cartão Top** · Código 9156 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 28,50 [fonte:F1]\n\n**Forma de pagamento:** Pagamento Online [fonte:F1]\n\n**Procedimento:** Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão. [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 4157
+    }
+  ],
+  "conversation_id": "2d67b0fe-cff7-4d8c-8107-03178ad2777d",
+  "duration_ms": 5698,
+  "completed_at": "2026-10-21T13:01:22.754983+00:00"
+}

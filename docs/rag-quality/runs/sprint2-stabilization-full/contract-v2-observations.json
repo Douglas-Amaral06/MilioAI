@@ -1,0 +1,1850 @@
+{
+  "run_id": "rag-real-b5cacfd7101c",
+  "contract_version": "2.0.0",
+  "observations": [
+    {
+      "test_id": "AUTH-01",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "AUTH-02",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "AUTH-03",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "AUTH-04",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CONFLICT-01",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CONFLICT-02",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-01",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-02",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-03",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-04",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-05",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-06",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-07",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-08",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "CTX-09",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-01",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-02",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-03",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-04",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-05",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-06",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-07",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-08",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-09",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-10",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-11",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-12",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-13",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-14",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-15",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "FP-16",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-01",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": false,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-02",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-03",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-04",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-05",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-06",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-07",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "NEG-08",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "OP-01",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "OP-02",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "OP-03",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": false,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "OP-04",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [],
+      "operational_provenance_exact": true,
+      "warning_metadata_present": null,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-10394",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "3c7400a3-4da8-40d6-9da9-67ac337cb1bd",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "3c7400a3-4da8-40d6-9da9-67ac337cb1bd",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-10398",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "6633c388-cc8f-4b24-885c-c93f52641464",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "6633c388-cc8f-4b24-885c-c93f52641464",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-10420",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-1071",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-10771",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-155",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15504",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15506",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15508",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15510",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15511",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15512",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "4b2b692d-87c5-4a83-8249-df190a204fc0",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "4b2b692d-87c5-4a83-8249-df190a204fc0",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15515",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "eef76c2e-c63e-470c-a00c-50c2f683cb7e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "eef76c2e-c63e-470c-a00c-50c2f683cb7e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15566",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15723",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15779",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "2ca272c1-5afc-4525-9d63-50e300f91678",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "2ca272c1-5afc-4525-9d63-50e300f91678",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-15780",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "60d69991-80cb-41a8-9921-dc7076824a84",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "60d69991-80cb-41a8-9921-dc7076824a84",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-164",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-182",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "5bcac667-53d3-4baf-a522-008dbd99ceac",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "5bcac667-53d3-4baf-a522-008dbd99ceac",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-1892",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "caac4527-ef09-4943-851d-02be7d528396",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "caac4527-ef09-4943-851d-02be7d528396",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-200",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-216",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-2337",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "b575da20-2359-47ae-8cce-4587caf01067",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "b575da20-2359-47ae-8cce-4587caf01067",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-3845",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-3854",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-472",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "535efd97-2daf-49c5-b87a-098ab925937d",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "535efd97-2daf-49c5-b87a-098ab925937d",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-503",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-5631",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-7099",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "57b81d0e-003c-4052-873a-cb97461a8299",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "57b81d0e-003c-4052-873a-cb97461a8299",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-738",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-89",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-9156",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    },
+    {
+      "test_id": "VT-937",
+      "input_overlay_present": false,
+      "input_overlay_matches_v2": null,
+      "selected_topic_sent": null,
+      "structured_instructor_selected": null,
+      "runtime_source_bindings": [
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        },
+        {
+          "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "chunk_id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+          "exact_binding_match": true,
+          "historical_snapshot_equivalence": "not_established"
+        }
+      ],
+      "operational_provenance_exact": null,
+      "warning_metadata_present": true,
+      "ui_notice_rendered": null,
+      "semantic_decision": null,
+      "institutional_approval": null
+    }
+  ],
+  "semantic_approvals": 0,
+  "human_acceptance": null,
+  "interpretation": "Technical observations only; historical metrics are unchanged. Missing legacy overlays remain visible."
+}

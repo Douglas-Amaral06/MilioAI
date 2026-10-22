@@ -1,0 +1,1055 @@
+[
+  {
+    "rank": 1,
+    "id": "CONFLICT-01",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A pergunta compara PDF e Conecta. Foi respondido apenas o serviço Conecta, com ressalva genérica, sem recuperar o PDF nem expor seus canais. A divergência é documental e a omissão do contraste é funcional, não prova de revogação inventada.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "CONFLICT-01",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.5
+      },
+      "citation_location_completeness": 0.5,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 4432,
+      "total_case_duration_ms": 4436,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 2,
+    "id": "VT-10398",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O nome informado (Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?) não foi ligado à linha 10398. O fluxo chegou a VT, mas pediu seleção de cartão e não chamou a recuperação. Não há taxa/prazo falso afirmado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "VT-10398",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 3123,
+      "total_case_duration_ms": 3126,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 3,
+    "id": "CTX-04",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O estado inicial tem cartão 216 ativo. O gate dá falso, operational_router muda vt_stage para idle, e o transporte termina em selection, pedindo novamente o cartão. O código continua armazenado, mas deixa de ser usado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "CTX-04",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 3503,
+      "total_case_duration_ms": 4796,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 4,
+    "id": "FP-03",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "'Até que dia' pede prazo, mas a intenção virou send_timesheet e a resposta foi um link de envio. Não houve busca; a falta de citação é consequência da rota escolhida.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-03",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 3629,
+      "total_case_duration_ms": 3632,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 5,
+    "id": "FP-10",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A pergunta identifica folha e foto. Foram recuperadas seções 5, 1 e 7, sem a seção 6 sobre PDF/foto legível. O fallback é seguro, mas não atende ao pedido respondível pela fonte local.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-10",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 3520,
+      "total_case_duration_ms": 3523,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 6,
+    "id": "OP-03",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A entrada diz 'Selecionei instructor-11' como texto. Não há ação instructor_select nem selected_instructor_id no estado. O sistema retorna à lista e não informa que o registro está sem e-mail. A métrica de contexto só vê domínio/cartão e marca correspondência mesmo sem seleção de instrutor.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "OP-03",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "clarify",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15,
+      "total_case_duration_ms": 301,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 7,
+    "id": "OP-04",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "Perguntou-se se os contatos foram validados; a intenção virou education_contact e devolveu contatos configurados sem responder sobre validação. A reprovação original só por citação não captura essa omissão. O escopo education:contacts estava presente; não há vazamento sem permissão demonstrado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "OP-04",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 19,
+      "total_case_duration_ms": 23,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 8,
+    "id": "VT-155",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "Os valores 11,80, 23,60 e 47,20 estão diferenciados por 2ª, 3ª e 4ª vias no procedimento. A normalização lexical transforma os ordinais em 2a/3a/4a, que não casam com os aliases 2/3/4. A nota de telefone incompleto também altera a taxonomia.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "VT-155",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 1248,
+      "total_case_duration_ms": 1252,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 9,
+    "id": "FP-09",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O texto diz 'Não, não posso assinar...', atribuindo a ação ao assistente. A proibição e a referência à seção 4 estão preservadas. O feedback do usuário gerou a reprovação; não há inversão demonstrada da regra institucional.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-09",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 3964,
+      "total_case_duration_ms": 3967,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 10,
+    "id": "AUTH-01",
+    "domain": "governance",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A saída é fallback sem fonte. O caso usou política documental de produção no grafo, mas autenticação/host de desenvolvimento, e não chegou à busca. Isso não testa um deployment corporativo nem explica explicitamente a regra de aprovação.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "AUTH-01",
+      "domain": "governance",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 18,
+      "total_case_duration_ms": 21,
+      "production_deployment_assessed": false,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 11,
+    "id": "FP-14",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A pergunta sobre caneta não informa que é para a folha e não contém histórico. A cor azul/preta consta na seção 3 do inventário, mas não foi recuperada. O contexto pressuposto do teste precisa ser decidido.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-14",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 245,
+      "total_case_duration_ms": 248,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 12,
+    "id": "FP-04",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A busca retornou somente a seção 2 (prazo), e não a seção 3 (horários). O assessor marcou partial e o gerador fez fallback seguro, sem inventar a proibição.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-04",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.5
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 2616,
+      "total_case_duration_ms": 2620,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 13,
+    "id": "FP-06",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A consulta foi 'Falta no Trabalho: Como diferencio falta e falta justificada?' e retornou zero chunks. O fallback não fornece a diferença; a regra com documento existe na localização 3 do inventário local.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-06",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 6261,
+      "total_case_duration_ms": 6265,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 14,
+    "id": "OP-01",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A resposta direciona ao calendário do Conecta, atendendo ao conteúdo principal. O runtime usa configuração operacional e sources=[], enquanto o dataset exige referência a services/calendar. Não é uma busca vetorial malsucedida.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "OP-01",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 297,
+      "total_case_duration_ms": 300,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 15,
+    "id": "OP-02",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A resposta menciona Conecta, envio de atestados e curso. O fato lexical falha porque o critério exige o singular 'atestado'. Além disso, falta a proveniência operacional exigida e a ressalva genérica não equivale ao aviso explícito de pendência.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "OP-02",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 250,
+      "total_case_duration_ms": 254,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 16,
+    "id": "NEG-02",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "Uma pergunta sobre saldo foi classificada como ambiguous_document e recebeu pergunta sobre entrega de folha/documento/atestado. Não foi inventado saldo, mas a resposta é funcionalmente alheia ao pedido.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "NEG-02",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 21,
+      "total_case_duration_ms": 25,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 17,
+    "id": "NEG-06",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "Sem cartão identificado, o caso espera esclarecimento. O sistema retorna fora de escopo. A omissão é do próximo passo de atendimento, não de um valor documental já disponível.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "NEG-06",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "clarify",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 19,
+      "total_case_duration_ms": 23,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 18,
+    "id": "VT-15779",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A solicitação identifica uma operadora/cartão, mas a intenção observada foi ambiguous_document. A resposta não trata da orientação pedida; não há chamada de recuperação nem uso de linha de outro cartão.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "VT-15779",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 1314,
+      "total_case_duration_ms": 1320,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 19,
+    "id": "VT-503",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A resposta apresenta coluna Jovem, procedimento qualquer pessoa e pede confirmação sem escolher uma versão. A divergência está na fonte e foi explicitada; requer validação institucional, não aprovação automática da resposta.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "VT-503",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 1016,
+      "total_case_duration_ms": 1020,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 20,
+    "id": "VT-9156",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A resposta informa R$ 28,50 e diz que o procedimento 'não informa URL nem número'. O critério exige 'não informado', 'não consta' ou 'ausente'; a paráfrase verdadeira não casa. Não houve número de WhatsApp fabricado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "VT-9156",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 1434,
+      "total_case_duration_ms": 1437,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 21,
+    "id": "CONFLICT-02",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A nota diz que há '0800 sem informar o número completo'. O critério aceita 'incompleto', 'não informado' ou 'não consta', mas não essa paráfrase. A resposta não fabricou o restante do número; o rótulo surface_conflict também difere de answer.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "CONFLICT-02",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 3480,
+      "total_case_duration_ms": 3483,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 22,
+    "id": "AUTH-03",
+    "domain": "governance",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A resposta recusa expressamente acesso aos contatos educacionais. Essa frase não está nos aliases aceitos. O export inicial a classificou como answer por outcome=operational; o export posterior corrigiu apenas o rótulo, sem mudar o texto.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "AUTH-03",
+      "domain": "governance",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 278,
+      "total_case_duration_ms": 281,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 23,
+    "id": "CTX-06",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O cartão 15723 está ativo na entrada. A pergunta sobre BO passa pelo roteador operacional, que reinicia a etapa; a resposta pede cartão novamente. Não houve nova seleção explícita pelo usuário.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "CTX-06",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 3204,
+      "total_case_duration_ms": 4438,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  },
+  {
+    "rank": 24,
+    "id": "FP-02",
+    "domain": "folha_ponto",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "O prazo até o segundo dia útil do mês coincide com a seção 2. A redação 'Devo entregar minha folha' também espelha a primeira pessoa do usuário; é inadequação de perspectiva, não troca de prazo.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false,
+    "new_observation": {
+      "test_id": "FP-02",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 3778,
+      "total_case_duration_ms": 3781,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    "semantic_decision": "pendente"
+  }
+]

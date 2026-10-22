@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-3845",
+  "input": {
+    "test_id": "VT-3845",
+    "question": "SOU Valinhos emite a segunda via imediatamente sem condições?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:10:31.862431+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "2e5bee47-64d3-49e9-831f-7b662feedd0d",
+        "content": "SOU Valinhos emite a segunda via imediatamente sem condições?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "3845",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+              "benefit_code": "3845",
+              "attributes": {
+                "uf": "SP",
+                "fee": "10 tarifas",
+                "code": "3845",
+                "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+              "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+              "chunk": 21,
+              "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.834551,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2109
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3014
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3025,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "SOU Valinhos emite a segunda via imediatamente sem condições?"
+              ]
+            ],
+            "deadline": 10427.422054793
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal** · Código 3845 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+                "benefit_code": "3845",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "3845",
+                  "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+                "chunk": 21,
+                "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.834551,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+                "benefit_code": "3845",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "3845",
+                  "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+                "chunk": 21,
+                "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.834551,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "3845"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "a2754c39-f138-4c38-83c9-55c2d599be0d",
+            "role": "user",
+            "content": "SOU Valinhos emite a segunda via imediatamente sem condições?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:31.870185Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "0d466c00-cec5-48fb-8c8e-afdc50a4ce6e",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:31.870186Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal** · Código 3845 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+              "benefit_code": "3845",
+              "attributes": {
+                "uf": "SP",
+                "fee": "10 tarifas",
+                "code": "3845",
+                "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+              "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+              "chunk": 21,
+              "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.834551,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "0d466c00-cec5-48fb-8c8e-afdc50a4ce6e",
+            "role": "assistant",
+            "content": "**Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal** · Código 3845 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+                "benefit_code": "3845",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "3845",
+                  "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+                "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+                "chunk": 21,
+                "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.834551,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:10:31.870186Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54",
+        "deadline": 10427.422054793,
+        "question": "SOU Valinhos emite a segunda via imediatamente sem condições?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54",
+        "deadline": 10427.422054793,
+        "question": "SOU Valinhos emite a segunda via imediatamente sem condições?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "3845"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+            "benefit_code": "3845",
+            "attributes": {
+              "uf": "SP",
+              "fee": "10 tarifas",
+              "code": "3845",
+              "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+            "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+            "chunk": 21,
+            "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.834551,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+            "benefit_code": "3845",
+            "attributes": {
+              "uf": "SP",
+              "fee": "10 tarifas",
+              "code": "3845",
+              "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+            "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+            "chunk": 21,
+            "excerpt": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.834551,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "SOU Valinhos emite a segunda via imediatamente sem condições?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal** · Código 3845 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3032
+    }
+  ],
+  "conversation_id": "e12ef888-5b2e-4dc2-be84-1291dc4b8a54",
+  "duration_ms": 3036,
+  "completed_at": "2026-10-21T14:10:34.898370+00:00"
+}

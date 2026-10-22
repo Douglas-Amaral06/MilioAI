@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-15504",
+  "input": {
+    "test_id": "VT-15504",
+    "question": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:17:40.424753+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "19355fb2-442b-40b3-b6b3-8028485af2d8",
+        "content": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Onpag - Cartão Ferraz de Vasconcelos Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15504",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+              "benefit_code": "15504",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15504",
+                "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou Pix",
+                "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+              "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+              "chunk": 18,
+              "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.807725,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2220
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3034
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3054,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Como pago a segunda via Onpag Ferraz de Vasconcelos?"
+              ]
+            ],
+            "deadline": 10856.177683072
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Onpag - Cartão Ferraz de Vasconcelos Municipal** · Código 15504 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+                "benefit_code": "15504",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15504",
+                  "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou Pix",
+                  "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+                "chunk": 18,
+                "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.807725,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+                "benefit_code": "15504",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15504",
+                  "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou Pix",
+                  "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+                "chunk": 18,
+                "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.807725,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15504"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "b0551944-f915-46d3-803b-6ad7ec36244a",
+            "role": "user",
+            "content": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:40.436217Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "6c8bc913-6f2a-46b4-936b-e8ed021bfcb9",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:40.436218Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Onpag - Cartão Ferraz de Vasconcelos Municipal** · Código 15504 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+              "benefit_code": "15504",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15504",
+                "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou Pix",
+                "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+              "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+              "chunk": 18,
+              "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.807725,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "6c8bc913-6f2a-46b4-936b-e8ed021bfcb9",
+            "role": "assistant",
+            "content": "**Onpag - Cartão Ferraz de Vasconcelos Municipal** · Código 15504 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+                "benefit_code": "15504",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15504",
+                  "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou Pix",
+                  "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+                "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+                "chunk": 18,
+                "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.807725,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:17:40.436218Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "5d4c861e-114a-4736-b2cb-c4e965c14c30",
+        "deadline": 10856.177683072,
+        "question": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "5d4c861e-114a-4736-b2cb-c4e965c14c30",
+        "deadline": 10856.177683072,
+        "question": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15504"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+            "benefit_code": "15504",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15504",
+              "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou Pix",
+              "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+            "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+            "chunk": 18,
+            "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.807725,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+            "benefit_code": "15504",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15504",
+              "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou Pix",
+              "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+            "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+            "chunk": 18,
+            "excerpt": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.807725,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Como pago a segunda via Onpag Ferraz de Vasconcelos?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Onpag - Cartão Ferraz de Vasconcelos Municipal** · Código 15504 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3064
+    }
+  ],
+  "conversation_id": "5d4c861e-114a-4736-b2cb-c4e965c14c30",
+  "duration_ms": 3071,
+  "completed_at": "2026-10-21T14:17:43.495597+00:00"
+}

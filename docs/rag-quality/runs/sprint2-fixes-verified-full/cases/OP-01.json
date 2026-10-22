@@ -1,0 +1,235 @@
+{
+  "test_id": "OP-01",
+  "input": {
+    "test_id": "OP-01",
+    "question": "Onde consulto os dias de curso?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "operational-services"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:19:12.409862+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "cd2ffb12-b68f-4e41-b0cb-a1b5a353de96",
+        "content": "Onde consulto os dias de curso?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 280
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 289,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Onde consulto os dias de curso?"
+              ]
+            ],
+            "deadline": 10948.223373266
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "calendar",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional.",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "calendar",
+              "selected_service": "calendar",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "calendar",
+                "institutionally_approved": false
+              }
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "c6c71f8e-06c0-423f-a135-5c0285c8430b",
+            "role": "user",
+            "content": "Onde consulto os dias de curso?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:12.417218Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "8ce07386-83b9-43f9-a799-a7640300b70a",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:12.417219Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "8ce07386-83b9-43f9-a799-a7640300b70a",
+            "role": "assistant",
+            "content": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:12.417219Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "ad041a13-e177-45c2-aa07-a84891c1d72d",
+        "deadline": 10948.223373266,
+        "question": "Onde consulto os dias de curso?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "ad041a13-e177-45c2-aa07-a84891c1d72d",
+        "deadline": 10948.223373266,
+        "question": "Onde consulto os dias de curso?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "calendar",
+          "selected_service": "calendar",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "calendar",
+            "institutionally_approved": false
+          }
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Onde consulto os dias de curso?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "calendar",
+        "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional.",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 297
+    }
+  ],
+  "conversation_id": "ad041a13-e177-45c2-aa07-a84891c1d72d",
+  "duration_ms": 300,
+  "completed_at": "2026-10-21T14:19:12.709737+00:00"
+}

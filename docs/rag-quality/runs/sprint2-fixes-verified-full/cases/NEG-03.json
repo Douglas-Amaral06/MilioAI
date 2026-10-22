@@ -1,0 +1,213 @@
+{
+  "test_id": "NEG-03",
+  "input": {
+    "test_id": "NEG-03",
+    "question": "Qual meu salário líquido deste mês?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T14:19:03.356765+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "21554530-25db-4714-b795-b17d28c88392",
+        "content": "Qual meu salário líquido deste mês?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 8,
+          "outcome": "no_evidence",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "salario",
+                "Qual meu salário líquido deste mês?"
+              ]
+            ],
+            "deadline": 10939.172470308
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "personal_unavailable",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+            "sources": [],
+            "outcome": "no_evidence",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "personal_unavailable"
+            },
+            "domain": "salario"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "5a678f31-8cfe-408a-8dd0-115d981ecbed",
+            "role": "user",
+            "content": "Qual meu salário líquido deste mês?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:03.365647Z",
+            "outcome": null,
+            "topic_id": "salario",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "b2699691-a241-4988-a89a-90409f27cd4e",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:03.365648Z",
+            "outcome": null,
+            "topic_id": "salario",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "b2699691-a241-4988-a89a-90409f27cd4e",
+            "role": "assistant",
+            "content": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:03.365648Z",
+            "outcome": "no_evidence",
+            "topic_id": "salario",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "70b05b20-c53c-4a3b-8e52-c437c4b28bc2",
+        "deadline": 10939.172470308,
+        "question": "Qual meu salário líquido deste mês?",
+        "topic_id": "salario",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "70b05b20-c53c-4a3b-8e52-c437c4b28bc2",
+        "deadline": 10939.172470308,
+        "question": "Qual meu salário líquido deste mês?",
+        "topic_id": "salario",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "personal_unavailable"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "salario",
+            "Qual meu salário líquido deste mês?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "personal_unavailable",
+        "answer": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+        "outcome": "no_evidence",
+        "domain": "salario"
+      },
+      "duration_ms": 17
+    }
+  ],
+  "conversation_id": "70b05b20-c53c-4a3b-8e52-c437c4b28bc2",
+  "duration_ms": 21,
+  "completed_at": "2026-10-21T14:19:03.377980+00:00"
+}

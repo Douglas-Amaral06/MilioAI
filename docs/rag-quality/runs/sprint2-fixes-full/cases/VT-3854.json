@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-3854",
+  "input": {
+    "test_id": "VT-3854",
+    "question": "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:10:30.406088+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "77f45a19-6013-4139-8c1a-d3724bf0e7b7",
+        "content": "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "3854",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+              "benefit_code": "3854",
+              "attributes": {
+                "uf": "SP",
+                "fee": "6 tarifas",
+                "code": "3854",
+                "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                "payment": "Dinheiro",
+                "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+              "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+              "chunk": 20,
+              "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.810747,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 88
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 1323
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 1419,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?"
+              ]
+            ],
+            "deadline": 10425.965341163
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho** · Código 3854 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+                "benefit_code": "3854",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "6 tarifas",
+                  "code": "3854",
+                  "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                  "payment": "Dinheiro",
+                  "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+                "chunk": 20,
+                "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.810747,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+                "benefit_code": "3854",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "6 tarifas",
+                  "code": "3854",
+                  "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                  "payment": "Dinheiro",
+                  "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+                "chunk": 20,
+                "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.810747,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "3854"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "4bf4940f-57c5-4020-832e-ba141bb2f516",
+            "role": "user",
+            "content": "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:30.413334Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "3b4a8d8f-192d-454f-a641-3d0129acb2f8",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:30.413335Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho** · Código 3854 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+              "benefit_code": "3854",
+              "attributes": {
+                "uf": "SP",
+                "fee": "6 tarifas",
+                "code": "3854",
+                "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                "payment": "Dinheiro",
+                "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+              "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+              "chunk": 20,
+              "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.810747,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "3b4a8d8f-192d-454f-a641-3d0129acb2f8",
+            "role": "assistant",
+            "content": "**Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho** · Código 3854 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+                "benefit_code": "3854",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "6 tarifas",
+                  "code": "3854",
+                  "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                  "payment": "Dinheiro",
+                  "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+                "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+                "chunk": 20,
+                "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.810747,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:10:30.413335Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a",
+        "deadline": 10425.965341163,
+        "question": "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a",
+        "deadline": 10425.965341163,
+        "question": "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "3854"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+            "benefit_code": "3854",
+            "attributes": {
+              "uf": "SP",
+              "fee": "6 tarifas",
+              "code": "3854",
+              "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+              "payment": "Dinheiro",
+              "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+            "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+            "chunk": 20,
+            "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.810747,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+            "benefit_code": "3854",
+            "attributes": {
+              "uf": "SP",
+              "fee": "6 tarifas",
+              "code": "3854",
+              "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+              "payment": "Dinheiro",
+              "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+            "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+            "chunk": 20,
+            "excerpt": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.810747,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "A taxa do Rápido D'Oeste é 6 tarifas ou 21,30?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho** · Código 3854 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 1427
+    }
+  ],
+  "conversation_id": "050b4bee-9b86-4f41-a24f-9b772b98bc0a",
+  "duration_ms": 1430,
+  "completed_at": "2026-10-21T14:10:31.836218+00:00"
+}

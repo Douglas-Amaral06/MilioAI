@@ -1,5 +1,6 @@
 """Trusted operational data and explicit instructor state machine. No generated contacts."""
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -32,6 +33,9 @@ INTENTS = [
     "ambiguous_document",
     "documental",
     "transport_replacement",
+    "personal_unavailable",
+    "education_validation",
+    "instructor_selection_required",
 ]
 GUIDED = {
     "folha_ponto.gerar": "generate_timesheet",
@@ -63,6 +67,19 @@ def available(settings):
     return CONFIG["enabled"] and (
         CONFIG["validation_status"] == "validated" or settings.app_env == "development"
     )
+
+
+def provenance(intent):
+    path = Path(__file__).with_name("operational_guidance.json")
+    return {
+        "kind": "operational_configuration",
+        "file": path.name,
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "origin": CONFIG["origin"],
+        "validation_status": CONFIG["validation_status"],
+        "intent": intent,
+        "institutionally_approved": CONFIG["validation_status"] == "validated",
+    }
 
 
 def authorize(scopes):
@@ -173,6 +190,25 @@ async def detect(ollama, question, question_id, topic_id, history, state):
     response = confirmation_action(question, state)
     if response:
         return response
+    if re.search(r"instructor-\d+", text):
+        return (
+            "course_contact"
+            if state.get("selected_instructor_id")
+            else "instructor_selection_required"
+        )
+    if re.search(r"saldo.*hoje|salario.*liquido|minha senha", text):
+        return "personal_unavailable"
+    if re.search(r"contatos|educacional", text) and re.search(r"valid|aprov", text):
+        return "education_validation"
+    timesheet = bool(re.search(r"folha|ponto|frequencia", text)) or topic_id == "folha_ponto"
+    acquiring = bool(
+        re.search(
+            r"\b(?:gerar|gero|gera|gere|emitir|emito|emite|baixar|baixo|baixa|obter|obtenho|pegar|pego|encontr\w*|acho)\b",
+            text,
+        )
+    )
+    if timesheet and not acquiring and not re.search(r"onde.*(envi|mand|entreg)", text):
+        return "documental"
     # Policy safeguards are conservative; semantic service selection remains model-based.
     if re.search(r"ferias", text) and re.search(r"solicit|pedir|direito|regras|posso", text):
         return "documental"
@@ -188,9 +224,7 @@ async def detect(ollama, question, question_id, topic_id, history, state):
         and not re.search(r"esse|essa|este|esta|isso", text)
     ):
         return "ambiguous_document"
-    acquiring_form = re.search(r"gerar|emitir|baixar|obter|pegar|encontr|acho", text) and re.search(
-        r"folha|ponto|frequencia", text
-    )
+    acquiring_form = acquiring and re.search(r"folha|ponto|frequencia", text)
     if (
         not acquiring_form
         and re.search(

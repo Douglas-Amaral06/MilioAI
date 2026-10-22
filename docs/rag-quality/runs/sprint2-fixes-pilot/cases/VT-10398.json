@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-10398",
+  "input": {
+    "test_id": "VT-10398",
+    "question": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:01:37.685959+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "37513525-28f8-443e-bddd-fac248640684",
+        "content": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "10398",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+              "benefit_code": "10398",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 20,00",
+                "code": "10398",
+                "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+              "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+              "chunk": 0,
+              "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.866685,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2319
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 4
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3239
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3253,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Após bloquear o CIT Sumaré Urbano, quando como retiro a segunda via?"
+              ]
+            ],
+            "deadline": 9893.198481468
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano** · Código 10398 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+                "benefit_code": "10398",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 20,00",
+                  "code": "10398",
+                  "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+                "chunk": 0,
+                "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.866685,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+                "benefit_code": "10398",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 20,00",
+                  "code": "10398",
+                  "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+                "chunk": 0,
+                "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.866685,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "10398"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "bbfceeb0-530b-438a-b864-0cbfb89b4c13",
+            "role": "user",
+            "content": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:01:37.693025Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "81124eb7-0251-4ab6-a3d7-06f5213a3225",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:01:37.693026Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano** · Código 10398 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+              "benefit_code": "10398",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 20,00",
+                "code": "10398",
+                "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+              "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+              "chunk": 0,
+              "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.866685,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "81124eb7-0251-4ab6-a3d7-06f5213a3225",
+            "role": "assistant",
+            "content": "**Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano** · Código 10398 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+                "benefit_code": "10398",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 20,00",
+                  "code": "10398",
+                  "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+                "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+                "chunk": 0,
+                "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.866685,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:01:37.693026Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "a83aa664-7704-4d9c-aba3-f850e0f5193e",
+        "deadline": 9893.198481468,
+        "question": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "a83aa664-7704-4d9c-aba3-f850e0f5193e",
+        "deadline": 9893.198481468,
+        "question": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "10398"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+            "benefit_code": "10398",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 20,00",
+              "code": "10398",
+              "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+            "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+            "chunk": 0,
+            "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.866685,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+            "benefit_code": "10398",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 20,00",
+              "code": "10398",
+              "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+            "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+            "chunk": 0,
+            "excerpt": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.866685,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Após bloquear o CIT Sumaré Urbano, quando como retiro a segunda via?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano** · Código 10398 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3261
+    }
+  ],
+  "conversation_id": "a83aa664-7704-4d9c-aba3-f850e0f5193e",
+  "duration_ms": 3264,
+  "completed_at": "2026-10-21T14:01:40.950048+00:00"
+}

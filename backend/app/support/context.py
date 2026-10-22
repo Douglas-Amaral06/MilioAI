@@ -8,7 +8,7 @@ def explicit_topic(question):
     text = normalize(question)
     if re.search(r"\b(ferias|rescisao|decimo terceiro)\b", text):
         return "outros"
-    if re.search(r"vale.?transporte|\bvt\b", text):
+    if re.search(r"vale.?transporte|\bvt\b|sptrans|bilhete unico|cartao top", text):
         return "vale_transporte"
     if re.search(r"vale.?refeicao|alimentacao|cartao de refeicao", text):
         return "vale_refeicao_alimentacao"
@@ -42,7 +42,7 @@ def resolve_context(question, selected_topic, question_id, history, scopes):
             chosen = (
                 selected_topic
                 if re.search(
-                    r"\b(e |isso|essa|esse|qual|como|onde|prazo|atras|assin|documento|horario)",
+                    r"\b(e |isso|essa|esse|qual|como|onde|prazo|atras|assin|documento|horario|preench|caneta|corretivo|datas|entrega|duvidas|ajuda)",
                     normalize(question),
                 )
                 else "outros"

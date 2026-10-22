@@ -1,0 +1,256 @@
+{
+  "priority": 26,
+  "test_id": "FP-02",
+  "domain": "folha_ponto",
+  "question": "Até quando devo entregar minha folha ponto?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "FP-02",
+    "question": "Até quando devo entregar minha folha ponto?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "answer_delivered": "Deve ser enviada até o segundo dia útil do mês [fonte:F1].",
+  "observed_behavior": "answer",
+  "expected_facts": [
+    {
+      "criterion_id": "FP-02-fact-1",
+      "description": "Até o segundo dia útil do mês.",
+      "match": {
+        "all_of": [
+          [
+            "segundo dia útil",
+            "2 dia útil",
+            "2º dia útil"
+          ],
+          [
+            "mês"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-deadline"
+      ]
+    },
+    {
+      "criterion_id": "FP-02-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-deadline"
+      ]
+    }
+  ],
+  "forbidden_claims": [
+    {
+      "criterion_id": "FP-02-forbidden-1",
+      "description": "Não trocar dia útil por dia corrido.",
+      "match": {
+        "all_of": [
+          [
+            "segundo dia corrido",
+            "2 dia corrido",
+            "2º dia corrido"
+          ]
+        ]
+      },
+      "evidence_ids": []
+    }
+  ],
+  "historical_expected_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "2.",
+      "page": 1,
+      "benefit_code": null
+    }
+  ],
+  "retrieval_calls": [
+    {
+      "query": "Folha Ponto: Até quando devo entregar minha folha ponto?",
+      "scopes": [
+        "local_review"
+      ],
+      "domain": "rh_frequency",
+      "benefit_code": null,
+      "app_env_filter": "development",
+      "version_filter": "folha-ponto-local-v1",
+      "chunks": [
+        {
+          "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "2. Periodicidade e Prazo",
+          "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+          "chunk": 2,
+          "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.659946,
+          "status": "approved"
+        },
+        {
+          "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 2,
+          "section": "5. Assinaturas obrigatórias",
+          "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+          "chunk": 5,
+          "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.582832,
+          "status": "approved"
+        },
+        {
+          "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 2,
+          "section": "6. Envio do documento",
+          "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+          "chunk": 6,
+          "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.589899,
+          "status": "approved"
+        }
+      ],
+      "duration_ms": 12355
+    }
+  ],
+  "actual_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "folha-ponto-local-v1",
+      "section_or_row": "2. Periodicidade e Prazo",
+      "page": 1,
+      "benefit_code": null,
+      "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+      "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+      "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+      "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+    }
+  ],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "vt_stage": "idle",
+    "stage": "idle"
+  },
+  "automatic_observations": {
+    "test_id": "FP-02",
+    "domain": "folha_ponto",
+    "automatic_status": "inconclusive_checks",
+    "final_status": "inconclusivo",
+    "reasons": [],
+    "review_alerts": [],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": true,
+      "recall_at_3": 1.0,
+      "reciprocal_rank_at_3": 1.0
+    },
+    "citation_location_completeness": 1.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.5,
+    "forbidden_lexical_alerts": [],
+    "behavior": "answer",
+    "behavior_match": true,
+    "context_match": null,
+    "card_match": null,
+    "question_duration_ms": 19144,
+    "total_case_duration_ms": 19171,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

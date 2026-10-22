@@ -1,0 +1,231 @@
+{
+  "test_id": "VT-15506",
+  "input": {
+    "test_id": "VT-15506",
+    "question": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:23.207490+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "244a3957-c266-4d47-8aa7-06ee71159444",
+        "content": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 225
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "unavailable",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "auto",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 239,
+          "outcome": "out_of_scope",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem solicita qual documento apresenta no Onpag Suzano?"
+              ]
+            ],
+            "deadline": 6218.417443625
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "outros",
+            "domain": "auto",
+            "agent": "unavailable",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "unavailable",
+          "state": {
+            "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "sources": [],
+            "outcome": "out_of_scope"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "b0d74326-ddd2-4ea4-90ea-f4bbe1ac0ddb",
+            "role": "user",
+            "content": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:23.215408Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "45166375-661c-40be-b568-9925f5444bec",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:23.215409Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Ainda não tenho informações disponíveis sobre esse assunto."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "45166375-661c-40be-b568-9925f5444bec",
+            "role": "assistant",
+            "content": "Ainda não tenho informações disponíveis sobre esse assunto.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:23.215409Z",
+            "outcome": "out_of_scope",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "08d0867b-d8d6-4fb1-b226-ff41d18a95cc",
+        "deadline": 6218.417443625,
+        "question": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "08d0867b-d8d6-4fb1-b226-ff41d18a95cc",
+        "deadline": 6218.417443625,
+        "question": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem solicita qual documento apresenta no Onpag Suzano?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "auto",
+        "agent": "unavailable",
+        "comprehensible": true,
+        "answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+        "outcome": "out_of_scope"
+      },
+      "duration_ms": 247
+    }
+  ],
+  "conversation_id": "08d0867b-d8d6-4fb1-b226-ff41d18a95cc",
+  "duration_ms": 250,
+  "completed_at": "2026-10-21T13:00:23.457960+00:00"
+}

@@ -1,0 +1,544 @@
+{
+  "test_id": "FP-09",
+  "input": {
+    "test_id": "FP-09",
+    "question": "Posso assinar a folha de outra pessoa ou em branco?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:04:26.455830+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "667d11b5-1a36-41c4-bfbd-fd5bde5a7724",
+        "content": "Posso assinar a folha de outra pessoa ou em branco?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: Posso assinar a folha de outra pessoa ou em branco?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "4. O que NÃO fazer",
+              "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+              "chunk": 4,
+              "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.638424,
+              "status": "approved"
+            },
+            {
+              "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "3. Como preencher corretamente",
+              "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+              "chunk": 3,
+              "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.506838,
+              "status": "approved"
+            },
+            {
+              "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "5. Assinaturas obrigatórias",
+              "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+              "chunk": 5,
+              "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.599041,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 1913
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 1914
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "sufficient",
+          "chunk_count": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 730
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 702
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 332
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3694,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "Posso assinar a folha de outra pessoa ou em branco?"
+              ]
+            ],
+            "deadline": 10061.982234271
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "4. O que NÃO fazer",
+                "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                "chunk": 4,
+                "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.638424,
+                "status": "approved"
+              },
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.506838,
+                "status": "approved"
+              },
+              {
+                "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "5. Assinaturas obrigatórias",
+                "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+                "chunk": 5,
+                "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.599041,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: Posso assinar a folha de outra pessoa ou em branco?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "sufficient",
+            "chunks": [
+              {
+                "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "4. O que NÃO fazer",
+                "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                "chunk": 4,
+                "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.638424,
+                "status": "approved"
+              },
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.506838,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Você não pode assinar a folha de outra pessoa ou em branco [fonte:F1].",
+            "outcome": "answered"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Você não pode assinar a folha de outra pessoa ou em branco [fonte:F1].",
+            "sources": [
+              {
+                "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "4. O que NÃO fazer",
+                "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                "chunk": 4,
+                "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.638424,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "c5d8732d-6231-4d6a-bd64-c0a24b5379d7",
+            "role": "user",
+            "content": "Posso assinar a folha de outra pessoa ou em branco?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:26.462418Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "24ff99cf-1fa6-474d-a443-f4b78f545e1e",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:26.462419Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você não pode assinar a folha de outra pessoa ou em branco [fonte:F1]."
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "4. O que NÃO fazer",
+              "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+              "chunk": 4,
+              "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.638424,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "24ff99cf-1fa6-474d-a443-f4b78f545e1e",
+            "role": "assistant",
+            "content": "Você não pode assinar a folha de outra pessoa ou em branco [fonte:F1].",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "4. O que NÃO fazer",
+                "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                "chunk": 4,
+                "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.638424,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:04:26.462419Z",
+            "outcome": "answered",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "2e35508f-56ac-4328-9c45-124506242086",
+        "deadline": 10061.982234271,
+        "question": "Posso assinar a folha de outra pessoa ou em branco?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "2e35508f-56ac-4328-9c45-124506242086",
+        "deadline": 10061.982234271,
+        "question": "Posso assinar a folha de outra pessoa ou em branco?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "4. O que NÃO fazer",
+            "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+            "chunk": 4,
+            "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.638424,
+            "status": "approved"
+          },
+          {
+            "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 1,
+            "section": "3. Como preencher corretamente",
+            "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+            "chunk": 3,
+            "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.506838,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "4. O que NÃO fazer",
+            "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+            "chunk": 4,
+            "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.638424,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "Posso assinar a folha de outra pessoa ou em branco?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: Posso assinar a folha de outra pessoa ou em branco?",
+        "coverage": "sufficient",
+        "answer": "Você não pode assinar a folha de outra pessoa ou em branco [fonte:F1].",
+        "outcome": "answered"
+      },
+      "duration_ms": 3702
+    }
+  ],
+  "conversation_id": "2e35508f-56ac-4328-9c45-124506242086",
+  "duration_ms": 3705,
+  "completed_at": "2026-10-21T14:04:30.160339+00:00"
+}

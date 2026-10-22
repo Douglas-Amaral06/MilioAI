@@ -1,0 +1,383 @@
+{
+  "run_id": "rag-real-39d54d172a28",
+  "run_kind": "real",
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+  "evidence_catalog_sha256": "745c64dae08a09c17ff636838cca7e089abcb7809ea9bd9d606fed50d91d94f1",
+  "document_registry_sha256": "5f68edd2eb5808b106c1d7d4667671d86bbcaa731ca799ea476d9779ed831ad6",
+  "conflicts_sha256": "52e0b503475b1ff09c06155061b0d11c56a33efbf66702fd7e9b3039294a5f20",
+  "card_coverage_sha256": "293568ee6ad3038e831d5f73c24797deb15c936449a9ee8808ee210bc794dcf3",
+  "executed_at": "2026-10-21T14:12:39.970021+00:00",
+  "results": [
+    {
+      "test_id": "FP-05",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você precisa preencher todos os dias do mês na folha ponto [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-11",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "7. Responsabilidade",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "6. Envio do documento",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Se você atrasar a entrega, pode resultar em: bloqueio da entrada da capacitação teórica e/ou prática, advertência verbal e/ou por escrito e não recebimento dos proventos e benefícios [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-13",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "8. Dúvidas",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "8. Dúvidas",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você pode tirar dúvidas com o RH Jovem antes do prazo final, entrando em contato por e-mail: frequência.sp@renapsi.org.br ou por WhatsApp: 11 97080-6028 [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-14",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "4. O que NÃO fazer",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Deve usar caneta azul ou preta [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-15",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "4. O que NÃO fazer",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "5. Assinaturas obrigatórias",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "9952a53b-ea93-4457-a817-8316c0c72208",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "4. O que NÃO fazer",
+          "page": 2,
+          "benefit_code": null,
+          "chunk_id": "acda3c11-ae44-451f-9cbf-32397007d293",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você não pode usar corretivos nem alterar datas retroativamente [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "FP-16",
+      "retrieval_status": "observed",
+      "retrieved": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "3. Como preencher corretamente",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+        },
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "1. O que é a Folha Ponto?",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a"
+        }
+      ],
+      "citation_status": "observed",
+      "citations": [
+        {
+          "document_id": "folha-ponto",
+          "source_version": "folha-ponto-local-v1",
+          "section_or_row": "2. Periodicidade e Prazo",
+          "page": 1,
+          "benefit_code": null,
+          "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+          "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+        }
+      ],
+      "generation_status": "observed",
+      "answer": "Você deve preencher diariamente a folha ponto [fonte:F1].",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "folha_ponto",
+        "benefit_code": null
+      }
+    },
+    {
+      "test_id": "OP-03",
+      "retrieval_status": "observed",
+      "retrieved": [],
+      "citation_status": "observed",
+      "citations": [],
+      "generation_status": "observed",
+      "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+      "behavior": "answer",
+      "context_status": "observed",
+      "context": {
+        "domain": "operational",
+        "benefit_code": null
+      }
+    }
+  ]
+}

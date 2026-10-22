@@ -1,0 +1,253 @@
+{
+  "priority": 13,
+  "test_id": "FP-03",
+  "domain": "folha_ponto",
+  "question": "Até que dia tenho pra mandar meu ponto?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "Você deve enviar a Folha Ponto até o segundo dia útil do mês [fonte:F1].",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "FP-03",
+    "question": "Até que dia tenho pra mandar meu ponto?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "answer_delivered": "Você deve enviar a Folha Ponto até o segundo dia útil do mês [fonte:F1].",
+  "observed_behavior": "answer",
+  "expected_facts": [
+    {
+      "criterion_id": "FP-03-fact-1",
+      "description": "Preservar dia útil, sem trocar por dia corrido.",
+      "match": {
+        "all_of": [
+          [
+            "segundo dia útil",
+            "2 dia útil",
+            "2º dia útil"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-deadline"
+      ]
+    },
+    {
+      "criterion_id": "FP-03-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-deadline"
+      ]
+    }
+  ],
+  "forbidden_claims": [
+    {
+      "criterion_id": "FP-03-forbidden-1",
+      "description": "Não trocar dia útil por dia corrido.",
+      "match": {
+        "all_of": [
+          [
+            "segundo dia corrido",
+            "2 dia corrido",
+            "2º dia corrido"
+          ]
+        ]
+      },
+      "evidence_ids": []
+    }
+  ],
+  "historical_expected_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "2.",
+      "page": 1,
+      "benefit_code": null
+    }
+  ],
+  "retrieval_calls": [
+    {
+      "query": "Folha Ponto: Até que dia tenho pra mandar meu ponto?",
+      "scopes": [
+        "local_review"
+      ],
+      "domain": "rh_frequency",
+      "benefit_code": null,
+      "app_env_filter": "development",
+      "version_filter": "folha-ponto-local-v1",
+      "chunks": [
+        {
+          "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "2. Periodicidade e Prazo",
+          "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+          "chunk": 2,
+          "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.623238,
+          "status": "approved"
+        },
+        {
+          "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "1. O que é a Folha Ponto?",
+          "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+          "chunk": 1,
+          "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.547059,
+          "status": "approved"
+        },
+        {
+          "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "3. Como preencher corretamente",
+          "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+          "chunk": 3,
+          "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.490294,
+          "status": "approved"
+        }
+      ],
+      "duration_ms": 15272
+    }
+  ],
+  "actual_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "folha-ponto-local-v1",
+      "section_or_row": "2. Periodicidade e Prazo",
+      "page": 1,
+      "benefit_code": null,
+      "chunk_id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+      "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+      "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+      "chunk_hash": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c"
+    }
+  ],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "vt_stage": "idle",
+    "stage": "idle"
+  },
+  "automatic_observations": {
+    "test_id": "FP-03",
+    "domain": "folha_ponto",
+    "automatic_status": "inconclusive_checks",
+    "final_status": "inconclusivo",
+    "reasons": [],
+    "review_alerts": [],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": true,
+      "recall_at_3": 1.0,
+      "reciprocal_rank_at_3": 1.0
+    },
+    "citation_location_completeness": 1.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.5,
+    "forbidden_lexical_alerts": [],
+    "behavior": "answer",
+    "behavior_match": true,
+    "context_match": null,
+    "card_match": null,
+    "question_duration_ms": 24024,
+    "total_case_duration_ms": 24050,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

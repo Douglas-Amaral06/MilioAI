@@ -1,0 +1,403 @@
+{
+  "run_id": "rag-real-2910fb363405",
+  "counts": {
+    "dataset": 76,
+    "executed": 3,
+    "approved_semantically": 0,
+    "failed_observable_checks": 0,
+    "inconclusive_semantics": 3,
+    "not_executed": 73
+  },
+  "automatic_statuses": {
+    "inconclusive_checks": 3
+  },
+  "by_domain": {
+    "folha_ponto": {
+      "executed": 3,
+      "statuses": {
+        "inconclusivo": 3
+      },
+      "automatic_statuses": {
+        "inconclusive_checks": 3
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": 1.0,
+          "n": 3
+        },
+        "recall_at_3": {
+          "value": 1.0,
+          "n": 3
+        },
+        "mrr_at_3": {
+          "value": 0.611111111111111,
+          "n": 3
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.0,
+          "n": 3
+        },
+        "recall_at_3": {
+          "value": 0.0,
+          "n": 3
+        },
+        "mrr_at_3": {
+          "value": 0.0,
+          "n": 3
+        }
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "citation_location_completeness": 1.0,
+      "behavior_match": 1.0,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 3,
+        "mean_ms": 20587,
+        "p50_ms": 15836,
+        "p95_ms": 30686,
+        "max_ms": 30686
+      },
+      "latency_with_context": {
+        "n": 3,
+        "mean_ms": 20603,
+        "p50_ms": 15845,
+        "p95_ms": 30715,
+        "max_ms": 30715
+      }
+    },
+    "governance": {
+      "executed": 0,
+      "statuses": {},
+      "automatic_statuses": {},
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "required_fact_lexical_coverage": null,
+      "citation_location_completeness": null,
+      "behavior_match": null,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      },
+      "latency_with_context": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      }
+    },
+    "operational": {
+      "executed": 0,
+      "statuses": {},
+      "automatic_statuses": {},
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "required_fact_lexical_coverage": null,
+      "citation_location_completeness": null,
+      "behavior_match": null,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      },
+      "latency_with_context": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      }
+    },
+    "vale_transporte": {
+      "executed": 0,
+      "statuses": {},
+      "automatic_statuses": {},
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "required_fact_lexical_coverage": null,
+      "citation_location_completeness": null,
+      "behavior_match": null,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      },
+      "latency_with_context": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      }
+    }
+  },
+  "strict_metrics": {
+    "hit_rate_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "document_match_at_k": 0.0,
+    "section_or_card_match_at_k": 0.0,
+    "required_fact_lexical_coverage": 0.5,
+    "citation_precision": 0.0,
+    "citation_completeness": 0.0,
+    "behavior_trace_match_rate": 1.0,
+    "context_trace_match_rate": null,
+    "domain_trace_match_rate": null,
+    "card_trace_match_rate": null,
+    "citation_policy_pass_rate": 0.0,
+    "source_authorization_pass_rate": 0.0,
+    "fallback_behavior_trace_match_rate": null,
+    "clarification_behavior_trace_match_rate": null
+  },
+  "strict_metric_denominators": {
+    "hit_rate_at_k": 3,
+    "recall_at_k": 3,
+    "mrr_at_k": 3,
+    "document_match_at_k": 3,
+    "section_or_card_match_at_k": 3,
+    "required_fact_lexical_coverage": 3,
+    "citation_precision": 3,
+    "citation_completeness": 3,
+    "behavior_trace_match_rate": 3,
+    "context_trace_match_rate": 0,
+    "domain_trace_match_rate": 0,
+    "card_trace_match_rate": 0,
+    "citation_policy_pass_rate": 3,
+    "source_authorization_pass_rate": 3,
+    "fallback_behavior_trace_match_rate": 0,
+    "clarification_behavior_trace_match_rate": 0
+  },
+  "failure_categories": {},
+  "runtime_event_counts": {
+    "intents_identified": 3,
+    "stage_finished": 27,
+    "retrieval_complete": 3,
+    "evidence_assessed": 3,
+    "response_finished": 3
+  },
+  "grounding_events": [],
+  "failure_events": [],
+  "integrity": [
+    {
+      "test_id": "FP-04",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-07",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-12",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    }
+  ],
+  "cases": [
+    {
+      "test_id": "FP-04",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.5
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 30686,
+      "total_case_duration_ms": 30715,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-07",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 15836,
+      "total_case_duration_ms": 15845,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-12",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.3333333333333333
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 15239,
+      "total_case_duration_ms": 15248,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    }
+  ],
+  "limitations": [
+    "Location-only metrics ignore version; they do not establish snapshot equivalence or semantic support.",
+    "Lexical checks cannot approve semantic fidelity or absence of hallucination.",
+    "Corporate cases exercise production document filtering inside development; production authentication/deployment is not assessed."
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-164",
+  "input": {
+    "test_id": "VT-164",
+    "question": "Preciso agendar a retirada da segunda via do AESA Andreense?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:01:59.780454+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "8c46d850-a11c-4b3b-a0b9-d806676aece2",
+        "content": "Preciso agendar a retirada da segunda via do AESA Andreense?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. AESA - Bilhete Único Andreense - Santo André Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "164",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+              "benefit_code": "164",
+              "attributes": {
+                "uf": "SP",
+                "fee": "10 tarifas",
+                "code": "164",
+                "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+              "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+              "chunk": 2,
+              "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.821257,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 11906
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 33
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 15145
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 15275,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Preciso agendar a retirada da segunda via do AESA Andreense?"
+              ]
+            ],
+            "deadline": 13516.458816655
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**AESA - Bilhete Único Andreense - Santo André Municipal** · Código 164 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O jovem deve solicitar a 2ª via através do site [https://santoandre.pagmob.com.br/login](https://santoandre.pagmob.com.br/login) ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+                "benefit_code": "164",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "164",
+                  "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+                "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+                "chunk": 2,
+                "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.821257,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+                "benefit_code": "164",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "164",
+                  "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+                "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+                "chunk": 2,
+                "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.821257,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "164"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "0cc17522-fd09-4e06-b8c2-e38909ba3f6e",
+            "role": "user",
+            "content": "Preciso agendar a retirada da segunda via do AESA Andreense?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:01:59.856688Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "f66bdfe5-d734-4463-9a41-6d900d03a9e2",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:01:59.856689Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**AESA - Bilhete Único Andreense - Santo André Municipal** · Código 164 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O jovem deve solicitar a 2ª via através do site [https://santoandre.pagmob.com.br/login](https://santoandre.pagmob.com.br/login) ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+              "benefit_code": "164",
+              "attributes": {
+                "uf": "SP",
+                "fee": "10 tarifas",
+                "code": "164",
+                "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+              "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+              "chunk": 2,
+              "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.821257,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "f66bdfe5-d734-4463-9a41-6d900d03a9e2",
+            "role": "assistant",
+            "content": "**AESA - Bilhete Único Andreense - Santo André Municipal** · Código 164 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O jovem deve solicitar a 2ª via através do site [https://santoandre.pagmob.com.br/login](https://santoandre.pagmob.com.br/login) ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+                "benefit_code": "164",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "164",
+                  "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+                "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+                "chunk": 2,
+                "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.821257,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:01:59.856689Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "513c490b-9a53-480c-87d5-cd389716511b",
+        "deadline": 13516.458816655,
+        "question": "Preciso agendar a retirada da segunda via do AESA Andreense?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "513c490b-9a53-480c-87d5-cd389716511b",
+        "deadline": 13516.458816655,
+        "question": "Preciso agendar a retirada da segunda via do AESA Andreense?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "164"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+            "benefit_code": "164",
+            "attributes": {
+              "uf": "SP",
+              "fee": "10 tarifas",
+              "code": "164",
+              "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+            "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+            "chunk": 2,
+            "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.821257,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+            "benefit_code": "164",
+            "attributes": {
+              "uf": "SP",
+              "fee": "10 tarifas",
+              "code": "164",
+              "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+            "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+            "chunk": 2,
+            "excerpt": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.821257,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Preciso agendar a retirada da segunda via do AESA Andreense?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**AESA - Bilhete Único Andreense - Santo André Municipal** · Código 164 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O jovem deve solicitar a 2ª via através do site [https://santoandre.pagmob.com.br/login](https://santoandre.pagmob.com.br/login) ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 15364
+    }
+  ],
+  "conversation_id": "513c490b-9a53-480c-87d5-cd389716511b",
+  "duration_ms": 15388,
+  "completed_at": "2026-10-21T15:02:15.129543+00:00"
+}

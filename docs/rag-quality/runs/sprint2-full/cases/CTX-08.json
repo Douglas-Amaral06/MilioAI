@@ -1,0 +1,926 @@
+{
+  "test_id": "CTX-08",
+  "input": {
+    "test_id": "CTX-08",
+    "question": "Agora perdi meu SPTrans. Como faço a segunda via?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Quem assina minha folha ponto?"
+        }
+      ],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:01:09.626220+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "037dd9a9-9093-4210-91a4-07512a4dde93",
+        "content": "Quem assina minha folha ponto?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: Quem assina minha folha ponto?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "1. O que é a Folha Ponto?",
+              "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+              "chunk": 1,
+              "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.581934,
+              "status": "approved"
+            },
+            {
+              "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "5. Assinaturas obrigatórias",
+              "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+              "chunk": 5,
+              "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.581317,
+              "status": "approved"
+            },
+            {
+              "id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "7. Responsabilidade",
+              "sha256": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b",
+              "chunk": 7,
+              "excerpt": "7.\nResponsabilidade\nO correto preenchimento e envio da Folha Ponto é uma responsabilidade\ncompartilhada entre:\n• Jovem Aprendiz\n• Gestor/Mentor\n• Empresa parceira\nO RH Jovem realiza conferência, mas não substitui o preenchimento na origem.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.569954,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2153
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 2154
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "partial",
+          "chunk_count": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 592
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 748
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 261
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3769,
+          "outcome": "partial",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "Quem assina minha folha ponto?"
+              ]
+            ],
+            "deadline": 6264.84191731
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "1. O que é a Folha Ponto?",
+                "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+                "chunk": 1,
+                "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.581934,
+                "status": "approved"
+              },
+              {
+                "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "5. Assinaturas obrigatórias",
+                "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+                "chunk": 5,
+                "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.581317,
+                "status": "approved"
+              },
+              {
+                "id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "7. Responsabilidade",
+                "sha256": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b",
+                "chunk": 7,
+                "excerpt": "7.\nResponsabilidade\nO correto preenchimento e envio da Folha Ponto é uma responsabilidade\ncompartilhada entre:\n• Jovem Aprendiz\n• Gestor/Mentor\n• Empresa parceira\nO RH Jovem realiza conferência, mas não substitui o preenchimento na origem.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.569954,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: Quem assina minha folha ponto?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "partial",
+            "chunks": [
+              {
+                "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "5. Assinaturas obrigatórias",
+                "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+                "chunk": 5,
+                "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.581317,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1].",
+            "outcome": "partial"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1].",
+            "sources": [
+              {
+                "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "5. Assinaturas obrigatórias",
+                "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+                "chunk": 5,
+                "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.581317,
+                "status": "approved"
+              }
+            ],
+            "outcome": "partial"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "cac4d1d9-0cbc-4178-b770-d327c651ce6f",
+            "role": "user",
+            "content": "Quem assina minha folha ponto?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:09.634400Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "f3c919c2-6fe2-400e-9663-645805b06f89",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:09.634401Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1]."
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "5. Assinaturas obrigatórias",
+              "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+              "chunk": 5,
+              "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.581317,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "f3c919c2-6fe2-400e-9663-645805b06f89",
+            "role": "assistant",
+            "content": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1].",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "5. Assinaturas obrigatórias",
+                "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+                "chunk": 5,
+                "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.581317,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T13:01:09.634401Z",
+            "outcome": "partial",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "683b908f-1a1e-46ad-abba-1dcc32a2efe2",
+        "deadline": 6264.84191731,
+        "question": "Quem assina minha folha ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "683b908f-1a1e-46ad-abba-1dcc32a2efe2",
+        "deadline": 6264.84191731,
+        "question": "Quem assina minha folha ponto?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "5. Assinaturas obrigatórias",
+            "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+            "chunk": 5,
+            "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.581317,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "5. Assinaturas obrigatórias",
+            "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+            "chunk": 5,
+            "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.581317,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "Quem assina minha folha ponto?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: Quem assina minha folha ponto?",
+        "coverage": "partial",
+        "answer": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1].",
+        "outcome": "partial"
+      },
+      "duration_ms": 3777
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "560b035d-8dda-4e31-bd45-ce23180309c8",
+        "content": "Agora perdi meu SPTrans. Como faço a segunda via?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. SPTRANS - Bilhete Único. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "89",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+              "benefit_code": "89",
+              "attributes": {
+                "uf": "SP",
+                "fee": "7 tarifas",
+                "code": "89",
+                "name": "SPTRANS - Bilhete Único",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "89 · SPTRANS - Bilhete Único",
+              "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+              "chunk": 25,
+              "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.77195,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2345
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3602
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3611,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Agora perdi meu SPTrans. Como faço a segunda via?"
+              ]
+            ],
+            "deadline": 6268.61824415
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "89"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "ea927a17-6c1e-4415-8f55-7149f002b6f8",
+            "role": "user",
+            "content": "Agora perdi meu SPTrans. Como faço a segunda via?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:13.410947Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "cf4f2bbb-791b-4c3a-aa58-90a6e0bfa02e",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:13.410948Z",
+            "outcome": null,
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+              "benefit_code": "89",
+              "attributes": {
+                "uf": "SP",
+                "fee": "7 tarifas",
+                "code": "89",
+                "name": "SPTRANS - Bilhete Único",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "89 · SPTRANS - Bilhete Único",
+              "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+              "chunk": 25,
+              "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.77195,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "cf4f2bbb-791b-4c3a-aa58-90a6e0bfa02e",
+            "role": "assistant",
+            "content": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+                "benefit_code": "89",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "7 tarifas",
+                  "code": "89",
+                  "name": "SPTRANS - Bilhete Único",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "89 · SPTRANS - Bilhete Único",
+                "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+                "chunk": 25,
+                "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.77195,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T13:01:13.410948Z",
+            "outcome": "answered",
+            "topic_id": "vale_transporte",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "683b908f-1a1e-46ad-abba-1dcc32a2efe2",
+        "deadline": 6268.61824415,
+        "question": "Agora perdi meu SPTrans. Como faço a segunda via?",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Quem assina minha folha ponto?",
+            "topic_id": "folha_ponto"
+          },
+          {
+            "role": "assistant",
+            "content": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1].",
+            "topic_id": "folha_ponto"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "683b908f-1a1e-46ad-abba-1dcc32a2efe2",
+        "deadline": 6268.61824415,
+        "question": "Agora perdi meu SPTrans. Como faço a segunda via?",
+        "topic_id": "vale_transporte",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Quem assina minha folha ponto?",
+            "topic_id": "folha_ponto"
+          },
+          {
+            "role": "assistant",
+            "content": "A folha ponto é assinada pelo Aprendiz e pelo Gestor/Mentor responsável [fonte:F1].",
+            "topic_id": "folha_ponto"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "89"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+            "benefit_code": "89",
+            "attributes": {
+              "uf": "SP",
+              "fee": "7 tarifas",
+              "code": "89",
+              "name": "SPTRANS - Bilhete Único",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "89 · SPTRANS - Bilhete Único",
+            "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+            "chunk": 25,
+            "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.77195,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+            "benefit_code": "89",
+            "attributes": {
+              "uf": "SP",
+              "fee": "7 tarifas",
+              "code": "89",
+              "name": "SPTRANS - Bilhete Único",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "89 · SPTRANS - Bilhete Único",
+            "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+            "chunk": 25,
+            "excerpt": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.77195,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Agora perdi meu SPTrans. Como faço a segunda via?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**SPTRANS - Bilhete Único** · Código 89 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 7 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3618
+    }
+  ],
+  "conversation_id": "683b908f-1a1e-46ad-abba-1dcc32a2efe2",
+  "duration_ms": 7399,
+  "completed_at": "2026-10-21T13:01:17.025212+00:00"
+}

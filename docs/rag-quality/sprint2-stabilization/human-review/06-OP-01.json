@@ -1,0 +1,175 @@
+{
+  "priority": 6,
+  "test_id": "OP-01",
+  "domain": "operational",
+  "question": "Onde consulto os dias de curso?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional.",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "OP-01",
+    "question": "Onde consulto os dias de curso?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "operational-services"
+      ]
+    }
+  },
+  "answer_delivered": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar seu calendário educacional.",
+  "observed_behavior": "answer",
+  "expected_facts": [
+    {
+      "criterion_id": "OP-01-fact-1",
+      "description": "Identificar Conecta Jovem como orientação operacional pendente, não como PDF.",
+      "match": {
+        "all_of": [
+          [
+            "Conecta Jovem"
+          ],
+          [
+            "calendário"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "op-calendar"
+      ]
+    },
+    {
+      "criterion_id": "OP-01-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "op-calendar"
+      ]
+    }
+  ],
+  "forbidden_claims": [],
+  "historical_expected_citations": [
+    {
+      "document_id": "operational-services",
+      "source_version": "operational-snapshot-v1",
+      "section_or_row": "services/calendar",
+      "page": null,
+      "benefit_code": null
+    }
+  ],
+  "retrieval_calls": [],
+  "actual_citations": [],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "vt_stage": "idle",
+    "stage": "idle",
+    "detected_intent": "calendar",
+    "selected_service": "calendar",
+    "operational_provenance": {
+      "kind": "operational_configuration",
+      "file": "operational_guidance.json",
+      "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+      "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+      "validation_status": "pending",
+      "intent": "calendar",
+      "institutionally_approved": false
+    }
+  },
+  "automatic_observations": {
+    "test_id": "OP-01",
+    "domain": "operational",
+    "automatic_status": "failed_checks",
+    "final_status": "reprovado",
+    "reasons": [
+      "expected_citation_location_missing"
+    ],
+    "review_alerts": [],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": null,
+      "recall_at_3": null,
+      "reciprocal_rank_at_3": null
+    },
+    "citation_location_completeness": 0.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.5,
+    "forbidden_lexical_alerts": [],
+    "behavior": "answer",
+    "behavior_match": true,
+    "context_match": null,
+    "card_match": null,
+    "question_duration_ms": 1648,
+    "total_case_duration_ms": 1657,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

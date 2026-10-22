@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-2337",
+  "input": {
+    "test_id": "VT-2337",
+    "question": "Quem solicita o cartão Amarelinho da linha 6315?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:17:27.045384+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "1c1cd588-f28b-4a77-acb3-eed37dd5929e",
+        "content": "Quem solicita o cartão Amarelinho da linha 6315?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "2337",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "b575da20-2359-47ae-8cce-4587caf01067",
+              "benefit_code": "2337",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 10,00",
+                "code": "2337",
+                "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                "requester": "Empresa"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+              "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+              "chunk": 12,
+              "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.854098,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2229
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3114
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3125,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Quem solicita o cartão Amarelinho da linha 6315?"
+              ]
+            ],
+            "deadline": 10842.796410126
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João** · Código 2337 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "b575da20-2359-47ae-8cce-4587caf01067",
+                "benefit_code": "2337",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 10,00",
+                  "code": "2337",
+                  "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+                "chunk": 12,
+                "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.854098,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "b575da20-2359-47ae-8cce-4587caf01067",
+                "benefit_code": "2337",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 10,00",
+                  "code": "2337",
+                  "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+                "chunk": 12,
+                "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.854098,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "2337"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "eadd1f44-4507-49a1-ac0a-047835a57f97",
+            "role": "user",
+            "content": "Quem solicita o cartão Amarelinho da linha 6315?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:27.055370Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "4f5f5d9f-faa5-446d-8f2c-147177b9c0c0",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:27.055371Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João** · Código 2337 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "b575da20-2359-47ae-8cce-4587caf01067",
+              "benefit_code": "2337",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 10,00",
+                "code": "2337",
+                "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                "requester": "Empresa"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+              "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+              "chunk": 12,
+              "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.854098,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "4f5f5d9f-faa5-446d-8f2c-147177b9c0c0",
+            "role": "assistant",
+            "content": "**Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João** · Código 2337 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "b575da20-2359-47ae-8cce-4587caf01067",
+                "benefit_code": "2337",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 10,00",
+                  "code": "2337",
+                  "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+                "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+                "chunk": 12,
+                "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.854098,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:17:27.055371Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "f2584419-8fce-4128-ab9e-091552f8e94e",
+        "deadline": 10842.796410126,
+        "question": "Quem solicita o cartão Amarelinho da linha 6315?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "f2584419-8fce-4128-ab9e-091552f8e94e",
+        "deadline": 10842.796410126,
+        "question": "Quem solicita o cartão Amarelinho da linha 6315?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "2337"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "b575da20-2359-47ae-8cce-4587caf01067",
+            "benefit_code": "2337",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 10,00",
+              "code": "2337",
+              "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+              "requester": "Empresa"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+            "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+            "chunk": 12,
+            "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.854098,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "b575da20-2359-47ae-8cce-4587caf01067",
+            "benefit_code": "2337",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 10,00",
+              "code": "2337",
+              "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+              "requester": "Empresa"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+            "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+            "chunk": 12,
+            "excerpt": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.854098,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Quem solicita o cartão Amarelinho da linha 6315?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João** · Código 2337 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3134
+    }
+  ],
+  "conversation_id": "f2584419-8fce-4128-ab9e-091552f8e94e",
+  "duration_ms": 3140,
+  "completed_at": "2026-10-21T14:17:30.185535+00:00"
+}

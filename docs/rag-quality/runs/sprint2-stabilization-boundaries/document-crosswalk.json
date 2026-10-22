@@ -1,0 +1,918 @@
+[
+  {
+    "runtime_document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+    "alias": "folha-ponto",
+    "name": "folha-ponto.pdf",
+    "domain": "rh_frequency",
+    "runtime_version": "folha-ponto-local-v1",
+    "dataset_version": "snapshot-local-v1",
+    "stored_blob_sha256": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+    "verified_blob_sha256": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+    "scope": "local_review",
+    "approved_runtime_flag": true,
+    "status": "approved",
+    "validation_only": true,
+    "institutionally_approved": false,
+    "mapping_basis": "exact_domain_and_registered_runtime_version_with_full_chunk_inventory",
+    "snapshot_equivalence": "not_established",
+    "chunks": [
+      {
+        "id": "0b8c93cd-0873-4263-8bba-67a6e1e34bf5",
+        "page": 1,
+        "section": "Documento",
+        "benefit_code": null,
+        "sha256": "52e00530190aa75a111c7a274bc1180b46699b7ffa84841b8165f6c3078f825d",
+        "content": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO",
+        "attributes": {}
+      },
+      {
+        "id": "89124cde-2425-426d-9cfc-9b90e0e4d6f2",
+        "page": 1,
+        "section": "1. O que é a Folha Ponto?",
+        "benefit_code": null,
+        "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+        "content": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+        "attributes": {}
+      },
+      {
+        "id": "6318bd24-ef7e-427c-8b5f-2c745ce187a5",
+        "page": 1,
+        "section": "2. Periodicidade e Prazo",
+        "benefit_code": null,
+        "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+        "content": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+        "attributes": {}
+      },
+      {
+        "id": "063547d8-23c4-42e4-9f6c-fc84c5814aa1",
+        "page": 1,
+        "section": "3. Como preencher corretamente",
+        "benefit_code": null,
+        "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+        "content": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+        "attributes": {}
+      },
+      {
+        "id": "629b4e38-5209-44c9-95ed-55f02f20feef",
+        "page": 2,
+        "section": "4. O que NÃO fazer",
+        "benefit_code": null,
+        "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+        "content": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+        "attributes": {}
+      },
+      {
+        "id": "cf73f639-4597-4adb-b538-bd848a6386c4",
+        "page": 2,
+        "section": "5. Assinaturas obrigatórias",
+        "benefit_code": null,
+        "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+        "content": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+        "attributes": {}
+      },
+      {
+        "id": "1af70102-7aaf-4557-b0c3-db2b3f1dd414",
+        "page": 2,
+        "section": "6. Envio do documento",
+        "benefit_code": null,
+        "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+        "content": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+        "attributes": {}
+      },
+      {
+        "id": "13ac6cfa-4c7b-44d4-87cb-c33ff47ae474",
+        "page": 2,
+        "section": "7. Responsabilidade",
+        "benefit_code": null,
+        "sha256": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b",
+        "content": "7.\nResponsabilidade\nO correto preenchimento e envio da Folha Ponto é uma responsabilidade\ncompartilhada entre:\n• Jovem Aprendiz\n• Gestor/Mentor\n• Empresa parceira\nO RH Jovem realiza conferência, mas não substitui o preenchimento na origem.",
+        "attributes": {}
+      },
+      {
+        "id": "4ea277d1-b70f-4756-862f-eb94e03ca385",
+        "page": 2,
+        "section": "8. Dúvidas",
+        "benefit_code": null,
+        "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+        "content": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+        "attributes": {}
+      }
+    ]
+  },
+  {
+    "runtime_document_id": "3790832c-0d63-475b-8795-3fc32444be8f",
+    "alias": null,
+    "name": "frequency-test.md",
+    "domain": "rh_frequency",
+    "runtime_version": "test-v1",
+    "dataset_version": "snapshot-local-v1",
+    "stored_blob_sha256": "18f7749cb75675344b50eea15edf5fa7e8f290c52742ad0f074033233e20f592",
+    "verified_blob_sha256": "18f7749cb75675344b50eea15edf5fa7e8f290c52742ad0f074033233e20f592",
+    "scope": "test",
+    "approved_runtime_flag": true,
+    "status": "approved",
+    "validation_only": false,
+    "institutionally_approved": false,
+    "mapping_basis": "unmapped",
+    "snapshot_equivalence": "not_established",
+    "chunks": [
+      {
+        "id": "340be201-caf4-4560-9d9e-2d6c9b5c1a7f",
+        "page": null,
+        "section": "Documento",
+        "benefit_code": null,
+        "sha256": "",
+        "content": "# Política Fictícia de Frequência — Documento de Teste MilioAI\n\nMaterial inteiramente fictício, criado exclusivamente para testes de software. Não é uma norma oficial e não deve ser usado como orientação institucional real.\n\n## Registro de ponto de teste\nNeste cenário fictício de teste, o registro de ponto é realizado no Portal Fictício de Frequência. O colaborador registra a entrada e a saída de cada jornada.\n\n## Atestado de teste\nNeste cenário fictício, um atestado deve ser anexado à solicitação de justificativa de ausência no Portal Fictício de Frequência. O prazo fictício para envio é de 3 dias úteis após o retorno. Esta regra é apenas material de teste, sem validade institucional.\n\n## Correção de ponto de teste\nPara corrigir uma batida ausente neste cenário fictício, crie uma justificativa de ajuste de ponto no Portal Fictício de Frequência e descreva o horário correto. Nenhum contato real é definido neste documento.",
+        "attributes": {}
+      },
+      {
+        "id": "44d573c7-9cf4-4fc1-9544-cf35f06f39d7",
+        "page": null,
+        "section": "Documento",
+        "benefit_code": null,
+        "sha256": "",
+        "content": "to real é definido neste documento.",
+        "attributes": {}
+      }
+    ]
+  },
+  {
+    "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+    "alias": "vt-segunda-via",
+    "name": "orientações segunda via cartões vt (1).pdf",
+    "domain": "beneficios.vale_transporte.segunda_via",
+    "runtime_version": "vt-segunda-via-local-v1",
+    "dataset_version": "snapshot-local-v1",
+    "stored_blob_sha256": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+    "verified_blob_sha256": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+    "scope": "local_review",
+    "approved_runtime_flag": true,
+    "status": "approved",
+    "validation_only": true,
+    "institutionally_approved": false,
+    "mapping_basis": "exact_domain_and_registered_runtime_version_with_full_chunk_inventory",
+    "snapshot_equivalence": "not_established",
+    "chunks": [
+      {
+        "id": "6633c388-cc8f-4b24-885c-c93f52641464",
+        "page": 1,
+        "section": "10398 · Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+        "benefit_code": "10398",
+        "sha256": "fcaf4eca6ac66c2b2094eeeb5a1644fa82dd2fd475e9bc971ef8e80dbee89f32",
+        "content": "UF: SP\nCódigo do benefício: 10398\nCartão / operadora: Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 20,00",
+          "code": "10398",
+          "name": "Auto Viação Ouro Verde - (Sumaré) - Cartão CIT Sumaré Urbano",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "A 2ª via só pode ser solicitada pelo jovem. Primeiro, é necessário bloquear via telefone (19) 3803-9595 e, após 5 dias, comparecer pessoalmente com documento original em um posto de atendimento da operadora",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "f00a93ae-d458-4abb-8522-67d2866eda2e",
+        "page": 1,
+        "section": "10420 · Viação Botucatu - Cartão Municipal Botucatu",
+        "benefit_code": "10420",
+        "sha256": "e6495101b18ae055b9bcc7c4f085b9b28442de9e66755a1fdd4bb75a772382c5",
+        "content": "UF: SP\nCódigo do benefício: 10420\nCartão / operadora: Viação Botucatu - Cartão Municipal Botucatu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 25,00",
+          "code": "10420",
+          "name": "Viação Botucatu - Cartão Municipal Botucatu",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Somente o próprio jovem quem pode solicitar a 2º via do cartão. Comparecer no posto de atendimento da operadora munido de documento pessoal com foto.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "59c7c91f-449b-4cb0-918c-22a76fa21395",
+        "page": 1,
+        "section": "164 · AESA - Bilhete Único Andreense - Santo André Municipal",
+        "benefit_code": "164",
+        "sha256": "9b4b8973f713889bdcc1028c80e198040b9a7c5e97dbe4861989a849272b683a",
+        "content": "UF: SP\nCódigo do benefício: 164\nCartão / operadora: AESA - Bilhete Único Andreense - Santo André Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+        "attributes": {
+          "uf": "SP",
+          "fee": "10 tarifas",
+          "code": "164",
+          "name": "AESA - Bilhete Único Andreense - Santo André Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O jovem deve solicitar a 2ª via através do site https://santoandre.pagmob.com.br/login ou pelo telefone (11) 4435-5400 e agendar a data e horário para retirada do cartão",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "eef76c2e-c63e-470c-a00c-50c2f683cb7e",
+        "page": 1,
+        "section": "15515 · AETUR Del Rey - Cartão Pec - Municipal Carapicuíba",
+        "benefit_code": "15515",
+        "sha256": "eb77a99b6f010e3370583868c21ec2f7479b50466d5b696e37532e428c51b2d3",
+        "content": "UF: SP\nCódigo do benefício: 15515\nCartão / operadora: AETUR Del Rey - Cartão Pec - Municipal Carapicuíba\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 26,50\nProcedimento integral: Para bloquear o cartão (extravio, perda, furto, roubo e etc) entre em contato através dos telefones: 4164-3700 ou 4164-4141 Para solicitar a 2ª via do cartão, comparecer pessoalmente em nossa Central de Atendimento e apresentar um documento de identificação com foto, o cartão fica pronto na hora (Considerar disponibilidade de sistema ou estoque)",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 26,50",
+          "code": "15515",
+          "name": "AETUR Del Rey - Cartão Pec - Municipal Carapicuíba",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Para bloquear o cartão (extravio, perda, furto, roubo e etc) entre em contato através dos telefones: 4164-3700 ou 4164-4141 Para solicitar a 2ª via do cartão, comparecer pessoalmente em nossa Central de Atendimento e apresentar um documento de identificação com foto, o cartão fica pronto na hora (Considerar disponibilidade de sistema ou estoque)",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+        "page": 1,
+        "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+        "benefit_code": "15566",
+        "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+        "content": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 53,00",
+          "code": "15566",
+          "name": "BB Turismo - Cartão Itapevi Integração",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "d3f04914-173f-48a0-a8c1-af87c37f109c",
+        "page": 1,
+        "section": "15510 · BB Turismo - Cartão Municipal Barueri",
+        "benefit_code": "15510",
+        "sha256": "44f56e2efee0ae8ee6a1c2eb627d785fa5b271a333d51ade76a703b258253a96",
+        "content": "UF: SP\nCódigo do benefício: 15510\nCartão / operadora: BB Turismo - Cartão Municipal Barueri\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 53,00",
+          "code": "15510",
+          "name": "BB Turismo - Cartão Municipal Barueri",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+        "page": 1,
+        "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+        "benefit_code": "15511",
+        "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+        "content": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 53,00",
+          "code": "15511",
+          "name": "BB Turismo - Cartão Municipal Itapevi",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "4b2b692d-87c5-4a83-8249-df190a204fc0",
+        "page": 1,
+        "section": "15512 · BB Turismo - Cartão Municipal Jandira",
+        "benefit_code": "15512",
+        "sha256": "29b0370be31da7584565fb9e43318eb5408752f6371e97e1d3a1ccdc0ad9c039",
+        "content": "UF: SP\nCódigo do benefício: 15512\nCartão / operadora: BB Turismo - Cartão Municipal Jandira\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 53,00",
+          "code": "15512",
+          "name": "BB Turismo - Cartão Municipal Jandira",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "60d69991-80cb-41a8-9921-dc7076824a84",
+        "page": 1,
+        "section": "15780 · Bem Osasco - Cartão Municipal Osasco",
+        "benefit_code": "15780",
+        "sha256": "511ec566cb512363b6baf9658952a1c57421f85e5d5f27432bb4d057b1425fc2",
+        "content": "UF: SP\nCódigo do benefício: 15780\nCartão / operadora: Bem Osasco - Cartão Municipal Osasco\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 Tarifas\nProcedimento integral: Somente o funcionário poderá solicitar o bloqueio pelo telefone (11)3658-7776 ou comparecer ao posto de atendimento",
+        "attributes": {
+          "uf": "SP",
+          "fee": "5 Tarifas",
+          "code": "15780",
+          "name": "Bem Osasco - Cartão Municipal Osasco",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Somente o funcionário poderá solicitar o bloqueio pelo telefone (11)3658-7776 ou comparecer ao posto de atendimento",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "2ca272c1-5afc-4525-9d63-50e300f91678",
+        "page": 1,
+        "section": "15779 · Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba",
+        "benefit_code": "15779",
+        "sha256": "a31217e012d65e12689608972f50030a2c701eb0b3aaaa0e854e5cce22726b32",
+        "content": "UF: SP\nCódigo do benefício: 15779\nCartão / operadora: Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 38,00\nProcedimento integral: Somente o funcionário poderá solicitar o bloqueio através do site www.bemsantana.com.br,após o bloqueio deverá comparecer ao posto de atendimento e pagar taxa e levar o RG ORIGINAL no endereço mencionado abaixo e no ato já retira o cartão.\nPendências de revisão: O procedimento menciona endereço abaixo, mas nenhum endereço é informado nesta linha.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 38,00",
+          "code": "15779",
+          "name": "Bem Santana de Parnaíba - Cartão Municipal Santana de Parnaíba",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "O procedimento menciona endereço abaixo, mas nenhum endereço é informado nesta linha.",
+          "payment": "Dinheiro",
+          "procedure": "Somente o funcionário poderá solicitar o bloqueio através do site www.bemsantana.com.br,após o bloqueio deverá comparecer ao posto de atendimento e pagar taxa e levar o RG ORIGINAL no endereço mencionado abaixo e no ato já retira o cartão.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+        "page": 1,
+        "section": "7099 · Consórcio Bus Mais",
+        "benefit_code": "7099",
+        "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+        "content": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 20,00",
+          "code": "7099",
+          "name": "Consórcio Bus Mais",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+        "page": 1,
+        "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+        "benefit_code": "216",
+        "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+        "content": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 5,74",
+          "code": "216",
+          "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+          "requester": "Empresa"
+        }
+      },
+      {
+        "id": "b575da20-2359-47ae-8cce-4587caf01067",
+        "page": 1,
+        "section": "2337 · Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+        "benefit_code": "2337",
+        "sha256": "f2ad839e7af93d6b12335a4d8b25e90d731ac41d8f1574415c47e691c1055ed0",
+        "content": "UF: SP\nCódigo do benefício: 2337\nCartão / operadora: Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 10,00",
+          "code": "2337",
+          "name": "Expresso Amarelinho - Cartão Salto de Pirapora X Sorocaba (Linha 6315) - Grupo São João",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado",
+          "requester": "Empresa"
+        }
+      },
+      {
+        "id": "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1",
+        "page": 1,
+        "section": "5631 · Expresso Itamarati - Cartão Votuporanga Municipal",
+        "benefit_code": "5631",
+        "sha256": "3d54ea0bf7d8ef774b4097fcb5b2ba6f571d18d2e5941e70e061dd8c4023e3cd",
+        "content": "UF: SP\nCódigo do benefício: 5631\nCartão / operadora: Expresso Itamarati - Cartão Votuporanga Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 2,00\nProcedimento integral: Solicitação presencial com documento; prazo de 7 dias; bloqueio em caso de perda com RG e CPF.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 2,00",
+          "code": "5631",
+          "name": "Expresso Itamarati - Cartão Votuporanga Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro ou cartão",
+          "procedure": "Solicitação presencial com documento; prazo de 7 dias; bloqueio em caso de perda com RG e CPF.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "5bcac667-53d3-4baf-a522-008dbd99ceac",
+        "page": 1,
+        "section": "182 · Guarupas - Cartão Guarulhos - Municipal / Guarulhos",
+        "benefit_code": "182",
+        "sha256": "fb3410ccc2aec79f43032c3df2b59f58481507cbac2a591cf496596e65eaa3e6",
+        "content": "UF: SP\nCódigo do benefício: 182\nCartão / operadora: Guarupas - Cartão Guarulhos - Municipal / Guarulhos\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Debito, PIX e/ou dinheiro\nTaxa: R$ 40,80\nProcedimento integral: Realizar abertura de chamado na plataforma BF,o cartão será bloqueado e será disponibilizada a carta para retirada do cartão",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 40,80",
+          "code": "182",
+          "name": "Guarupas - Cartão Guarulhos - Municipal / Guarulhos",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Debito, PIX e/ou dinheiro",
+          "procedure": "Realizar abertura de chamado na plataforma BF,o cartão será bloqueado e será disponibilizada a carta para retirada do cartão",
+          "requester": "Empresa"
+        }
+      },
+      {
+        "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+        "page": 1,
+        "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+        "benefit_code": "15508",
+        "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+        "content": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 15,00",
+          "code": "15508",
+          "name": "Moratense - Cartão Municipal Francisco Morato",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro ou cartão",
+          "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+        "page": 1,
+        "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+        "benefit_code": "10771",
+        "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+        "content": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 30,00",
+          "code": "10771",
+          "name": "Mov - Avaré - Cartão Municipal Avaré",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "3c7400a3-4da8-40d6-9da9-67ac337cb1bd",
+        "page": 1,
+        "section": "10394 · Mov Itu - Cartão Municipal Itu",
+        "benefit_code": "10394",
+        "sha256": "8d7303f389c0452efda2ac41e80c73ff3b7df6bf902d85fbfadddc70c6343c52",
+        "content": "UF: SP\nCódigo do benefício: 10394\nCartão / operadora: Mov Itu - Cartão Municipal Itu\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 25,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 25,00",
+          "code": "10394",
+          "name": "Mov Itu - Cartão Municipal Itu",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "82886062-1171-42ab-bcfe-d6409eaf864f",
+        "page": 1,
+        "section": "15504 · Onpag - Cartão Ferraz de Vasconcelos Municipal",
+        "benefit_code": "15504",
+        "sha256": "c47233c10af87cb476cd42cd24082a97cb4246ba917a957dd25b93d02e2cb7fa",
+        "content": "UF: SP\nCódigo do benefício: 15504\nCartão / operadora: Onpag - Cartão Ferraz de Vasconcelos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 53,00",
+          "code": "15504",
+          "name": "Onpag - Cartão Ferraz de Vasconcelos Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro ou Pix",
+          "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+        "page": 1,
+        "section": "15506 · Onpag - Cartão Suzano Municipal",
+        "benefit_code": "15506",
+        "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+        "content": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 53,00",
+          "code": "15506",
+          "name": "Onpag - Cartão Suzano Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro ou Pix",
+          "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "3b1d02b8-a92d-4843-a414-453f8eda02f6",
+        "page": 1,
+        "section": "3854 · Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+        "benefit_code": "3854",
+        "sha256": "e53c0e8a5906d470981b7052e1e553941ad5760f9b8e33ff410789ef740ced9a",
+        "content": "UF: SP\nCódigo do benefício: 3854\nCartão / operadora: Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.\nPendências de revisão: Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "6 tarifas",
+          "code": "3854",
+          "name": "Rápido D Oeste - Cartão Ribeirão Preto x Sertãozinho",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "Divergência no PDF: coluna Taxa informa 6 tarifas; procedimento menciona taxa de 21,30. Confirmar com a operadora, sem converter ou escolher um dos valores.",
+          "payment": "Dinheiro",
+          "procedure": "Em caso de perda, roubo ou extravio: O jovem deverá solicitar o bloqueio do cartão através do telefone: (16) 2102-8721.Posteriormente comparecer ao guiche com documentos e taxa de 21,30.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad",
+        "page": 1,
+        "section": "3845 · Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+        "benefit_code": "3845",
+        "sha256": "b25795cbb169a9d46d4088b834974300fd260e5c3b95cf8669d269f75b5882ba",
+        "content": "UF: SP\nCódigo do benefício: 3845\nCartão / operadora: Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 10 tarifas\nProcedimento integral: A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "10 tarifas",
+          "code": "3845",
+          "name": "Sancetur Valinhos - Cartão SOU Valinhos - Valinhos Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "A 2ª via só pode ser solicitada pelo jovem na bilheteria, mediante pagamento de taxa equivalente a 10 tarifas vigentes, em dinheiro. A emissão é imediata, desde que o cartão esteja bloqueado ou sem uso por 3 dias. Retirada pelo titular com documento original. Transferência de créditos é automática.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+        "page": 1,
+        "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+        "benefit_code": "1071",
+        "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+        "content": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+        "attributes": {
+          "uf": "SP",
+          "fee": "10 tarifas",
+          "code": "1071",
+          "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Pix ou dinheiro.",
+          "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "caac4527-ef09-4943-851d-02be7d528396",
+        "page": 1,
+        "section": "1892 · Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)",
+        "benefit_code": "1892",
+        "sha256": "cd3150a82d836f8e9f8e3605032571f06192becc66965c54f8a24247abf73106",
+        "content": "UF: SP\nCódigo do benefício: 1892\nCartão / operadora: Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro, cartão ou Pix\nTaxa: R$ 55,00\nProcedimento integral: A 2ª via deve ser solicitada pelo Jovem diretamente no posto, apresentando nome completo e CPF. Emissão imediata",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 55,00",
+          "code": "1892",
+          "name": "Sim Mauá - Cartão Sim Mauá / Mauá (Viação Barão)",
+          "page": 1,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro, cartão ou Pix",
+          "procedure": "A 2ª via deve ser solicitada pelo Jovem diretamente no posto, apresentando nome completo e CPF. Emissão imediata",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+        "page": 2,
+        "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+        "benefit_code": "503",
+        "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+        "content": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "5 tarifas",
+          "code": "503",
+          "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+          "payment": "Dinheiro",
+          "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "f92226c6-cfff-4904-b41d-32b54ef8fefe",
+        "page": 2,
+        "section": "89 · SPTRANS - Bilhete Único",
+        "benefit_code": "89",
+        "sha256": "6322a6c0dafd2a6cc19f0a7591885251bc000776310097eaa0eceff0de252c3d",
+        "content": "UF: SP\nCódigo do benefício: 89\nCartão / operadora: SPTRANS - Bilhete Único\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 7 tarifas\nProcedimento integral: O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "7 tarifas",
+          "code": "89",
+          "name": "SPTRANS - Bilhete Único",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O funcionário deverá ligar para o (156) e solicitar o cancelamento de seu cartão, o atendente irá informar o número da SPT (protocolo). Após 72 horas a contar da data e horário do registro da ocorrência. O jovem deve se dirigir ao posto de atendimento, munido de documentos, apresentar o número do protocolo de registro da ocorrência e retirar a 2ª via e a restituição do saldo, mediante pagamento relativo à emissão de 2ª via e demais serviços.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "0b6203d2-3baf-4901-98e1-5fd0f7caac52",
+        "page": 2,
+        "section": "9156 · TOP - Cartão Top",
+        "benefit_code": "9156",
+        "sha256": "e8d56ee7c627c6ccab0e27ed76f1bcfc118090707edde0a760ec6940ce987f6b",
+        "content": "UF: SP\nCódigo do benefício: 9156\nCartão / operadora: TOP - Cartão Top\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pagamento Online\nTaxa: R$ 28,50\nProcedimento integral: Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.\nPendências de revisão: O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 28,50",
+          "code": "9156",
+          "name": "TOP - Cartão Top",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "O procedimento menciona página de autoatendimento e WhatsApp, mas não informa URL nem número.",
+          "payment": "Pagamento Online",
+          "procedure": "Realize o procedimento através do nosso autoatendimento, clicando no botão de chat no canto inferior direito da página, ou via WhatsApp clicando no botão \"Solicitar 2ª via\". Após o cancelamento, você poderá escolher se prefere receber ou retirar a segunda via do seu cartão.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+        "page": 2,
+        "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+        "benefit_code": "738",
+        "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+        "content": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 10,00",
+          "code": "738",
+          "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+        "page": 2,
+        "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+        "benefit_code": "472",
+        "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+        "content": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+        "attributes": {
+          "uf": "SP",
+          "fee": "6 tarifas",
+          "code": "472",
+          "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+        "page": 2,
+        "section": "155 · Transurc Campinas - Municipal Campinas",
+        "benefit_code": "155",
+        "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+        "content": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "De R$ 11,8 a R$ 47,20",
+          "code": "155",
+          "name": "Transurc Campinas - Municipal Campinas",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+          "payment": "Dinheiro",
+          "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2",
+        "page": 2,
+        "section": "200 · Urbes Sorocaba - Cartão Sorocaba Municipal",
+        "benefit_code": "200",
+        "sha256": "5cb888f4929fcda41a7a8c134c0063b01b42883c71b55d8cdd79b56cbe46df1e",
+        "content": "UF: SP\nCódigo do benefício: 200\nCartão / operadora: Urbes Sorocaba - Cartão Sorocaba Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 4,00\nProcedimento integral: Realizar a abertura de um chamado na plataforma BF, jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais e a autorização anexa no retorno chamado em 3 dias úteis.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 4,00",
+          "code": "200",
+          "name": "Urbes Sorocaba - Cartão Sorocaba Municipal",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "Realizar a abertura de um chamado na plataforma BF, jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais e a autorização anexa no retorno chamado em 3 dias úteis.",
+          "requester": "Empresa"
+        }
+      },
+      {
+        "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+        "page": 2,
+        "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+        "benefit_code": "937",
+        "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+        "content": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 23,00",
+          "code": "937",
+          "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+          "requester": "Jovem"
+        }
+      },
+      {
+        "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+        "page": 2,
+        "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+        "benefit_code": "15723",
+        "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+        "content": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+        "attributes": {
+          "uf": "SP",
+          "fee": "R$ 37,00",
+          "code": "15723",
+          "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+          "page": 2,
+          "payer": "Jovem",
+          "review": "",
+          "payment": "Dinheiro",
+          "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+          "requester": "Jovem"
+        }
+      }
+    ]
+  },
+  {
+    "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+    "alias": "folha-ponto",
+    "name": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+    "domain": "rh_frequency",
+    "runtime_version": "folha-ponto-local-v1",
+    "dataset_version": "snapshot-local-v1",
+    "stored_blob_sha256": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+    "verified_blob_sha256": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+    "scope": "local_review",
+    "approved_runtime_flag": true,
+    "status": "approved",
+    "validation_only": true,
+    "institutionally_approved": false,
+    "mapping_basis": "exact_domain_and_registered_runtime_version_with_full_chunk_inventory",
+    "snapshot_equivalence": "not_established",
+    "chunks": [
+      {
+        "id": "68e29863-43f4-4efe-9169-305862b1c801",
+        "page": 1,
+        "section": "Documento",
+        "benefit_code": null,
+        "sha256": "52e00530190aa75a111c7a274bc1180b46699b7ffa84841b8165f6c3078f825d",
+        "content": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO",
+        "attributes": {}
+      },
+      {
+        "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+        "page": 1,
+        "section": "1. O que é a Folha Ponto?",
+        "benefit_code": null,
+        "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+        "content": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+        "attributes": {}
+      },
+      {
+        "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+        "page": 1,
+        "section": "2. Periodicidade e Prazo",
+        "benefit_code": null,
+        "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+        "content": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+        "attributes": {}
+      },
+      {
+        "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+        "page": 1,
+        "section": "3. Como preencher corretamente",
+        "benefit_code": null,
+        "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+        "content": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+        "attributes": {}
+      },
+      {
+        "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+        "page": 2,
+        "section": "4. O que NÃO fazer",
+        "benefit_code": null,
+        "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+        "content": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+        "attributes": {}
+      },
+      {
+        "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+        "page": 2,
+        "section": "5. Assinaturas obrigatórias",
+        "benefit_code": null,
+        "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+        "content": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+        "attributes": {}
+      },
+      {
+        "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+        "page": 2,
+        "section": "6. Envio do documento",
+        "benefit_code": null,
+        "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+        "content": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+        "attributes": {}
+      },
+      {
+        "id": "80199034-1195-4e22-a4b2-b0c5aba97170",
+        "page": 2,
+        "section": "7. Responsabilidade",
+        "benefit_code": null,
+        "sha256": "9189523d33117828abbb79e53ed0735683462d24b8bef24fc3cf79cee88d095b",
+        "content": "7.\nResponsabilidade\nO correto preenchimento e envio da Folha Ponto é uma responsabilidade\ncompartilhada entre:\n• Jovem Aprendiz\n• Gestor/Mentor\n• Empresa parceira\nO RH Jovem realiza conferência, mas não substitui o preenchimento na origem.",
+        "attributes": {}
+      },
+      {
+        "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+        "page": 2,
+        "section": "8. Dúvidas",
+        "benefit_code": null,
+        "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+        "content": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+        "attributes": {}
+      }
+    ]
+  }
+]

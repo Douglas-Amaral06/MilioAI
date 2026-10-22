@@ -1,0 +1,3777 @@
+{
+  "report_kind": "real_export_deterministic_indicators",
+  "run_id": "rag-real-b5cacfd7101c",
+  "executed_at": "2026-10-21T14:57:28.156039+00:00",
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "3003fe2c9d96fdcf48785caf2fc987f6f1d9a57126dfb235285a4fcdda845c3f",
+  "k": 3,
+  "coverage": {
+    "dataset_cases": 76,
+    "exported_cases": 76,
+    "missing_test_ids": [],
+    "retrieval_metric_denominator": 64,
+    "generation_observed": 76
+  },
+  "metrics": {
+    "hit_rate_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "document_match_at_k": 0.0,
+    "section_or_card_match_at_k": 0.0,
+    "required_fact_lexical_coverage": 0.6710526315789473,
+    "citation_precision": 0.0,
+    "citation_completeness": 0.0,
+    "behavior_trace_match_rate": 0.8289473684210527,
+    "context_trace_match_rate": 1.0,
+    "domain_trace_match_rate": 1.0,
+    "card_trace_match_rate": 1.0,
+    "citation_policy_pass_rate": 0.15789473684210525,
+    "source_authorization_pass_rate": 0.27631578947368424,
+    "fallback_behavior_trace_match_rate": 1.0,
+    "clarification_behavior_trace_match_rate": 1.0
+  },
+  "metric_denominators": {
+    "hit_rate_at_k": 64,
+    "recall_at_k": 64,
+    "mrr_at_k": 64,
+    "document_match_at_k": 64,
+    "section_or_card_match_at_k": 64,
+    "required_fact_lexical_coverage": 76,
+    "citation_precision": 54,
+    "citation_completeness": 64,
+    "behavior_trace_match_rate": 76,
+    "context_trace_match_rate": 44,
+    "domain_trace_match_rate": 44,
+    "card_trace_match_rate": 44,
+    "citation_policy_pass_rate": 76,
+    "source_authorization_pass_rate": 76,
+    "fallback_behavior_trace_match_rate": 9,
+    "clarification_behavior_trace_match_rate": 3
+  },
+  "aggregation": "macro_average_over_observed_applicable_cases",
+  "cases": [
+    {
+      "test_id": "AUTH-01",
+      "domain": "governance",
+      "question_type": "authorization",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "AUTH-01-fact-1",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "AUTH-02",
+      "domain": "governance",
+      "question_type": "authorization",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "AUTH-02-fact-1",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "AUTH-03",
+      "domain": "governance",
+      "question_type": "authorization",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "AUTH-03-fact-1",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "AUTH-04",
+      "domain": "governance",
+      "question_type": "authorization",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "AUTH-04-fact-1",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CONFLICT-01",
+      "domain": "folha_ponto",
+      "question_type": "conflicting_information",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CONFLICT-01-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "CONFLICT-01-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "surface_conflict",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CONFLICT-02",
+      "domain": "vale_transporte",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CONFLICT-02-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "CONFLICT-02-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-01",
+      "domain": "vale_transporte",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-01-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-01-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-02",
+      "domain": "vale_transporte",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-02-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-02-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-03",
+      "domain": "vale_transporte",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-03-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-03-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-04",
+      "domain": "vale_transporte",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-04-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-04-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-05",
+      "domain": "vale_transporte",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-05-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-05-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-06",
+      "domain": "vale_transporte",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-06-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-06-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-07",
+      "domain": "folha_ponto",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-07-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-07-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-08",
+      "domain": "vale_transporte",
+      "question_type": "context_switch",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-08-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-08-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "CTX-09",
+      "domain": "vale_transporte",
+      "question_type": "context_switch",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "CTX-09-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "CTX-09-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-01",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-01-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-01-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-02",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-02-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-02-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-03",
+      "domain": "folha_ponto",
+      "question_type": "semantic_paraphrase",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-03-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-03-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-04",
+      "domain": "folha_ponto",
+      "question_type": "informal",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-04-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-04-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-05",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-05-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-05-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-06",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-06-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-06-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-07",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-07-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-07-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-08",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-08-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-08-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-09",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-09-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "FP-09-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-10",
+      "domain": "folha_ponto",
+      "question_type": "semantic_paraphrase",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-10-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-10-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-11",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-11-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-11-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-12",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-12-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-12-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-13",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-13-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-13-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-14",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-14-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-14-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-15",
+      "domain": "folha_ponto",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-15-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-15-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "FP-16",
+      "domain": "folha_ponto",
+      "question_type": "semantic_paraphrase",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "FP-16-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "FP-16-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-01",
+      "domain": "folha_ponto",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-01-fact-1",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "retrieval",
+          "document_id": "folha-ponto",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-02",
+      "domain": "vale_transporte",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-02-fact-1",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-03",
+      "domain": "folha_ponto",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-03-fact-1",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-04",
+      "domain": "vale_transporte",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-04-fact-1",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-05",
+      "domain": "operational",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-05-fact-1",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "fallback",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-06",
+      "domain": "vale_transporte",
+      "question_type": "ambiguity",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-06-fact-1",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "clarify",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-07",
+      "domain": "vale_transporte",
+      "question_type": "ambiguity",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-07-fact-1",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "clarify",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "NEG-08",
+      "domain": "vale_transporte",
+      "question_type": "ambiguity",
+      "retrieval": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "NEG-08-fact-1",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": null,
+      "citation_policy_pass": true,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "clarify",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "OP-01",
+      "domain": "operational",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "OP-01-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "OP-01-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "OP-02",
+      "domain": "operational",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "OP-02-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "OP-02-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "OP-03",
+      "domain": "operational",
+      "question_type": "continuation",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "OP-03-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "OP-03-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": false,
+      "requires_context": true,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "OP-04",
+      "domain": "operational",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "OP-04-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "OP-04-unverified",
+          "lexical_match": false
+        }
+      ],
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": null,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": true,
+      "source_findings": [],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": null,
+      "domain_trace_match": null,
+      "card_trace_match": null,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-10394",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-10394-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-10394-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-10398",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-10398-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-10398-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-10420",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-10420-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-10420-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-1071",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-1071-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-1071-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-10771",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-10771-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-10771-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-155",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-155-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "VT-155-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15504",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15504-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15504-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15506",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15506-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15506-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15508",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15508-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15508-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15510",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15510-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15510-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15511",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15511-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15511-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15512",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15512-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15512-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15515",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15515-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15515-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15566",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15566-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15566-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15723",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15723-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15723-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15779",
+      "domain": "vale_transporte",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15779-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "VT-15779-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-15780",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-15780-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-15780-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-164",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-164-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-164-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-182",
+      "domain": "vale_transporte",
+      "question_type": "informal",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-182-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-182-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-1892",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-1892-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-1892-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-200",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-200-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-200-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-216",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-216-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-216-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-2337",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-2337-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-2337-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-3845",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-3845-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-3845-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-3854",
+      "domain": "vale_transporte",
+      "question_type": "conflicting_information",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-3854-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-3854-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "surface_conflict",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-472",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-472-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-472-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-503",
+      "domain": "vale_transporte",
+      "question_type": "conflicting_information",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-503-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-503-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "surface_conflict",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-5631",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-5631-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-5631-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-7099",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-7099-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-7099-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-738",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-738-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-738-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-89",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-89-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-89-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-9156",
+      "domain": "vale_transporte",
+      "question_type": "no_information",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-9156-fact-1",
+          "lexical_match": false
+        },
+        {
+          "criterion_id": "VT-9156-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": false,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    },
+    {
+      "test_id": "VT-937",
+      "domain": "vale_transporte",
+      "question_type": "direct",
+      "retrieval": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "generation_observed": true,
+      "required_fact_checks": [
+        {
+          "criterion_id": "VT-937-fact-1",
+          "lexical_match": true
+        },
+        {
+          "criterion_id": "VT-937-unverified",
+          "lexical_match": true
+        }
+      ],
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_claim_lexical_alerts": [],
+      "forbidden_claims_semantic_verdict": "not_assessed",
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_policy_pass": false,
+      "source_authorization_pass": false,
+      "source_findings": [
+        {
+          "channel": "retrieval",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        },
+        {
+          "channel": "citation",
+          "document_id": "vt-segunda-via",
+          "reason": "unregistered_version"
+        }
+      ],
+      "behavior_trace_match": true,
+      "requires_context": false,
+      "context_trace_match": true,
+      "domain_trace_match": true,
+      "card_trace_match": true,
+      "expected_behavior": "answer",
+      "documentary_fidelity": "not_assessed",
+      "manual_review_required": true,
+      "source_validation_status": "pending_institutional"
+    }
+  ],
+  "documentary_fidelity": "not_assessed",
+  "provenance_hashes": {
+    "evidence_catalog_sha256": "745c64dae08a09c17ff636838cca7e089abcb7809ea9bd9d606fed50d91d94f1",
+    "document_registry_sha256": "5f68edd2eb5808b106c1d7d4667671d86bbcaa731ca799ea476d9779ed831ad6",
+    "conflicts_sha256": "52e0b503475b1ff09c06155061b0d11c56a33efbf66702fd7e9b3039294a5f20",
+    "card_coverage_sha256": "293568ee6ad3038e831d5f73c24797deb15c936449a9ee8808ee210bc794dcf3"
+  },
+  "evaluator_sha256": "3c7a3aaa0035fd2ab739117a0b8f68c3fbf45ea6b9056e9e017391217d95c37f",
+  "evaluation_schema_sha256": "ad496138f523910becbbf482215d5f2dd0180ea23bf1a05361526e81e05df180",
+  "limitation": "Indicadores lexicais não comprovam fidelidade, ausência de alucinação, negação correta ou aprovação institucional. Não há score geral de precisão. Identificação de run_kind é declarada pelo exportador, não prova criptográfica de execução.",
+  "model_execution_by_this_tool": "never"
+}

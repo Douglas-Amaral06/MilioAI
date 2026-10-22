@@ -1,0 +1,9 @@
+{
+  "capture_phase": "after_execution_before_source_update",
+  "source_sha256": {
+    "app/agents/rh_frequency.py": "8a544cb1db9d752269809d70fadd0d6edbb1808ebdd63b460e29a1d0f4170f25",
+    "app/llm/ollama.py": "c1df99e67bb4bbe5958b0ccbc5c93b8f285dfa32694076a36ebef14117734ed4",
+    "app/orchestration/graph.py": "29377d40079f8d85fce0cdcdc06365970e4f1aca1683f4542e05d11ac68c41cf",
+    "check_fp07_stability.py": "062677d6d8f9118f65d89fca9a8a74bcf9a7143caca583299c69a4e51806aa84"
+  }
+}

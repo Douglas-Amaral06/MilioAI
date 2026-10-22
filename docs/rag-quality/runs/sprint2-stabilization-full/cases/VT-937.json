@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-937",
+  "input": {
+    "test_id": "VT-937",
+    "question": "O titular pode retirar a Piracicabana Praia Grande imediatamente?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:09:26.878196+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "8ec28dc0-cd3d-4300-bf9c-f45c53018355",
+        "content": "O titular pode retirar a Piracicabana Praia Grande imediatamente?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Viação Piracicabana - Cartão Praia Grande -Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "937",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+              "benefit_code": "937",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 23,00",
+                "code": "937",
+                "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+              "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+              "chunk": 31,
+              "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.826777,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 10157
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 31
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 12991
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 13110,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "O titular pode retirar a Piracicabana Praia Grande imediatamente?"
+              ]
+            ],
+            "deadline": 13964.150791822
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Viação Piracicabana - Cartão Praia Grande -Municipal** · Código 937 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 23,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+                "benefit_code": "937",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 23,00",
+                  "code": "937",
+                  "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+                "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+                "chunk": 31,
+                "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.826777,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+                "benefit_code": "937",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 23,00",
+                  "code": "937",
+                  "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+                "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+                "chunk": 31,
+                "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.826777,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "937"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "28173c72-cdd1-4bcd-88d5-7bbe72bdb9c3",
+            "role": "user",
+            "content": "O titular pode retirar a Piracicabana Praia Grande imediatamente?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:09:26.953060Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "b16dce99-0b4f-49ed-9a38-6daad92a9185",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:09:26.953061Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Viação Piracicabana - Cartão Praia Grande -Municipal** · Código 937 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 23,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+              "benefit_code": "937",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 23,00",
+                "code": "937",
+                "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+              "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+              "chunk": 31,
+              "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.826777,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "b16dce99-0b4f-49ed-9a38-6daad92a9185",
+            "role": "assistant",
+            "content": "**Viação Piracicabana - Cartão Praia Grande -Municipal** · Código 937 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 23,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+                "benefit_code": "937",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 23,00",
+                  "code": "937",
+                  "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+                "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+                "chunk": 31,
+                "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.826777,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:09:26.953061Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "3f41a588-fb27-4d13-ba1d-d920246c35ff",
+        "deadline": 13964.150791822,
+        "question": "O titular pode retirar a Piracicabana Praia Grande imediatamente?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "3f41a588-fb27-4d13-ba1d-d920246c35ff",
+        "deadline": 13964.150791822,
+        "question": "O titular pode retirar a Piracicabana Praia Grande imediatamente?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "937"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+            "benefit_code": "937",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 23,00",
+              "code": "937",
+              "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+            "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+            "chunk": 31,
+            "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.826777,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e",
+            "benefit_code": "937",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 23,00",
+              "code": "937",
+              "name": "Viação Piracicabana - Cartão Praia Grande -Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "937 · Viação Piracicabana - Cartão Praia Grande -Municipal",
+            "sha256": "de3ac7ad36ffd23f52ae78ad69409ffe2769ede6406ed5d4420e8dc77433a951",
+            "chunk": 31,
+            "excerpt": "UF: SP\nCódigo do benefício: 937\nCartão / operadora: Viação Piracicabana - Cartão Praia Grande -Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 23,00\nProcedimento integral: A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.826777,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "O titular pode retirar a Piracicabana Praia Grande imediatamente?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Viação Piracicabana - Cartão Praia Grande -Municipal** · Código 937 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 23,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via deve ser solicitada pelo titular nos postos de atendimento, apresentando documento original com foto. Emissão imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 13196
+    }
+  ],
+  "conversation_id": "3f41a588-fb27-4d13-ba1d-d920246c35ff",
+  "duration_ms": 13220,
+  "completed_at": "2026-10-21T15:09:40.089767+00:00"
+}

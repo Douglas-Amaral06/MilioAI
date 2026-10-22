@@ -1,0 +1,234 @@
+{
+  "priority": 14,
+  "test_id": "VT-155",
+  "domain": "vale_transporte",
+  "question": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "VT-155",
+    "question": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "answer_delivered": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+  "observed_behavior": "surface_conflict",
+  "expected_facts": [
+    {
+      "criterion_id": "VT-155-fact-1",
+      "description": "Distinguir R$ 11,80, R$ 23,60 e R$ 47,20 por via, sem taxa única.",
+      "match": {
+        "all_of": [
+          [
+            "11,80"
+          ],
+          [
+            "23,60"
+          ],
+          [
+            "47,20"
+          ],
+          [
+            "2",
+            "segunda"
+          ],
+          [
+            "3",
+            "terceira"
+          ],
+          [
+            "4",
+            "quarta"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "vt-155"
+      ]
+    },
+    {
+      "criterion_id": "VT-155-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "vt-155"
+      ]
+    }
+  ],
+  "forbidden_claims": [],
+  "historical_expected_citations": [
+    {
+      "document_id": "vt-segunda-via",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "155",
+      "page": 2,
+      "benefit_code": "155"
+    }
+  ],
+  "retrieval_calls": [
+    {
+      "query": "Segunda via. Transurc Campinas - Municipal Campinas. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+      "scopes": [
+        "local_review"
+      ],
+      "domain": "beneficios.vale_transporte.segunda_via",
+      "benefit_code": "155",
+      "app_env_filter": "development",
+      "version_filter": "vt-segunda-via-local-v1",
+      "chunks": [
+        {
+          "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+          "benefit_code": "155",
+          "attributes": {
+            "uf": "SP",
+            "fee": "De R$ 11,8 a R$ 47,20",
+            "code": "155",
+            "name": "Transurc Campinas - Municipal Campinas",
+            "page": 2,
+            "payer": "Jovem",
+            "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+            "payment": "Dinheiro",
+            "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+            "requester": "Jovem"
+          },
+          "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+          "title": "orientações segunda via cartões vt (1).pdf",
+          "version": "vt-segunda-via-local-v1",
+          "page": 2,
+          "section": "155 · Transurc Campinas - Municipal Campinas",
+          "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+          "chunk": 29,
+          "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.771781,
+          "status": "approved"
+        }
+      ],
+      "duration_ms": 7839
+    }
+  ],
+  "actual_citations": [
+    {
+      "document_id": "vt-segunda-via",
+      "source_version": "vt-segunda-via-local-v1",
+      "section_or_row": "155 · Transurc Campinas - Municipal Campinas",
+      "page": 2,
+      "benefit_code": "155",
+      "chunk_id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+      "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+      "document_hash": "94099aa8678d0e52630aa7001393d388db9d27da21a359e433c5a771b40ad9fc",
+      "chunk_hash": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5"
+    }
+  ],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "stage": "idle",
+    "vt_stage": "active",
+    "selected_card_code": "155"
+  },
+  "automatic_observations": {
+    "test_id": "VT-155",
+    "domain": "vale_transporte",
+    "automatic_status": "inconclusive_checks",
+    "final_status": "inconclusivo",
+    "reasons": [],
+    "review_alerts": [
+      "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+    ],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": true,
+      "recall_at_3": 1.0,
+      "reciprocal_rank_at_3": 1.0
+    },
+    "citation_location_completeness": 1.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.5,
+    "forbidden_lexical_alerts": [],
+    "behavior": "surface_conflict",
+    "behavior_match": false,
+    "context_match": true,
+    "card_match": true,
+    "question_duration_ms": 10720,
+    "total_case_duration_ms": 10746,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

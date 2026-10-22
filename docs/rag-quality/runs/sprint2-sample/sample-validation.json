@@ -1,0 +1,63 @@
+{
+  "integrity_pass": true,
+  "cases": [
+    {
+      "test_id": "AUTH-02",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "CTX-01",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "CTX-08",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "FP-02",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "FP-07",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "NEG-06",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "VT-3854",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    },
+    {
+      "test_id": "VT-89",
+      "actual_question_matches_dataset_input": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "no_expected_answers_in_execution_input": true
+    }
+  ],
+  "quality_pass_implied": false,
+  "decision": "Proceed to full run; product failures are retained as observations"
+}

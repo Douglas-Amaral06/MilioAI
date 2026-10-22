@@ -1,0 +1,496 @@
+{
+  "test_id": "OP-03",
+  "input": {
+    "test_id": "OP-03",
+    "question": "Selecionei instructor-11. Qual é o contato?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Preciso falar com meu instrutor."
+        }
+      ],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review",
+        "education:contacts"
+      ],
+      "allowed_document_ids": [
+        "instructor-directory"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:17:25.032206+00:00",
+  "effective_scopes": [
+    "education:contacts",
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "2a991a41-4ab2-4629-ae76-9c2e39133b15",
+        "content": "Preciso falar com meu instrutor.",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 1660
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 1720,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Preciso falar com meu instrutor."
+              ]
+            ],
+            "deadline": 14442.771630729
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_contact",
+            "support_state": {
+              "vt_stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Você sabe quem é seu instrutor do curso?",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "detected_intent": "course_contact",
+              "asked": true,
+              "stage": "confirmation",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "course_contact",
+                "institutionally_approved": false
+              }
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "12a79cf9-346e-4b98-ab6f-9f81a88102a7",
+            "role": "user",
+            "content": "Preciso falar com meu instrutor.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:25.069916Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "13f486c4-21fe-487c-b982-e45811e25fa2",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:25.069917Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você sabe quem é seu instrutor do curso?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "13f486c4-21fe-487c-b982-e45811e25fa2",
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:25.069917Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "79bd2ef6-fd96-400c-b35e-a1f691007992",
+        "deadline": 14442.771630729,
+        "question": "Preciso falar com meu instrutor.",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "79bd2ef6-fd96-400c-b35e-a1f691007992",
+        "deadline": 14442.771630729,
+        "question": "Preciso falar com meu instrutor.",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "asked": true,
+          "stage": "confirmation",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "course_contact",
+            "institutionally_approved": false
+          }
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Preciso falar com meu instrutor."
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "course_contact",
+        "answer": "Você sabe quem é seu instrutor do curso?",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 1763
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "698c4b2b-9f87-4df1-87c9-a7c86c75288e",
+        "content": "Selecionei instructor-11. Qual é o contato?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 42,
+          "outcome": "clarify",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Selecionei instructor-11. Qual é o contato?"
+              ]
+            ],
+            "deadline": 14444.529670463
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "instructor_selection_required",
+            "support_state": {
+              "asked": true,
+              "stage": "idle",
+              "vt_stage": "idle",
+              "detected_intent": "course_contact",
+              "operational_provenance": {
+                "file": "operational_guidance.json",
+                "kind": "operational_configuration",
+                "intent": "course_contact",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "validation_status": "pending",
+                "institutionally_approved": false
+              }
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Selecione o instrutor na lista abaixo para confirmar o contato. Informar um identificador na mensagem não confirma a seleção.",
+            "sources": [],
+            "outcome": "clarify",
+            "support_state": {
+              "asked": true,
+              "stage": "selection",
+              "vt_stage": "idle",
+              "detected_intent": "instructor_selection_required",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "instructor_selection_required",
+                "institutionally_approved": false
+              }
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "e88caa12-85dc-468f-bc86-9ea559a1b917",
+            "role": "user",
+            "content": "Selecionei instructor-11. Qual é o contato?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:26.830823Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "7a8a3821-2695-47d4-b950-7ca7c0f0a585",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:26.830824Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Selecione o instrutor na lista abaixo para confirmar o contato. Informar um identificador na mensagem não confirma a seleção."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "7a8a3821-2695-47d4-b950-7ca7c0f0a585",
+            "role": "assistant",
+            "content": "Selecione o instrutor na lista abaixo para confirmar o contato. Informar um identificador na mensagem não confirma a seleção.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:17:26.830824Z",
+            "outcome": "clarify",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "79bd2ef6-fd96-400c-b35e-a1f691007992",
+        "deadline": 14444.529670463,
+        "question": "Selecionei instructor-11. Qual é o contato?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Preciso falar com meu instrutor.",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "confirmation",
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "operational_provenance": {
+            "file": "operational_guidance.json",
+            "kind": "operational_configuration",
+            "intent": "course_contact",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "validation_status": "pending",
+            "institutionally_approved": false
+          }
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "79bd2ef6-fd96-400c-b35e-a1f691007992",
+        "deadline": 14444.529670463,
+        "question": "Selecionei instructor-11. Qual é o contato?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Preciso falar com meu instrutor.",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "selection",
+          "vt_stage": "idle",
+          "detected_intent": "instructor_selection_required",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "instructor_selection_required",
+            "institutionally_approved": false
+          }
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Selecionei instructor-11. Qual é o contato?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "instructor_selection_required",
+        "answer": "Selecione o instrutor na lista abaixo para confirmar o contato. Informar um identificador na mensagem não confirma a seleção.",
+        "outcome": "clarify",
+        "domain": "operational"
+      },
+      "duration_ms": 80
+    }
+  ],
+  "conversation_id": "79bd2ef6-fd96-400c-b35e-a1f691007992",
+  "duration_ms": 1856,
+  "completed_at": "2026-10-21T15:17:26.888026+00:00"
+}

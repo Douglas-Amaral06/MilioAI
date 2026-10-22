@@ -1,0 +1,62 @@
+[
+  {
+    "test_id": "CONFLICT-01",
+    "kind": "operational_configuration",
+    "file": "operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "intent": "send_timesheet",
+    "institutionally_approved": false
+  },
+  {
+    "test_id": "FP-13",
+    "kind": "operational_configuration",
+    "file": "operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "intent": "course_contact",
+    "institutionally_approved": false
+  },
+  {
+    "test_id": "OP-01",
+    "kind": "operational_configuration",
+    "file": "operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "intent": "calendar",
+    "institutionally_approved": false
+  },
+  {
+    "test_id": "OP-02",
+    "kind": "operational_configuration",
+    "file": "operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "intent": "course_certificate",
+    "institutionally_approved": false
+  },
+  {
+    "test_id": "OP-03",
+    "kind": "operational_configuration",
+    "file": "operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "intent": "instructor_selection_required",
+    "institutionally_approved": false
+  },
+  {
+    "test_id": "OP-04",
+    "kind": "operational_configuration",
+    "file": "operational_guidance.json",
+    "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+    "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+    "validation_status": "pending",
+    "intent": "education_validation",
+    "institutionally_approved": false
+  }
+]

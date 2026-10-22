@@ -1,0 +1,20 @@
+{
+  "audited_cases": 76,
+  "csv_columns": 31,
+  "original_failed": 45,
+  "original_inconclusive": 31,
+  "promotions": 0,
+  "preserved_input_files": 146,
+  "original_files_unchanged": true,
+  "runtime_and_model_calls": 0,
+  "csv_roundtrip_values_preserved": true,
+  "pending_review_sample_cases": 24,
+  "all_12_cause_classes_covered": true,
+  "source_warning_metadata_confirmed_for_six_cases": true,
+  "output_sha256": {
+    "RELATORIO.md": "81f28c699d25451d1c9fe7dc320b56e667eef0327dddf505cf24a73c44b56aed",
+    "AUDITORIA_76_CASOS.csv": "9de205b629edc41bdb58b624ade368d01ae8ccab95812677ab6101c4c89a9399",
+    "CASOS.md": "05dff504d771fcf6677bd4568b25157636cbf9d8af1ab189dce48f8238e2d506",
+    "FILA_REVISAO.md": "9d9d76e3b451f2b26cedbac8827a01e3b9a378a835a5675127a33e5b52d3ba51"
+  }
+}

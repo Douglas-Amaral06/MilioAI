@@ -1,0 +1,834 @@
+{
+  "test_id": "CTX-04",
+  "input": {
+    "test_id": "CTX-04",
+    "question": "Quem abre o pedido então?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Como solicito a segunda via do cartão código 216?"
+        }
+      ],
+      "selected_benefit_code": "216"
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:11:04.623848+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "8a8decf5-ebd0-4bcf-85d3-4602a2f28458",
+        "content": "Como solicito a segunda via do cartão código 216?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Eroles - Cartão Mogi das Cruzes Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "216",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+              "benefit_code": "216",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 5,74",
+                "code": "216",
+                "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "requester": "Empresa"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+              "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+              "chunk": 11,
+              "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.774049,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 8281
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 11986
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 12083,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Como solicito a segunda via do cartão código 216?"
+              ]
+            ],
+            "deadline": 14061.933753868
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+                "benefit_code": "216",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 5,74",
+                  "code": "216",
+                  "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+                "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+                "chunk": 11,
+                "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.774049,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+                "benefit_code": "216",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 5,74",
+                  "code": "216",
+                  "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+                "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+                "chunk": 11,
+                "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.774049,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "216"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "bcd51707-07ec-460a-ba6f-e9fc9e823f25",
+            "role": "user",
+            "content": "Como solicito a segunda via do cartão código 216?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:04.701652Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "59e4bf7a-7c26-44fb-ab34-dab2b1d48c11",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:04.701653Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+              "benefit_code": "216",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 5,74",
+                "code": "216",
+                "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "requester": "Empresa"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+              "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+              "chunk": 11,
+              "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.774049,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "59e4bf7a-7c26-44fb-ab34-dab2b1d48c11",
+            "role": "assistant",
+            "content": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+                "benefit_code": "216",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 5,74",
+                  "code": "216",
+                  "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+                "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+                "chunk": 11,
+                "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.774049,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:11:04.701653Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "fd9ba24a-05b3-4073-914b-e26ab7dd3996",
+        "deadline": 14061.933753868,
+        "question": "Como solicito a segunda via do cartão código 216?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "fd9ba24a-05b3-4073-914b-e26ab7dd3996",
+        "deadline": 14061.933753868,
+        "question": "Como solicito a segunda via do cartão código 216?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "216"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+            "benefit_code": "216",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 5,74",
+              "code": "216",
+              "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "requester": "Empresa"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+            "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+            "chunk": 11,
+            "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.774049,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+            "benefit_code": "216",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 5,74",
+              "code": "216",
+              "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "requester": "Empresa"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+            "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+            "chunk": 11,
+            "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.774049,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Como solicito a segunda via do cartão código 216?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 12168
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "a2ee7a5d-dd49-47da-91b1-90a58d6eed17",
+        "content": "Quem abre o pedido então?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Eroles - Cartão Mogi das Cruzes Municipal. Quem abre o pedido então?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "216",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+              "benefit_code": "216",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 5,74",
+                "code": "216",
+                "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "requester": "Empresa"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+              "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+              "chunk": 11,
+              "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.695212,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 9638
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 12426
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 12521,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem abre o pedido então?"
+              ]
+            ],
+            "deadline": 14074.115433178
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+                "benefit_code": "216",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 5,74",
+                  "code": "216",
+                  "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+                "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+                "chunk": 11,
+                "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.695212,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+                "benefit_code": "216",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 5,74",
+                  "code": "216",
+                  "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+                "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+                "chunk": 11,
+                "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.695212,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "216"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "83238777-09bf-4db6-8d2a-77e0ad668bf3",
+            "role": "user",
+            "content": "Quem abre o pedido então?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:16.888857Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "95fcc83a-0043-4848-b095-4fd74567f31a",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:16.888858Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+              "benefit_code": "216",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 5,74",
+                "code": "216",
+                "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "requester": "Empresa"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+              "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+              "chunk": 11,
+              "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.695212,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "95fcc83a-0043-4848-b095-4fd74567f31a",
+            "role": "assistant",
+            "content": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+                "benefit_code": "216",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 5,74",
+                  "code": "216",
+                  "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                  "requester": "Empresa"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+                "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+                "chunk": 11,
+                "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.695212,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:11:16.888858Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "fd9ba24a-05b3-4073-914b-e26ab7dd3996",
+        "deadline": 14074.115433178,
+        "question": "Quem abre o pedido então?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como solicito a segunda via do cartão código 216?",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "216"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "fd9ba24a-05b3-4073-914b-e26ab7dd3996",
+        "deadline": 14074.115433178,
+        "question": "Quem abre o pedido então?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como solicito a segunda via do cartão código 216?",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "216"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+            "benefit_code": "216",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 5,74",
+              "code": "216",
+              "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "requester": "Empresa"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+            "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+            "chunk": 11,
+            "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.695212,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c",
+            "benefit_code": "216",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 5,74",
+              "code": "216",
+              "name": "Eroles - Cartão Mogi das Cruzes Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+              "requester": "Empresa"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "216 · Eroles - Cartão Mogi das Cruzes Municipal",
+            "sha256": "3996e17a2a54a75da4da2dab27888245e499b0694c5e8de1b82750ae8b6df287",
+            "chunk": 11,
+            "excerpt": "UF: SP\nCódigo do benefício: 216\nCartão / operadora: Eroles - Cartão Mogi das Cruzes Municipal\nQuem solicita: Empresa\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 5,74\nProcedimento integral: Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.695212,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem abre o pedido então?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Eroles - Cartão Mogi das Cruzes Municipal** · Código 216 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Empresa [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 5,74 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Realizar a abertura de chamado. Conforme regras da operadora, o jovem poderá retirar o cartão diretamente no posto de atendimento munido dos documentos pessoais, e com a apresentação da carta de autorização anexada no chamado em 01 dia útil pagando uma taxa de R$ 5,74 no local. [fonte:F1]\n\nA solicitação cabe à empresa; o jovem deve seguir apenas as etapas de retirada que constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 12602
+    }
+  ],
+  "conversation_id": "fd9ba24a-05b3-4073-914b-e26ab7dd3996",
+  "duration_ms": 24814,
+  "completed_at": "2026-10-21T15:11:29.438401+00:00"
+}

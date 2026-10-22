@@ -1,0 +1,23 @@
+[
+  {
+    "probe": "contradictory_opening",
+    "answer": "Não se mantém o registro do curso, pois a orientação diz manter o preenchimento como CURSO [fonte:F1].",
+    "expected_supported": false,
+    "actual_supported": true,
+    "check_passed": false
+  },
+  {
+    "probe": "inverted_instruction",
+    "answer": "Em caso de falta no dia de curso, escreva FALTA na folha [fonte:F1].",
+    "expected_supported": false,
+    "actual_supported": true,
+    "check_passed": false
+  },
+  {
+    "probe": "documentary_rule",
+    "answer": "Caso haja falta no dia de curso, manter o preenchimento como CURSO, para que não ocorra o desconto duplicado da falta [fonte:F1].",
+    "expected_supported": true,
+    "actual_supported": true,
+    "check_passed": true
+  }
+]

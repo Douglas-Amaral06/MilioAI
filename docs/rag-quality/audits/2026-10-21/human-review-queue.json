@@ -1,0 +1,242 @@
+[
+  {
+    "rank": 1,
+    "id": "CONFLICT-01",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A pergunta compara PDF e Conecta. Foi respondido apenas o serviço Conecta, com ressalva genérica, sem recuperar o PDF nem expor seus canais. A divergência é documental e a omissão do contraste é funcional, não prova de revogação inventada.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 2,
+    "id": "VT-10398",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O nome informado (Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?) não foi ligado à linha 10398. O fluxo chegou a VT, mas pediu seleção de cartão e não chamou a recuperação. Não há taxa/prazo falso afirmado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 3,
+    "id": "CTX-04",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O estado inicial tem cartão 216 ativo. O gate dá falso, operational_router muda vt_stage para idle, e o transporte termina em selection, pedindo novamente o cartão. O código continua armazenado, mas deixa de ser usado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 4,
+    "id": "FP-03",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "'Até que dia' pede prazo, mas a intenção virou send_timesheet e a resposta foi um link de envio. Não houve busca; a falta de citação é consequência da rota escolhida.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 5,
+    "id": "FP-10",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A pergunta identifica folha e foto. Foram recuperadas seções 5, 1 e 7, sem a seção 6 sobre PDF/foto legível. O fallback é seguro, mas não atende ao pedido respondível pela fonte local.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 6,
+    "id": "OP-03",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A entrada diz 'Selecionei instructor-11' como texto. Não há ação instructor_select nem selected_instructor_id no estado. O sistema retorna à lista e não informa que o registro está sem e-mail. A métrica de contexto só vê domínio/cartão e marca correspondência mesmo sem seleção de instrutor.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 7,
+    "id": "OP-04",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "Perguntou-se se os contatos foram validados; a intenção virou education_contact e devolveu contatos configurados sem responder sobre validação. A reprovação original só por citação não captura essa omissão. O escopo education:contacts estava presente; não há vazamento sem permissão demonstrado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 8,
+    "id": "VT-155",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "Os valores 11,80, 23,60 e 47,20 estão diferenciados por 2ª, 3ª e 4ª vias no procedimento. A normalização lexical transforma os ordinais em 2a/3a/4a, que não casam com os aliases 2/3/4. A nota de telefone incompleto também altera a taxonomia.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 9,
+    "id": "FP-09",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O texto diz 'Não, não posso assinar...', atribuindo a ação ao assistente. A proibição e a referência à seção 4 estão preservadas. O feedback do usuário gerou a reprovação; não há inversão demonstrada da regra institucional.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 10,
+    "id": "AUTH-01",
+    "domain": "governance",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A saída é fallback sem fonte. O caso usou política documental de produção no grafo, mas autenticação/host de desenvolvimento, e não chegou à busca. Isso não testa um deployment corporativo nem explica explicitamente a regra de aprovação.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 11,
+    "id": "FP-14",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A pergunta sobre caneta não informa que é para a folha e não contém histórico. A cor azul/preta consta na seção 3 do inventário, mas não foi recuperada. O contexto pressuposto do teste precisa ser decidido.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 12,
+    "id": "FP-04",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A busca retornou somente a seção 2 (prazo), e não a seção 3 (horários). O assessor marcou partial e o gerador fez fallback seguro, sem inventar a proibição.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 13,
+    "id": "FP-06",
+    "domain": "folha_ponto",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A consulta foi 'Falta no Trabalho: Como diferencio falta e falta justificada?' e retornou zero chunks. O fallback não fornece a diferença; a regra com documento existe na localização 3 do inventário local.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 14,
+    "id": "OP-01",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A resposta direciona ao calendário do Conecta, atendendo ao conteúdo principal. O runtime usa configuração operacional e sources=[], enquanto o dataset exige referência a services/calendar. Não é uma busca vetorial malsucedida.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 15,
+    "id": "OP-02",
+    "domain": "operational",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A resposta menciona Conecta, envio de atestados e curso. O fato lexical falha porque o critério exige o singular 'atestado'. Além disso, falta a proveniência operacional exigida e a ressalva genérica não equivale ao aviso explícito de pendência.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 16,
+    "id": "NEG-02",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "Uma pergunta sobre saldo foi classificada como ambiguous_document e recebeu pergunta sobre entrega de folha/documento/atestado. Não foi inventado saldo, mas a resposta é funcionalmente alheia ao pedido.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 17,
+    "id": "NEG-06",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "Sem cartão identificado, o caso espera esclarecimento. O sistema retorna fora de escopo. A omissão é do próximo passo de atendimento, não de um valor documental já disponível.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 18,
+    "id": "VT-15779",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "A solicitação identifica uma operadora/cartão, mas a intenção observada foi ambiguous_document. A resposta não trata da orientação pedida; não há chamada de recuperação nem uso de linha de outro cartão.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 19,
+    "id": "VT-503",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A resposta apresenta coluna Jovem, procedimento qualquer pessoa e pede confirmação sem escolher uma versão. A divergência está na fonte e foi explicitada; requer validação institucional, não aprovação automática da resposta.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 20,
+    "id": "VT-9156",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A resposta informa R$ 28,50 e diz que o procedimento 'não informa URL nem número'. O critério exige 'não informado', 'não consta' ou 'ausente'; a paráfrase verdadeira não casa. Não houve número de WhatsApp fabricado.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 21,
+    "id": "CONFLICT-02",
+    "domain": "vale_transporte",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A nota diz que há '0800 sem informar o número completo'. O critério aceita 'incompleto', 'não informado' ou 'não consta', mas não essa paráfrase. A resposta não fabricou o restante do número; o rótulo surface_conflict também difere de answer.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 22,
+    "id": "AUTH-03",
+    "domain": "governance",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "A resposta recusa expressamente acesso aos contatos educacionais. Essa frase não está nos aliases aceitos. O export inicial a classificou como answer por outcome=operational; o export posterior corrigiu apenas o rótulo, sem mudar o texto.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 23,
+    "id": "CTX-06",
+    "domain": "vale_transporte",
+    "original_result": "reprovado",
+    "question_for_reviewer": "O cartão 15723 está ativo na entrada. A pergunta sobre BO passa pelo roteador operacional, que reinicia a etapa; a resposta pede cartão novamente. Não houve nova seleção explícita pelo usuário.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  },
+  {
+    "rank": 24,
+    "id": "FP-02",
+    "domain": "folha_ponto",
+    "original_result": "inconclusivo",
+    "question_for_reviewer": "O prazo até o segundo dia útil do mês coincide com a seção 2. A redação 'Devo entregar minha folha' também espelha a primeira pessoa do usuário; é inadequação de perspectiva, não troca de prazo.",
+    "reviewer": null,
+    "decision": "pendente",
+    "institutional_approval": false
+  }
+]

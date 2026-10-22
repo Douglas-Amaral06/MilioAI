@@ -1,0 +1,211 @@
+{
+  "test_id": "VT-10398",
+  "input": {
+    "test_id": "VT-10398",
+    "question": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:04.276217+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "95ffabe5-20c7-4986-bcc7-1d18991d1554",
+        "content": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 268
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 8
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 285,
+          "outcome": "card_selection",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Após bloquear o CIT Sumaré Urbano, quando como retiro a segunda via?"
+              ]
+            ],
+            "deadline": 6199.487937615
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "transport_replacement",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "Claro! Qual cartão de transporte você utiliza?",
+            "sources": [],
+            "outcome": "card_selection",
+            "support_state": {
+              "vt_stage": "selection",
+              "stage": "idle"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "b9b1912d-5154-46a8-8184-d955c7ad3a1a",
+            "role": "user",
+            "content": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:04.285767Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "ba4b2e65-a41c-4415-99f4-9c85f8f60677",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:04.285768Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Claro! Qual cartão de transporte você utiliza?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "ba4b2e65-a41c-4415-99f4-9c85f8f60677",
+            "role": "assistant",
+            "content": "Claro! Qual cartão de transporte você utiliza?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:04.285768Z",
+            "outcome": "card_selection",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "2ae71d02-e623-4ac8-a2c5-a83a082a1964",
+        "deadline": 6199.487937615,
+        "question": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "2ae71d02-e623-4ac8-a2c5-a83a082a1964",
+        "deadline": 6199.487937615,
+        "question": "Após bloquear o CIT Sumaré Urbano, quando e como retiro a segunda via?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "selection",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Após bloquear o CIT Sumaré Urbano, quando como retiro a segunda via?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "transport_replacement",
+        "answer": "Claro! Qual cartão de transporte você utiliza?",
+        "outcome": "card_selection"
+      },
+      "duration_ms": 295
+    }
+  ],
+  "conversation_id": "2ae71d02-e623-4ac8-a2c5-a83a082a1964",
+  "duration_ms": 298,
+  "completed_at": "2026-10-21T13:00:04.574472+00:00"
+}

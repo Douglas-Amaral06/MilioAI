@@ -58,12 +58,14 @@ def is_transport(question, state, question_id=None):
     text = normalize(question)
     if question_id:
         return question_id == "vale_transporte.segunda_via"
+    if re.search(r"sptrans|sou diadema|guarupas|cartao top", text):
+        return True
     if re.search(
         r"folha|atestado|holerite|salario|ferias|instrutor|escola|curso|capacitacao|refeicao|alimentacao",
         text,
     ):
         return False
-    if re.search(r"sptrans|sou diadema|guarupas|cartao top", text):
+    if re.search(r"cartao|bilhete", text) and re.search(r"taxa|prazo|quanto|custa|custo", text):
         return True
     if re.search(
         r"segunda via|2[ªa°º]?\s*via|outro bilhete|outro cartao|perdi|roubar|roubo|furt|extravi|bloque",
@@ -74,7 +76,7 @@ def is_transport(question, state, question_id=None):
         return bool(
             text.strip().isdigit()
             or re.search(
-                r"^(e |meu cartao|uso |utilizo |o meu)|taxa|quanto|custa|custo|valor|preco|prazo|demora|dias|pront|tempo|saldo|transfer|pago|pagar|retir|documento|trocar|cartao|\btop\b",
+                r"^(e |meu cartao|uso |utilizo |o meu)|codigo|quem|pedido|boletim|ocorrencia|taxa|quanto|custa|custo|valor|preco|prazo|demora|dias|pront|tempo|saldo|transfer|pago|pagar|retir|documento|trocar|cartao|\btop\b",
                 text,
             )
         )
@@ -83,24 +85,36 @@ def is_transport(question, state, question_id=None):
 
 def card_candidates(question, rows):
     text = normalize(question)
-    hits = []
+    codes = re.findall(r"codigo(?: do beneficio)?\s*[:#-]?\s*(\d+)\b", text)
+    if codes or text.strip().isdigit():
+        requested = set(codes or [text.strip()])
+        return [row["code"] for row in rows if row["code"] in requested]
+    generic = set(
+        "cartao bilhete unico comum viacao auto empresa transporte transportes linha de do da dos das e".split()
+    )
+    weak = {
+        "municipal",
+        "urbano",
+        "integracao",
+        "sim",
+        "sou",
+        "legal",
+        "mais",
+        "sao",
+        "santo",
+        "grupo",
+        "campo",
+        "x",
+    }
+    words = set(re.findall(r"\w+", text)) - generic
+    matches = []
     for row in rows:
-        name = normalize(row["name"])
-        prefix = name.split(" - ")[0]
-        aliases = [name, prefix]
-        if row["code"] == "182":
-            aliases.append("guarulhos")
-        if row["code"] == "89":
-            aliases.append("sptrans")
-        if row["code"] == "9156":
-            aliases.append("top")
-        if (
-            any(re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", text) for alias in aliases)
-            or text.strip() == row["code"]
-            or re.search(r"codigo(?: do beneficio)?\s*" + re.escape(row["code"]) + r"(?!\d)", text)
-        ):
-            hits.append(row["code"])
-    return hits
+        tokens = set(re.findall(r"\w+", normalize(row["name"]))) - generic
+        overlap = tokens & words
+        if overlap - weak:
+            matches.append((row["code"], overlap))
+    # A municipality disambiguates a shared operator. Disjoint names remain ambiguous.
+    return [code for code, overlap in matches if not any(overlap < other for _, other in matches)]
 
 
 def identify_card(question, rows):

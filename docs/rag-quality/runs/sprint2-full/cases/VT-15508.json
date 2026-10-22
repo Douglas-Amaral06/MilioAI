@@ -1,0 +1,213 @@
+{
+  "test_id": "VT-15508",
+  "input": {
+    "test_id": "VT-15508",
+    "question": "O que levo e em quanto tempo retiro o Moratense?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:18.843974+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "59e241df-eb09-4680-879f-b0d0d62baf0b",
+        "content": "O que levo e em quanto tempo retiro o Moratense?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 310
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 319,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "O que levo e em quanto tempo retiro o Moratense?"
+              ]
+            ],
+            "deadline": 6214.054242019
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "ambiguous_document",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "ambiguous_document"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "ddd15705-1e14-4f64-aefb-33aba21e80ec",
+            "role": "user",
+            "content": "O que levo e em quanto tempo retiro o Moratense?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:18.851842Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "e871e266-1596-461e-93a3-86a41eea2996",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:18.851843Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "e871e266-1596-461e-93a3-86a41eea2996",
+            "role": "assistant",
+            "content": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:18.851843Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "d049c305-7194-43d0-a3f0-d90de5513c0e",
+        "deadline": 6214.054242019,
+        "question": "O que levo e em quanto tempo retiro o Moratense?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "d049c305-7194-43d0-a3f0-d90de5513c0e",
+        "deadline": 6214.054242019,
+        "question": "O que levo e em quanto tempo retiro o Moratense?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "ambiguous_document"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "O que levo e em quanto tempo retiro o Moratense?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "ambiguous_document",
+        "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+        "outcome": "operational"
+      },
+      "duration_ms": 328
+    }
+  ],
+  "conversation_id": "d049c305-7194-43d0-a3f0-d90de5513c0e",
+  "duration_ms": 331,
+  "completed_at": "2026-10-21T13:00:19.175022+00:00"
+}

@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-503",
+  "input": {
+    "test_id": "VT-503",
+    "question": "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:04:38.937579+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "68474ce7-aa6e-4526-b7fe-4332001347ac",
+        "content": "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. SOU Diadema - Cartão SOU - Diadema Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "503",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+              "benefit_code": "503",
+              "attributes": {
+                "uf": "SP",
+                "fee": "5 tarifas",
+                "code": "503",
+                "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+              "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+              "chunk": 24,
+              "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.829868,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 66
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 1251
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 1265,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?"
+              ]
+            ],
+            "deadline": 10074.470064278
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**SOU Diadema - Cartão SOU - Diadema Municipal** · Código 503 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 5 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via pode ser solicitada por qualquer pessoa via e-mail ([sac@soudiadema.com.br](mailto:sac@soudiadema.com.br)) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+                "benefit_code": "503",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "5 tarifas",
+                  "code": "503",
+                  "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+                "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+                "chunk": 24,
+                "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.829868,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+                "benefit_code": "503",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "5 tarifas",
+                  "code": "503",
+                  "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+                "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+                "chunk": 24,
+                "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.829868,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "503"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "45d55297-c636-4aa2-9b34-b4e4ba644c3a",
+            "role": "user",
+            "content": "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:38.948520Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "c19114b1-7d0f-414c-bcb9-c352d70abf5b",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:04:38.948521Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**SOU Diadema - Cartão SOU - Diadema Municipal** · Código 503 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 5 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via pode ser solicitada por qualquer pessoa via e-mail ([sac@soudiadema.com.br](mailto:sac@soudiadema.com.br)) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+              "benefit_code": "503",
+              "attributes": {
+                "uf": "SP",
+                "fee": "5 tarifas",
+                "code": "503",
+                "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                "payment": "Dinheiro",
+                "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+              "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+              "chunk": 24,
+              "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.829868,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "c19114b1-7d0f-414c-bcb9-c352d70abf5b",
+            "role": "assistant",
+            "content": "**SOU Diadema - Cartão SOU - Diadema Municipal** · Código 503 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 5 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via pode ser solicitada por qualquer pessoa via e-mail ([sac@soudiadema.com.br](mailto:sac@soudiadema.com.br)) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+                "benefit_code": "503",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "5 tarifas",
+                  "code": "503",
+                  "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                  "payment": "Dinheiro",
+                  "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+                "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+                "chunk": 24,
+                "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.829868,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:04:38.948521Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "4c01b4d3-4d11-4ae5-a357-22f1a7c02d2e",
+        "deadline": 10074.470064278,
+        "question": "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "4c01b4d3-4d11-4ae5-a357-22f1a7c02d2e",
+        "deadline": 10074.470064278,
+        "question": "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "503"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+            "benefit_code": "503",
+            "attributes": {
+              "uf": "SP",
+              "fee": "5 tarifas",
+              "code": "503",
+              "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+            "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+            "chunk": 24,
+            "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.829868,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8",
+            "benefit_code": "503",
+            "attributes": {
+              "uf": "SP",
+              "fee": "5 tarifas",
+              "code": "503",
+              "name": "SOU Diadema - Cartão SOU - Diadema Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+              "payment": "Dinheiro",
+              "procedure": "A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "503 · SOU Diadema - Cartão SOU - Diadema Municipal",
+            "sha256": "d5c3de236ec22c2464e2e5cffe4600383df8f273f5453e97fcbe19b632f13809",
+            "chunk": 24,
+            "excerpt": "UF: SP\nCódigo do benefício: 503\nCartão / operadora: SOU Diadema - Cartão SOU - Diadema Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 5 tarifas\nProcedimento integral: A 2ª via pode ser solicitada por qualquer pessoa via e-mail (sac@soudiadema.com.br) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro.\nPendências de revisão: A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.829868,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem solicita o SOU Diadema: só jovem ou qualquer pessoa?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**SOU Diadema - Cartão SOU - Diadema Municipal** · Código 503 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 5 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A 2ª via pode ser solicitada por qualquer pessoa via e-mail ([sac@soudiadema.com.br](mailto:sac@soudiadema.com.br)) ou na central (Rua Graciosa, 125 – Diadema), de segunda a sexta, das 08h às 18h. É necessário documento original com foto. Retirada por qualquer pessoa com documento do titular. Transferência de créditos é automática. Pagamento somente em dinheiro. [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\n**Ponto para revisão:** A coluna Quem solicita informa Jovem, mas o procedimento permite qualquer pessoa. Confirmar a condição aplicável. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 1277
+    }
+  ],
+  "conversation_id": "4c01b4d3-4d11-4ae5-a357-22f1a7c02d2e",
+  "duration_ms": 1281,
+  "completed_at": "2026-10-21T14:04:40.218457+00:00"
+}

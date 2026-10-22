@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-1071",
+  "input": {
+    "test_id": "VT-1071",
+    "question": "Quanto tempo leva a retirada do Legal São Bernardo?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:10:34.921706+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "c27c8f05-c309-4f32-92b4-59bc05b0450f",
+        "content": "Quanto tempo leva a retirada do Legal São Bernardo?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Sbctrans - Cartão Legal São Bernardo do Campo Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "1071",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+              "benefit_code": "1071",
+              "attributes": {
+                "uf": "SP",
+                "fee": "10 tarifas",
+                "code": "1071",
+                "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Pix ou dinheiro.",
+                "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+              "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+              "chunk": 22,
+              "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.805419,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2200
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3067
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3078,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quanto tempo leva a retirada do Legal São Bernardo?"
+              ]
+            ],
+            "deadline": 10430.480785996
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Sbctrans - Cartão Legal São Bernardo do Campo Municipal** · Código 1071 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Pix ou dinheiro. [fonte:F1]\n\n**Procedimento:** Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+                "benefit_code": "1071",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "1071",
+                  "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Pix ou dinheiro.",
+                  "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+                "chunk": 22,
+                "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.805419,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+                "benefit_code": "1071",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "1071",
+                  "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Pix ou dinheiro.",
+                  "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+                "chunk": 22,
+                "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.805419,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "1071"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "c6507418-5803-4bdd-9e05-5cad47df3841",
+            "role": "user",
+            "content": "Quanto tempo leva a retirada do Legal São Bernardo?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:34.929105Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "d8c8b26f-1aba-48fb-81a9-ab1a12faf7f0",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:34.929106Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Sbctrans - Cartão Legal São Bernardo do Campo Municipal** · Código 1071 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Pix ou dinheiro. [fonte:F1]\n\n**Procedimento:** Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+              "benefit_code": "1071",
+              "attributes": {
+                "uf": "SP",
+                "fee": "10 tarifas",
+                "code": "1071",
+                "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Pix ou dinheiro.",
+                "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+              "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+              "chunk": 22,
+              "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.805419,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "d8c8b26f-1aba-48fb-81a9-ab1a12faf7f0",
+            "role": "assistant",
+            "content": "**Sbctrans - Cartão Legal São Bernardo do Campo Municipal** · Código 1071 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Pix ou dinheiro. [fonte:F1]\n\n**Procedimento:** Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+                "benefit_code": "1071",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "10 tarifas",
+                  "code": "1071",
+                  "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Pix ou dinheiro.",
+                  "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+                "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+                "chunk": 22,
+                "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.805419,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:10:34.929106Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1",
+        "deadline": 10430.480785996,
+        "question": "Quanto tempo leva a retirada do Legal São Bernardo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1",
+        "deadline": 10430.480785996,
+        "question": "Quanto tempo leva a retirada do Legal São Bernardo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "1071"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+            "benefit_code": "1071",
+            "attributes": {
+              "uf": "SP",
+              "fee": "10 tarifas",
+              "code": "1071",
+              "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Pix ou dinheiro.",
+              "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+            "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+            "chunk": 22,
+            "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.805419,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "98be8f63-d7b4-4974-b203-3a408dcfd8a8",
+            "benefit_code": "1071",
+            "attributes": {
+              "uf": "SP",
+              "fee": "10 tarifas",
+              "code": "1071",
+              "name": "Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Pix ou dinheiro.",
+              "procedure": "Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "1071 · Sbctrans - Cartão Legal São Bernardo do Campo Municipal",
+            "sha256": "c4e80e46ac3b12ddaf603b5cb42d679d138c6ae1b9bd5015ac2cfb5c1bbd1bfe",
+            "chunk": 22,
+            "excerpt": "UF: SP\nCódigo do benefício: 1071\nCartão / operadora: Sbctrans - Cartão Legal São Bernardo do Campo Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Pix ou dinheiro.\nTaxa: 10 tarifas\nProcedimento integral: Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.805419,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quanto tempo leva a retirada do Legal São Bernardo?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Sbctrans - Cartão Legal São Bernardo do Campo Municipal** · Código 1071 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 10 tarifas [fonte:F1]\n\n**Forma de pagamento:** Pix ou dinheiro. [fonte:F1]\n\n**Procedimento:** Após o ocorrido, o jovem deve informar a Central de Atendimento e bloquear o cartão com RG, CPF e carta de autorização. Em seguida, comprar e preencher o formulário de 2ª via (taxa de 10 tarifas) e entregar no ato. A retirada ocorre em até 3 dias úteis [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3086
+    }
+  ],
+  "conversation_id": "55732684-c041-489a-8bbe-9d5f827ddbd1",
+  "duration_ms": 3089,
+  "completed_at": "2026-10-21T14:10:38.010607+00:00"
+}

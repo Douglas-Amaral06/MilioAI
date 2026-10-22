@@ -1,0 +1,211 @@
+{
+  "test_id": "NEG-02",
+  "input": {
+    "test_id": "NEG-02",
+    "question": "Qual é o saldo do meu cartão hoje?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T13:01:25.167475+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "9acc1114-dc45-4765-a8c4-dcb41ffa43ac",
+        "content": "Qual é o saldo do meu cartão hoje?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 308
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 318,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Qual é o saldo do meu cartão hoje?"
+              ]
+            ],
+            "deadline": 6280.384391158
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "ambiguous_document",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "ambiguous_document"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "67dfd743-f973-486b-8ccb-ad70767afd9a",
+            "role": "user",
+            "content": "Qual é o saldo do meu cartão hoje?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:25.173520Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "ac08683a-58ad-4d03-b00e-36f1fc727a5c",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:25.173521Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "ac08683a-58ad-4d03-b00e-36f1fc727a5c",
+            "role": "assistant",
+            "content": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:25.173521Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "012b850c-619c-4810-82db-c45b2337f5e9",
+        "deadline": 6280.384391158,
+        "question": "Qual é o saldo do meu cartão hoje?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "012b850c-619c-4810-82db-c45b2337f5e9",
+        "deadline": 6280.384391158,
+        "question": "Qual é o saldo do meu cartão hoje?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "ambiguous_document"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Qual é o saldo do meu cartão hoje?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "ambiguous_document",
+        "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+        "outcome": "operational"
+      },
+      "duration_ms": 328
+    }
+  ],
+  "conversation_id": "012b850c-619c-4810-82db-c45b2337f5e9",
+  "duration_ms": 331,
+  "completed_at": "2026-10-21T13:01:25.496314+00:00"
+}

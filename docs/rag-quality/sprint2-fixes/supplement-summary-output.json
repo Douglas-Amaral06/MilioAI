@@ -1,0 +1,230 @@
+{
+  "counts": {
+    "dataset": 76,
+    "executed": 7,
+    "approved_semantically": 0,
+    "failed_observable_checks": 2,
+    "inconclusive_semantics": 5,
+    "not_executed": 69
+  },
+  "by_domain": {
+    "folha_ponto": {
+      "executed": 6,
+      "statuses": {
+        "reprovado": 1,
+        "inconclusivo": 5
+      },
+      "automatic_statuses": {
+        "failed_checks": 1,
+        "inconclusive_checks": 5
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": 1.0,
+          "n": 6
+        },
+        "recall_at_3": {
+          "value": 1.0,
+          "n": 6
+        },
+        "mrr_at_3": {
+          "value": 1.0,
+          "n": 6
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.0,
+          "n": 6
+        },
+        "recall_at_3": {
+          "value": 0.0,
+          "n": 6
+        },
+        "mrr_at_3": {
+          "value": 0.0,
+          "n": 6
+        }
+      },
+      "required_fact_lexical_coverage": 0.4166666666666667,
+      "citation_location_completeness": 0.8333333333333334,
+      "behavior_match": 0.8333333333333334,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 6,
+        "mean_ms": 5989,
+        "p50_ms": 4904,
+        "p95_ms": 12922,
+        "max_ms": 12922
+      },
+      "latency_with_context": {
+        "n": 6,
+        "mean_ms": 6015,
+        "p50_ms": 4913,
+        "p95_ms": 13058,
+        "max_ms": 13058
+      }
+    },
+    "governance": {
+      "executed": 0,
+      "statuses": {},
+      "automatic_statuses": {},
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "required_fact_lexical_coverage": null,
+      "citation_location_completeness": null,
+      "behavior_match": null,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      },
+      "latency_with_context": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      }
+    },
+    "operational": {
+      "executed": 1,
+      "statuses": {
+        "reprovado": 1
+      },
+      "automatic_statuses": {
+        "failed_checks": 1
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.0,
+          "n": 1
+        },
+        "recall_at_3": {
+          "value": 0.0,
+          "n": 1
+        },
+        "mrr_at_3": {
+          "value": 0.0,
+          "n": 1
+        }
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "citation_location_completeness": 0.0,
+      "behavior_match": 1.0,
+      "context_match": 1.0,
+      "card_match": 1.0,
+      "latency_question": {
+        "n": 1,
+        "mean_ms": 22,
+        "p50_ms": 22,
+        "p95_ms": 22,
+        "max_ms": 22
+      },
+      "latency_with_context": {
+        "n": 1,
+        "mean_ms": 1228,
+        "p50_ms": 1228,
+        "p95_ms": 1228,
+        "max_ms": 1228
+      }
+    },
+    "vale_transporte": {
+      "executed": 0,
+      "statuses": {},
+      "automatic_statuses": {},
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "required_fact_lexical_coverage": null,
+      "citation_location_completeness": null,
+      "behavior_match": null,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      },
+      "latency_with_context": {
+        "n": 0,
+        "mean_ms": null,
+        "p50_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      }
+    }
+  }
+}

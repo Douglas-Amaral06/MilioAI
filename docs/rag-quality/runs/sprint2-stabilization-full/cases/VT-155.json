@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-155",
+  "input": {
+    "test_id": "VT-155",
+    "question": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:09:03.438276+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "3da5580a-30d0-44e4-97a2-d2b70b039e03",
+        "content": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Transurc Campinas - Municipal Campinas. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "155",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+              "benefit_code": "155",
+              "attributes": {
+                "uf": "SP",
+                "fee": "De R$ 11,8 a R$ 47,20",
+                "code": "155",
+                "name": "Transurc Campinas - Municipal Campinas",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                "payment": "Dinheiro",
+                "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "155 · Transurc Campinas - Municipal Campinas",
+              "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+              "chunk": 29,
+              "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.771781,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 7839
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 31
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 10514
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 10636,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?"
+              ]
+            ],
+            "deadline": 13940.710655549
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+                "benefit_code": "155",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "De R$ 11,8 a R$ 47,20",
+                  "code": "155",
+                  "name": "Transurc Campinas - Municipal Campinas",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                  "payment": "Dinheiro",
+                  "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "155 · Transurc Campinas - Municipal Campinas",
+                "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+                "chunk": 29,
+                "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.771781,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+                "benefit_code": "155",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "De R$ 11,8 a R$ 47,20",
+                  "code": "155",
+                  "name": "Transurc Campinas - Municipal Campinas",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                  "payment": "Dinheiro",
+                  "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "155 · Transurc Campinas - Municipal Campinas",
+                "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+                "chunk": 29,
+                "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.771781,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "155"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "58435b32-2abb-43b3-80b3-e0020897431e",
+            "role": "user",
+            "content": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:09:03.513820Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "b0ca8823-56aa-4776-a01c-fc81a5f1540d",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:09:03.513821Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+              "benefit_code": "155",
+              "attributes": {
+                "uf": "SP",
+                "fee": "De R$ 11,8 a R$ 47,20",
+                "code": "155",
+                "name": "Transurc Campinas - Municipal Campinas",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                "payment": "Dinheiro",
+                "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "155 · Transurc Campinas - Municipal Campinas",
+              "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+              "chunk": 29,
+              "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.771781,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "b0ca8823-56aa-4776-a01c-fc81a5f1540d",
+            "role": "assistant",
+            "content": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+                "benefit_code": "155",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "De R$ 11,8 a R$ 47,20",
+                  "code": "155",
+                  "name": "Transurc Campinas - Municipal Campinas",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                  "payment": "Dinheiro",
+                  "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "155 · Transurc Campinas - Municipal Campinas",
+                "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+                "chunk": 29,
+                "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.771781,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:09:03.513821Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "51124975-c304-4b29-bf8f-0a9e4e3616fa",
+        "deadline": 13940.710655549,
+        "question": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "51124975-c304-4b29-bf8f-0a9e4e3616fa",
+        "deadline": 13940.710655549,
+        "question": "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "155"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+            "benefit_code": "155",
+            "attributes": {
+              "uf": "SP",
+              "fee": "De R$ 11,8 a R$ 47,20",
+              "code": "155",
+              "name": "Transurc Campinas - Municipal Campinas",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+              "payment": "Dinheiro",
+              "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "155 · Transurc Campinas - Municipal Campinas",
+            "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+            "chunk": 29,
+            "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.771781,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "a68a253f-af72-47b0-9f5c-5e94d3907949",
+            "benefit_code": "155",
+            "attributes": {
+              "uf": "SP",
+              "fee": "De R$ 11,8 a R$ 47,20",
+              "code": "155",
+              "name": "Transurc Campinas - Municipal Campinas",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+              "payment": "Dinheiro",
+              "procedure": "Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "155 · Transurc Campinas - Municipal Campinas",
+            "sha256": "0db618ace427db01fa46ae3081eb8c424ab284203b955ab56a49fe99a37108a5",
+            "chunk": 29,
+            "excerpt": "UF: SP\nCódigo do benefício: 155\nCartão / operadora: Transurc Campinas - Municipal Campinas\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: De R$ 11,8 a R$ 47,20\nProcedimento integral: Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio\nPendências de revisão: O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.771781,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quanto custa a segunda, terceira e quarta via do Transurc Campinas?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Transurc Campinas - Municipal Campinas** · Código 155 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** De R$ 11,8 a R$ 47,20 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Somente o funcionário pode solicitar a 2ª via, ligando para o 0800 e informando seus dados. Taxa varia conforme a quantidade de vias: R$11,80 (2ª), R$23,60 (3ª), R$47,20 (4ª em diante), paga na hora da retirada em um posto de atendimento. Prazo: 48h após bloqueio [fonte:F1]\n\n**Ponto para revisão:** O procedimento menciona um telefone 0800 sem informar o número completo. A faixa na coluna é De R$ 11,8 a R$ 47,20; os valores por via constam no procedimento. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 10720
+    }
+  ],
+  "conversation_id": "51124975-c304-4b29-bf8f-0a9e4e3616fa",
+  "duration_ms": 10746,
+  "completed_at": "2026-10-21T15:09:14.184265+00:00"
+}

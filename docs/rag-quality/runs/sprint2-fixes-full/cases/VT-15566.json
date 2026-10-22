@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-15566",
+  "input": {
+    "test_id": "VT-15566",
+    "question": "Qual o prazo da segunda via do Itapevi Integração?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:09:55.165796+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "54a83799-549c-48da-b496-c4eb63bf164d",
+        "content": "Qual o prazo da segunda via do Itapevi Integração?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. BB Turismo - Cartão Itapevi Integração. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15566",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+              "benefit_code": "15566",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15566",
+                "name": "BB Turismo - Cartão Itapevi Integração",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+              "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+              "chunk": 4,
+              "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.798425,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 63
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 6
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 933
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 950,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Qual o prazo da segunda via do Itapevi Integração?"
+              ]
+            ],
+            "deadline": 10390.723078812
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**BB Turismo - Cartão Itapevi Integração** · Código 15566 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+                "benefit_code": "15566",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15566",
+                  "name": "BB Turismo - Cartão Itapevi Integração",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+                "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+                "chunk": 4,
+                "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.798425,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+                "benefit_code": "15566",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15566",
+                  "name": "BB Turismo - Cartão Itapevi Integração",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+                "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+                "chunk": 4,
+                "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.798425,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15566"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "cdd8da83-cdf3-4145-b93b-4653bb675ce5",
+            "role": "user",
+            "content": "Qual o prazo da segunda via do Itapevi Integração?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:09:55.175644Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "f15d56fd-1305-4a48-b158-3f942c03d1b7",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:09:55.175645Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**BB Turismo - Cartão Itapevi Integração** · Código 15566 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+              "benefit_code": "15566",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15566",
+                "name": "BB Turismo - Cartão Itapevi Integração",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+              "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+              "chunk": 4,
+              "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.798425,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "f15d56fd-1305-4a48-b158-3f942c03d1b7",
+            "role": "assistant",
+            "content": "**BB Turismo - Cartão Itapevi Integração** · Código 15566 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+                "benefit_code": "15566",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15566",
+                  "name": "BB Turismo - Cartão Itapevi Integração",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+                "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+                "chunk": 4,
+                "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.798425,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:09:55.175645Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed",
+        "deadline": 10390.723078812,
+        "question": "Qual o prazo da segunda via do Itapevi Integração?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed",
+        "deadline": 10390.723078812,
+        "question": "Qual o prazo da segunda via do Itapevi Integração?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15566"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+            "benefit_code": "15566",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15566",
+              "name": "BB Turismo - Cartão Itapevi Integração",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+            "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+            "chunk": 4,
+            "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.798425,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea",
+            "benefit_code": "15566",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15566",
+              "name": "BB Turismo - Cartão Itapevi Integração",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15566 · BB Turismo - Cartão Itapevi Integração",
+            "sha256": "378ea4ae4359dc5fc65a8311279c96c175cd37be81bab3ee0485daadc043e1bb",
+            "chunk": 4,
+            "excerpt": "UF: SP\nCódigo do benefício: 15566\nCartão / operadora: BB Turismo - Cartão Itapevi Integração\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.798425,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Qual o prazo da segunda via do Itapevi Integração?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**BB Turismo - Cartão Itapevi Integração** · Código 15566 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 960
+    }
+  ],
+  "conversation_id": "82947f56-4251-40a2-b123-4cc34950f2ed",
+  "duration_ms": 965,
+  "completed_at": "2026-10-21T14:09:56.127551+00:00"
+}

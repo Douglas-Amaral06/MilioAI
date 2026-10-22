@@ -1,0 +1,213 @@
+{
+  "test_id": "NEG-02",
+  "input": {
+    "test_id": "NEG-02",
+    "question": "Qual é o saldo do meu cartão hoje?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T14:11:48.172926+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "d35acf10-93d0-4e39-86f4-b231db93cf7b",
+        "content": "Qual é o saldo do meu cartão hoje?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 12,
+          "outcome": "no_evidence",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Qual é o saldo do meu cartão hoje?"
+              ]
+            ],
+            "deadline": 10503.740257
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "personal_unavailable",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+            "sources": [],
+            "outcome": "no_evidence",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "personal_unavailable"
+            },
+            "domain": "vale_transporte"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "3a77b8a2-9700-4ccd-ae15-681137357f15",
+            "role": "user",
+            "content": "Qual é o saldo do meu cartão hoje?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:11:48.180679Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "52049246-6b22-4c33-b34f-41b1eecb3a8a",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:11:48.180680Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "52049246-6b22-4c33-b34f-41b1eecb3a8a",
+            "role": "assistant",
+            "content": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:11:48.180680Z",
+            "outcome": "no_evidence",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed",
+        "deadline": 10503.740257,
+        "question": "Qual é o saldo do meu cartão hoje?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed",
+        "deadline": 10503.740257,
+        "question": "Qual é o saldo do meu cartão hoje?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "personal_unavailable"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Qual é o saldo do meu cartão hoje?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "personal_unavailable",
+        "answer": "Não tenho acesso ao seu saldo atual, salário líquido ou dados pessoais de pagamento. Consulte o canal responsável pelo seu benefício ou pagamento.",
+        "outcome": "no_evidence",
+        "domain": "vale_transporte"
+      },
+      "duration_ms": 21
+    }
+  ],
+  "conversation_id": "70fe993f-ceb8-44fe-ba9c-2320a7bc78ed",
+  "duration_ms": 24,
+  "completed_at": "2026-10-21T14:11:48.196633+00:00"
+}

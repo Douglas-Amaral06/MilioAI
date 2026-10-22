@@ -1,0 +1,192 @@
+{
+  "test_id": "NEG-07",
+  "input": {
+    "test_id": "NEG-07",
+    "question": "Mano, perdi meu bilhete. Como tiro outro?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T14:19:04.271943+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "bb86b51e-c800-4cfa-8e95-2d68d4225cd1",
+        "content": "Mano, perdi meu bilhete. Como tiro outro?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 4
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 21,
+          "outcome": "card_selection",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Mano, perdi meu bilhete. Como tiro outro?"
+              ]
+            ],
+            "deadline": 10940.088495328
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "Claro! Qual cartão de transporte você utiliza?",
+            "sources": [],
+            "outcome": "card_selection",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "selection"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "61757028-a53c-42c5-b5fa-4383b7b8a419",
+            "role": "user",
+            "content": "Mano, perdi meu bilhete. Como tiro outro?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:04.280086Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "528c6926-e6e6-430c-b719-983cd68df9d6",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:04.280087Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Claro! Qual cartão de transporte você utiliza?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "528c6926-e6e6-430c-b719-983cd68df9d6",
+            "role": "assistant",
+            "content": "Claro! Qual cartão de transporte você utiliza?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:04.280087Z",
+            "outcome": "card_selection",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "a504a3f3-0fd2-4b92-bced-2b7f1cb7b197",
+        "deadline": 10940.088495328,
+        "question": "Mano, perdi meu bilhete. Como tiro outro?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "a504a3f3-0fd2-4b92-bced-2b7f1cb7b197",
+        "deadline": 10940.088495328,
+        "question": "Mano, perdi meu bilhete. Como tiro outro?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "selection"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Mano, perdi meu bilhete. Como tiro outro?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "Claro! Qual cartão de transporte você utiliza?",
+        "outcome": "card_selection"
+      },
+      "duration_ms": 30
+    }
+  ],
+  "conversation_id": "a504a3f3-0fd2-4b92-bced-2b7f1cb7b197",
+  "duration_ms": 34,
+  "completed_at": "2026-10-21T14:19:04.306094+00:00"
+}

@@ -1,0 +1,213 @@
+{
+  "test_id": "VT-15512",
+  "input": {
+    "test_id": "VT-15512",
+    "question": "Onde faço bloqueio e solicitação do Municipal Jandira?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:09.460336+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "e8d045e1-c0ef-4893-b589-94fd0bf10db1",
+        "content": "Onde faço bloqueio e solicitação do Municipal Jandira?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 223
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 233,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Onde faço bloqueio e solicitação do Municipal Jandira?"
+              ]
+            ],
+            "deadline": 6204.672340311
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "ambiguous_document",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "ambiguous_document"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "9ff667cf-0b51-4580-9786-7c3df6afa763",
+            "role": "user",
+            "content": "Onde faço bloqueio e solicitação do Municipal Jandira?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:09.469854Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "c81fbd80-4ccd-4dfd-aff9-e391de4c24e6",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:09.469855Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "c81fbd80-4ccd-4dfd-aff9-e391de4c24e6",
+            "role": "assistant",
+            "content": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:09.469855Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "a23121ee-3806-4422-9e60-7f54b366caa9",
+        "deadline": 6204.672340311,
+        "question": "Onde faço bloqueio e solicitação do Municipal Jandira?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "a23121ee-3806-4422-9e60-7f54b366caa9",
+        "deadline": 6204.672340311,
+        "question": "Onde faço bloqueio e solicitação do Municipal Jandira?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "ambiguous_document"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Onde faço bloqueio e solicitação do Municipal Jandira?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "ambiguous_document",
+        "answer": "Qual documento você precisa entregar? É uma folha ponto, documento escolar ou atestado referente ao curso ou ao trabalho?",
+        "outcome": "operational"
+      },
+      "duration_ms": 243
+    }
+  ],
+  "conversation_id": "a23121ee-3806-4422-9e60-7f54b366caa9",
+  "duration_ms": 246,
+  "completed_at": "2026-10-21T13:00:09.706405+00:00"
+}

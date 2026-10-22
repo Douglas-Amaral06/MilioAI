@@ -1,0 +1,211 @@
+{
+  "test_id": "VT-15504",
+  "input": {
+    "test_id": "VT-15504",
+    "question": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:22.903269+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "8a5a8bb5-9cbb-4e2a-a53b-8f7cc6ab302c",
+        "content": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 255
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 268,
+          "outcome": "card_selection",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Como pago a segunda via Onpag Ferraz de Vasconcelos?"
+              ]
+            ],
+            "deadline": 6218.113151729
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "transport_replacement",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "Claro! Qual cartão de transporte você utiliza?",
+            "sources": [],
+            "outcome": "card_selection",
+            "support_state": {
+              "vt_stage": "selection",
+              "stage": "idle"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "936e7c37-0e6b-475e-9a4f-4996cc73856c",
+            "role": "user",
+            "content": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:22.910785Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "5cdf402c-cc1f-4b31-893a-96f37080045d",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:22.910786Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Claro! Qual cartão de transporte você utiliza?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "5cdf402c-cc1f-4b31-893a-96f37080045d",
+            "role": "assistant",
+            "content": "Claro! Qual cartão de transporte você utiliza?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:22.910786Z",
+            "outcome": "card_selection",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "165488ff-4d4c-4b95-8c9e-78dbe7b72266",
+        "deadline": 6218.113151729,
+        "question": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "165488ff-4d4c-4b95-8c9e-78dbe7b72266",
+        "deadline": 6218.113151729,
+        "question": "Como pago a segunda via Onpag Ferraz de Vasconcelos?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "selection",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Como pago a segunda via Onpag Ferraz de Vasconcelos?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "transport_replacement",
+        "answer": "Claro! Qual cartão de transporte você utiliza?",
+        "outcome": "card_selection"
+      },
+      "duration_ms": 276
+    }
+  ],
+  "conversation_id": "165488ff-4d4c-4b95-8c9e-78dbe7b72266",
+  "duration_ms": 280,
+  "completed_at": "2026-10-21T13:00:23.182780+00:00"
+}

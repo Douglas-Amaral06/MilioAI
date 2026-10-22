@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-15511",
+  "input": {
+    "test_id": "VT-15511",
+    "question": "Quem paga a segunda via do Municipal Itapevi?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:17:15.279577+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "37c5bd2e-e368-44c2-92da-8e47d2a3c9f8",
+        "content": "Quem paga a segunda via do Municipal Itapevi?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. BB Turismo - Cartão Municipal Itapevi. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15511",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+              "benefit_code": "15511",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15511",
+                "name": "BB Turismo - Cartão Municipal Itapevi",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+              "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+              "chunk": 6,
+              "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.791302,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 33
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 830
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 844,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem paga a segunda via do Municipal Itapevi?"
+              ]
+            ],
+            "deadline": 10831.004779224
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**BB Turismo - Cartão Municipal Itapevi** · Código 15511 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+                "benefit_code": "15511",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15511",
+                  "name": "BB Turismo - Cartão Municipal Itapevi",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+                "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+                "chunk": 6,
+                "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.791302,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+                "benefit_code": "15511",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15511",
+                  "name": "BB Turismo - Cartão Municipal Itapevi",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+                "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+                "chunk": 6,
+                "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.791302,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15511"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "d3ddf5cd-33ec-43a8-9d86-6be487dcb8f7",
+            "role": "user",
+            "content": "Quem paga a segunda via do Municipal Itapevi?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:15.287585Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "7ae2e843-b1cd-4766-a457-9436d24a4e7e",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:17:15.287586Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**BB Turismo - Cartão Municipal Itapevi** · Código 15511 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+              "benefit_code": "15511",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15511",
+                "name": "BB Turismo - Cartão Municipal Itapevi",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+              "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+              "chunk": 6,
+              "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.791302,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "7ae2e843-b1cd-4766-a457-9436d24a4e7e",
+            "role": "assistant",
+            "content": "**BB Turismo - Cartão Municipal Itapevi** · Código 15511 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+                "benefit_code": "15511",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15511",
+                  "name": "BB Turismo - Cartão Municipal Itapevi",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+                "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+                "chunk": 6,
+                "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.791302,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:17:15.287586Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "9e5a9eda-5b78-4736-a6a5-8d983a7ccc98",
+        "deadline": 10831.004779224,
+        "question": "Quem paga a segunda via do Municipal Itapevi?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "9e5a9eda-5b78-4736-a6a5-8d983a7ccc98",
+        "deadline": 10831.004779224,
+        "question": "Quem paga a segunda via do Municipal Itapevi?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15511"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+            "benefit_code": "15511",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15511",
+              "name": "BB Turismo - Cartão Municipal Itapevi",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+            "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+            "chunk": 6,
+            "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.791302,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "0da671c8-c15e-42a2-8cd9-e041f06b35e0",
+            "benefit_code": "15511",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15511",
+              "name": "BB Turismo - Cartão Municipal Itapevi",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15511 · BB Turismo - Cartão Municipal Itapevi",
+            "sha256": "e8ea4e2dd4e976489d884125db770b062261c78a1192a9d7db6abdce7e190ec8",
+            "chunk": 6,
+            "excerpt": "UF: SP\nCódigo do benefício: 15511\nCartão / operadora: BB Turismo - Cartão Municipal Itapevi\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 53,00\nProcedimento integral: O bloqueio e solicitação de 2ªvia pode ser feito pelo site http://www.benfacil.com/ ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.791302,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem paga a segunda via do Municipal Itapevi?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**BB Turismo - Cartão Municipal Itapevi** · Código 15511 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O bloqueio e solicitação de 2ªvia pode ser feito pelo site [http://www.benfacil.com/](http://www.benfacil.com/) ou em um posto de atendimento, a retirada poderá ser feita após 3 dias úteis [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 857
+    }
+  ],
+  "conversation_id": "9e5a9eda-5b78-4736-a6a5-8d983a7ccc98",
+  "duration_ms": 861,
+  "completed_at": "2026-10-21T14:17:16.140527+00:00"
+}

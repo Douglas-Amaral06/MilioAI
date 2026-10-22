@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-15506",
+  "input": {
+    "test_id": "VT-15506",
+    "question": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:06:42.516386+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "684a8a0b-a924-4713-9b3c-bca510ef5a37",
+        "content": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Onpag - Cartão Suzano Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15506",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+              "benefit_code": "15506",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15506",
+                "name": "Onpag - Cartão Suzano Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou Pix",
+                "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15506 · Onpag - Cartão Suzano Municipal",
+              "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+              "chunk": 19,
+              "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.811611,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 11306
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 34
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 14710
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 14837,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quem solicita qual documento apresenta no Onpag Suzano?"
+              ]
+            ],
+            "deadline": 13799.612549704
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Onpag - Cartão Suzano Municipal** · Código 15506 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+                "benefit_code": "15506",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15506",
+                  "name": "Onpag - Cartão Suzano Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou Pix",
+                  "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15506 · Onpag - Cartão Suzano Municipal",
+                "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+                "chunk": 19,
+                "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.811611,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+                "benefit_code": "15506",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15506",
+                  "name": "Onpag - Cartão Suzano Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou Pix",
+                  "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15506 · Onpag - Cartão Suzano Municipal",
+                "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+                "chunk": 19,
+                "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.811611,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15506"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "98091edf-fc82-4639-8107-17efd2869b45",
+            "role": "user",
+            "content": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:06:42.624156Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "20ecafdf-b413-4731-a683-b7cbadcdef5a",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:06:42.624157Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Onpag - Cartão Suzano Municipal** · Código 15506 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+              "benefit_code": "15506",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 53,00",
+                "code": "15506",
+                "name": "Onpag - Cartão Suzano Municipal",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou Pix",
+                "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15506 · Onpag - Cartão Suzano Municipal",
+              "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+              "chunk": 19,
+              "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.811611,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "20ecafdf-b413-4731-a683-b7cbadcdef5a",
+            "role": "assistant",
+            "content": "**Onpag - Cartão Suzano Municipal** · Código 15506 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+                "benefit_code": "15506",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 53,00",
+                  "code": "15506",
+                  "name": "Onpag - Cartão Suzano Municipal",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou Pix",
+                  "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15506 · Onpag - Cartão Suzano Municipal",
+                "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+                "chunk": 19,
+                "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.811611,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:06:42.624157Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "4d287359-5cec-4a62-a8c2-80bd65e69055",
+        "deadline": 13799.612549704,
+        "question": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "4d287359-5cec-4a62-a8c2-80bd65e69055",
+        "deadline": 13799.612549704,
+        "question": "Quem solicita e qual documento apresenta no Onpag Suzano?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15506"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+            "benefit_code": "15506",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15506",
+              "name": "Onpag - Cartão Suzano Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou Pix",
+              "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15506 · Onpag - Cartão Suzano Municipal",
+            "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+            "chunk": 19,
+            "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.811611,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "dc376055-0b0e-4780-bcec-24f44b394e2b",
+            "benefit_code": "15506",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 53,00",
+              "code": "15506",
+              "name": "Onpag - Cartão Suzano Municipal",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou Pix",
+              "procedure": "A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15506 · Onpag - Cartão Suzano Municipal",
+            "sha256": "6a3e0bb579f5febfd8d5f2d2d9555e9ab223a4a4046e29b8327805c25dbb1316",
+            "chunk": 19,
+            "excerpt": "UF: SP\nCódigo do benefício: 15506\nCartão / operadora: Onpag - Cartão Suzano Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou Pix\nTaxa: R$ 53,00\nProcedimento integral: A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.811611,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quem solicita qual documento apresenta no Onpag Suzano?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Onpag - Cartão Suzano Municipal** · Código 15506 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 53,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou Pix [fonte:F1]\n\n**Procedimento:** A 2ª via do cartão deve ser solicitada pelo titular diretamente na loja, apresentando documento com foto. A emissão é imediata [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 14957
+    }
+  ],
+  "conversation_id": "4d287359-5cec-4a62-a8c2-80bd65e69055",
+  "duration_ms": 14992,
+  "completed_at": "2026-10-21T15:06:57.508537+00:00"
+}

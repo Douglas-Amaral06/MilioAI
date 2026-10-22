@@ -1,0 +1,212 @@
+{
+  "test_id": "OP-02",
+  "input": {
+    "test_id": "OP-02",
+    "question": "Onde consulto o envio de atestado referente ao curso?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "operational-services"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:01:29.101756+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "40fa6f30-62bb-41ba-b84e-ad50351e93fc",
+        "content": "Onde consulto o envio de atestado referente ao curso?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 225
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 234,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "atestados",
+                "Onde consulto o envio de atestado referente ao curso?"
+              ]
+            ],
+            "deadline": 6284.319668747
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_certificate",
+            "support_state": {
+              "vt_stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar o serviço de envio de atestados referentes a faltas no curso.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "detected_intent": "course_certificate",
+              "selected_service": "course_certificate"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "fda5820a-3c09-4ff8-a811-030ca2d23c93",
+            "role": "user",
+            "content": "Onde consulto o envio de atestado referente ao curso?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:29.110428Z",
+            "outcome": null,
+            "topic_id": "atestados",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "49593497-255d-461b-8cb4-a1e417891ad0",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:29.110429Z",
+            "outcome": null,
+            "topic_id": "atestados",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar o serviço de envio de atestados referentes a faltas no curso.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "49593497-255d-461b-8cb4-a1e417891ad0",
+            "role": "assistant",
+            "content": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar o serviço de envio de atestados referentes a faltas no curso.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:29.110429Z",
+            "outcome": "operational",
+            "topic_id": "atestados",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "68927978-8ea0-47ab-ba0e-f7c5b1f0f66b",
+        "deadline": 6284.319668747,
+        "question": "Onde consulto o envio de atestado referente ao curso?",
+        "topic_id": "atestados",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "68927978-8ea0-47ab-ba0e-f7c5b1f0f66b",
+        "deadline": 6284.319668747,
+        "question": "Onde consulto o envio de atestado referente ao curso?",
+        "topic_id": "atestados",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "detected_intent": "course_certificate",
+          "selected_service": "course_certificate"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "atestados",
+            "Onde consulto o envio de atestado referente ao curso?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "course_certificate",
+        "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para consultar o serviço de envio de atestados referentes a faltas no curso.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+        "outcome": "operational"
+      },
+      "duration_ms": 242
+    }
+  ],
+  "conversation_id": "68927978-8ea0-47ab-ba0e-f7c5b1f0f66b",
+  "duration_ms": 246,
+  "completed_at": "2026-10-21T13:01:29.347915+00:00"
+}

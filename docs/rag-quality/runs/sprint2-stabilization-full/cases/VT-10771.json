@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-10771",
+  "input": {
+    "test_id": "VT-10771",
+    "question": "Qual documento levo para a segunda via do Mov Avaré?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:05:55.060776+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "b3fb87c0-c2dd-4772-ad30-7525e81a62dd",
+        "content": "Qual documento levo para a segunda via do Mov Avaré?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Mov - Avaré - Cartão Municipal Avaré. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "10771",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+              "benefit_code": "10771",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 30,00",
+                "code": "10771",
+                "name": "Mov - Avaré - Cartão Municipal Avaré",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+              "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+              "chunk": 16,
+              "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.810438,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 12517
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 32
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 14993
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 15123,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Qual documento levo para a segunda via do Mov Avaré?"
+              ]
+            ],
+            "deadline": 13752.047396608
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Mov - Avaré - Cartão Municipal Avaré** · Código 10771 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 30,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+                "benefit_code": "10771",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 30,00",
+                  "code": "10771",
+                  "name": "Mov - Avaré - Cartão Municipal Avaré",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+                "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+                "chunk": 16,
+                "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.810438,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+                "benefit_code": "10771",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 30,00",
+                  "code": "10771",
+                  "name": "Mov - Avaré - Cartão Municipal Avaré",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+                "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+                "chunk": 16,
+                "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.810438,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "10771"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "26fda112-f3a2-4edc-966a-97d03867cb4f",
+            "role": "user",
+            "content": "Qual documento levo para a segunda via do Mov Avaré?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:05:55.133795Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "0242a3e9-39a1-48cd-bf01-6c41ca476f17",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:05:55.133796Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Mov - Avaré - Cartão Municipal Avaré** · Código 10771 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 30,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+              "benefit_code": "10771",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 30,00",
+                "code": "10771",
+                "name": "Mov - Avaré - Cartão Municipal Avaré",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+              "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+              "chunk": 16,
+              "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.810438,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "0242a3e9-39a1-48cd-bf01-6c41ca476f17",
+            "role": "assistant",
+            "content": "**Mov - Avaré - Cartão Municipal Avaré** · Código 10771 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 30,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+                "benefit_code": "10771",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 30,00",
+                  "code": "10771",
+                  "name": "Mov - Avaré - Cartão Municipal Avaré",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+                "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+                "chunk": 16,
+                "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.810438,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:05:55.133796Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "feed4fd2-1db6-441f-ad1e-1ab224f6ead4",
+        "deadline": 13752.047396608,
+        "question": "Qual documento levo para a segunda via do Mov Avaré?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "feed4fd2-1db6-441f-ad1e-1ab224f6ead4",
+        "deadline": 13752.047396608,
+        "question": "Qual documento levo para a segunda via do Mov Avaré?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "10771"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+            "benefit_code": "10771",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 30,00",
+              "code": "10771",
+              "name": "Mov - Avaré - Cartão Municipal Avaré",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+            "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+            "chunk": 16,
+            "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.810438,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "a5268592-032b-4fd1-9cc3-bfebf8ece07e",
+            "benefit_code": "10771",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 30,00",
+              "code": "10771",
+              "name": "Mov - Avaré - Cartão Municipal Avaré",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "10771 · Mov - Avaré - Cartão Municipal Avaré",
+            "sha256": "3f02c8f3f61cd96e6669857f43abf7847269badfae97b0860275ffbe08b5238b",
+            "chunk": 16,
+            "excerpt": "UF: SP\nCódigo do benefício: 10771\nCartão / operadora: Mov - Avaré - Cartão Municipal Avaré\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 30,00\nProcedimento integral: O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.810438,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Qual documento levo para a segunda via do Mov Avaré?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Mov - Avaré - Cartão Municipal Avaré** · Código 10771 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 30,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O proprietário do cartão deve comparecer pessoalmente munido do RG original e solicitar a 2ª via no guichê da operadora. A 2ª via é emitida na hora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 15203
+    }
+  ],
+  "conversation_id": "feed4fd2-1db6-441f-ad1e-1ab224f6ead4",
+  "duration_ms": 15229,
+  "completed_at": "2026-10-21T15:06:10.258308+00:00"
+}

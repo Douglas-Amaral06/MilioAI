@@ -1,0 +1,221 @@
+{
+  "priority": 3,
+  "test_id": "FP-06",
+  "domain": "folha_ponto",
+  "question": "Como diferencio falta e falta justificada?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "Você deve diferenciar falta e falta justificada conforme o preenchimento da folha ponto: indicar \"Falta\" para ausência sem justificativa e \"Falta justificada\" quando houver documento comprovativo da justificativa [fonte:F1].",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "FP-06",
+    "question": "Como diferencio falta e falta justificada?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "answer_delivered": "Você deve indicar \"Falta\" para ausência sem justificativa e \"Falta justificada\" quando houver documento comprovativo, conforme orientação da Folha Ponto [fonte:F1].",
+  "observed_behavior": "answer",
+  "expected_facts": [
+    {
+      "criterion_id": "FP-06-fact-1",
+      "description": "Falta justificada exige documento segundo o material.",
+      "match": {
+        "all_of": [
+          [
+            "falta justificada"
+          ],
+          [
+            "documento"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-absence"
+      ]
+    },
+    {
+      "criterion_id": "FP-06-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-absence"
+      ]
+    }
+  ],
+  "forbidden_claims": [],
+  "historical_expected_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "3.",
+      "page": 1,
+      "benefit_code": null
+    }
+  ],
+  "retrieval_calls": [
+    {
+      "query": "Falta no Trabalho: Como diferencio falta e falta justificada?",
+      "scopes": [
+        "local_review"
+      ],
+      "domain": "rh_frequency",
+      "benefit_code": null,
+      "app_env_filter": "development",
+      "version_filter": "folha-ponto-local-v1",
+      "chunks": [
+        {
+          "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "3. Como preencher corretamente",
+          "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+          "chunk": 3,
+          "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.409556,
+          "status": "approved"
+        },
+        {
+          "id": "eb580d29-dca6-48e3-aae5-e42e8583d2c8",
+          "benefit_code": null,
+          "attributes": {},
+          "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+          "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+          "version": "folha-ponto-local-v1",
+          "page": 1,
+          "section": "1. O que é a Folha Ponto?",
+          "sha256": "9ff104c5a41bfdab79aceee98ed2c4003543930f47f8d3c18d1f76d4b83ed91a",
+          "chunk": 1,
+          "excerpt": "1.\nO que é a Folha Ponto?\nA Folha Ponto é o documento oficial que registra a frequência mensal do Jovem\nAprendiz nas atividades práticas e teóricas.\nEla é utilizada para:\n• Apuração de salário\n• Pagamento de benefícios (VT)\n• Verificação de faltas e descontos\n• Controle legal do contrato de aprendizagem\nO não envio ou envio incorreto impacta diretamente o pagamento do aprendiz.",
+          "is_test": false,
+          "validation_only": true,
+          "score": 0.313052,
+          "status": "approved"
+        }
+      ],
+      "duration_ms": 14360
+    }
+  ],
+  "actual_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "folha-ponto-local-v1",
+      "section_or_row": "3. Como preencher corretamente",
+      "page": 1,
+      "benefit_code": null,
+      "chunk_id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+      "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+      "document_hash": "3de571b6232dcc6130db18fe2b5700c2b98eefc12219595706a66e11b69b115f",
+      "chunk_hash": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287"
+    }
+  ],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "vt_stage": "idle"
+  },
+  "automatic_observations": {
+    "test_id": "FP-06",
+    "domain": "folha_ponto",
+    "automatic_status": "inconclusive_checks",
+    "final_status": "inconclusivo",
+    "reasons": [],
+    "review_alerts": [],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": true,
+      "recall_at_3": 1.0,
+      "reciprocal_rank_at_3": 1.0
+    },
+    "citation_location_completeness": 1.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.5,
+    "forbidden_lexical_alerts": [],
+    "behavior": "answer",
+    "behavior_match": true,
+    "context_match": null,
+    "card_match": null,
+    "question_duration_ms": 22609,
+    "total_case_duration_ms": 22637,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ]
+}

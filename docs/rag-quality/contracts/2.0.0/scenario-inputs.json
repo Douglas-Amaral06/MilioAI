@@ -1,0 +1,39 @@
+{
+  "FP-05": {
+    "topic_id": "folha_ponto"
+  },
+  "FP-11": {
+    "topic_id": "folha_ponto"
+  },
+  "FP-13": {
+    "topic_id": "folha_ponto"
+  },
+  "FP-14": {
+    "topic_id": "folha_ponto"
+  },
+  "FP-15": {
+    "topic_id": "folha_ponto"
+  },
+  "FP-16": {
+    "topic_id": "folha_ponto"
+  },
+  "OP-03": {
+    "setup_turns": [
+      {
+        "topic_id": "falta_curso",
+        "question_id": "falta_curso.instrutor"
+      },
+      {
+        "action": {
+          "kind": "instructor_known"
+        }
+      },
+      {
+        "action": {
+          "kind": "instructor_select",
+          "instructor_id": "instructor-11"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "test_id": "NEG-08",
+  "input": {
+    "test_id": "NEG-08",
+    "question": "É o cartão BB Turismo, qual taxa e prazo?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T14:19:04.349251+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "6786522d-a839-48a8-af58-9a337cf305a2",
+        "content": "É o cartão BB Turismo, qual taxa e prazo?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 9,
+          "outcome": "card_selection",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "É o cartão BB Turismo, qual taxa e prazo?"
+              ]
+            ],
+            "deadline": 10940.16422629
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "Claro! Qual cartão de transporte você utiliza?",
+            "sources": [],
+            "outcome": "card_selection",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "selection"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "8a6eb1df-5a65-4499-ad8d-caec919e6174",
+            "role": "user",
+            "content": "É o cartão BB Turismo, qual taxa e prazo?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:04.357308Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "1477a3d3-6066-436c-921e-c4213399b8cd",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:04.357309Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Claro! Qual cartão de transporte você utiliza?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "1477a3d3-6066-436c-921e-c4213399b8cd",
+            "role": "assistant",
+            "content": "Claro! Qual cartão de transporte você utiliza?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:19:04.357309Z",
+            "outcome": "card_selection",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "ef9145d3-99e7-41a4-a457-e26131711d0d",
+        "deadline": 10940.16422629,
+        "question": "É o cartão BB Turismo, qual taxa e prazo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "ef9145d3-99e7-41a4-a457-e26131711d0d",
+        "deadline": 10940.16422629,
+        "question": "É o cartão BB Turismo, qual taxa e prazo?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "selection"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "É o cartão BB Turismo, qual taxa e prazo?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "Claro! Qual cartão de transporte você utiliza?",
+        "outcome": "card_selection"
+      },
+      "duration_ms": 17
+    }
+  ],
+  "conversation_id": "ef9145d3-99e7-41a4-a457-e26131711d0d",
+  "duration_ms": 21,
+  "completed_at": "2026-10-21T14:19:04.369958+00:00"
+}

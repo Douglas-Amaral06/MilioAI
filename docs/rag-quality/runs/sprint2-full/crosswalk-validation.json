@@ -1,0 +1,558 @@
+{
+  "method": "Exact registered runtime version + domain + page/section/card inventory; VT additionally compared field-by-field to the hash-verified local extraction. No title-only mapping. Version equivalence and institutional provenance are not asserted.",
+  "reviewed_rows_sha256": "bce2447afcb9eaa9d6fa1b911c72939fc6569f8975e2c8d33a6a3622af554648",
+  "documents": [
+    {
+      "runtime_document_id": "129a0aa2-dfc4-463d-a4d8-f678568f20ab",
+      "alias": "folha-ponto",
+      "runtime_version": "folha-ponto-local-v1",
+      "dataset_version": "snapshot-local-v1",
+      "verified_blob_hash_matches_stored": true,
+      "locations": [
+        {
+          "evidence_id": "fp-purpose",
+          "runtime_chunk_ids": [
+            "89124cde-2425-426d-9cfc-9b90e0e4d6f2"
+          ],
+          "page": 1,
+          "section_or_row": "1.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-deadline",
+          "runtime_chunk_ids": [
+            "6318bd24-ef7e-427c-8b5f-2c745ce187a5"
+          ],
+          "page": 1,
+          "section_or_row": "2.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-delay",
+          "runtime_chunk_ids": [
+            "6318bd24-ef7e-427c-8b5f-2c745ce187a5"
+          ],
+          "page": 1,
+          "section_or_row": "2.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-hours",
+          "runtime_chunk_ids": [
+            "063547d8-23c4-42e4-9f6c-fc84c5814aa1"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-all-days",
+          "runtime_chunk_ids": [
+            "063547d8-23c4-42e4-9f6c-fc84c5814aa1"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-absence",
+          "runtime_chunk_ids": [
+            "063547d8-23c4-42e4-9f6c-fc84c5814aa1"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-course",
+          "runtime_chunk_ids": [
+            "063547d8-23c4-42e4-9f6c-fc84c5814aa1"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-prohibited",
+          "runtime_chunk_ids": [
+            "629b4e38-5209-44c9-95ed-55f02f20feef"
+          ],
+          "page": 2,
+          "section_or_row": "4.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-signatures",
+          "runtime_chunk_ids": [
+            "cf73f639-4597-4adb-b538-bd848a6386c4"
+          ],
+          "page": 2,
+          "section_or_row": "5.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-send",
+          "runtime_chunk_ids": [
+            "1af70102-7aaf-4557-b0c3-db2b3f1dd414"
+          ],
+          "page": 2,
+          "section_or_row": "6.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-responsibility",
+          "runtime_chunk_ids": [
+            "13ac6cfa-4c7b-44d4-87cb-c33ff47ae474"
+          ],
+          "page": 2,
+          "section_or_row": "7.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-questions",
+          "runtime_chunk_ids": [
+            "4ea277d1-b70f-4756-862f-eb94e03ca385"
+          ],
+          "page": 2,
+          "section_or_row": "8.",
+          "benefit_code": null
+        }
+      ],
+      "vt_33_extracted_rows_exact_match": null,
+      "field_differences": [],
+      "snapshot_version_equivalence": "not_established",
+      "institutional_approval": "not_established"
+    },
+    {
+      "runtime_document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+      "alias": "vt-segunda-via",
+      "runtime_version": "vt-segunda-via-local-v1",
+      "dataset_version": "snapshot-local-v1",
+      "verified_blob_hash_matches_stored": true,
+      "locations": [
+        {
+          "evidence_id": "vt-10398",
+          "runtime_chunk_ids": [
+            "6633c388-cc8f-4b24-885c-c93f52641464"
+          ],
+          "page": 1,
+          "section_or_row": "10398",
+          "benefit_code": "10398"
+        },
+        {
+          "evidence_id": "vt-10420",
+          "runtime_chunk_ids": [
+            "f00a93ae-d458-4abb-8522-67d2866eda2e"
+          ],
+          "page": 1,
+          "section_or_row": "10420",
+          "benefit_code": "10420"
+        },
+        {
+          "evidence_id": "vt-164",
+          "runtime_chunk_ids": [
+            "59c7c91f-449b-4cb0-918c-22a76fa21395"
+          ],
+          "page": 1,
+          "section_or_row": "164",
+          "benefit_code": "164"
+        },
+        {
+          "evidence_id": "vt-15515",
+          "runtime_chunk_ids": [
+            "eef76c2e-c63e-470c-a00c-50c2f683cb7e"
+          ],
+          "page": 1,
+          "section_or_row": "15515",
+          "benefit_code": "15515"
+        },
+        {
+          "evidence_id": "vt-15566",
+          "runtime_chunk_ids": [
+            "d8da6aa6-65f5-41e9-b8f7-8868bbe020ea"
+          ],
+          "page": 1,
+          "section_or_row": "15566",
+          "benefit_code": "15566"
+        },
+        {
+          "evidence_id": "vt-15510",
+          "runtime_chunk_ids": [
+            "d3f04914-173f-48a0-a8c1-af87c37f109c"
+          ],
+          "page": 1,
+          "section_or_row": "15510",
+          "benefit_code": "15510"
+        },
+        {
+          "evidence_id": "vt-15511",
+          "runtime_chunk_ids": [
+            "0da671c8-c15e-42a2-8cd9-e041f06b35e0"
+          ],
+          "page": 1,
+          "section_or_row": "15511",
+          "benefit_code": "15511"
+        },
+        {
+          "evidence_id": "vt-15512",
+          "runtime_chunk_ids": [
+            "4b2b692d-87c5-4a83-8249-df190a204fc0"
+          ],
+          "page": 1,
+          "section_or_row": "15512",
+          "benefit_code": "15512"
+        },
+        {
+          "evidence_id": "vt-15780",
+          "runtime_chunk_ids": [
+            "60d69991-80cb-41a8-9921-dc7076824a84"
+          ],
+          "page": 1,
+          "section_or_row": "15780",
+          "benefit_code": "15780"
+        },
+        {
+          "evidence_id": "vt-15779",
+          "runtime_chunk_ids": [
+            "2ca272c1-5afc-4525-9d63-50e300f91678"
+          ],
+          "page": 1,
+          "section_or_row": "15779",
+          "benefit_code": "15779"
+        },
+        {
+          "evidence_id": "vt-7099",
+          "runtime_chunk_ids": [
+            "57b81d0e-003c-4052-873a-cb97461a8299"
+          ],
+          "page": 1,
+          "section_or_row": "7099",
+          "benefit_code": "7099"
+        },
+        {
+          "evidence_id": "vt-216",
+          "runtime_chunk_ids": [
+            "ea0d4a9f-d145-4d7d-9ac7-ae7051ad116c"
+          ],
+          "page": 1,
+          "section_or_row": "216",
+          "benefit_code": "216"
+        },
+        {
+          "evidence_id": "vt-2337",
+          "runtime_chunk_ids": [
+            "b575da20-2359-47ae-8cce-4587caf01067"
+          ],
+          "page": 1,
+          "section_or_row": "2337",
+          "benefit_code": "2337"
+        },
+        {
+          "evidence_id": "vt-5631",
+          "runtime_chunk_ids": [
+            "9bce5475-55f3-4bf1-9f4b-8930eb0e3ef1"
+          ],
+          "page": 1,
+          "section_or_row": "5631",
+          "benefit_code": "5631"
+        },
+        {
+          "evidence_id": "vt-182",
+          "runtime_chunk_ids": [
+            "5bcac667-53d3-4baf-a522-008dbd99ceac"
+          ],
+          "page": 1,
+          "section_or_row": "182",
+          "benefit_code": "182"
+        },
+        {
+          "evidence_id": "vt-15508",
+          "runtime_chunk_ids": [
+            "56edca0c-8c1e-4c99-8d38-68fab55963a5"
+          ],
+          "page": 1,
+          "section_or_row": "15508",
+          "benefit_code": "15508"
+        },
+        {
+          "evidence_id": "vt-10771",
+          "runtime_chunk_ids": [
+            "a5268592-032b-4fd1-9cc3-bfebf8ece07e"
+          ],
+          "page": 1,
+          "section_or_row": "10771",
+          "benefit_code": "10771"
+        },
+        {
+          "evidence_id": "vt-10394",
+          "runtime_chunk_ids": [
+            "3c7400a3-4da8-40d6-9da9-67ac337cb1bd"
+          ],
+          "page": 1,
+          "section_or_row": "10394",
+          "benefit_code": "10394"
+        },
+        {
+          "evidence_id": "vt-15504",
+          "runtime_chunk_ids": [
+            "82886062-1171-42ab-bcfe-d6409eaf864f"
+          ],
+          "page": 1,
+          "section_or_row": "15504",
+          "benefit_code": "15504"
+        },
+        {
+          "evidence_id": "vt-15506",
+          "runtime_chunk_ids": [
+            "dc376055-0b0e-4780-bcec-24f44b394e2b"
+          ],
+          "page": 1,
+          "section_or_row": "15506",
+          "benefit_code": "15506"
+        },
+        {
+          "evidence_id": "vt-3854",
+          "runtime_chunk_ids": [
+            "3b1d02b8-a92d-4843-a414-453f8eda02f6"
+          ],
+          "page": 1,
+          "section_or_row": "3854",
+          "benefit_code": "3854"
+        },
+        {
+          "evidence_id": "vt-3845",
+          "runtime_chunk_ids": [
+            "c0c2a58b-a5a2-48a8-805a-adedc2a9a8ad"
+          ],
+          "page": 1,
+          "section_or_row": "3845",
+          "benefit_code": "3845"
+        },
+        {
+          "evidence_id": "vt-1071",
+          "runtime_chunk_ids": [
+            "98be8f63-d7b4-4974-b203-3a408dcfd8a8"
+          ],
+          "page": 1,
+          "section_or_row": "1071",
+          "benefit_code": "1071"
+        },
+        {
+          "evidence_id": "vt-1892",
+          "runtime_chunk_ids": [
+            "caac4527-ef09-4943-851d-02be7d528396"
+          ],
+          "page": 1,
+          "section_or_row": "1892",
+          "benefit_code": "1892"
+        },
+        {
+          "evidence_id": "vt-503",
+          "runtime_chunk_ids": [
+            "a94d6a09-0eac-48e6-90f8-3ac7f3e70db8"
+          ],
+          "page": 2,
+          "section_or_row": "503",
+          "benefit_code": "503"
+        },
+        {
+          "evidence_id": "vt-89",
+          "runtime_chunk_ids": [
+            "f92226c6-cfff-4904-b41d-32b54ef8fefe"
+          ],
+          "page": 2,
+          "section_or_row": "89",
+          "benefit_code": "89"
+        },
+        {
+          "evidence_id": "vt-9156",
+          "runtime_chunk_ids": [
+            "0b6203d2-3baf-4901-98e1-5fd0f7caac52"
+          ],
+          "page": 2,
+          "section_or_row": "9156",
+          "benefit_code": "9156"
+        },
+        {
+          "evidence_id": "vt-738",
+          "runtime_chunk_ids": [
+            "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737"
+          ],
+          "page": 2,
+          "section_or_row": "738",
+          "benefit_code": "738"
+        },
+        {
+          "evidence_id": "vt-472",
+          "runtime_chunk_ids": [
+            "535efd97-2daf-49c5-b87a-098ab925937d"
+          ],
+          "page": 2,
+          "section_or_row": "472",
+          "benefit_code": "472"
+        },
+        {
+          "evidence_id": "vt-155",
+          "runtime_chunk_ids": [
+            "a68a253f-af72-47b0-9f5c-5e94d3907949"
+          ],
+          "page": 2,
+          "section_or_row": "155",
+          "benefit_code": "155"
+        },
+        {
+          "evidence_id": "vt-200",
+          "runtime_chunk_ids": [
+            "3b3f1fbc-0dfe-4bd2-830a-a70d76e74bc2"
+          ],
+          "page": 2,
+          "section_or_row": "200",
+          "benefit_code": "200"
+        },
+        {
+          "evidence_id": "vt-937",
+          "runtime_chunk_ids": [
+            "d1c1221c-0b08-493b-9c08-0f2ce1d58e4e"
+          ],
+          "page": 2,
+          "section_or_row": "937",
+          "benefit_code": "937"
+        },
+        {
+          "evidence_id": "vt-15723",
+          "runtime_chunk_ids": [
+            "80be3d59-a1a1-4aee-969f-3820903a8549"
+          ],
+          "page": 2,
+          "section_or_row": "15723",
+          "benefit_code": "15723"
+        }
+      ],
+      "vt_33_extracted_rows_exact_match": true,
+      "field_differences": [],
+      "snapshot_version_equivalence": "not_established",
+      "institutional_approval": "not_established"
+    },
+    {
+      "runtime_document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+      "alias": "folha-ponto",
+      "runtime_version": "folha-ponto-local-v1",
+      "dataset_version": "snapshot-local-v1",
+      "verified_blob_hash_matches_stored": true,
+      "locations": [
+        {
+          "evidence_id": "fp-purpose",
+          "runtime_chunk_ids": [
+            "eb580d29-dca6-48e3-aae5-e42e8583d2c8"
+          ],
+          "page": 1,
+          "section_or_row": "1.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-deadline",
+          "runtime_chunk_ids": [
+            "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5"
+          ],
+          "page": 1,
+          "section_or_row": "2.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-delay",
+          "runtime_chunk_ids": [
+            "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5"
+          ],
+          "page": 1,
+          "section_or_row": "2.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-hours",
+          "runtime_chunk_ids": [
+            "ff88ae7f-0aba-407a-bd35-0361bae0de92"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-all-days",
+          "runtime_chunk_ids": [
+            "ff88ae7f-0aba-407a-bd35-0361bae0de92"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-absence",
+          "runtime_chunk_ids": [
+            "ff88ae7f-0aba-407a-bd35-0361bae0de92"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-course",
+          "runtime_chunk_ids": [
+            "ff88ae7f-0aba-407a-bd35-0361bae0de92"
+          ],
+          "page": 1,
+          "section_or_row": "3.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-prohibited",
+          "runtime_chunk_ids": [
+            "acda3c11-ae44-451f-9cbf-32397007d293"
+          ],
+          "page": 2,
+          "section_or_row": "4.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-signatures",
+          "runtime_chunk_ids": [
+            "9952a53b-ea93-4457-a817-8316c0c72208"
+          ],
+          "page": 2,
+          "section_or_row": "5.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-send",
+          "runtime_chunk_ids": [
+            "bd551e64-abb3-4f81-8601-f3941f0b61f7"
+          ],
+          "page": 2,
+          "section_or_row": "6.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-responsibility",
+          "runtime_chunk_ids": [
+            "80199034-1195-4e22-a4b2-b0c5aba97170"
+          ],
+          "page": 2,
+          "section_or_row": "7.",
+          "benefit_code": null
+        },
+        {
+          "evidence_id": "fp-questions",
+          "runtime_chunk_ids": [
+            "6ce755fe-36cc-40e0-af9b-05d0a6a22732"
+          ],
+          "page": 2,
+          "section_or_row": "8.",
+          "benefit_code": null
+        }
+      ],
+      "vt_33_extracted_rows_exact_match": null,
+      "field_differences": [],
+      "snapshot_version_equivalence": "not_established",
+      "institutional_approval": "not_established"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sha256": "4d97772318988d1f1616c8808a0ef47e96e2eb173bc7f204876a8c44f388fc9d",
+  "file": "execution-source.zip",
+  "source_matches_execution_manifest": true,
+  "sprint1_smoke": {
+    "cases": 8,
+    "functional_assertions_passed": true,
+    "semantic_approvals": 0
+  }
+}

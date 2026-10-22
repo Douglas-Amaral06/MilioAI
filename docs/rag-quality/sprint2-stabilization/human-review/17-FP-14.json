@@ -1,0 +1,647 @@
+{
+  "priority": 17,
+  "test_id": "FP-14",
+  "domain": "folha_ponto",
+  "question": "Devo usar qual cor de caneta?",
+  "baseline_run_id": "rag-real-183dfe28d96b",
+  "baseline_answer": "Ainda não tenho informações disponíveis sobre esse assunto.",
+  "baseline_rejected_drafts": [],
+  "new_run_id": "rag-real-b5cacfd7101c",
+  "actual_input": {
+    "test_id": "FP-14",
+    "question": "Devo usar qual cor de caneta?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "answer_delivered": "Ainda não tenho informações disponíveis sobre esse assunto.",
+  "observed_behavior": "fallback",
+  "expected_facts": [
+    {
+      "criterion_id": "FP-14-fact-1",
+      "description": "Caneta azul ou preta.",
+      "match": {
+        "all_of": [
+          [
+            "azul"
+          ],
+          [
+            "preta"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-all-days"
+      ]
+    },
+    {
+      "criterion_id": "FP-14-unverified",
+      "description": "Informar que a vigência/aprovação não foi confirmada.",
+      "match": {
+        "all_of": [
+          [
+            "vigência não confirmada",
+            "vigência não verificada",
+            "pendente de validação",
+            "sem validação institucional",
+            "não validado institucionalmente"
+          ]
+        ]
+      },
+      "evidence_ids": [
+        "fp-all-days"
+      ]
+    }
+  ],
+  "forbidden_claims": [],
+  "historical_expected_citations": [
+    {
+      "document_id": "folha-ponto",
+      "source_version": "snapshot-local-v1",
+      "section_or_row": "3.",
+      "page": 1,
+      "benefit_code": null
+    }
+  ],
+  "retrieval_calls": [],
+  "actual_citations": [],
+  "generation_mode": null,
+  "generated_drafts_not_delivered": [],
+  "support_state": {
+    "vt_stage": "idle",
+    "stage": "idle"
+  },
+  "automatic_observations": {
+    "test_id": "FP-14",
+    "domain": "folha_ponto",
+    "automatic_status": "failed_checks",
+    "final_status": "reprovado",
+    "reasons": [
+      "behavior_mismatch",
+      "expected_location_not_retrieved",
+      "expected_citation_location_missing"
+    ],
+    "review_alerts": [],
+    "review_override": null,
+    "location_only": {
+      "hit_at_3": false,
+      "recall_at_3": 0.0,
+      "reciprocal_rank_at_3": 0
+    },
+    "citation_location_completeness": 0.0,
+    "strict_version_metrics": {
+      "hit_at_k": false,
+      "recall_at_k": 0.0,
+      "reciprocal_rank_at_k": 0,
+      "document_match_at_k": false,
+      "section_or_card_match_at_k": false
+    },
+    "required_fact_lexical_coverage": 0.0,
+    "forbidden_lexical_alerts": [],
+    "behavior": "fallback",
+    "behavior_match": false,
+    "context_match": null,
+    "card_match": null,
+    "question_duration_ms": 939,
+    "total_case_duration_ms": 969,
+    "production_deployment_assessed": null,
+    "manual_semantic_review": "pending"
+  },
+  "scope_and_policy": {
+    "effective_scopes": [
+      "local_review"
+    ],
+    "policy_profile": "local_review",
+    "production_deployment_tested": false
+  },
+  "human_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "decision": null,
+    "rationale": null,
+    "dimensions": {
+      "fidelity": {
+        "decision": null,
+        "evidence": null
+      },
+      "completeness": {
+        "decision": null,
+        "evidence": null
+      },
+      "conditions_and_exceptions": {
+        "decision": null,
+        "evidence": null
+      },
+      "citations": {
+        "decision": null,
+        "evidence": null
+      },
+      "institutional_conflicts": {
+        "decision": null,
+        "evidence": null
+      },
+      "access_restrictions": {
+        "decision": null,
+        "evidence": null
+      }
+    },
+    "institutional_owner": null,
+    "institutional_approval": null
+  },
+  "limitations": [
+    "Exact runtime versions are not equivalent to snapshot-local-v1.",
+    "Source metadata visibility is not proof the UI notice was rendered.",
+    "Automatic checks do not approve semantics."
+  ],
+  "separate_v2_scenario": {
+    "test_id": "FP-14",
+    "input": {
+      "test_id": "FP-14",
+      "question": "Devo usar qual cor de caneta?",
+      "conversation_context": {
+        "prior_turns": [],
+        "selected_benefit_code": null
+      },
+      "run_context": {
+        "environment": "local_review",
+        "scopes": [
+          "local_review"
+        ],
+        "allowed_document_ids": [
+          "folha-ponto"
+        ]
+      },
+      "scenario_input": {
+        "topic_id": "folha_ponto"
+      }
+    },
+    "started_at": "2026-10-21T15:22:23.145044+00:00",
+    "effective_scopes": [
+      "local_review"
+    ],
+    "execution_environment": "development",
+    "policy_profile": "local_review",
+    "turns": [
+      {
+        "kind": "evaluated_question",
+        "payload": {
+          "request_id": "c2952924-a08f-4876-8673-ce6e01d29bb8",
+          "content": "Devo usar qual cor de caneta?",
+          "topic_id": "folha_ponto",
+          "question_id": null,
+          "action": null,
+          "attachment_ids": []
+        },
+        "retrieval_calls": [
+          {
+            "query": "Folha Ponto: Devo usar qual cor de caneta?",
+            "scopes": [
+              "local_review"
+            ],
+            "domain": "rh_frequency",
+            "benefit_code": null,
+            "app_env_filter": "development",
+            "version_filter": "folha-ponto-local-v1",
+            "chunks": [
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.460946,
+                "status": "approved"
+              },
+              {
+                "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "4. O que NÃO fazer",
+                "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                "chunk": 4,
+                "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.409586,
+                "status": "approved"
+              }
+            ],
+            "duration_ms": 19720
+          }
+        ],
+        "logs": [
+          {
+            "event": "intents_identified"
+          },
+          {
+            "event": "stage_finished",
+            "stage": "entry",
+            "domain": null,
+            "duration_ms": 3
+          },
+          {
+            "event": "stage_finished",
+            "stage": "transport_gate",
+            "domain": null,
+            "duration_ms": 0
+          },
+          {
+            "event": "stage_finished",
+            "stage": "operational_router",
+            "domain": null,
+            "duration_ms": 0
+          },
+          {
+            "event": "stage_finished",
+            "stage": "validate_context",
+            "domain": null,
+            "duration_ms": 0
+          },
+          {
+            "event": "retrieval_complete",
+            "chunk_count": 2
+          },
+          {
+            "event": "stage_finished",
+            "stage": "retrieve",
+            "domain": "rh_frequency",
+            "duration_ms": 19729
+          },
+          {
+            "event": "evidence_assessed",
+            "coverage": "sufficient",
+            "chunk_count": 1
+          },
+          {
+            "event": "stage_finished",
+            "stage": "assess",
+            "domain": "rh_frequency",
+            "duration_ms": 5576
+          },
+          {
+            "event": "stage_finished",
+            "stage": "generate",
+            "domain": "rh_frequency",
+            "duration_ms": 5869
+          },
+          {
+            "event": "stage_finished",
+            "stage": "validate",
+            "domain": "rh_frequency",
+            "duration_ms": 6300
+          },
+          {
+            "event": "stage_finished",
+            "stage": "finish_document",
+            "domain": "rh_frequency",
+            "duration_ms": 0
+          },
+          {
+            "event": "response_finished",
+            "duration_ms": 37649,
+            "outcome": "answered",
+            "success": true
+          }
+        ],
+        "updates": [
+          {
+            "node": "entry",
+            "state": {
+              "entry_route": "transport_gate",
+              "planned": [
+                [
+                  null,
+                  "Devo usar qual cor de caneta?"
+                ]
+              ],
+              "deadline": 14741.101474361
+            }
+          },
+          {
+            "node": "transport_gate",
+            "state": {
+              "vt_route": false
+            }
+          },
+          {
+            "node": "operational_router",
+            "state": {
+              "detected_intent": "documental",
+              "support_state": {
+                "vt_stage": "idle",
+                "stage": "idle"
+              }
+            }
+          },
+          {
+            "node": "validate_context",
+            "state": {
+              "topic_id": "folha_ponto",
+              "domain": "rh_frequency",
+              "agent": "rh_frequency",
+              "comprehensible": true
+            }
+          },
+          {
+            "node": "retrieve",
+            "state": {
+              "chunks": [
+                {
+                  "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                  "benefit_code": null,
+                  "attributes": {},
+                  "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                  "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "version": "folha-ponto-local-v1",
+                  "page": 1,
+                  "section": "3. Como preencher corretamente",
+                  "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                  "chunk": 3,
+                  "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                  "is_test": false,
+                  "validation_only": true,
+                  "score": 0.460946,
+                  "status": "approved"
+                },
+                {
+                  "id": "acda3c11-ae44-451f-9cbf-32397007d293",
+                  "benefit_code": null,
+                  "attributes": {},
+                  "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                  "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "version": "folha-ponto-local-v1",
+                  "page": 2,
+                  "section": "4. O que NÃO fazer",
+                  "sha256": "84d55f26073cd04c32f7d1d3fa56253e59675eb776d138bc41dad143cabb67f1",
+                  "chunk": 4,
+                  "excerpt": "4.\nO que NÃO fazer\n• Não assinar folha em branco\n• Não assinar por outra pessoa\n• Não alterar datas retroativamente\n• Não enviar foto cortada ou ilegível\n• Não usar corretivos e não rasurar\n• Não enviar fora do prazo acreditando que “não tem problema”",
+                  "is_test": false,
+                  "validation_only": true,
+                  "score": 0.409586,
+                  "status": "approved"
+                }
+              ],
+              "retrieval_question": "Folha Ponto: Devo usar qual cor de caneta?",
+              "document_question": "Devo usar qual cor de caneta?"
+            }
+          },
+          {
+            "node": "assess",
+            "state": {
+              "coverage": "sufficient",
+              "chunks": [
+                {
+                  "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                  "benefit_code": null,
+                  "attributes": {},
+                  "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                  "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "version": "folha-ponto-local-v1",
+                  "page": 1,
+                  "section": "3. Como preencher corretamente",
+                  "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                  "chunk": 3,
+                  "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                  "is_test": false,
+                  "validation_only": true,
+                  "score": 0.460946,
+                  "status": "approved"
+                }
+              ]
+            }
+          },
+          {
+            "node": "generate",
+            "state": {
+              "answer": "Deve usar caneta azul ou preta [fonte:F1].",
+              "outcome": "answered"
+            }
+          },
+          {
+            "node": "validate",
+            "state": {
+              "answer": "Deve usar caneta azul ou preta [fonte:F1].",
+              "sources": [
+                {
+                  "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                  "benefit_code": null,
+                  "attributes": {},
+                  "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                  "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "version": "folha-ponto-local-v1",
+                  "page": 1,
+                  "section": "3. Como preencher corretamente",
+                  "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                  "chunk": 3,
+                  "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                  "is_test": false,
+                  "validation_only": true,
+                  "score": 0.460946,
+                  "status": "approved"
+                }
+              ],
+              "outcome": "answered"
+            }
+          }
+        ],
+        "events": [
+          {
+            "event": "start",
+            "user": {
+              "id": "86584f32-f9c5-451f-bb0f-ffa694e7ce2f",
+              "role": "user",
+              "content": "Devo usar qual cor de caneta?",
+              "status": "complete",
+              "sources": [],
+              "created_at": "2026-10-21T15:22:23.243951Z",
+              "outcome": null,
+              "topic_id": "folha_ponto",
+              "question_id": null
+            },
+            "assistant": {
+              "id": "d08f6469-0292-405e-8f5c-adf1f06402e0",
+              "role": "assistant",
+              "content": "",
+              "status": "processing",
+              "sources": [],
+              "created_at": "2026-10-21T15:22:23.243952Z",
+              "outcome": null,
+              "topic_id": "folha_ponto",
+              "question_id": null
+            }
+          },
+          {
+            "event": "delta",
+            "text": "Deve usar caneta azul ou preta [fonte:F1]."
+          },
+          {
+            "event": "sources",
+            "sources": [
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.460946,
+                "status": "approved"
+              }
+            ]
+          },
+          {
+            "event": "done",
+            "message": {
+              "id": "d08f6469-0292-405e-8f5c-adf1f06402e0",
+              "role": "assistant",
+              "content": "Deve usar caneta azul ou preta [fonte:F1].",
+              "status": "complete",
+              "sources": [
+                {
+                  "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                  "benefit_code": null,
+                  "attributes": {},
+                  "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                  "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                  "version": "folha-ponto-local-v1",
+                  "page": 1,
+                  "section": "3. Como preencher corretamente",
+                  "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                  "chunk": 3,
+                  "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                  "is_test": false,
+                  "validation_only": true,
+                  "score": 0.460946,
+                  "status": "approved"
+                }
+              ],
+              "created_at": "2026-10-21T15:22:23.243952Z",
+              "outcome": "answered",
+              "topic_id": "folha_ponto",
+              "question_id": null
+            }
+          }
+        ],
+        "initial_state": {
+          "conversation_id": "aad744c9-cbfe-42d2-894b-11178eebca7f",
+          "deadline": 14741.101474361,
+          "question": "Devo usar qual cor de caneta?",
+          "topic_id": "folha_ponto",
+          "question_id": null,
+          "history": [],
+          "scopes": [
+            "local_review"
+          ],
+          "support_state": {},
+          "action": null,
+          "chunks": [],
+          "sources": []
+        },
+        "final_state": {
+          "conversation_id": "aad744c9-cbfe-42d2-894b-11178eebca7f",
+          "deadline": 14741.101474361,
+          "question": "Devo usar qual cor de caneta?",
+          "topic_id": "folha_ponto",
+          "question_id": null,
+          "history": [],
+          "scopes": [
+            "local_review"
+          ],
+          "support_state": {
+            "vt_stage": "idle",
+            "stage": "idle"
+          },
+          "action": null,
+          "chunks": [
+            {
+              "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "3. Como preencher corretamente",
+              "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+              "chunk": 3,
+              "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.460946,
+              "status": "approved"
+            }
+          ],
+          "sources": [
+            {
+              "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "3. Como preencher corretamente",
+              "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+              "chunk": 3,
+              "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.460946,
+              "status": "approved"
+            }
+          ],
+          "entry_route": "transport_gate",
+          "planned": [
+            [
+              null,
+              "Devo usar qual cor de caneta?"
+            ]
+          ],
+          "vt_route": false,
+          "detected_intent": "documental",
+          "domain": "rh_frequency",
+          "agent": "rh_frequency",
+          "comprehensible": true,
+          "retrieval_question": "Folha Ponto: Devo usar qual cor de caneta?",
+          "document_question": "Devo usar qual cor de caneta?",
+          "coverage": "sufficient",
+          "answer": "Deve usar caneta azul ou preta [fonte:F1].",
+          "outcome": "answered"
+        },
+        "duration_ms": 37757
+      }
+    ],
+    "conversation_id": "aad744c9-cbfe-42d2-894b-11178eebca7f",
+    "duration_ms": 37792,
+    "completed_at": "2026-10-21T15:23:00.881535+00:00"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "test_id": "FP-06",
+  "input": {
+    "test_id": "FP-06",
+    "question": "Como diferencio falta e falta justificada?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T12:59:43.071126+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "04b5571b-7766-41ed-b76e-453443f8852b",
+        "content": "Como diferencio falta e falta justificada?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Falta no Trabalho: Como diferencio falta e falta justificada?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [],
+          "duration_ms": 2180
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 325
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 2180
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 2517,
+          "outcome": "no_evidence",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "falta_trabalho",
+                "Como diferencio falta e falta justificada?"
+              ]
+            ],
+            "deadline": 6178.275770583
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_document",
+            "support_state": {
+              "vt_stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "falta_trabalho",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [],
+            "retrieval_question": "Falta no Trabalho: Como diferencio falta e falta justificada?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "none"
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "outcome": "no_evidence"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "sources": [],
+            "outcome": "no_evidence"
+          }
+        },
+        {
+          "node": "finish_document",
+          "state": {
+            "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "support_state": {
+              "vt_stage": "idle"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "ece49e8f-e6d5-4c70-96d4-caed0548e36c",
+            "role": "user",
+            "content": "Como diferencio falta e falta justificada?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T12:59:43.077839Z",
+            "outcome": null,
+            "topic_id": "falta_trabalho",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "647731c6-696d-4291-902b-3f52d0679aab",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T12:59:43.077840Z",
+            "outcome": null,
+            "topic_id": "falta_trabalho",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida."
+        },
+        {
+          "event": "sources",
+          "sources": []
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "647731c6-696d-4291-902b-3f52d0679aab",
+            "role": "assistant",
+            "content": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T12:59:43.077840Z",
+            "outcome": "no_evidence",
+            "topic_id": "falta_trabalho",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "5d9d244b-bb0b-4752-a035-c5406b0b2ea8",
+        "deadline": 6178.275770583,
+        "question": "Como diferencio falta e falta justificada?",
+        "topic_id": "falta_trabalho",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "5d9d244b-bb0b-4752-a035-c5406b0b2ea8",
+        "deadline": 6178.275770583,
+        "question": "Como diferencio falta e falta justificada?",
+        "topic_id": "falta_trabalho",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "falta_trabalho",
+            "Como diferencio falta e falta justificada?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "course_document",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Falta no Trabalho: Como diferencio falta e falta justificada?",
+        "coverage": "none",
+        "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+        "outcome": "no_evidence"
+      },
+      "duration_ms": 2524
+    }
+  ],
+  "conversation_id": "5d9d244b-bb0b-4752-a035-c5406b0b2ea8",
+  "duration_ms": 2527,
+  "completed_at": "2026-10-21T12:59:45.598295+00:00"
+}

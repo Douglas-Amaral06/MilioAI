@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:milioai:rag-evaluation-contract:2.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "status",
+    "baseline",
+    "inputs",
+    "source_bindings",
+    "operational_configuration",
+    "warning_policy",
+    "scoring_policy",
+    "review_protocol"
+  ],
+  "properties": {
+    "baseline": {
+      "type": "object"
+    },
+    "inputs": {
+      "type": "object"
+    },
+    "operational_configuration": {
+      "type": "object"
+    },
+    "warning_policy": {
+      "type": "object"
+    },
+    "scoring_policy": {
+      "type": "object"
+    },
+    "review_protocol": {
+      "type": "object"
+    },
+    "contract_version": {
+      "enum": [
+        "2.0.0"
+      ]
+    },
+    "status": {
+      "enum": [
+        "technical_proposal_pending_human_acceptance"
+      ]
+    },
+    "source_bindings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "runtime_document_id",
+          "runtime_version",
+          "document_sha256",
+          "chunks",
+          "historical_snapshot_equivalence"
+        ],
+        "properties": {
+          "historical_snapshot_equivalence": {
+            "enum": [
+              "not_established"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

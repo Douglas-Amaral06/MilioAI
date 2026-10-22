@@ -1,0 +1,1353 @@
+{
+  "test_id": "OP-03",
+  "input": {
+    "test_id": "OP-03",
+    "question": "Selecionei instructor-11. Qual é o contato?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Preciso falar com meu instrutor."
+        }
+      ],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review",
+        "education:contacts"
+      ],
+      "allowed_document_ids": [
+        "instructor-directory"
+      ]
+    },
+    "scenario_input": {
+      "setup_turns": [
+        {
+          "topic_id": "falta_curso",
+          "question_id": "falta_curso.instrutor"
+        },
+        {
+          "action": {
+            "kind": "instructor_known"
+          }
+        },
+        {
+          "action": {
+            "kind": "instructor_select",
+            "instructor_id": "instructor-11"
+          }
+        }
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:13:05.491133+00:00",
+  "effective_scopes": [
+    "education:contacts",
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "explicit_scenario_setup",
+      "payload": {
+        "request_id": "1f463ac9-800b-4c5e-8a21-ec0d334fc41d",
+        "content": null,
+        "topic_id": "falta_curso",
+        "question_id": "falta_curso.instrutor",
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 16,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "deadline": 10581.123056151
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_contact",
+            "support_state": {
+              "vt_stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Você sabe quem é seu instrutor do curso?",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "detected_intent": "course_contact",
+              "asked": true,
+              "stage": "confirmation",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "course_contact",
+                "institutionally_approved": false
+              }
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "4d85505f-bd15-4ce0-ab86-e1909b79fc43",
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.545631Z",
+            "outcome": null,
+            "topic_id": "falta_curso",
+            "question_id": "falta_curso.instrutor"
+          },
+          "assistant": {
+            "id": "3fcfa2a8-39de-40b7-8420-33edcc19e49c",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.545632Z",
+            "outcome": null,
+            "topic_id": "falta_curso",
+            "question_id": "falta_curso.instrutor"
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você sabe quem é seu instrutor do curso?"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "3fcfa2a8-39de-40b7-8420-33edcc19e49c",
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.545632Z",
+            "outcome": "operational",
+            "topic_id": "falta_curso",
+            "question_id": "falta_curso.instrutor"
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.123056151,
+        "question": "Como descubro quem é meu instrutor?",
+        "topic_id": "falta_curso",
+        "question_id": "falta_curso.instrutor",
+        "history": [],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.123056151,
+        "question": "Como descubro quem é meu instrutor?",
+        "topic_id": "falta_curso",
+        "question_id": "falta_curso.instrutor",
+        "history": [],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "asked": true,
+          "stage": "confirmation",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "course_contact",
+            "institutionally_approved": false
+          }
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "vt_route": false,
+        "detected_intent": "course_contact",
+        "answer": "Você sabe quem é seu instrutor do curso?",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 39
+    },
+    {
+      "kind": "explicit_scenario_setup",
+      "payload": {
+        "request_id": "62cfa5c5-dde1-4cdb-882c-650addbdda9e",
+        "content": null,
+        "topic_id": null,
+        "question_id": null,
+        "action": {
+          "kind": "instructor_known",
+          "instructor_id": null,
+          "benefit_code": null
+        },
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 12,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "deadline": 10581.148395121
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "action"
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Selecione o nome do seu instrutor na lista abaixo.",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "asked": true,
+              "stage": "selection",
+              "vt_stage": "idle",
+              "detected_intent": "action",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "action",
+                "institutionally_approved": false
+              }
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "8db22ba1-71bc-4a41-b860-7e90f7433dc9",
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.576886Z",
+            "outcome": null,
+            "topic_id": "falta_curso",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "4287baed-7a98-4f14-a1d6-d16e62dae405",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.576887Z",
+            "outcome": null,
+            "topic_id": "falta_curso",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Selecione o nome do seu instrutor na lista abaixo."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "4287baed-7a98-4f14-a1d6-d16e62dae405",
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.576887Z",
+            "outcome": "operational",
+            "topic_id": "falta_curso",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.148395121,
+        "question": "Sim, sei quem é.",
+        "topic_id": "falta_curso",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "confirmation",
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "operational_provenance": {
+            "file": "operational_guidance.json",
+            "kind": "operational_configuration",
+            "intent": "course_contact",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "validation_status": "pending",
+            "institutionally_approved": false
+          }
+        },
+        "action": {
+          "kind": "instructor_known",
+          "instructor_id": null,
+          "benefit_code": null
+        },
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.148395121,
+        "question": "Sim, sei quem é.",
+        "topic_id": "falta_curso",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "selection",
+          "vt_stage": "idle",
+          "detected_intent": "action",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "action",
+            "institutionally_approved": false
+          }
+        },
+        "action": {
+          "kind": "instructor_known",
+          "instructor_id": null,
+          "benefit_code": null
+        },
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "vt_route": false,
+        "detected_intent": "action",
+        "answer": "Selecione o nome do seu instrutor na lista abaixo.",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 22
+    },
+    {
+      "kind": "explicit_scenario_setup",
+      "payload": {
+        "request_id": "c5ecd503-86de-48e4-a594-cae06819dbe5",
+        "content": null,
+        "topic_id": null,
+        "question_id": null,
+        "action": {
+          "kind": "instructor_select",
+          "instructor_id": "instructor-11",
+          "benefit_code": null
+        },
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 22,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "deadline": 10581.203745486
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "action"
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "asked": true,
+              "stage": "contact",
+              "vt_stage": "idle",
+              "detected_intent": "action",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "action",
+                "institutionally_approved": false
+              },
+              "selected_instructor_id": "instructor-11"
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "4e74cf1a-1218-4c6e-8bc9-82881d9cdc0f",
+            "role": "user",
+            "content": "Instrutor selecionado: Letícia da Silva Lima",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.598596Z",
+            "outcome": null,
+            "topic_id": "falta_curso",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "a0cb5792-b353-45b1-9055-f4da874f332a",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.598597Z",
+            "outcome": null,
+            "topic_id": "falta_curso",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "a0cb5792-b353-45b1-9055-f4da874f332a",
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.598597Z",
+            "outcome": "operational",
+            "topic_id": "falta_curso",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.203745486,
+        "question": "Instrutor selecionado: Letícia da Silva Lima",
+        "topic_id": "falta_curso",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "topic_id": "falta_curso"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "selection",
+          "vt_stage": "idle",
+          "detected_intent": "action",
+          "operational_provenance": {
+            "file": "operational_guidance.json",
+            "kind": "operational_configuration",
+            "intent": "action",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "validation_status": "pending",
+            "institutionally_approved": false
+          }
+        },
+        "action": {
+          "kind": "instructor_select",
+          "instructor_id": "instructor-11",
+          "benefit_code": null
+        },
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.203745486,
+        "question": "Instrutor selecionado: Letícia da Silva Lima",
+        "topic_id": "falta_curso",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "topic_id": "falta_curso"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "contact",
+          "vt_stage": "idle",
+          "detected_intent": "action",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "action",
+            "institutionally_approved": false
+          },
+          "selected_instructor_id": "instructor-11"
+        },
+        "action": {
+          "kind": "instructor_select",
+          "instructor_id": "instructor-11",
+          "benefit_code": null
+        },
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "vt_route": false,
+        "detected_intent": "action",
+        "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 66
+    },
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "1ec51ae2-3aab-4721-b7ff-23ca1d708782",
+        "content": "Preciso falar com meu instrutor.",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 400
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 433,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Preciso falar com meu instrutor."
+              ]
+            ],
+            "deadline": 10581.240903452
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_contact",
+            "support_state": {
+              "asked": true,
+              "stage": "contact",
+              "vt_stage": "idle",
+              "detected_intent": "action",
+              "operational_provenance": {
+                "file": "operational_guidance.json",
+                "kind": "operational_configuration",
+                "intent": "action",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "validation_status": "pending",
+                "institutionally_approved": false
+              },
+              "selected_instructor_id": "instructor-11"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "asked": true,
+              "stage": "contact",
+              "vt_stage": "idle",
+              "detected_intent": "course_contact",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "course_contact",
+                "institutionally_approved": false
+              },
+              "selected_instructor_id": "instructor-11"
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "f66324bc-8ba6-4899-8aa2-ec8edaaa2e6e",
+            "role": "user",
+            "content": "Preciso falar com meu instrutor.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.666986Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "e09cbea1-40d5-491a-a342-683d60de877d",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.666987Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "e09cbea1-40d5-491a-a342-683d60de877d",
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:05.666987Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.240903452,
+        "question": "Preciso falar com meu instrutor.",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Instrutor selecionado: Letícia da Silva Lima",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "topic_id": "falta_curso"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "contact",
+          "vt_stage": "idle",
+          "detected_intent": "action",
+          "operational_provenance": {
+            "file": "operational_guidance.json",
+            "kind": "operational_configuration",
+            "intent": "action",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "validation_status": "pending",
+            "institutionally_approved": false
+          },
+          "selected_instructor_id": "instructor-11"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.240903452,
+        "question": "Preciso falar com meu instrutor.",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Instrutor selecionado: Letícia da Silva Lima",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "topic_id": "falta_curso"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "contact",
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "course_contact",
+            "institutionally_approved": false
+          },
+          "selected_instructor_id": "instructor-11"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Preciso falar com meu instrutor."
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "course_contact",
+        "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 448
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "e13cd193-c9e3-41fe-af32-668c75849288",
+        "content": "Selecionei instructor-11. Qual é o contato?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 12,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Selecionei instructor-11. Qual é o contato?"
+              ]
+            ],
+            "deadline": 10581.684046164
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_contact",
+            "support_state": {
+              "asked": true,
+              "stage": "contact",
+              "vt_stage": "idle",
+              "detected_intent": "course_contact",
+              "operational_provenance": {
+                "file": "operational_guidance.json",
+                "kind": "operational_configuration",
+                "intent": "course_contact",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "validation_status": "pending",
+                "institutionally_approved": false
+              },
+              "selected_instructor_id": "instructor-11"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "asked": true,
+              "stage": "contact",
+              "vt_stage": "idle",
+              "detected_intent": "course_contact",
+              "operational_provenance": {
+                "kind": "operational_configuration",
+                "file": "operational_guidance.json",
+                "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+                "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+                "validation_status": "pending",
+                "intent": "course_contact",
+                "institutionally_approved": false
+              },
+              "selected_instructor_id": "instructor-11"
+            },
+            "domain": "operational"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "358f3212-86ae-444c-8695-c565d0715170",
+            "role": "user",
+            "content": "Selecionei instructor-11. Qual é o contato?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:06.111926Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "e1b6b797-ed76-4b7d-a48c-dbf6862dd843",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:06.111927Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)"
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "e1b6b797-ed76-4b7d-a48c-dbf6862dd843",
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:13:06.111927Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.684046164,
+        "question": "Selecionei instructor-11. Qual é o contato?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Instrutor selecionado: Letícia da Silva Lima",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Preciso falar com meu instrutor.",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "contact",
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "operational_provenance": {
+            "file": "operational_guidance.json",
+            "kind": "operational_configuration",
+            "intent": "course_contact",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "validation_status": "pending",
+            "institutionally_approved": false
+          },
+          "selected_instructor_id": "instructor-11"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+        "deadline": 10581.684046164,
+        "question": "Selecionei instructor-11. Qual é o contato?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como descubro quem é meu instrutor?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Você sabe quem é seu instrutor do curso?",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Sim, sei quem é.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Selecione o nome do seu instrutor na lista abaixo.",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Instrutor selecionado: Letícia da Silva Lima",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "topic_id": "falta_curso"
+          },
+          {
+            "role": "user",
+            "content": "Preciso falar com meu instrutor.",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "education:contacts",
+          "local_review"
+        ],
+        "support_state": {
+          "asked": true,
+          "stage": "contact",
+          "vt_stage": "idle",
+          "detected_intent": "course_contact",
+          "operational_provenance": {
+            "kind": "operational_configuration",
+            "file": "operational_guidance.json",
+            "sha256": "1c30e2a324bd858998d3bdb55300340d64621188cd2aded8eccc119a28da8196",
+            "origin": "Orientações operacionais fornecidas pelo solicitante em 2026-10-20",
+            "validation_status": "pending",
+            "intent": "course_contact",
+            "institutionally_approved": false
+          },
+          "selected_instructor_id": "instructor-11"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Selecionei instructor-11. Qual é o contato?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "course_contact",
+        "answer": "Encontrei Letícia da Silva Lima, mas ainda não tenho um e-mail confirmado para contato.\n\nEntre em contato com o time educacional para identificar o profissional responsável pelo seu curso.\n\nTelefone: [11 99803-0631](tel:+5511998030631)\nE-mail: [educacional.sp@renapsi.org.br](mailto:educacional.sp@renapsi.org.br)",
+        "outcome": "operational",
+        "domain": "operational"
+      },
+      "duration_ms": 22
+    }
+  ],
+  "conversation_id": "cb4e385e-4abc-42d6-9dec-0aafe5b9eb43",
+  "duration_ms": 637,
+  "completed_at": "2026-10-21T14:13:06.127889+00:00"
+}

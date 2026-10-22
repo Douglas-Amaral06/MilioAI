@@ -1,0 +1,6 @@
+{
+  "observed_chunks_checked": 92,
+  "failures": [],
+  "institutional_approval_asserted": false,
+  "embedding_filter_validation": "Covered by SQL/integration tests; model profile is not independently serialized in the crosswalk."
+}

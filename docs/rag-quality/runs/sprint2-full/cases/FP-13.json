@@ -1,0 +1,210 @@
+{
+  "test_id": "FP-13",
+  "input": {
+    "test_id": "FP-13",
+    "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:03.087965+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "eb967565-c6a0-4cf4-bc89-eb83b0642503",
+        "content": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 301
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 312,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Com quem tiro dúvidas quando devo procurar ajuda?"
+              ]
+            ],
+            "deadline": 6198.297037095
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "course_contact",
+            "support_state": {
+              "vt_stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Seu acesso não permite consultar os contatos educacionais. Solicite autorização para este atendimento.",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "detected_intent": "course_contact"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "18243d6b-ed3e-489c-92e1-083ea09f02e4",
+            "role": "user",
+            "content": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:03.094959Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "c582ae3f-f066-4840-a82d-26cf54c3befc",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:03.094960Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Seu acesso não permite consultar os contatos educacionais. Solicite autorização para este atendimento."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "c582ae3f-f066-4840-a82d-26cf54c3befc",
+            "role": "assistant",
+            "content": "Seu acesso não permite consultar os contatos educacionais. Solicite autorização para este atendimento.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:03.094960Z",
+            "outcome": "operational",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "975c5ff9-eb43-4ea3-b115-0f16d6c1d46f",
+        "deadline": 6198.297037095,
+        "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "975c5ff9-eb43-4ea3-b115-0f16d6c1d46f",
+        "deadline": 6198.297037095,
+        "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "detected_intent": "course_contact"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Com quem tiro dúvidas quando devo procurar ajuda?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "course_contact",
+        "answer": "Seu acesso não permite consultar os contatos educacionais. Solicite autorização para este atendimento.",
+        "outcome": "operational"
+      },
+      "duration_ms": 319
+    }
+  ],
+  "conversation_id": "975c5ff9-eb43-4ea3-b115-0f16d6c1d46f",
+  "duration_ms": 322,
+  "completed_at": "2026-10-21T13:00:03.409993+00:00"
+}

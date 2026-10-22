@@ -1,0 +1,434 @@
+{
+  "test_id": "VT-472",
+  "input": {
+    "test_id": "VT-472",
+    "question": "Quando retiro o Transurb Ribeirão Preto e como pago?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:36.368805+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "773ec625-e610-4bde-8d22-a23729e097df",
+        "content": "Quando retiro o Transurb Ribeirão Preto e como pago?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "472",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+              "benefit_code": "472",
+              "attributes": {
+                "uf": "SP",
+                "fee": "6 tarifas",
+                "code": "472",
+                "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+              "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+              "chunk": 28,
+              "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.809303,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 43
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 288
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 962
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 1576,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quando retiro o Transurb Ribeirão Preto como pago?"
+              ]
+            ],
+            "deadline": 6231.581448568
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "transport_replacement",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal** · Código 472 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+                "benefit_code": "472",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "6 tarifas",
+                  "code": "472",
+                  "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+                "chunk": 28,
+                "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.809303,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+                "benefit_code": "472",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "6 tarifas",
+                  "code": "472",
+                  "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+                "chunk": 28,
+                "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.809303,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "vt_stage": "active",
+              "stage": "idle",
+              "selected_card_code": "472"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "76bf1e9f-0bac-4dd7-a659-f929babb76cb",
+            "role": "user",
+            "content": "Quando retiro o Transurb Ribeirão Preto e como pago?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:36.376339Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "908bbb1f-21f8-46e6-84ae-c79bcfc052ea",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:36.376340Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal** · Código 472 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+              "benefit_code": "472",
+              "attributes": {
+                "uf": "SP",
+                "fee": "6 tarifas",
+                "code": "472",
+                "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+              "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+              "chunk": 28,
+              "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.809303,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "908bbb1f-21f8-46e6-84ae-c79bcfc052ea",
+            "role": "assistant",
+            "content": "**Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal** · Código 472 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+                "benefit_code": "472",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "6 tarifas",
+                  "code": "472",
+                  "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+                "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+                "chunk": 28,
+                "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.809303,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T13:00:36.376340Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "f0c0754e-c9bb-4c11-8520-1ae061689fe3",
+        "deadline": 6231.581448568,
+        "question": "Quando retiro o Transurb Ribeirão Preto e como pago?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "f0c0754e-c9bb-4c11-8520-1ae061689fe3",
+        "deadline": 6231.581448568,
+        "question": "Quando retiro o Transurb Ribeirão Preto e como pago?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "active",
+          "stage": "idle",
+          "selected_card_code": "472"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+            "benefit_code": "472",
+            "attributes": {
+              "uf": "SP",
+              "fee": "6 tarifas",
+              "code": "472",
+              "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+            "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+            "chunk": 28,
+            "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.809303,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "535efd97-2daf-49c5-b87a-098ab925937d",
+            "benefit_code": "472",
+            "attributes": {
+              "uf": "SP",
+              "fee": "6 tarifas",
+              "code": "472",
+              "name": "Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "472 · Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal",
+            "sha256": "a3153bf76899916bee054c6a4388483508f040f8f7d72c6198ac63673acac49a",
+            "chunk": 28,
+            "excerpt": "UF: SP\nCódigo do benefício: 472\nCartão / operadora: Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: 6 tarifas\nProcedimento integral: O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.809303,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quando retiro o Transurb Ribeirão Preto como pago?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "transport_replacement",
+        "answer": "**Transurb Ribeirão Preto - Cartão Ribeirão Preto Municipal** · Código 472 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** 6 tarifas [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O pagamento da 2ª via é feito pelo jovem, somente em dinheiro, no ato da retirada. O bloqueio deve ser solicitado pelo telefone 0800 7710 118, e a retirada ocorre após 48 horas [fonte:F1]\n\nA taxa está expressa em número de tarifas; não foi convertida em reais. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 1583
+    }
+  ],
+  "conversation_id": "f0c0754e-c9bb-4c11-8520-1ae061689fe3",
+  "duration_ms": 1587,
+  "completed_at": "2026-10-21T13:00:37.955753+00:00"
+}

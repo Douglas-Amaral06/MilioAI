@@ -1,0 +1,834 @@
+{
+  "test_id": "CTX-05",
+  "input": {
+    "test_id": "CTX-05",
+    "question": "Quanto tempo preciso esperar?",
+    "conversation_context": {
+      "prior_turns": [
+        {
+          "role": "user",
+          "content": "Como solicito a segunda via do cartão código 15508?"
+        }
+      ],
+      "selected_benefit_code": "15508"
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T15:11:29.763355+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "prior_user_replay",
+      "payload": {
+        "request_id": "d05faf64-83fa-4ff5-838a-cf63a727231a",
+        "content": "Como solicito a segunda via do cartão código 15508?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Moratense - Cartão Municipal Francisco Morato. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15508",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+              "benefit_code": "15508",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 15,00",
+                "code": "15508",
+                "name": "Moratense - Cartão Municipal Francisco Morato",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou cartão",
+                "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+              "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+              "chunk": 15,
+              "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.766763,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 8264
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 10922
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 10999,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "Como solicito a segunda via do cartão código 15508?"
+              ]
+            ],
+            "deadline": 14087.011420775
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+                "benefit_code": "15508",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 15,00",
+                  "code": "15508",
+                  "name": "Moratense - Cartão Municipal Francisco Morato",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou cartão",
+                  "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+                "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+                "chunk": 15,
+                "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.766763,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+                "benefit_code": "15508",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 15,00",
+                  "code": "15508",
+                  "name": "Moratense - Cartão Municipal Francisco Morato",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou cartão",
+                  "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+                "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+                "chunk": 15,
+                "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.766763,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15508"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "df5e63c5-00fe-45f4-b7a7-1cf7ffa80c96",
+            "role": "user",
+            "content": "Como solicito a segunda via do cartão código 15508?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:29.797107Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "6dea7afd-b302-4db1-9d2f-a98831a8e036",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:29.797108Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+              "benefit_code": "15508",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 15,00",
+                "code": "15508",
+                "name": "Moratense - Cartão Municipal Francisco Morato",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou cartão",
+                "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+              "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+              "chunk": 15,
+              "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.766763,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "6dea7afd-b302-4db1-9d2f-a98831a8e036",
+            "role": "assistant",
+            "content": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+                "benefit_code": "15508",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 15,00",
+                  "code": "15508",
+                  "name": "Moratense - Cartão Municipal Francisco Morato",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou cartão",
+                  "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+                "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+                "chunk": 15,
+                "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.766763,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:11:29.797108Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "8fc593c4-4495-478c-b24b-68153a9b47c6",
+        "deadline": 14087.011420775,
+        "question": "Como solicito a segunda via do cartão código 15508?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "8fc593c4-4495-478c-b24b-68153a9b47c6",
+        "deadline": 14087.011420775,
+        "question": "Como solicito a segunda via do cartão código 15508?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15508"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+            "benefit_code": "15508",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 15,00",
+              "code": "15508",
+              "name": "Moratense - Cartão Municipal Francisco Morato",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou cartão",
+              "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+            "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+            "chunk": 15,
+            "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.766763,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+            "benefit_code": "15508",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 15,00",
+              "code": "15508",
+              "name": "Moratense - Cartão Municipal Francisco Morato",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou cartão",
+              "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+            "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+            "chunk": 15,
+            "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.766763,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "Como solicito a segunda via do cartão código 15508?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 11037
+    },
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "d2536d53-bb59-4b3b-9cd3-19963454b3ad",
+        "content": "Quanto tempo preciso esperar?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Moratense - Cartão Municipal Francisco Morato. Quanto tempo preciso esperar?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15508",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+              "benefit_code": "15508",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 15,00",
+                "code": "15508",
+                "name": "Moratense - Cartão Municipal Francisco Morato",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou cartão",
+                "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+              "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+              "chunk": 15,
+              "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.686283,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 8138
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 10905
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 10988,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Quanto tempo preciso esperar?"
+              ]
+            ],
+            "deadline": 14098.106635629
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+                "benefit_code": "15508",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 15,00",
+                  "code": "15508",
+                  "name": "Moratense - Cartão Municipal Francisco Morato",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou cartão",
+                  "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+                "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+                "chunk": 15,
+                "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.686283,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+                "benefit_code": "15508",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 15,00",
+                  "code": "15508",
+                  "name": "Moratense - Cartão Municipal Francisco Morato",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou cartão",
+                  "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+                "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+                "chunk": 15,
+                "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.686283,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15508"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "2dc03707-8ce4-4112-a37f-91965e21d1b9",
+            "role": "user",
+            "content": "Quanto tempo preciso esperar?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:40.874109Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "f50f85b3-0873-4d93-93e1-a3209e0a7402",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:11:40.874110Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+              "benefit_code": "15508",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 15,00",
+                "code": "15508",
+                "name": "Moratense - Cartão Municipal Francisco Morato",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro ou cartão",
+                "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+              "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+              "chunk": 15,
+              "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.686283,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "f50f85b3-0873-4d93-93e1-a3209e0a7402",
+            "role": "assistant",
+            "content": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+                "benefit_code": "15508",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 15,00",
+                  "code": "15508",
+                  "name": "Moratense - Cartão Municipal Francisco Morato",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro ou cartão",
+                  "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+                "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+                "chunk": 15,
+                "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.686283,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T15:11:40.874110Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "8fc593c4-4495-478c-b24b-68153a9b47c6",
+        "deadline": 14098.106635629,
+        "question": "Quanto tempo preciso esperar?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como solicito a segunda via do cartão código 15508?",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15508"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "8fc593c4-4495-478c-b24b-68153a9b47c6",
+        "deadline": 14098.106635629,
+        "question": "Quanto tempo preciso esperar?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [
+          {
+            "role": "user",
+            "content": "Como solicito a segunda via do cartão código 15508?",
+            "topic_id": "outros"
+          },
+          {
+            "role": "assistant",
+            "content": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "topic_id": "outros"
+          }
+        ],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15508"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+            "benefit_code": "15508",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 15,00",
+              "code": "15508",
+              "name": "Moratense - Cartão Municipal Francisco Morato",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou cartão",
+              "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+            "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+            "chunk": 15,
+            "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.686283,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "56edca0c-8c1e-4c99-8d38-68fab55963a5",
+            "benefit_code": "15508",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 15,00",
+              "code": "15508",
+              "name": "Moratense - Cartão Municipal Francisco Morato",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro ou cartão",
+              "procedure": "O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "15508 · Moratense - Cartão Municipal Francisco Morato",
+            "sha256": "56f14e736853d887fe3a0dd81bb26d3af93efb6d778e36a2d28aac2dc6428a19",
+            "chunk": 15,
+            "excerpt": "UF: SP\nCódigo do benefício: 15508\nCartão / operadora: Moratense - Cartão Municipal Francisco Morato\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro ou cartão\nTaxa: R$ 15,00\nProcedimento integral: O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.686283,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Quanto tempo preciso esperar?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Moratense - Cartão Municipal Francisco Morato** · Código 15508 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 15,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro ou cartão [fonte:F1]\n\n**Procedimento:** O cartão deve ser solicitado pelo funcionário presencialmente com documento original. Prazo: 3 dias úteis. Retirada pelo próprio funcionário com documento e protocolo. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 11065
+    }
+  ],
+  "conversation_id": "8fc593c4-4495-478c-b24b-68153a9b47c6",
+  "duration_ms": 22134,
+  "completed_at": "2026-10-21T15:11:51.890137+00:00"
+}

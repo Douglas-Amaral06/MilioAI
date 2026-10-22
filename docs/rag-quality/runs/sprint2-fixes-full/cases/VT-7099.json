@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-7099",
+  "input": {
+    "test_id": "VT-7099",
+    "question": "O que faço após bloquear o cartão do Consórcio Bus Mais?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:10:07.296453+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "771388f2-1e6d-4654-adf8-d1a21e98cf05",
+        "content": "O que faço após bloquear o cartão do Consórcio Bus Mais?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Consórcio Bus Mais. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "7099",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+              "benefit_code": "7099",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 20,00",
+                "code": "7099",
+                "name": "Consórcio Bus Mais",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "7099 · Consórcio Bus Mais",
+              "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+              "chunk": 10,
+              "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.74938,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2234
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 3503
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3516,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "vale_transporte",
+                "O que faço após bloquear o cartão do Consórcio Bus Mais?"
+              ]
+            ],
+            "deadline": 10402.852238829
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Consórcio Bus Mais** · Código 7099 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento [https://busmais.com.br/sobre/atendimento/](https://busmais.com.br/sobre/atendimento/) para solicitar a 2°via do cartão. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+                "benefit_code": "7099",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 20,00",
+                  "code": "7099",
+                  "name": "Consórcio Bus Mais",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "7099 · Consórcio Bus Mais",
+                "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+                "chunk": 10,
+                "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.74938,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+                "benefit_code": "7099",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 20,00",
+                  "code": "7099",
+                  "name": "Consórcio Bus Mais",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "7099 · Consórcio Bus Mais",
+                "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+                "chunk": 10,
+                "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.74938,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "7099"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "d2d00f28-3935-42dd-bad1-b3ffe2b1d52e",
+            "role": "user",
+            "content": "O que faço após bloquear o cartão do Consórcio Bus Mais?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:07.303322Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "304c4ec1-b433-4688-b191-d676690cc543",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:10:07.303323Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Consórcio Bus Mais** · Código 7099 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento [https://busmais.com.br/sobre/atendimento/](https://busmais.com.br/sobre/atendimento/) para solicitar a 2°via do cartão. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+              "benefit_code": "7099",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 20,00",
+                "code": "7099",
+                "name": "Consórcio Bus Mais",
+                "page": 1,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 1,
+              "section": "7099 · Consórcio Bus Mais",
+              "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+              "chunk": 10,
+              "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.74938,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "304c4ec1-b433-4688-b191-d676690cc543",
+            "role": "assistant",
+            "content": "**Consórcio Bus Mais** · Código 7099 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento [https://busmais.com.br/sobre/atendimento/](https://busmais.com.br/sobre/atendimento/) para solicitar a 2°via do cartão. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+                "benefit_code": "7099",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 20,00",
+                  "code": "7099",
+                  "name": "Consórcio Bus Mais",
+                  "page": 1,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 1,
+                "section": "7099 · Consórcio Bus Mais",
+                "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+                "chunk": 10,
+                "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.74938,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:10:07.303323Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0",
+        "deadline": 10402.852238829,
+        "question": "O que faço após bloquear o cartão do Consórcio Bus Mais?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0",
+        "deadline": 10402.852238829,
+        "question": "O que faço após bloquear o cartão do Consórcio Bus Mais?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "7099"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+            "benefit_code": "7099",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 20,00",
+              "code": "7099",
+              "name": "Consórcio Bus Mais",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "7099 · Consórcio Bus Mais",
+            "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+            "chunk": 10,
+            "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.74938,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "57b81d0e-003c-4052-873a-cb97461a8299",
+            "benefit_code": "7099",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 20,00",
+              "code": "7099",
+              "name": "Consórcio Bus Mais",
+              "page": 1,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 1,
+            "section": "7099 · Consórcio Bus Mais",
+            "sha256": "4b5bd150606e6f86080a3c3b8a619d1304d1e7532f3c4fdbb4bf4c74b5a929ca",
+            "chunk": 10,
+            "excerpt": "UF: SP\nCódigo do benefício: 7099\nCartão / operadora: Consórcio Bus Mais\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 20,00\nProcedimento integral: Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento https://busmais.com.br/sobre/atendimento/ para solicitar a 2°via do cartão.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.74938,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "vale_transporte",
+            "O que faço após bloquear o cartão do Consórcio Bus Mais?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Consórcio Bus Mais** · Código 7099 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 20,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** Entrar em contato no telefone 0800 777 2870 opção 3, após o bloqueio o titular deve dirigir- se a um dos Pontos de Atendimento [https://busmais.com.br/sobre/atendimento/](https://busmais.com.br/sobre/atendimento/) para solicitar a 2°via do cartão. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3523
+    }
+  ],
+  "conversation_id": "4dcc670f-1199-4ebb-8c73-abe8a33037d0",
+  "duration_ms": 3526,
+  "completed_at": "2026-10-21T14:10:10.822290+00:00"
+}

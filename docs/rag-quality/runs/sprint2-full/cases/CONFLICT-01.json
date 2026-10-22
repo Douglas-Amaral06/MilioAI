@@ -1,0 +1,216 @@
+{
+  "test_id": "CONFLICT-01",
+  "input": {
+    "test_id": "CONFLICT-01",
+    "question": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto",
+        "operational-services"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:01:26.847040+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "7d4e069a-2c15-424a-9274-1c767071966a",
+        "content": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 240
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 249,
+          "outcome": "operational",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "folha_ponto",
+                "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?"
+              ]
+            ],
+            "deadline": 6282.067367893
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "send_timesheet",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "operational",
+          "state": {
+            "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+            "sources": [],
+            "outcome": "operational",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle",
+              "detected_intent": "send_timesheet",
+              "selected_service": "send_timesheet"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "60196896-457a-4887-8eba-5eac218c190b",
+            "role": "user",
+            "content": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:26.857349Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "9c82cb6f-98b0-4530-8861-7f914793aaa2",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:26.857350Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados."
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "9c82cb6f-98b0-4530-8861-7f914793aaa2",
+            "role": "assistant",
+            "content": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:01:26.857350Z",
+            "outcome": "operational",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "ee2278bb-75a1-44d3-809c-f43deeda8692",
+        "deadline": 6282.067367893,
+        "question": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "ee2278bb-75a1-44d3-809c-f43deeda8692",
+        "deadline": 6282.067367893,
+        "question": "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle",
+          "detected_intent": "send_timesheet",
+          "selected_service": "send_timesheet"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "folha_ponto",
+            "Envio a folha pelo Conecta Jovem ou pelos canais do PDF?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "send_timesheet",
+        "answer": "Você pode acessar o [Conecta Jovem](https://conectajovem.dema.org.br/accounts/login/?next=/polo/1e677d8e-6e50-470a-b2d0-3c2051bc405a/) para encaminhar sua Folha Ponto assinada.\n\nConfirme com a área responsável o procedimento vigente; esta orientação não substitui outros canais informados.",
+        "outcome": "operational"
+      },
+      "duration_ms": 259
+    }
+  ],
+  "conversation_id": "ee2278bb-75a1-44d3-809c-f43deeda8692",
+  "duration_ms": 264,
+  "completed_at": "2026-10-21T13:01:27.110871+00:00"
+}

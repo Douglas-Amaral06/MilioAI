@@ -1,0 +1,9 @@
+{
+  "kind": "supplementary_read_only_policy_probe",
+  "production_deployment_test": false,
+  "model_calls": 0,
+  "frequency_production_filtered_rows": 0,
+  "transport_production_filtered_rows": 0,
+  "transport_development_rows": 33,
+  "transport_without_scope_rows": 0
+}

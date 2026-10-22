@@ -1,9 +1,14 @@
+import math
+import re
+from collections import Counter
+
 from sqlalchemy import select, true
 
+from app.agents.rh_frequency import normalize
 from app.db.models import Document, DocumentChunk
 
 
-def retrieval_query(vector, settings, scopes, domain, benefit_code=None):
+def authorized_corpus(settings, scopes, domain, benefit_code=None):
     authorized = (
         select(
             DocumentChunk.id,
@@ -38,7 +43,11 @@ def retrieval_query(vector, settings, scopes, domain, benefit_code=None):
         authorized = authorized.where(DocumentChunk.benefit_code == benefit_code)
     if settings.app_env != "development":
         authorized = authorized.where(Document.validation_only.is_(False))
-    corpus = authorized.cte("authorized").prefix_with("MATERIALIZED")
+    return authorized.cte("authorized").prefix_with("MATERIALIZED")
+
+
+def retrieval_query(vector, settings, scopes, domain, benefit_code=None):
+    corpus = authorized_corpus(settings, scopes, domain, benefit_code)
     distance = corpus.c.embedding.cosine_distance(vector)
     return (
         select(corpus, distance.label("distance"))
@@ -46,6 +55,37 @@ def retrieval_query(vector, settings, scopes, domain, benefit_code=None):
         .order_by(distance, corpus.c.id)
         .limit(settings.rag_top_k)
     )
+
+
+def lexical_rank(question, rows):
+    stop = set(
+        "a o os as de do da dos das em no na para por e um uma eu meu minha como qual quais posso pode preciso devo folha ponto".split()
+    )
+
+    def terms(text):
+        return [
+            t.rstrip("s")
+            for t in re.findall(r"[a-z0-9]+", normalize(text))
+            if len(t) > 2 and t not in stop
+        ]
+
+    query = set(terms(question))
+    counts = [Counter(terms(row["content"])) for row in rows]
+    frequencies = Counter(t for count in counts for t in count)
+    scored = []
+    average = sum(sum(c.values()) for c in counts) / max(len(counts), 1)
+    for row, count in zip(rows, counts, strict=True):
+        score = sum(
+            math.log(1 + (len(rows) - frequencies[t] + 0.5) / (frequencies[t] + 0.5))
+            * count[t]
+            * 2.2
+            / (count[t] + 1.2 * (0.25 + 0.75 * sum(count.values()) / max(average, 1)))
+            for t in query
+            if count[t]
+        )
+        if score > 0:
+            scored.append((score, row))
+    return [row for _, row in sorted(scored, key=lambda pair: (-pair[0], str(pair[1]["id"])))]
 
 
 async def retrieve(session, ollama, settings, question, scopes, domain, benefit_code=None):
@@ -57,6 +97,27 @@ async def retrieve(session, ollama, settings, question, scopes, domain, benefit_
         .mappings()
         .all()
     )
+    if domain == "rh_frequency" and benefit_code is None:
+        corpus = authorized_corpus(settings, scopes, domain)
+        candidates = (
+            (
+                await session.execute(
+                    select(corpus, corpus.c.embedding.cosine_distance(vector).label("distance"))
+                )
+            )
+            .mappings()
+            .all()
+        )
+        lexical = lexical_rank(question, candidates)
+        combined = {str(row["id"]): row for row in [*rows, *lexical]}
+        scores = Counter()
+        for weight, ranking in [(1, rows), (2, lexical)]:
+            for rank, row in enumerate(ranking, 1):
+                scores[str(row["id"])] += weight / (60 + rank)
+        rows = [
+            combined[key]
+            for key in sorted(scores, key=lambda key: (-scores[key], key))[: settings.rag_top_k]
+        ]
     return [
         {
             "id": str(r["id"]),

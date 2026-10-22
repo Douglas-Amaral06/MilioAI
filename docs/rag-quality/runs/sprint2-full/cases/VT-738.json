@@ -1,0 +1,434 @@
+{
+  "test_id": "VT-738",
+  "input": {
+    "test_id": "VT-738",
+    "question": "Posso autorizar outra pessoa para retirar o Transurb Bauru?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T13:00:33.043706+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "eac15d70-dced-43a9-96e9-325996a02cfc",
+        "content": "Posso autorizar outra pessoa para retirar o Transurb Bauru?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Transurb Bauru - Cartão Bauru - Comum / Municipal. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "738",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+              "benefit_code": "738",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 10,00",
+                "code": "738",
+                "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+              "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+              "chunk": 27,
+              "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.80501,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 2095
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 329
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 2955
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 3292,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Posso autorizar outra pessoa para retirar o Transurb Bauru?"
+              ]
+            ],
+            "deadline": 6228.25500204
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "transport_replacement",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Transurb Bauru - Cartão Bauru - Comum / Municipal** · Código 738 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+                "benefit_code": "738",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 10,00",
+                  "code": "738",
+                  "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+                "chunk": 27,
+                "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.80501,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+                "benefit_code": "738",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 10,00",
+                  "code": "738",
+                  "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+                "chunk": 27,
+                "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.80501,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "vt_stage": "active",
+              "stage": "idle",
+              "selected_card_code": "738"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "bcd71922-e80f-4c4f-a6d3-e770daa81420",
+            "role": "user",
+            "content": "Posso autorizar outra pessoa para retirar o Transurb Bauru?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:33.050413Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "40844fe4-8082-417d-91d3-63628c1f92bb",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T13:00:33.050414Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Transurb Bauru - Cartão Bauru - Comum / Municipal** · Código 738 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+              "benefit_code": "738",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 10,00",
+                "code": "738",
+                "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+              "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+              "chunk": 27,
+              "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.80501,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "40844fe4-8082-417d-91d3-63628c1f92bb",
+            "role": "assistant",
+            "content": "**Transurb Bauru - Cartão Bauru - Comum / Municipal** · Código 738 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+                "benefit_code": "738",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 10,00",
+                  "code": "738",
+                  "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+                "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+                "chunk": 27,
+                "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.80501,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T13:00:33.050414Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "a57bd711-470c-49bf-a376-ea05fd119de0",
+        "deadline": 6228.25500204,
+        "question": "Posso autorizar outra pessoa para retirar o Transurb Bauru?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "a57bd711-470c-49bf-a376-ea05fd119de0",
+        "deadline": 6228.25500204,
+        "question": "Posso autorizar outra pessoa para retirar o Transurb Bauru?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "active",
+          "stage": "idle",
+          "selected_card_code": "738"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+            "benefit_code": "738",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 10,00",
+              "code": "738",
+              "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+            "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+            "chunk": 27,
+            "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.80501,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "b5e3cb6e-f2d4-4ac2-960a-bddf652a4737",
+            "benefit_code": "738",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 10,00",
+              "code": "738",
+              "name": "Transurb Bauru - Cartão Bauru - Comum / Municipal",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "738 · Transurb Bauru - Cartão Bauru - Comum / Municipal",
+            "sha256": "3bc5a0372d4bfd12068f9295a60b7bc2c9051e100e08797188d37f1287dabdf8",
+            "chunk": 27,
+            "excerpt": "UF: SP\nCódigo do benefício: 738\nCartão / operadora: Transurb Bauru - Cartão Bauru - Comum / Municipal\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 10,00\nProcedimento integral: O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.80501,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Posso autorizar outra pessoa para retirar o Transurb Bauru?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "transport_replacement",
+        "answer": "**Transurb Bauru - Cartão Bauru - Comum / Municipal** · Código 738 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 10,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** O Jovem pode bloquear, solicitar e retirar a 2ª via, ou autorizar um terceiro com documento original em um posto de atendimento da operadora. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 3299
+    }
+  ],
+  "conversation_id": "a57bd711-470c-49bf-a376-ea05fd119de0",
+  "duration_ms": 3302,
+  "completed_at": "2026-10-21T13:00:36.346060+00:00"
+}

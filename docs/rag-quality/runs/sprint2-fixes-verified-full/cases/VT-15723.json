@@ -1,0 +1,417 @@
+{
+  "test_id": "VT-15723",
+  "input": {
+    "test_id": "VT-15723",
+    "question": "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "vt-segunda-via"
+      ]
+    }
+  },
+  "started_at": "2026-10-21T14:18:09.075796+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "ae96e9e9-9299-487f-a537-a970d2dc3553",
+        "content": "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Segunda via. Viação São Bento - Cartão Ribeirão Preto X Serrana. Como solicitar a segunda via? Informe o procedimento completo, responsável, taxa e pagamento.",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "beneficios.vale_transporte.segunda_via",
+          "benefit_code": "15723",
+          "app_env_filter": "development",
+          "version_filter": "vt-segunda-via-local-v1",
+          "chunks": [
+            {
+              "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+              "benefit_code": "15723",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 37,00",
+                "code": "15723",
+                "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+              "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+              "chunk": 32,
+              "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.807459,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 42
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 6
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport",
+          "domain": null,
+          "duration_ms": 1186
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 1203,
+          "outcome": "answered",
+          "success": true
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?"
+              ]
+            ],
+            "deadline": 10884.888200929
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": true
+          }
+        },
+        {
+          "node": "transport",
+          "state": {
+            "answer": "**Viação São Bento - Cartão Ribeirão Preto X Serrana** · Código 15723 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 37,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "chunks": [
+              {
+                "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+                "benefit_code": "15723",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 37,00",
+                  "code": "15723",
+                  "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+                "chunk": 32,
+                "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.807459,
+                "status": "approved"
+              }
+            ],
+            "sources": [
+              {
+                "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+                "benefit_code": "15723",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 37,00",
+                  "code": "15723",
+                  "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+                "chunk": 32,
+                "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.807459,
+                "status": "approved"
+              }
+            ],
+            "outcome": "answered",
+            "support_state": {
+              "stage": "idle",
+              "vt_stage": "active",
+              "selected_card_code": "15723"
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "a6d90da8-54f5-483f-8488-0a656b9d8079",
+            "role": "user",
+            "content": "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T14:18:09.116489Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "172f4fbc-072e-4ea4-bc58-4d49ec2b6c9c",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T14:18:09.116490Z",
+            "outcome": null,
+            "topic_id": "outros",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "**Viação São Bento - Cartão Ribeirão Preto X Serrana** · Código 15723 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 37,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]"
+        },
+        {
+          "event": "sources",
+          "sources": [
+            {
+              "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+              "benefit_code": "15723",
+              "attributes": {
+                "uf": "SP",
+                "fee": "R$ 37,00",
+                "code": "15723",
+                "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                "page": 2,
+                "payer": "Jovem",
+                "review": "",
+                "payment": "Dinheiro",
+                "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                "requester": "Jovem"
+              },
+              "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+              "title": "orientações segunda via cartões vt (1).pdf",
+              "version": "vt-segunda-via-local-v1",
+              "page": 2,
+              "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+              "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+              "chunk": 32,
+              "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.807459,
+              "status": "approved"
+            }
+          ]
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "172f4fbc-072e-4ea4-bc58-4d49ec2b6c9c",
+            "role": "assistant",
+            "content": "**Viação São Bento - Cartão Ribeirão Preto X Serrana** · Código 15723 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 37,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+            "status": "complete",
+            "sources": [
+              {
+                "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+                "benefit_code": "15723",
+                "attributes": {
+                  "uf": "SP",
+                  "fee": "R$ 37,00",
+                  "code": "15723",
+                  "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                  "page": 2,
+                  "payer": "Jovem",
+                  "review": "",
+                  "payment": "Dinheiro",
+                  "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                  "requester": "Jovem"
+                },
+                "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+                "title": "orientações segunda via cartões vt (1).pdf",
+                "version": "vt-segunda-via-local-v1",
+                "page": 2,
+                "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+                "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+                "chunk": 32,
+                "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.807459,
+                "status": "approved"
+              }
+            ],
+            "created_at": "2026-10-21T14:18:09.116490Z",
+            "outcome": "answered",
+            "topic_id": "outros",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "4c263de8-c34b-4689-a24e-e7ef38bb1934",
+        "deadline": 10884.888200929,
+        "question": "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "4c263de8-c34b-4689-a24e-e7ef38bb1934",
+        "deadline": 10884.888200929,
+        "question": "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?",
+        "topic_id": "outros",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "stage": "idle",
+          "vt_stage": "active",
+          "selected_card_code": "15723"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+            "benefit_code": "15723",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 37,00",
+              "code": "15723",
+              "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+            "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+            "chunk": 32,
+            "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.807459,
+            "status": "approved"
+          }
+        ],
+        "sources": [
+          {
+            "id": "80be3d59-a1a1-4aee-969f-3820903a8549",
+            "benefit_code": "15723",
+            "attributes": {
+              "uf": "SP",
+              "fee": "R$ 37,00",
+              "code": "15723",
+              "name": "Viação São Bento - Cartão Ribeirão Preto X Serrana",
+              "page": 2,
+              "payer": "Jovem",
+              "review": "",
+              "payment": "Dinheiro",
+              "procedure": "A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+              "requester": "Jovem"
+            },
+            "document_id": "95cf8dd3-864f-42a9-866c-9e1cf8a08c52",
+            "title": "orientações segunda via cartões vt (1).pdf",
+            "version": "vt-segunda-via-local-v1",
+            "page": 2,
+            "section": "15723 · Viação São Bento - Cartão Ribeirão Preto X Serrana",
+            "sha256": "1a2c05d90dbc8eecd0a96249c81a2c620e0060ee29e7bc1349431f524ad1ddb8",
+            "chunk": 32,
+            "excerpt": "UF: SP\nCódigo do benefício: 15723\nCartão / operadora: Viação São Bento - Cartão Ribeirão Preto X Serrana\nQuem solicita: Jovem\nQuem paga: Jovem\nForma de pagamento: Dinheiro\nTaxa: R$ 37,00\nProcedimento integral: A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original.",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.807459,
+            "status": "approved"
+          }
+        ],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Qual o prazo e documento na segunda via São Bento Ribeirão Preto x Serrana?"
+          ]
+        ],
+        "vt_route": true,
+        "answer": "**Viação São Bento - Cartão Ribeirão Preto X Serrana** · Código 15723 · SP [fonte:F1]\n\nConforme o documento fornecido; valores e procedimentos têm vigência não confirmada. [fonte:F1]\n\n**Quem solicita:** Jovem [fonte:F1]\n\n**Quem paga:** Jovem [fonte:F1]\n\n**Taxa documentada:** R$ 37,00 [fonte:F1]\n\n**Forma de pagamento:** Dinheiro [fonte:F1]\n\n**Procedimento:** A solicitação deve ser feita pessoalmente no local indicado (varias por cidade) pelo titular, apresentando boletim de ocorrência em caso de perda ou roubo. Prazo para retirada: 7 dias úteis, somente pelo titular, com RG original. [fonte:F1]\n\nDocumentos, contatos e prazos: considere apenas os especificados no procedimento acima; a tabela não detalha os demais. [fonte:F1]",
+        "outcome": "answered"
+      },
+      "duration_ms": 1221
+    }
+  ],
+  "conversation_id": "4c263de8-c34b-4689-a24e-e7ef38bb1934",
+  "duration_ms": 1252,
+  "completed_at": "2026-10-21T14:18:10.327907+00:00"
+}

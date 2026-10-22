@@ -1,0 +1,3393 @@
+{
+  "run_id": "rag-real-b5cacfd7101c",
+  "counts": {
+    "dataset": 76,
+    "executed": 76,
+    "approved_semantically": 0,
+    "failed_observable_checks": 10,
+    "inconclusive_semantics": 66,
+    "not_executed": 0
+  },
+  "automatic_statuses": {
+    "inconclusive_checks": 24,
+    "passed_checks": 42,
+    "failed_checks": 10
+  },
+  "by_domain": {
+    "folha_ponto": {
+      "executed": 20,
+      "statuses": {
+        "inconclusivo": 14,
+        "reprovado": 6
+      },
+      "automatic_statuses": {
+        "inconclusive_checks": 12,
+        "failed_checks": 6,
+        "passed_checks": 2
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.6666666666666666,
+          "n": 18
+        },
+        "recall_at_3": {
+          "value": 0.6666666666666666,
+          "n": 18
+        },
+        "mrr_at_3": {
+          "value": 0.5740740740740741,
+          "n": 18
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.0,
+          "n": 18
+        },
+        "recall_at_3": {
+          "value": 0.0,
+          "n": 18
+        },
+        "mrr_at_3": {
+          "value": 0.0,
+          "n": 18
+        }
+      },
+      "required_fact_lexical_coverage": 0.325,
+      "citation_location_completeness": 0.6388888888888888,
+      "behavior_match": 0.7,
+      "context_match": 1.0,
+      "card_match": 1.0,
+      "latency_question": {
+        "n": 20,
+        "mean_ms": 15800,
+        "p50_ms": 20658,
+        "p95_ms": 28071,
+        "max_ms": 36266
+      },
+      "latency_with_context": {
+        "n": 20,
+        "mean_ms": 16894,
+        "p50_ms": 20690,
+        "p95_ms": 36314,
+        "max_ms": 47472
+      }
+    },
+    "governance": {
+      "executed": 4,
+      "statuses": {
+        "inconclusivo": 4
+      },
+      "automatic_statuses": {
+        "inconclusive_checks": 4
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "citation_location_completeness": null,
+      "behavior_match": 1.0,
+      "context_match": null,
+      "card_match": null,
+      "latency_question": {
+        "n": 4,
+        "mean_ms": 898,
+        "p50_ms": 98,
+        "p95_ms": 1756,
+        "max_ms": 1756
+      },
+      "latency_with_context": {
+        "n": 4,
+        "mean_ms": 910,
+        "p50_ms": 116,
+        "p95_ms": 1768,
+        "max_ms": 1768
+      }
+    },
+    "operational": {
+      "executed": 5,
+      "statuses": {
+        "inconclusivo": 1,
+        "reprovado": 4
+      },
+      "automatic_statuses": {
+        "inconclusive_checks": 1,
+        "failed_checks": 4
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "recall_at_3": {
+          "value": null,
+          "n": 0
+        },
+        "mrr_at_3": {
+          "value": null,
+          "n": 0
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.0,
+          "n": 4
+        },
+        "recall_at_3": {
+          "value": 0.0,
+          "n": 4
+        },
+        "mrr_at_3": {
+          "value": 0.0,
+          "n": 4
+        }
+      },
+      "required_fact_lexical_coverage": 0.1,
+      "citation_location_completeness": 0.0,
+      "behavior_match": 0.8,
+      "context_match": 1.0,
+      "card_match": 1.0,
+      "latency_question": {
+        "n": 5,
+        "mean_ms": 1332,
+        "p50_ms": 1648,
+        "p95_ms": 3119,
+        "max_ms": 3119
+      },
+      "latency_with_context": {
+        "n": 5,
+        "mean_ms": 1704,
+        "p50_ms": 1721,
+        "p95_ms": 3168,
+        "max_ms": 3168
+      }
+    },
+    "vale_transporte": {
+      "executed": 47,
+      "statuses": {
+        "inconclusivo": 47
+      },
+      "automatic_statuses": {
+        "inconclusive_checks": 7,
+        "passed_checks": 40
+      },
+      "location_only_metrics": {
+        "hit_rate_at_3": {
+          "value": 1.0,
+          "n": 42
+        },
+        "recall_at_3": {
+          "value": 1.0,
+          "n": 42
+        },
+        "mrr_at_3": {
+          "value": 1.0,
+          "n": 42
+        }
+      },
+      "strict_metrics": {
+        "hit_rate_at_3": {
+          "value": 0.0,
+          "n": 42
+        },
+        "recall_at_3": {
+          "value": 0.0,
+          "n": 42
+        },
+        "mrr_at_3": {
+          "value": 0.0,
+          "n": 42
+        }
+      },
+      "required_fact_lexical_coverage": 0.9361702127659575,
+      "citation_location_completeness": 1.0,
+      "behavior_match": 0.8723404255319149,
+      "context_match": 1.0,
+      "card_match": 1.0,
+      "latency_question": {
+        "n": 47,
+        "mean_ms": 14318,
+        "p50_ms": 14533,
+        "p95_ms": 21894,
+        "max_ms": 41919
+      },
+      "latency_with_context": {
+        "n": 47,
+        "mean_ms": 17660,
+        "p50_ms": 15072,
+        "p95_ms": 30170,
+        "max_ms": 84585
+      }
+    }
+  },
+  "strict_metrics": {
+    "hit_rate_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "mrr_at_k": 0.0,
+    "document_match_at_k": 0.0,
+    "section_or_card_match_at_k": 0.0,
+    "required_fact_lexical_coverage": 0.6710526315789473,
+    "citation_precision": 0.0,
+    "citation_completeness": 0.0,
+    "behavior_trace_match_rate": 0.8289473684210527,
+    "context_trace_match_rate": 1.0,
+    "domain_trace_match_rate": 1.0,
+    "card_trace_match_rate": 1.0,
+    "citation_policy_pass_rate": 0.15789473684210525,
+    "source_authorization_pass_rate": 0.27631578947368424,
+    "fallback_behavior_trace_match_rate": 1.0,
+    "clarification_behavior_trace_match_rate": 1.0
+  },
+  "strict_metric_denominators": {
+    "hit_rate_at_k": 64,
+    "recall_at_k": 64,
+    "mrr_at_k": 64,
+    "document_match_at_k": 64,
+    "section_or_card_match_at_k": 64,
+    "required_fact_lexical_coverage": 76,
+    "citation_precision": 54,
+    "citation_completeness": 64,
+    "behavior_trace_match_rate": 76,
+    "context_trace_match_rate": 44,
+    "domain_trace_match_rate": 44,
+    "card_trace_match_rate": 44,
+    "citation_policy_pass_rate": 76,
+    "source_authorization_pass_rate": 76,
+    "fallback_behavior_trace_match_rate": 9,
+    "clarification_behavior_trace_match_rate": 3
+  },
+  "failure_categories": {
+    "behavior_mismatch": 7,
+    "expected_location_not_retrieved": 6,
+    "expected_citation_location_missing": 10
+  },
+  "runtime_event_counts": {
+    "intents_identified": 86,
+    "stage_finished": 393,
+    "response_finished": 86,
+    "intent_finished": 2,
+    "retrieval_complete": 15,
+    "evidence_assessed": 15
+  },
+  "grounding_events": [],
+  "failure_events": [],
+  "integrity": [
+    {
+      "test_id": "AUTH-01",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "AUTH-02",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "AUTH-03",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "AUTH-04",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CONFLICT-01",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CONFLICT-02",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-01",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-02",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-03",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-04",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-05",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-06",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-07",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-08",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "CTX-09",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-01",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-02",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-03",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-04",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-05",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-06",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-07",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-08",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-09",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-10",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-11",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-12",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-13",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-14",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-15",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "FP-16",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-01",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-02",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-03",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-04",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-05",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-06",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-07",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "NEG-08",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "OP-01",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "OP-02",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "OP-03",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "OP-04",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-10394",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-10398",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-10420",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-1071",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-10771",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-155",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15504",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15506",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15508",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15510",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15511",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15512",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15515",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15566",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15723",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15779",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-15780",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-164",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-182",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-1892",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-200",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-216",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-2337",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-3845",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-3854",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-472",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-503",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-5631",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-7099",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-738",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-89",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-9156",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    },
+    {
+      "test_id": "VT-937",
+      "exact_question": true,
+      "stream_matches_final": true,
+      "sources_were_retrieved": true,
+      "citation_markers_resolve": true,
+      "has_completed_response": true
+    }
+  ],
+  "cases": [
+    {
+      "test_id": "AUTH-01",
+      "domain": "governance",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 98,
+      "total_case_duration_ms": 116,
+      "production_deployment_assessed": false,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "AUTH-02",
+      "domain": "governance",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1756,
+      "total_case_duration_ms": 1768,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "AUTH-03",
+      "domain": "governance",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1672,
+      "total_case_duration_ms": 1681,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "AUTH-04",
+      "domain": "governance",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 66,
+      "total_case_duration_ms": 75,
+      "production_deployment_assessed": false,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CONFLICT-01",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.5
+      },
+      "citation_location_completeness": 0.5,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 25294,
+      "total_case_duration_ms": 25320,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CONFLICT-02",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15614,
+      "total_case_duration_ms": 15625,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-01",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 10135,
+      "total_case_duration_ms": 21157,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-02",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 12741,
+      "total_case_duration_ms": 24112,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-03",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11659,
+      "total_case_duration_ms": 23416,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-04",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 12602,
+      "total_case_duration_ms": 24814,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-05",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11065,
+      "total_case_duration_ms": 22134,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-06",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15538,
+      "total_case_duration_ms": 30170,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-07",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 26155,
+      "total_case_duration_ms": 47472,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-08",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 41919,
+      "total_case_duration_ms": 84585,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "CTX-09",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 39308,
+      "total_case_duration_ms": 80150,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-01",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 14885,
+      "total_case_duration_ms": 14904,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-02",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 19144,
+      "total_case_duration_ms": 19171,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-03",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 24024,
+      "total_case_duration_ms": 24050,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-04",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.5
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 20658,
+      "total_case_duration_ms": 20690,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-05",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 220,
+      "total_case_duration_ms": 244,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-06",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 22609,
+      "total_case_duration_ms": 22637,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-07",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 21471,
+      "total_case_duration_ms": 21500,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-08",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 20710,
+      "total_case_duration_ms": 20737,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-09",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 27711,
+      "total_case_duration_ms": 27736,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-10",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 36266,
+      "total_case_duration_ms": 36314,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-11",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 2035,
+      "total_case_duration_ms": 2065,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-12",
+      "domain": "folha_ponto",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 0.3333333333333333
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 21311,
+      "total_case_duration_ms": 21339,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-13",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1365,
+      "total_case_duration_ms": 1394,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-14",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 939,
+      "total_case_duration_ms": 969,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-15",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1556,
+      "total_case_duration_ms": 1583,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "FP-16",
+      "domain": "folha_ponto",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_location_not_retrieved",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": false,
+        "recall_at_3": 0.0,
+        "reciprocal_rank_at_3": 0
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": false,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1230,
+      "total_case_duration_ms": 1258,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-01",
+      "domain": "folha_ponto",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 28071,
+      "total_case_duration_ms": 28113,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-02",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 348,
+      "total_case_duration_ms": 385,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-03",
+      "domain": "folha_ponto",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 344,
+      "total_case_duration_ms": 384,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-04",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 4244,
+      "total_case_duration_ms": 4287,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-05",
+      "domain": "operational",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "fallback",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 3119,
+      "total_case_duration_ms": 3168,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-06",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "clarify",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 256,
+      "total_case_duration_ms": 292,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-07",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "clarify",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 213,
+      "total_case_duration_ms": 243,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "NEG-08",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": null,
+      "strict_version_metrics": {
+        "hit_at_k": null,
+        "recall_at_k": null,
+        "reciprocal_rank_at_k": null,
+        "document_match_at_k": null,
+        "section_or_card_match_at_k": null
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "clarify",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 227,
+      "total_case_duration_ms": 257,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "OP-01",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1648,
+      "total_case_duration_ms": 1657,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "OP-02",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 1710,
+      "total_case_duration_ms": 1721,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "OP-03",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "behavior_mismatch",
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "clarify",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 80,
+      "total_case_duration_ms": 1856,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "OP-04",
+      "domain": "operational",
+      "automatic_status": "failed_checks",
+      "final_status": "reprovado",
+      "reasons": [
+        "expected_citation_location_missing"
+      ],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": null,
+        "recall_at_3": null,
+        "reciprocal_rank_at_3": null
+      },
+      "citation_location_completeness": 0.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": null,
+      "card_match": null,
+      "question_duration_ms": 105,
+      "total_case_duration_ms": 117,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-10394",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14865,
+      "total_case_duration_ms": 14890,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-10398",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 17662,
+      "total_case_duration_ms": 17689,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-10420",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15354,
+      "total_case_duration_ms": 15380,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-1071",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14692,
+      "total_case_duration_ms": 14703,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-10771",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15203,
+      "total_case_duration_ms": 15229,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-155",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 10720,
+      "total_case_duration_ms": 10746,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15504",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 16363,
+      "total_case_duration_ms": 16391,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15506",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14957,
+      "total_case_duration_ms": 14992,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15508",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14259,
+      "total_case_duration_ms": 14285,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15510",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 17360,
+      "total_case_duration_ms": 17389,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15511",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 21894,
+      "total_case_duration_ms": 21922,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15512",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 20714,
+      "total_case_duration_ms": 21183,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15515",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15852,
+      "total_case_duration_ms": 15887,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15566",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15790,
+      "total_case_duration_ms": 15817,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15723",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 13460,
+      "total_case_duration_ms": 13485,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15779",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 17667,
+      "total_case_duration_ms": 17692,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-15780",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 20007,
+      "total_case_duration_ms": 20034,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-164",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15364,
+      "total_case_duration_ms": 15388,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-182",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 17425,
+      "total_case_duration_ms": 17452,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-1892",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11951,
+      "total_case_duration_ms": 11960,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-200",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11726,
+      "total_case_duration_ms": 11753,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-216",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11657,
+      "total_case_duration_ms": 11690,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-2337",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14237,
+      "total_case_duration_ms": 14262,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-3845",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 15048,
+      "total_case_duration_ms": 15072,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-3854",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 17611,
+      "total_case_duration_ms": 17636,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-472",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11453,
+      "total_case_duration_ms": 11478,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-503",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 11724,
+      "total_case_duration_ms": 11748,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-5631",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14305,
+      "total_case_duration_ms": 14333,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-7099",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14533,
+      "total_case_duration_ms": 14562,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-738",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 12570,
+      "total_case_duration_ms": 12598,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-89",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 12882,
+      "total_case_duration_ms": 12913,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-9156",
+      "domain": "vale_transporte",
+      "automatic_status": "inconclusive_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [
+        "answer_includes_explicit_review_notice; behavior_taxonomy_needs_review"
+      ],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 0.5,
+      "forbidden_lexical_alerts": [],
+      "behavior": "surface_conflict",
+      "behavior_match": false,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 14567,
+      "total_case_duration_ms": 14593,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    },
+    {
+      "test_id": "VT-937",
+      "domain": "vale_transporte",
+      "automatic_status": "passed_checks",
+      "final_status": "inconclusivo",
+      "reasons": [],
+      "review_alerts": [],
+      "review_override": null,
+      "location_only": {
+        "hit_at_3": true,
+        "recall_at_3": 1.0,
+        "reciprocal_rank_at_3": 1.0
+      },
+      "citation_location_completeness": 1.0,
+      "strict_version_metrics": {
+        "hit_at_k": false,
+        "recall_at_k": 0.0,
+        "reciprocal_rank_at_k": 0,
+        "document_match_at_k": false,
+        "section_or_card_match_at_k": false
+      },
+      "required_fact_lexical_coverage": 1.0,
+      "forbidden_lexical_alerts": [],
+      "behavior": "answer",
+      "behavior_match": true,
+      "context_match": true,
+      "card_match": true,
+      "question_duration_ms": 13196,
+      "total_case_duration_ms": 13220,
+      "production_deployment_assessed": null,
+      "manual_semantic_review": "pending"
+    }
+  ],
+  "limitations": [
+    "Location-only metrics ignore version; they do not establish snapshot equivalence or semantic support.",
+    "Lexical checks cannot approve semantic fidelity or absence of hallucination.",
+    "Corporate cases exercise production document filtering inside development; production authentication/deployment is not assessed."
+  ]
+}

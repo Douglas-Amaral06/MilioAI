@@ -183,6 +183,7 @@ async def execute(app, principal, cid, payload, prepared):
             async for mode, value in app.state.graph.astream(
                 {
                     "conversation_id": str(cid),
+                    "deadline": start + settings.ollama_timeout - 2,
                     "question": user.content,
                     "topic_id": user.topic_id,
                     "question_id": user.question_id,
@@ -213,7 +214,7 @@ async def execute(app, principal, cid, payload, prepared):
             support_state=result.get("support_state", support_state),
         )
         succeeded = True
-        completed = True
+        completed = result.get("outcome") not in {"partial", "no_evidence", "error"}
         yield {"event": "done", "message": wire(message)}
     except (asyncio.CancelledError, GeneratorExit):
         raise
@@ -258,6 +259,7 @@ async def execute(app, principal, cid, payload, prepared):
             "response_finished",
             extra={
                 "agent": result.get("agent"),
+                "outcome": result.get("outcome", "error"),
                 "duration_ms": round((time.monotonic() - start) * 1000),
                 "success": completed,
             },

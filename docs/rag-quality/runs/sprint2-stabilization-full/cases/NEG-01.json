@@ -1,0 +1,402 @@
+{
+  "test_id": "NEG-01",
+  "input": {
+    "test_id": "NEG-01",
+    "question": "Qual o prazo de entrega de atestado médico segundo estes documentos?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": []
+    }
+  },
+  "started_at": "2026-10-21T15:15:57.008801+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "a6f9a1c3-7025-4ade-b4f0-430f54d4804a",
+        "content": "Qual o prazo de entrega de atestado médico segundo estes documentos?",
+        "topic_id": null,
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Atestados: Qual o prazo de entrega de atestado médico segundo estes documentos?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "2. Periodicidade e Prazo",
+              "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+              "chunk": 2,
+              "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.394314,
+              "status": "approved"
+            },
+            {
+              "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "8. Dúvidas",
+              "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+              "chunk": 8,
+              "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.355826,
+              "status": "approved"
+            },
+            {
+              "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "6. Envio do documento",
+              "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+              "chunk": 6,
+              "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.380752,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 22241
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 2
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 22250
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "none",
+          "chunk_count": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 5461
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 27906,
+          "outcome": "no_evidence",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                "atestados",
+                "Qual o prazo de entrega de atestado médico segundo estes documentos?"
+              ]
+            ],
+            "deadline": 14354.69519151
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "atestados",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "e69bf7cd-f8f4-4cc1-bcba-09e28675ecb5",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "2. Periodicidade e Prazo",
+                "sha256": "113b41a188b33946fa908872c46281dad8999bdd6763e274532625f33ea0da4c",
+                "chunk": 2,
+                "excerpt": "2.\nPeriodicidade e Prazo\n• A Folha Ponto deve ser preenchida diariamente e enviada mensalmente ao RH\nJovem\n• Deve ser enviada até o segundo dia útil do mês\nEnvio fora do prazo pode resultar em:\n• Bloqueio da entrada da capacitação teórica e/ou prática\n• Advertência verbal e/ou por escrito\n• Não recebimento dos proventos e benefícios",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.394314,
+                "status": "approved"
+              },
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.355826,
+                "status": "approved"
+              },
+              {
+                "id": "bd551e64-abb3-4f81-8601-f3941f0b61f7",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "6. Envio do documento",
+                "sha256": "df064c6accbaceb15e123137710437f53e52e304ed1eeb65efe0b593f80181a6",
+                "chunk": 6,
+                "excerpt": "6.\nEnvio do documento\n• Enviar conforme canal oficial informado pelo RH Jovem:\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028\n• Preferencialmente em PDF ou foto legível",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.380752,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Atestados: Qual o prazo de entrega de atestado médico segundo estes documentos?",
+            "document_question": "Qual o prazo de entrega de atestado médico segundo estes documentos?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "none",
+            "chunks": []
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "outcome": "no_evidence"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "sources": [],
+            "outcome": "no_evidence"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "407636e3-2ff1-4353-b6a1-fa130fc5ca05",
+            "role": "user",
+            "content": "Qual o prazo de entrega de atestado médico segundo estes documentos?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:15:57.137467Z",
+            "outcome": null,
+            "topic_id": "atestados",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "ed31fc1b-7def-4ae0-9f1e-f3e08a708be4",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:15:57.137468Z",
+            "outcome": null,
+            "topic_id": "atestados",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida."
+        },
+        {
+          "event": "sources",
+          "sources": []
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "ed31fc1b-7def-4ae0-9f1e-f3e08a708be4",
+            "role": "assistant",
+            "content": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:15:57.137468Z",
+            "outcome": "no_evidence",
+            "topic_id": "atestados",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "9257ad03-5a4e-482b-88ab-8dd5648cb35d",
+        "deadline": 14354.69519151,
+        "question": "Qual o prazo de entrega de atestado médico segundo estes documentos?",
+        "topic_id": "atestados",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "9257ad03-5a4e-482b-88ab-8dd5648cb35d",
+        "deadline": 14354.69519151,
+        "question": "Qual o prazo de entrega de atestado médico segundo estes documentos?",
+        "topic_id": "atestados",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            "atestados",
+            "Qual o prazo de entrega de atestado médico segundo estes documentos?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Atestados: Qual o prazo de entrega de atestado médico segundo estes documentos?",
+        "document_question": "Qual o prazo de entrega de atestado médico segundo estes documentos?",
+        "coverage": "none",
+        "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+        "outcome": "no_evidence"
+      },
+      "duration_ms": 28071
+    }
+  ],
+  "conversation_id": "9257ad03-5a4e-482b-88ab-8dd5648cb35d",
+  "duration_ms": 28113,
+  "completed_at": "2026-10-21T15:16:25.077549+00:00"
+}

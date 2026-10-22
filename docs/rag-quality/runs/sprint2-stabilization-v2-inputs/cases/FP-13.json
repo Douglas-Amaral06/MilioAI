@@ -1,0 +1,456 @@
+{
+  "test_id": "FP-13",
+  "input": {
+    "test_id": "FP-13",
+    "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+    "conversation_context": {
+      "prior_turns": [],
+      "selected_benefit_code": null
+    },
+    "run_context": {
+      "environment": "local_review",
+      "scopes": [
+        "local_review"
+      ],
+      "allowed_document_ids": [
+        "folha-ponto"
+      ]
+    },
+    "scenario_input": {
+      "topic_id": "folha_ponto"
+    }
+  },
+  "started_at": "2026-10-21T15:21:37.501527+00:00",
+  "effective_scopes": [
+    "local_review"
+  ],
+  "execution_environment": "development",
+  "policy_profile": "local_review",
+  "turns": [
+    {
+      "kind": "evaluated_question",
+      "payload": {
+        "request_id": "5fd9944a-41ba-4d3a-9ed6-cabe58be1de8",
+        "content": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "action": null,
+        "attachment_ids": []
+      },
+      "retrieval_calls": [
+        {
+          "query": "Folha Ponto: Com quem tiro dúvidas e quando devo procurar ajuda?",
+          "scopes": [
+            "local_review"
+          ],
+          "domain": "rh_frequency",
+          "benefit_code": null,
+          "app_env_filter": "development",
+          "version_filter": "folha-ponto-local-v1",
+          "chunks": [
+            {
+              "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "8. Dúvidas",
+              "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+              "chunk": 8,
+              "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.518417,
+              "status": "approved"
+            },
+            {
+              "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 2,
+              "section": "5. Assinaturas obrigatórias",
+              "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+              "chunk": 5,
+              "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.431209,
+              "status": "approved"
+            },
+            {
+              "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+              "benefit_code": null,
+              "attributes": {},
+              "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+              "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+              "version": "folha-ponto-local-v1",
+              "page": 1,
+              "section": "3. Como preencher corretamente",
+              "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+              "chunk": 3,
+              "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+              "is_test": false,
+              "validation_only": true,
+              "score": 0.369005,
+              "status": "approved"
+            }
+          ],
+          "duration_ms": 14564
+        }
+      ],
+      "logs": [
+        {
+          "event": "intents_identified"
+        },
+        {
+          "event": "stage_finished",
+          "stage": "entry",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "transport_gate",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "operational_router",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate_context",
+          "domain": null,
+          "duration_ms": 0
+        },
+        {
+          "event": "retrieval_complete",
+          "chunk_count": 3
+        },
+        {
+          "event": "stage_finished",
+          "stage": "retrieve",
+          "domain": "rh_frequency",
+          "duration_ms": 14576
+        },
+        {
+          "event": "evidence_assessed",
+          "coverage": "partial",
+          "chunk_count": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "assess",
+          "domain": "rh_frequency",
+          "duration_ms": 5949
+        },
+        {
+          "event": "stage_finished",
+          "stage": "generate",
+          "domain": "rh_frequency",
+          "duration_ms": 11647
+        },
+        {
+          "event": "grounding_failed",
+          "error_type": "Unsupported number",
+          "repair_attempt": 0
+        },
+        {
+          "event": "grounding_repair"
+        },
+        {
+          "event": "grounding_failed",
+          "error_type": "Unsupported number",
+          "repair_attempt": 1
+        },
+        {
+          "event": "stage_finished",
+          "stage": "validate",
+          "domain": "rh_frequency",
+          "duration_ms": 13238
+        },
+        {
+          "event": "stage_finished",
+          "stage": "finish_document",
+          "domain": "rh_frequency",
+          "duration_ms": 0
+        },
+        {
+          "event": "response_finished",
+          "duration_ms": 45553,
+          "outcome": "no_evidence",
+          "success": false
+        }
+      ],
+      "updates": [
+        {
+          "node": "entry",
+          "state": {
+            "entry_route": "transport_gate",
+            "planned": [
+              [
+                null,
+                "Com quem tiro dúvidas quando devo procurar ajuda?"
+              ]
+            ],
+            "deadline": 14695.334904379
+          }
+        },
+        {
+          "node": "transport_gate",
+          "state": {
+            "vt_route": false
+          }
+        },
+        {
+          "node": "operational_router",
+          "state": {
+            "detected_intent": "documental",
+            "support_state": {
+              "vt_stage": "idle",
+              "stage": "idle"
+            }
+          }
+        },
+        {
+          "node": "validate_context",
+          "state": {
+            "topic_id": "folha_ponto",
+            "domain": "rh_frequency",
+            "agent": "rh_frequency",
+            "comprehensible": true
+          }
+        },
+        {
+          "node": "retrieve",
+          "state": {
+            "chunks": [
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.518417,
+                "status": "approved"
+              },
+              {
+                "id": "9952a53b-ea93-4457-a817-8316c0c72208",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "5. Assinaturas obrigatórias",
+                "sha256": "183ef6aeddd6b6a5d9b2fc14cf7ccce9ac34824d3a2751f9ea182082d76c511b",
+                "chunk": 5,
+                "excerpt": "5.\nAssinaturas obrigatórias\nA Folha Ponto só é válida quando contém:\n• Assinatura do Aprendiz\n• Assinatura e carimbo do Gestor/Mentor responsável\n• Data correta",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.431209,
+                "status": "approved"
+              },
+              {
+                "id": "ff88ae7f-0aba-407a-bd35-0361bae0de92",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 1,
+                "section": "3. Como preencher corretamente",
+                "sha256": "ccc6ed6bd236a7bc5e0df0ddd939c1299d038478873e3879f852d5aa300d0287",
+                "chunk": 3,
+                "excerpt": "3.\nComo preencher corretamente\n• Preencher todos os dias do mês\n• Indicar corretamente:\no Horários corretos de entrada e saída (Não usar horário britânico)\no Falta\no Falta justificada (com documento)\n• Não deixar campos em branco\n• Conferir se o mês e o nome do aprendiz estão corretos\n• Preencher de caneta azul ou preta\nDias de curso também devem constar conforme orientação do calendário educacional.\nCaso haja falta no dia de curso, manter o preenchimento como CURSO, para que não\nocorra o desconto duplicado da falta.",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.369005,
+                "status": "approved"
+              }
+            ],
+            "retrieval_question": "Folha Ponto: Com quem tiro dúvidas e quando devo procurar ajuda?",
+            "document_question": "Com quem tiro dúvidas e quando devo procurar ajuda?"
+          }
+        },
+        {
+          "node": "assess",
+          "state": {
+            "coverage": "partial",
+            "chunks": [
+              {
+                "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+                "benefit_code": null,
+                "attributes": {},
+                "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+                "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+                "version": "folha-ponto-local-v1",
+                "page": 2,
+                "section": "8. Dúvidas",
+                "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+                "chunk": 8,
+                "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+                "is_test": false,
+                "validation_only": true,
+                "score": 0.518417,
+                "status": "approved"
+              }
+            ]
+          }
+        },
+        {
+          "node": "generate",
+          "state": {
+            "answer": "Você pode tirar dúvidas contatando o RH Jovem antes do prazo final, por e-mail: frequência.sp@renapsi.org.br ou pelo WhatsApp: 11 97080-6728 [fonte:F1].",
+            "outcome": "partial"
+          }
+        },
+        {
+          "node": "validate",
+          "state": {
+            "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "sources": [],
+            "outcome": "no_evidence"
+          }
+        }
+      ],
+      "events": [
+        {
+          "event": "start",
+          "user": {
+            "id": "52175b1f-e329-4362-9a83-6bbe0ce6782c",
+            "role": "user",
+            "content": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:21:37.522500Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          },
+          "assistant": {
+            "id": "48f44235-69a2-41dc-b366-6ecc95894f3b",
+            "role": "assistant",
+            "content": "",
+            "status": "processing",
+            "sources": [],
+            "created_at": "2026-10-21T15:21:37.522501Z",
+            "outcome": null,
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        },
+        {
+          "event": "delta",
+          "text": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida."
+        },
+        {
+          "event": "sources",
+          "sources": []
+        },
+        {
+          "event": "done",
+          "message": {
+            "id": "48f44235-69a2-41dc-b366-6ecc95894f3b",
+            "role": "assistant",
+            "content": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+            "status": "complete",
+            "sources": [],
+            "created_at": "2026-10-21T15:21:37.522501Z",
+            "outcome": "no_evidence",
+            "topic_id": "folha_ponto",
+            "question_id": null
+          }
+        }
+      ],
+      "initial_state": {
+        "conversation_id": "b4e1c6ea-8ecc-40fd-83b7-096dd05453c3",
+        "deadline": 14695.334904379,
+        "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {},
+        "action": null,
+        "chunks": [],
+        "sources": []
+      },
+      "final_state": {
+        "conversation_id": "b4e1c6ea-8ecc-40fd-83b7-096dd05453c3",
+        "deadline": 14695.334904379,
+        "question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "topic_id": "folha_ponto",
+        "question_id": null,
+        "history": [],
+        "scopes": [
+          "local_review"
+        ],
+        "support_state": {
+          "vt_stage": "idle",
+          "stage": "idle"
+        },
+        "action": null,
+        "chunks": [
+          {
+            "id": "6ce755fe-36cc-40e0-af9b-05d0a6a22732",
+            "benefit_code": null,
+            "attributes": {},
+            "document_id": "bc24eb6a-e6c0-46f2-af60-441b263b9110",
+            "title": "ORIENTAÇÕES PARA PREENCHIMENTO DA FOLHA PONTO.pdf",
+            "version": "folha-ponto-local-v1",
+            "page": 2,
+            "section": "8. Dúvidas",
+            "sha256": "2739227d24855a20fb0d86493d8e5a84bbadaaf353e4d4661c2f8275654966a2",
+            "chunk": 8,
+            "excerpt": "8.\nDúvidas\nEm caso de dúvidas sobre preenchimento ou envio:\n➡️ Entre em contato com o RH Jovem antes do prazo final.\ne-mail: frequência.sp@renapsi.org.br ou whatsapp: 11 97080-6028",
+            "is_test": false,
+            "validation_only": true,
+            "score": 0.518417,
+            "status": "approved"
+          }
+        ],
+        "sources": [],
+        "entry_route": "transport_gate",
+        "planned": [
+          [
+            null,
+            "Com quem tiro dúvidas quando devo procurar ajuda?"
+          ]
+        ],
+        "vt_route": false,
+        "detected_intent": "documental",
+        "domain": "rh_frequency",
+        "agent": "rh_frequency",
+        "comprehensible": true,
+        "retrieval_question": "Folha Ponto: Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "document_question": "Com quem tiro dúvidas e quando devo procurar ajuda?",
+        "coverage": "partial",
+        "answer": "Não encontrei informações suficientes na documentação disponível para responder com segurança à sua dúvida.",
+        "outcome": "no_evidence"
+      },
+      "duration_ms": 45578
+    }
+  ],
+  "conversation_id": "b4e1c6ea-8ecc-40fd-83b7-096dd05453c3",
+  "duration_ms": 45586,
+  "completed_at": "2026-10-21T15:22:23.075911+00:00"
+}
